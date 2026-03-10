@@ -12,7 +12,7 @@ import { categories } from '../data';
 import type { Product } from '../data';
 import type { UserInfo } from './UserInfoForm';
 import { CategoryStep } from './CategoryStep';
-import { SummaryCart } from './SummaryCart';
+import { SummaryCard } from './SummaryCard';
 import type { SelectedItem } from '../utils/exportUtils';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
@@ -88,7 +88,7 @@ export const OfferStepper: React.FC<OfferStepperProps> = ({ userInfo, onReset })
 
                 <Box>
                     {isCompleted ? (
-                        <SummaryCart
+                        <SummaryCard
                             userInfo={userInfo}
                             selectedItems={selectedItems}
                             onReset={onReset}

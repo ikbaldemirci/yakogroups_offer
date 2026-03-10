@@ -66,6 +66,34 @@ export const CategoryStep: React.FC<CategoryStepProps> = ({
                 </Box>
             </Box>
 
+            <Typography variant="h5" gutterBottom fontWeight="bold" color="primary">
+                {category.title2}
+            </Typography>
+            {category.description && (
+                <Typography variant="body1" color="text.secondary" paragraph>
+                    {category.description2}
+                </Typography>
+            )}
+
+            <Box sx={{ my: 4 }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                    <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: '1fr 1fr', md: '1fr 1fr 1fr' }, gap: 4 }}>
+                        // how to implement items 2
+                        {category.items.map((item) => (
+                            <Box key={item.id}>
+                                <ProductCard
+                                    product={item}
+                                    personCountTier={personCountTier}
+                                    isSelected={!!selectedItems[item.id]}
+                                    onAdd={onItemSelect}
+                                    onRemove={onItemDeselect}
+                                />
+                            </Box>
+                        ))}
+                    </Box>
+                </Box>
+            </Box>
+
             <Box sx={{ display: 'flex', justifyContent: 'flex-end', mt: 4 }}>
                 <Button
                     variant="contained"

@@ -17,13 +17,13 @@ import type { SelectedItem } from '../utils/exportUtils';
 import DownloadIcon from '@mui/icons-material/Download';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
-interface SummaryCartProps {
+interface SummaryCardProps {
     userInfo: UserInfo;
     selectedItems: Record<string, SelectedItem>;
     onReset: () => void;
 }
 
-export const SummaryCart: React.FC<SummaryCartProps> = ({ userInfo, selectedItems, onReset }) => {
+export const SummaryCard: React.FC<SummaryCardProps> = ({ userInfo, selectedItems, onReset }) => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [success, setSuccess] = useState(false);
     const items = Object.values(selectedItems);

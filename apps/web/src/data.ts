@@ -33,8 +33,11 @@ export type Product = FixedPriceProduct | TieredPriceProduct;
 export interface Category {
   id: string;
   title: string;
+  title2?: string;
   description?: string;
+  description2?: string;
   items: Product[];
+  items2?: Product[];
 }
 
 export const categories: Category[] = [
@@ -113,7 +116,35 @@ export const categories: Category[] = [
     id: 'animations-inflatables',
     title: 'Animasyon ve Şişme Oyunlar',
     description: 'Çocuklar ve yetişkinler için eğlenceli oyun alanları',
+    title2: "fmaklfa",
+    description2: "gagaga",
     items: [
+      {
+        id: 'a1',
+        type: 'fixed',
+        title: 'Dev Şişme Kaydırak',
+        description: 'Etkinlik alanına kurulan 5x10 metre şişme kaydırak',
+        price: 5000,
+        photoUrl: 'https://images.unsplash.com/photo-1596461404969-9ce20c71c7e7?q=80&w=400&h=300&fit=crop'
+      },
+      {
+        id: 'a2',
+        type: 'fixed',
+        title: 'Sumo Güreşi',
+        description: '2 adet şişme sumo kıyafeti ve minder',
+        price: 2500,
+        photoUrl: 'https://images.unsplash.com/photo-1511886929837-354d827aae26?q=80&w=400&h=300&fit=crop'
+      },
+      {
+        id: 'a3',
+        type: 'fixed',
+        title: 'Animatör Gösterisi',
+        description: 'Yüz boyama, sosis balon ve mini yarışmalar (2 Saat)',
+        price: 3000,
+        photoUrl: 'https://images.unsplash.com/photo-1530103043960-ef38714abb15?q=80&w=400&h=300&fit=crop'
+      }
+    ],
+    items2: [
       {
         id: 'a1',
         type: 'fixed',
