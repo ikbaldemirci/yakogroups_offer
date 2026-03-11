@@ -9,21 +9,24 @@ import {
     ListItemText,
     Divider,
     Alert,
-    CircularProgress
+    CircularProgress,
+    IconButton
 } from '@mui/material';
 import type { UserInfo } from './UserInfoForm';
 import { exportToExcel, sendToCRM } from '../utils/exportUtils';
 import type { SelectedItem } from '../utils/exportUtils';
 import DownloadIcon from '@mui/icons-material/Download';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 interface SummaryCardProps {
     userInfo: UserInfo;
     selectedItems: Record<string, SelectedItem>;
     onReset: () => void;
+    onItemDeselect: (productId: string) => void;
 }
 
-export const SummaryCard: React.FC<SummaryCardProps> = ({ userInfo, selectedItems, onReset }) => {
+export const SummaryCard: React.FC<SummaryCardProps> = ({ userInfo, selectedItems, onReset, onItemDeselect }) => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [success, setSuccess] = useState(false);
     const items = Object.values(selectedItems);
@@ -105,9 +108,19 @@ export const SummaryCard: React.FC<SummaryCardProps> = ({ userInfo, selectedItem
                                         primary={<Typography fontWeight="bold">{item.product.title}</Typography>}
                                         secondary={item.product.description}
                                     />
-                                    <Typography variant="body1" fontWeight="bold" color="primary">
-                                        {item.price.toLocaleString('tr-TR')} ₺
-                                    </Typography>
+                                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+                                        <Typography variant="body1" fontWeight="bold" color="primary">
+                                            {item.price.toLocaleString('tr-TR')} ₺
+                                        </Typography>
+                                        <IconButton
+                                            edge="end"
+                                            aria-label="delete"
+                                            color="error"
+                                            onClick={() => onItemDeselect(item.product.id)}
+                                        >
+                                            <DeleteIcon />
+                                        </IconButton>
+                                    </Box>
                                 </ListItem>
                                 {index < items.length - 1 && <Divider />}
                             </React.Fragment>

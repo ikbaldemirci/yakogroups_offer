@@ -37,7 +37,7 @@ export const OfferStepper: React.FC<OfferStepperProps> = ({ userInfo, onReset })
     };
 
     const handleSkip = () => {
-        
+
         handleNext();
     };
 
@@ -66,7 +66,7 @@ export const OfferStepper: React.FC<OfferStepperProps> = ({ userInfo, onReset })
                             Başa Dön
                         </Button>
                     ) : (
-                        <Button startIcon={<ArrowBackIcon />} onClick={handleBack} color="inherit" disabled={isCompleted}>
+                        <Button startIcon={<ArrowBackIcon />} onClick={handleBack} color="inherit">
                             Geri
                         </Button>
                     )}
@@ -92,6 +92,7 @@ export const OfferStepper: React.FC<OfferStepperProps> = ({ userInfo, onReset })
                             userInfo={userInfo}
                             selectedItems={selectedItems}
                             onReset={onReset}
+                            onItemDeselect={handleItemDeselect}
                         />
                     ) : (
                         <CategoryStep

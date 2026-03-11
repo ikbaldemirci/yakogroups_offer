@@ -78,7 +78,7 @@ export const CategoryStep: React.FC<CategoryStepProps> = ({
             <Box sx={{ my: 4 }}>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
                     <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: '1fr 1fr', md: '1fr 1fr 1fr' }, gap: 4 }}>
-                        // how to implement items 2
+                        {/* // how to implement items 2 */}
                         {category.items.map((item) => (
                             <Box key={item.id}>
                                 <ProductCard
