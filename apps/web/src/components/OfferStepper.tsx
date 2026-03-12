@@ -8,8 +8,8 @@ import {
     Paper,
     Button
 } from '@mui/material';
-import { categories } from '../data';
-import type { Product } from '../data';
+import { categories } from '../types';
+import type { Product } from '../types';
 import type { UserInfo } from './UserInfoForm';
 import { CategoryStep } from './CategoryStep';
 import { SummaryCard } from './SummaryCard';
