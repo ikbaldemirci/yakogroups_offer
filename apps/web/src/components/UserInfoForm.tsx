@@ -11,7 +11,7 @@ import {
     Paper
 } from '@mui/material';
 import type { SelectChangeEvent } from '@mui/material';
-import type { PersonCountTier } from '../data';
+import type { PersonCountTier } from '../types';
 
 export interface UserInfo {
     firstName: string;

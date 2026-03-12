@@ -13,7 +13,7 @@ import {
     DialogContent,
     DialogActions
 } from '@mui/material';
-import type { Product, PersonCountTier } from '../data';
+import type { Product, PersonCountTier } from '../types';
 
 interface ProductCardProps {
     product: Product;

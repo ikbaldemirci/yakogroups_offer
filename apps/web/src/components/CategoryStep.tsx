@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography, Button, Divider } from '@mui/material';
-import type { Category, Product, PersonCountTier } from '../data';
+import type { Category, Product, PersonCountTier } from '../types';
 import { ProductCard } from './ProductCard';
 
 interface CategoryStepProps {
