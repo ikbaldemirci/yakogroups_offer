@@ -10,8 +10,8 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import type { UserInfo } from "./UserInfoForm";
 import { categories } from "../types";
+import { useOffer } from "../context/OfferContext";
 
 const categoryIcons = [
     <RestaurantMenuIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
@@ -33,16 +33,17 @@ const campaigns = [
     { image: "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=1200&h=500&fit=crop" }
 ];
 
-interface HomePageProps {
-    userInfo: UserInfo;
-    onCategorySelect: (index: number) => void;
-    selectedItemCount: number;
-    onCartOpen: () => void;
-}
-
-export const HomePage: React.FC<HomePageProps> = ({ userInfo, onCategorySelect, selectedItemCount, onCartOpen }) => {
+export const HomePage: React.FC = () => {
+    const { 
+        userInfo, 
+        handleCategorySelect, 
+        selectedItemCount, 
+        setCartOpen 
+    } = useOffer();
     const swiperRef = useRef(null);
     const theme = useTheme();
+
+    if (!userInfo) return null;
 
     const categoryColors = [
         `linear-gradient(135deg, ${theme.palette.primary.light}, ${theme.palette.primary.main})`,
@@ -88,7 +89,7 @@ export const HomePage: React.FC<HomePageProps> = ({ userInfo, onCategorySelect, 
                                         boxShadow: `0 25px 50px ${alpha(theme.palette.common.black, 0.15)}`
                                     }
                                 }}
-                                onClick={() => onCategorySelect(index)}
+                                onClick={() => handleCategorySelect(index)}
                             >
                                 <CardActionArea sx={{ height: "100%" }}>
                                     <Box sx={{ position: "relative", height: 160, overflow: "hidden" }}>
@@ -253,7 +254,7 @@ export const HomePage: React.FC<HomePageProps> = ({ userInfo, onCategorySelect, 
                             label={`${selectedItemCount} ürün seçildi`}
                             color="primary"
                             variant="filled"
-                            onClick={onCartOpen}
+                            onClick={() => setCartOpen(true)}
                             sx={{ fontWeight: "bold", cursor: "pointer" }}
                             clickable
                         />

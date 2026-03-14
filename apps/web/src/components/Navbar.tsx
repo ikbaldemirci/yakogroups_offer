@@ -12,27 +12,19 @@ import {
 } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import type { UserInfo } from "./UserInfoForm";
+import { useOffer } from "../context/OfferContext";
 
 export type View = "userInfo" | "home" | "stepper";
 
-interface NavbarProps {
-    userInfo: UserInfo | null;
-    view: View;
-    handleLogoClick: () => void;
-    handleGoHome: () => void;
-    selectedItemCount: number;
-    setCartOpen: (open: boolean) => void;
-}
-
-export const Navbar: React.FC<NavbarProps> = ({
-    userInfo,
-    view,
-    handleLogoClick,
-    handleGoHome,
-    selectedItemCount,
-    setCartOpen
-}) => {
+export const Navbar: React.FC = () => {
+    const { 
+        userInfo, 
+        view, 
+        handleLogoClick, 
+        handleGoHome, 
+        selectedItemCount, 
+        setCartOpen 
+    } = useOffer();
     const theme = useTheme();
 
     return (

@@ -12,21 +12,21 @@ import {
     CircularProgress,
     IconButton
 } from '@mui/material';
-import type { UserInfo } from './UserInfoForm';
 import { exportToExcel, sendToCRM } from '../utils/exportUtils';
-import type { SelectedItem } from '../utils/exportUtils';
 import DownloadIcon from '@mui/icons-material/Download';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import DeleteIcon from '@mui/icons-material/Delete';
 
-interface SummaryCardProps {
-    userInfo: UserInfo;
-    selectedItems: Record<string, SelectedItem>;
-    onReset: () => void;
-    onItemDeselect: (productId: string) => void;
-}
+import { useOffer } from "../context/OfferContext";
 
-export const SummaryCard: React.FC<SummaryCardProps> = ({ userInfo, selectedItems, onReset, onItemDeselect }) => {
+export const SummaryCard: React.FC = () => {
+    const {
+        userInfo,
+        selectedItems,
+        handleCartReset,
+        handleItemDeselect
+    } = useOffer();
+
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [success, setSuccess] = useState(false);
     const items = Object.values(selectedItems);
@@ -34,15 +34,19 @@ export const SummaryCard: React.FC<SummaryCardProps> = ({ userInfo, selectedItem
     const totalAmount = items.reduce((sum, item) => sum + item.price, 0);
 
     const handleExportExcel = () => {
+        if (!userInfo) return;
         exportToExcel(userInfo, selectedItems, totalAmount);
     };
 
     const handleConfirm = async () => {
+        if (!userInfo) return;
         setIsSubmitting(true);
         await sendToCRM(userInfo, selectedItems, totalAmount);
         setIsSubmitting(false);
         setSuccess(true);
     };
+
+    if (!userInfo) return null;
 
     if (success) {
         return (
@@ -58,7 +62,7 @@ export const SummaryCard: React.FC<SummaryCardProps> = ({ userInfo, selectedItem
                     <Button variant="outlined" onClick={handleExportExcel} startIcon={<DownloadIcon />}>
                         Kopyasını İndir (Excel)
                     </Button>
-                    <Button variant="contained" onClick={onReset}>
+                    <Button variant="contained" onClick={handleCartReset}>
                         Yeni Teklif Oluştur
                     </Button>
                 </Box>
@@ -116,7 +120,7 @@ export const SummaryCard: React.FC<SummaryCardProps> = ({ userInfo, selectedItem
                                             edge="end"
                                             aria-label="delete"
                                             color="error"
-                                            onClick={() => onItemDeselect(item.product.id)}
+                                            onClick={() => handleItemDeselect(item.product.id)}
                                         >
                                             <DeleteIcon />
                                         </IconButton>

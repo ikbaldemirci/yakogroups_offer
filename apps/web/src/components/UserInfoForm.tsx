@@ -13,6 +13,7 @@ import {
 } from "@mui/material";
 import type { SelectChangeEvent } from "@mui/material";
 import type { PersonCountTier } from "../types";
+import { useOffer } from "../context/OfferContext";
 
 export interface UserInfo {
     firstName: string;
@@ -23,19 +24,17 @@ export interface UserInfo {
     personCount: PersonCountTier | "";
 }
 
-interface UserInfoFormProps {
-    onSubmit: (info: UserInfo) => void;
-}
-
-export const UserInfoForm: React.FC<UserInfoFormProps> = ({ onSubmit }) => {
-    const [formData, setFormData] = useState<UserInfo>({
-        firstName: "",
-        lastName: "",
-        companyName: "",
-        email: "",
-        phone: "",
-        personCount: ""
-    });
+export const UserInfoForm: React.FC = () => {
+    const { userInfo: globalUserInfo, handleUserInfoSubmit } = useOffer();
+    const [formData, setFormData] = useState<UserInfo>(
+        globalUserInfo || {
+            firstName: "",
+            lastName: "",
+            companyName: "",
+            email: "",
+            phone: "",
+            personCount: ""
+        });
 
     const [errors, setErrors] = useState<Partial<Record<keyof UserInfo, string>>>({});
 
@@ -88,8 +87,22 @@ export const UserInfoForm: React.FC<UserInfoFormProps> = ({ onSubmit }) => {
             formData.phone &&
             formData.personCount
         ) {
-            onSubmit(formData);
+            handleUserInfoSubmit(formData);
         }
+    };
+
+    const handleClearData = () => {
+        setFormData({
+            firstName: "",
+            lastName: "",
+            companyName: "",
+            email: "",
+            phone: "",
+            personCount: ""
+        });
+        setErrors({});
+        localStorage.removeItem("yako_groups_userInfo");
+        localStorage.removeItem("yako_groups_selectedItems");
     };
 
     return (
@@ -184,15 +197,27 @@ export const UserInfoForm: React.FC<UserInfoFormProps> = ({ onSubmit }) => {
                         </Select>
                     </FormControl>
 
-                    <Button
-                        type="submit"
-                        variant="contained"
-                        size="large"
-                        fullWidth
-                        sx={{ mt: 2, py: 1.5, borderRadius: 2, fontWeight: "bold" }}
-                    >
-                        Teklif Adımlarına Başla →
-                    </Button>
+                    <Box sx={{ display: 'flex', gap: 2, mt: 2 }}>
+                        {formData.firstName && (
+                            <Button
+                                variant="outlined"
+                                color="error"
+                                size="large"
+                                onClick={handleClearData}
+                                sx={{ py: 1.5, borderRadius: 2, fontWeight: "bold", flex: 1 }}
+                            >
+                                Temizle
+                            </Button>
+                        )}
+                        <Button
+                            type="submit"
+                            variant="contained"
+                            size="large"
+                            sx={{ py: 1.5, borderRadius: 2, fontWeight: "bold", flex: 2 }}
+                        >
+                            {formData.firstName ? "Devam Et" : "Teklif Adımlarına Başla"}
+                        </Button>
+                    </Box>
                 </Box>
             </Paper>
         </Box>

@@ -9,29 +9,25 @@ import {
 } from "@mui/material";
 import { categories } from "../types";
 import type { Product } from "../types";
-import type { UserInfo } from "./UserInfoForm";
 import { CategoryStep } from "./CategoryStep";
 import { SummaryCard } from "./SummaryCard";
-import type { SelectedItem } from "../utils/exportUtils";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import HomeIcon from "@mui/icons-material/Home";
 
-interface OfferStepperProps {
-    userInfo: UserInfo;
-    onHome: () => void;
-    initialStep?: number;
-    selectedItems: Record<string, SelectedItem>;
-    onSelectedItemsChange: (items: Record<string, SelectedItem>) => void;
-}
+import { useOffer } from "../context/OfferContext";
 
-export const OfferStepper: React.FC<OfferStepperProps> = ({
-    userInfo,
-    onHome,
-    initialStep = 0,
-    selectedItems,
-    onSelectedItemsChange,
-}) => {
-    const [activeStep, setActiveStep] = useState(initialStep);
+export const OfferStepper: React.FC = () => {
+    const {
+        userInfo,
+        handleGoHome,
+        initialCategoryIndex,
+        selectedItems,
+        setSelectedItems
+    } = useOffer();
+
+    if (!userInfo) return null;
+
+    const [activeStep, setActiveStep] = useState(initialCategoryIndex);
 
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -48,7 +44,7 @@ export const OfferStepper: React.FC<OfferStepperProps> = ({
 
     const handleBack = () => {
         if (activeStep === 0) {
-            onHome();
+            handleGoHome();
         } else {
             const prevStep = activeStep - 1;
             setActiveStep(prevStep);
@@ -61,16 +57,16 @@ export const OfferStepper: React.FC<OfferStepperProps> = ({
     };
 
     const handleItemSelect = (product: Product, price: number) => {
-        onSelectedItemsChange({
+        setSelectedItems({
             ...selectedItems,
             [product.id]: { product, price }
         });
     };
 
-    const handleItemDeselect = (productId: string) => {
+    const handleItemDeselectLocal = (productId: string) => {
         const newItems = { ...selectedItems };
         delete newItems[productId];
-        onSelectedItemsChange(newItems);
+        setSelectedItems(newItems);
     };
 
     return (
@@ -81,7 +77,7 @@ export const OfferStepper: React.FC<OfferStepperProps> = ({
                     <Button startIcon={<ArrowBackIcon />} onClick={handleBack} color="inherit">
                         {activeStep === 0 ? "Ana Sayfa" : "Geri"}
                     </Button>
-                    <Button startIcon={<HomeIcon />} onClick={onHome} color="inherit" sx={{ ml: "auto" }}>
+                    <Button startIcon={<HomeIcon />} onClick={handleGoHome} color="inherit" sx={{ ml: "auto" }}>
                         Ana Sayfa
                     </Button>
                 </Box>
@@ -99,19 +95,14 @@ export const OfferStepper: React.FC<OfferStepperProps> = ({
 
                 <Box>
                     {isCompleted ? (
-                        <SummaryCard
-                            userInfo={userInfo}
-                            selectedItems={selectedItems}
-                            onReset={onHome}
-                            onItemDeselect={handleItemDeselect}
-                        />
+                        <SummaryCard />
                     ) : (
                         <CategoryStep
                             category={categories[activeStep]}
                             personCountTier={userInfo.personCount as any}
                             selectedItems={selectedItems}
                             onItemSelect={handleItemSelect}
-                            onItemDeselect={handleItemDeselect}
+                            onItemDeselect={handleItemDeselectLocal}
                             onSkip={handleSkip}
                             onNext={handleNext}
                             isLastStep={isLastStep}
