@@ -51,7 +51,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                     height: '100%',
                     display: 'flex',
                     flexDirection: 'column',
-                    border: isSelected ? '2px solid #1976d2' : '2px solid transparent',
+                    border: '2px solid',
+                    borderColor: isSelected ? 'primary.main' : 'transparent',
                     transition: 'all 0.3s ease',
                     transform: isSelected ? 'scale(1.02)' : 'none',
                     boxShadow: isSelected ? 6 : 1

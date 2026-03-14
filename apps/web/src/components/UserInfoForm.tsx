@@ -37,9 +37,25 @@ export const UserInfoForm: React.FC<UserInfoFormProps> = ({ onSubmit }) => {
         personCount: ""
     });
 
+    const [errors, setErrors] = useState<Partial<Record<keyof UserInfo, string>>>({});
+
+    const validateEmail = (email: string) => {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    };
+
+    const validatePhone = (phone: string) => {
+        const re = /^(?:\+?90\s?)?(?:0)?5\d{2}\s?\d{3}\s?\d{2}\s?\d{2}$/;
+        return re.test(phone.replace(/[\s-]/g, ''));
+    };
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData((prev) => ({ ...prev, [name]: value }));
+        
+        if (errors[name as keyof UserInfo]) {
+            setErrors((prev) => ({ ...prev, [name]: undefined }));
+        }
     };
 
     const handleSelectChange = (e: SelectChangeEvent<string>) => {
@@ -48,6 +64,22 @@ export const UserInfoForm: React.FC<UserInfoFormProps> = ({ onSubmit }) => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
+        
+        const newErrors: Partial<Record<keyof UserInfo, string>> = {};
+        
+        if (!validateEmail(formData.email)) {
+            newErrors.email = "Geçerli bir e-posta adresi giriniz.";
+        }
+        
+        if (!validatePhone(formData.phone)) {
+            newErrors.phone = "Geçerli bir telefon numarası giriniz (Örn: 0555 555 55 55).";
+        }
+
+        if (Object.keys(newErrors).length > 0) {
+            setErrors(newErrors);
+            return;
+        }
+
         if (
             formData.firstName &&
             formData.lastName &&
@@ -72,7 +104,7 @@ export const UserInfoForm: React.FC<UserInfoFormProps> = ({ onSubmit }) => {
 
                 <Box component="form" onSubmit={handleSubmit} sx={{ display: "flex", flexDirection: "column", gap: 2.5 }}>
                     <Grid container spacing={2}>
-                        <Grid item xs={6}>
+                        <Grid size={{ xs: 6 }}>
                             <TextField
                                 label="Ad"
                                 name="firstName"
@@ -83,7 +115,7 @@ export const UserInfoForm: React.FC<UserInfoFormProps> = ({ onSubmit }) => {
                                 variant="outlined"
                             />
                         </Grid>
-                        <Grid item xs={6}>
+                        <Grid size={{ xs: 6 }}>
                             <TextField
                                 label="Soyad"
                                 name="lastName"
@@ -116,6 +148,8 @@ export const UserInfoForm: React.FC<UserInfoFormProps> = ({ onSubmit }) => {
                         fullWidth
                         variant="outlined"
                         placeholder="ornek@sirket.com"
+                        error={!!errors.email}
+                        helperText={errors.email}
                     />
 
                     <TextField
@@ -127,7 +161,9 @@ export const UserInfoForm: React.FC<UserInfoFormProps> = ({ onSubmit }) => {
                         required
                         fullWidth
                         variant="outlined"
-                        placeholder="+90 5XX XXX XX XX"
+                        placeholder="05XX XXX XX XX"
+                        error={!!errors.phone}
+                        helperText={errors.phone}
                     />
 
                     <FormControl fullWidth required>

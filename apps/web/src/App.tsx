@@ -4,34 +4,42 @@ import {
     CssBaseline,
     ThemeProvider,
     createTheme,
-    AppBar,
-    Toolbar,
-    Typography,
-    Button,
-    IconButton,
-    Badge,
     Drawer
 } from "@mui/material";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import HomeIcon from "@mui/icons-material/Home";
 import { UserInfoForm } from "./components/UserInfoForm";
 import type { UserInfo } from "./components/UserInfoForm";
 import { OfferStepper } from "./components/OfferStepper";
 import { HomePage } from "./components/HomePage";
 import { SummaryCard } from "./components/SummaryCard";
 import type { SelectedItem } from "./utils/exportUtils";
+import { Navbar } from "./components/Navbar";
+import type { View } from "./components/Navbar";
 
 const theme = createTheme({
     palette: {
         primary: {
             main: "#764ba2",
+            light: "#a78bfa",
+            dark: "#1a1a2e", 
         },
         secondary: {
             main: "#f5576c",
+            dark: "#0f3460", 
+        },
+        info: {
+            main: "#00b4d8",
+            dark: "#16213e", 
         },
         background: {
             default: "#f8f9fa",
+            paper: "#ffffff",
         },
+        
+        action: {
+            hoverOpacity: 0.15,
+            selectedOpacity: 0.2,
+        },
+        tonalOffset: 0.2,
     },
     typography: {
         fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
@@ -50,8 +58,6 @@ const theme = createTheme({
         },
     },
 });
-
-type View = "userInfo" | "home" | "stepper";
 
 function App() {
     const [userInfo, setUserInfo] = useState<UserInfo | null>(null);
@@ -99,94 +105,14 @@ function App() {
             <CssBaseline />
             <Box sx={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
 
-                <AppBar
-                    position="static"
-                    elevation={0}
-                    sx={{
-                        background: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
-                        borderBottom: "1px solid rgba(255,255,255,0.08)"
-                    }}
-                >
-                    <Toolbar>
-
-                        <Box
-                            onClick={handleLogoClick}
-                            sx={{
-                                display: "flex",
-                                alignItems: "center",
-                                gap: 1,
-                                cursor: userInfo ? "pointer" : "default",
-                                userSelect: "none",
-                                "&:hover": userInfo ? {
-                                    opacity: 0.85
-                                } : {}
-                            }}
-                        >
-                            <Box
-                                sx={{
-                                    width: 36,
-                                    height: 36,
-                                    borderRadius: 2,
-                                    background: "linear-gradient(135deg, #764ba2, #f5576c)",
-                                    display: "flex",
-                                    alignItems: "center",
-                                    justifyContent: "center",
-                                    fontWeight: 900,
-                                    fontSize: "1rem",
-                                    color: "white"
-                                }}
-                            >
-                                Y
-                            </Box>
-                            <Typography
-                                variant="h6"
-                                fontWeight="800"
-                                sx={{
-                                    background: "linear-gradient(135deg, #ffffff 0%, #a78bfa 100%)",
-                                    WebkitBackgroundClip: "text",
-                                    WebkitTextFillColor: "transparent",
-                                    letterSpacing: -0.5
-                                }}
-                            >
-                                YakoGroups
-                            </Typography>
-                        </Box>
-
-                        <Box sx={{ flexGrow: 1 }} />
-
-                        {userInfo && (
-                            <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                                {view !== "home" && (
-                                    <Button
-                                        startIcon={<HomeIcon />}
-                                        onClick={handleGoHome}
-                                        sx={{
-                                            color: "rgba(255,255,255,0.85)",
-                                            "&:hover": { color: "white", bgcolor: "rgba(255,255,255,0.08)" }
-                                        }}
-                                    >
-                                        Ana Sayfa
-                                    </Button>
-                                )}
-                                <IconButton
-                                    onClick={() => setCartOpen(true)}
-                                    sx={{
-                                        color: "rgba(255,255,255,0.85)",
-                                        "&:hover": { color: "white", bgcolor: "rgba(255,255,255,0.08)" }
-                                    }}
-                                >
-                                    <Badge
-                                        badgeContent={selectedItemCount}
-                                        color="secondary"
-                                        sx={{ "& .MuiBadge-badge": { fontWeight: "bold" } }}
-                                    >
-                                        <ShoppingCartIcon />
-                                    </Badge>
-                                </IconButton>
-                            </Box>
-                        )}
-                    </Toolbar>
-                </AppBar>
+                <Navbar 
+                    userInfo={userInfo}
+                    view={view}
+                    handleLogoClick={handleLogoClick}
+                    handleGoHome={handleGoHome}
+                    selectedItemCount={selectedItemCount}
+                    setCartOpen={setCartOpen}
+                />
 
                 <Box component="main" sx={{ flexGrow: 1 }}>
                     {view === "userInfo" && (
@@ -221,7 +147,7 @@ function App() {
                         sx: {
                             width: { xs: "100%", sm: 560 },
                             p: 3,
-                            bgcolor: "#f8f9fa"
+                            bgcolor: theme.palette.background.default
                         }
                     }}
                 >
