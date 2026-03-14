@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
     Box,
     Stepper,
@@ -33,18 +33,26 @@ export const OfferStepper: React.FC<OfferStepperProps> = ({
 }) => {
     const [activeStep, setActiveStep] = useState(initialStep);
 
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, [activeStep]);
+
     const isLastStep = activeStep === categories.length - 1;
     const isCompleted = activeStep === categories.length;
 
     const handleNext = () => {
-        setActiveStep((prev) => prev + 1);
+        const nextStep = activeStep + 1;
+        setActiveStep(nextStep);
+        window.history.pushState({ view: "stepper", stepIndex: nextStep }, "", `#stepper-step-${nextStep}`);
     };
 
     const handleBack = () => {
         if (activeStep === 0) {
             onHome();
         } else {
-            setActiveStep((prev) => prev - 1);
+            const prevStep = activeStep - 1;
+            setActiveStep(prevStep);
+            window.history.pushState({ view: "stepper", stepIndex: prevStep }, "", `#stepper-step-${prevStep}`);
         }
     };
 
