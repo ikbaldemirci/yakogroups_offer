@@ -1,4 +1,4 @@
-export type PersonCountTier = '0-25' | '25-50' | '50-75' | '75-100';
+export type PersonCountTier = '0-25' | '25-50' | '50-75' | '75-100' | '100+';
 
 export interface ProductDetail {
   title: string;

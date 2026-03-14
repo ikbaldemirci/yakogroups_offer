@@ -1,29 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
     Box,
     Stepper,
     Step,
     StepLabel,
-    Typography,
     Paper,
     Button
-} from '@mui/material';
-import { categories } from '../types';
-import type { Product } from '../types';
-import type { UserInfo } from './UserInfoForm';
-import { CategoryStep } from './CategoryStep';
-import { SummaryCard } from './SummaryCard';
-import type { SelectedItem } from '../utils/exportUtils';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+} from "@mui/material";
+import { categories } from "../types";
+import type { Product } from "../types";
+import type { UserInfo } from "./UserInfoForm";
+import { CategoryStep } from "./CategoryStep";
+import { SummaryCard } from "./SummaryCard";
+import type { SelectedItem } from "../utils/exportUtils";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import HomeIcon from "@mui/icons-material/Home";
 
 interface OfferStepperProps {
     userInfo: UserInfo;
-    onReset: () => void;
+    onHome: () => void;
+    initialStep?: number;
+    selectedItems: Record<string, SelectedItem>;
+    onSelectedItemsChange: (items: Record<string, SelectedItem>) => void;
 }
 
-export const OfferStepper: React.FC<OfferStepperProps> = ({ userInfo, onReset }) => {
-    const [activeStep, setActiveStep] = useState(0);
-    const [selectedItems, setSelectedItems] = useState<Record<string, SelectedItem>>({});
+export const OfferStepper: React.FC<OfferStepperProps> = ({
+    userInfo,
+    onHome,
+    initialStep = 0,
+    selectedItems,
+    onSelectedItemsChange,
+}) => {
+    const [activeStep, setActiveStep] = useState(initialStep);
 
     const isLastStep = activeStep === categories.length - 1;
     const isCompleted = activeStep === categories.length;
@@ -33,46 +41,41 @@ export const OfferStepper: React.FC<OfferStepperProps> = ({ userInfo, onReset })
     };
 
     const handleBack = () => {
-        setActiveStep((prev) => prev - 1);
+        if (activeStep === 0) {
+            onHome();
+        } else {
+            setActiveStep((prev) => prev - 1);
+        }
     };
 
     const handleSkip = () => {
-
         handleNext();
     };
 
     const handleItemSelect = (product: Product, price: number) => {
-        setSelectedItems(prev => ({
-            ...prev,
+        onSelectedItemsChange({
+            ...selectedItems,
             [product.id]: { product, price }
-        }));
-    };
-
-    const handleItemDeselect = (productId: string) => {
-        setSelectedItems(prev => {
-            const newItems = { ...prev };
-            delete newItems[productId];
-            return newItems;
         });
     };
 
+    const handleItemDeselect = (productId: string) => {
+        const newItems = { ...selectedItems };
+        delete newItems[productId];
+        onSelectedItemsChange(newItems);
+    };
+
     return (
-        <Box sx={{ width: '100%', maxWidth: 1200, mx: 'auto', p: { xs: 2, md: 4 } }}>
+        <Box sx={{ width: "100%", maxWidth: 1200, mx: "auto", p: { xs: 2, md: 4 } }}>
             <Paper elevation={3} sx={{ p: { xs: 2, md: 4 }, borderRadius: 3 }}>
 
-                <Box sx={{ display: 'flex', alignItems: 'center', mb: 4 }}>
-                    {activeStep === 0 ? (
-                        <Button startIcon={<ArrowBackIcon />} onClick={onReset} color="inherit">
-                            Başa Dön
-                        </Button>
-                    ) : (
-                        <Button startIcon={<ArrowBackIcon />} onClick={handleBack} color="inherit">
-                            Geri
-                        </Button>
-                    )}
-                    <Typography variant="h6" sx={{ ml: 'auto', fontWeight: 'bold' }}>
-                        {userInfo.companyName} Teklif Dosyası
-                    </Typography>
+                <Box sx={{ display: "flex", alignItems: "center", mb: 4, gap: 1 }}>
+                    <Button startIcon={<ArrowBackIcon />} onClick={handleBack} color="inherit">
+                        {activeStep === 0 ? "Ana Sayfa" : "Geri"}
+                    </Button>
+                    <Button startIcon={<HomeIcon />} onClick={onHome} color="inherit" sx={{ ml: "auto" }}>
+                        Ana Sayfa
+                    </Button>
                 </Box>
 
                 <Stepper activeStep={activeStep} alternativeLabel sx={{ mb: 6 }}>
@@ -91,7 +94,7 @@ export const OfferStepper: React.FC<OfferStepperProps> = ({ userInfo, onReset })
                         <SummaryCard
                             userInfo={userInfo}
                             selectedItems={selectedItems}
-                            onReset={onReset}
+                            onReset={onHome}
                             onItemDeselect={handleItemDeselect}
                         />
                     ) : (

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
     Box,
     Button,
@@ -8,16 +8,19 @@ import {
     Select,
     TextField,
     Typography,
-    Paper
-} from '@mui/material';
-import type { SelectChangeEvent } from '@mui/material';
-import type { PersonCountTier } from '../types';
+    Paper,
+    Grid
+} from "@mui/material";
+import type { SelectChangeEvent } from "@mui/material";
+import type { PersonCountTier } from "../types";
 
 export interface UserInfo {
     firstName: string;
     lastName: string;
     companyName: string;
-    personCount: PersonCountTier | '';
+    email: string;
+    phone: string;
+    personCount: PersonCountTier | "";
 }
 
 interface UserInfoFormProps {
@@ -26,10 +29,12 @@ interface UserInfoFormProps {
 
 export const UserInfoForm: React.FC<UserInfoFormProps> = ({ onSubmit }) => {
     const [formData, setFormData] = useState<UserInfo>({
-        firstName: '',
-        lastName: '',
-        companyName: '',
-        personCount: ''
+        firstName: "",
+        lastName: "",
+        companyName: "",
+        email: "",
+        phone: "",
+        personCount: ""
     });
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -43,14 +48,21 @@ export const UserInfoForm: React.FC<UserInfoFormProps> = ({ onSubmit }) => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        if (formData.firstName && formData.lastName && formData.companyName && formData.personCount) {
+        if (
+            formData.firstName &&
+            formData.lastName &&
+            formData.companyName &&
+            formData.email &&
+            formData.phone &&
+            formData.personCount
+        ) {
             onSubmit(formData);
         }
     };
 
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'center', p: 4 }}>
-            <Paper elevation={3} sx={{ p: 4, maxWidth: 500, width: '100%', borderRadius: 3 }}>
+        <Box sx={{ display: "flex", justifyContent: "center", p: 4 }}>
+            <Paper elevation={3} sx={{ p: 4, maxWidth: 540, width: "100%", borderRadius: 3 }}>
                 <Typography variant="h5" component="h1" gutterBottom align="center" fontWeight="bold" color="primary">
                     YakoGroups Teklif Al
                 </Typography>
@@ -58,25 +70,32 @@ export const UserInfoForm: React.FC<UserInfoFormProps> = ({ onSubmit }) => {
                     Lütfen teklif oluşturmak için bilgilerinizi giriniz.
                 </Typography>
 
-                <Box component="form" onSubmit={handleSubmit} sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
-                    <TextField
-                        label="Ad"
-                        name="firstName"
-                        value={formData.firstName}
-                        onChange={handleChange}
-                        required
-                        fullWidth
-                        variant="outlined"
-                    />
-                    <TextField
-                        label="Soyad"
-                        name="lastName"
-                        value={formData.lastName}
-                        onChange={handleChange}
-                        required
-                        fullWidth
-                        variant="outlined"
-                    />
+                <Box component="form" onSubmit={handleSubmit} sx={{ display: "flex", flexDirection: "column", gap: 2.5 }}>
+                    <Grid container spacing={2}>
+                        <Grid item xs={6}>
+                            <TextField
+                                label="Ad"
+                                name="firstName"
+                                value={formData.firstName}
+                                onChange={handleChange}
+                                required
+                                fullWidth
+                                variant="outlined"
+                            />
+                        </Grid>
+                        <Grid item xs={6}>
+                            <TextField
+                                label="Soyad"
+                                name="lastName"
+                                value={formData.lastName}
+                                onChange={handleChange}
+                                required
+                                fullWidth
+                                variant="outlined"
+                            />
+                        </Grid>
+                    </Grid>
+
                     <TextField
                         label="Şirket Adı"
                         name="companyName"
@@ -85,6 +104,30 @@ export const UserInfoForm: React.FC<UserInfoFormProps> = ({ onSubmit }) => {
                         required
                         fullWidth
                         variant="outlined"
+                    />
+
+                    <TextField
+                        label="E-posta"
+                        name="email"
+                        type="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        fullWidth
+                        variant="outlined"
+                        placeholder="ornek@sirket.com"
+                    />
+
+                    <TextField
+                        label="Telefon"
+                        name="phone"
+                        type="tel"
+                        value={formData.phone}
+                        onChange={handleChange}
+                        required
+                        fullWidth
+                        variant="outlined"
+                        placeholder="+90 5XX XXX XX XX"
                     />
 
                     <FormControl fullWidth required>
@@ -97,10 +140,11 @@ export const UserInfoForm: React.FC<UserInfoFormProps> = ({ onSubmit }) => {
                             label="Kişi Sayısı"
                             onChange={handleSelectChange}
                         >
-                            <MenuItem value="0-25">0 - 25</MenuItem>
-                            <MenuItem value="25-50">25 - 50</MenuItem>
-                            <MenuItem value="50-75">50 - 75</MenuItem>
-                            <MenuItem value="75-100">75 - 100</MenuItem>
+                            <MenuItem value="0-25">0 - 25 Kişi</MenuItem>
+                            <MenuItem value="25-50">25 - 50 Kişi</MenuItem>
+                            <MenuItem value="50-75">50 - 75 Kişi</MenuItem>
+                            <MenuItem value="75-100">75 - 100 Kişi</MenuItem>
+                            <MenuItem value="100+">100+ Kişi</MenuItem>
                         </Select>
                     </FormControl>
 
@@ -109,9 +153,9 @@ export const UserInfoForm: React.FC<UserInfoFormProps> = ({ onSubmit }) => {
                         variant="contained"
                         size="large"
                         fullWidth
-                        sx={{ mt: 2, py: 1.5, borderRadius: 2, fontWeight: 'bold' }}
+                        sx={{ mt: 2, py: 1.5, borderRadius: 2, fontWeight: "bold" }}
                     >
-                        Teklif Adımlarına Başla
+                        Teklif Adımlarına Başla →
                     </Button>
                 </Box>
             </Paper>
