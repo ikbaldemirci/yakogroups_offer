@@ -11,8 +11,12 @@ import {
     Dialog,
     DialogTitle,
     DialogContent,
-    DialogActions
+    DialogActions,
+    IconButton,
+    Tooltip
 } from '@mui/material';
+import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
+import LanguageIcon from '@mui/icons-material/Language';
 import type { Product, PersonCountTier } from '../types';
 
 interface ProductCardProps {
@@ -22,6 +26,22 @@ interface ProductCardProps {
     onAdd: (product: Product, price: number) => void;
     onRemove: (productId: string) => void;
 }
+
+const getYouTubeEmbedUrl = (url: string) => {
+    let videoId = '';
+    try {
+        if (url.includes('youtube.com/watch')) {
+            videoId = new URL(url).searchParams.get('v') || '';
+        } else if (url.includes('youtu.be/')) {
+            videoId = url.split('youtu.be/')[1].split('?')[0];
+        } else if (url.includes('youtube.com/embed/')) {
+            return url;
+        }
+    } catch (e) {
+        console.error("Invalid YouTube URL", url);
+    }
+    return videoId ? `https://www.youtube.com/embed/${videoId}?autoplay=1` : '';
+};
 
 export const ProductCard: React.FC<ProductCardProps> = ({
     product,
@@ -40,8 +60,12 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     const currentPrice = getPrice();
 
     const [openDialog, setOpenDialog] = useState(false);
+    const [videoOpen, setVideoOpen] = useState(false);
 
     const handleOpenToggle = () => setOpenDialog(!openDialog);
+    const handleVideoToggle = () => setVideoOpen(!videoOpen);
+
+    const youtubeEmbedUrl = product.video_link ? getYouTubeEmbedUrl(product.video_link) : '';
 
     return (
         <>
@@ -65,7 +89,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                     alt={product.title}
                     sx={{ objectFit: 'cover' }}
                 />
-                <CardContent sx={{ flexGrow: 1 }}>
+                <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
                     <Box display="flex" justifyContent="space-between" alignItems="flex-start" mb={2}>
                         <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: 'bold' }}>
                             {product.title}
@@ -90,15 +114,45 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                     >
                         {product.summary || product.description}
                     </Typography>
-                    {(product.details || product.description) && (
-                        <Button
-                            size="small"
-                            onClick={handleOpenToggle}
-                            sx={{ mt: 1, p: 0, minWidth: 'auto', textTransform: 'none' }}
-                        >
-                            Detayları Görüntüle
-                        </Button>
-                    )}
+                    
+                    <Box display="flex" gap={1} mt="auto">
+                        {(product.details || product.description) && (
+                            <Button
+                                size="small"
+                                onClick={handleOpenToggle}
+                                sx={{ mt: 1, p: 0, minWidth: 'auto', textTransform: 'none' }}
+                            >
+                                Detayları Görüntüle
+                            </Button>
+                        )}
+                        {product.detail_link && (
+                            <Tooltip title="İncele">
+                                <IconButton 
+                                    size="small" 
+                                    color="primary" 
+                                    href={product.detail_link} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    sx={{ bgcolor: 'primary.50', '&:hover': { bgcolor: 'primary.100' } }}
+                                >
+                                    <LanguageIcon fontSize="small" />
+                                </IconButton>
+                            </Tooltip>
+                        )}
+                        
+                        {product.video_link && youtubeEmbedUrl && (
+                            <Tooltip title="Video İzle">
+                                <IconButton 
+                                    size="small" 
+                                    color="error"
+                                    onClick={handleVideoToggle}
+                                    sx={{ bgcolor: 'error.50', '&:hover': { bgcolor: 'error.100' } }}
+                                >
+                                    <PlayCircleOutlineIcon fontSize="small" />
+                                </IconButton>
+                            </Tooltip>
+                        )}
+                    </Box>
                 </CardContent>
                 <CardActions sx={{ p: 2, pt: 0 }}>
                     {isSelected ? (
@@ -127,7 +181,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                 </CardActions>
             </Card>
 
-            
+
             <Dialog open={openDialog} onClose={handleOpenToggle} maxWidth="sm" fullWidth>
                 <DialogTitle sx={{ fontWeight: 'bold' }}>{product.title}</DialogTitle>
                 <DialogContent dividers>
@@ -171,6 +225,27 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                         <Button onClick={() => { onAdd(product, currentPrice); handleOpenToggle(); }} color="primary" variant="contained">Sepete Ekle</Button>
                     )}
                 </DialogActions>
+            </Dialog>
+
+            <Dialog 
+                open={videoOpen} 
+                onClose={handleVideoToggle} 
+                maxWidth="md" 
+                fullWidth
+            >
+                <DialogContent sx={{ p: 0, overflow: "hidden" }}>
+                    <Box sx={{ position: "relative", paddingTop: "70%", width: "100%" }}>
+                        {videoOpen && youtubeEmbedUrl && (
+                            <iframe
+                                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
+                                src={youtubeEmbedUrl}
+                                title={product.title}
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            />
+                        )}
+                    </Box>
+                </DialogContent>
             </Dialog>
         </>
     );

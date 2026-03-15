@@ -32,7 +32,9 @@ export const menusCategory: Category = {
           "price": 775,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=400&h=300&fit=crop",
+          "video_link": "https://www.youtube.com/watch?v=aGwiauxA4hE",
+          "detail_link": "https://yakogroups.com"
         },
         {
           "id": "m2",
@@ -70,7 +72,8 @@ export const menusCategory: Category = {
           "price": 800,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=400&h=300&fit=crop",
+          "video_link": "https://www.youtube.com/watch?v=aGwiauxA4hE"
         },
         {
           "id": "m3",
@@ -104,7 +107,8 @@ export const menusCategory: Category = {
           "price": 760,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=400&h=300&fit=crop",
+          "detail_link": "https://yakogroups.com"
         },
         {
           "id": "m4",

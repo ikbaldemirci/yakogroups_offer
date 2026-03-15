@@ -16,6 +16,8 @@ export interface BaseProduct {
   currency?: string;
   vatIncluded?: boolean;
   photoUrl: string;
+  video_link?: string;
+  detail_link?: string;
 }
 
 export interface FixedPriceProduct extends BaseProduct {
