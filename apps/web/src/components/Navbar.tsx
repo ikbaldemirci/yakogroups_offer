@@ -3,7 +3,6 @@ import {
     AppBar,
     Toolbar,
     Box,
-    Button,
     IconButton,
     Badge,
     alpha,
@@ -111,16 +110,15 @@ export const Navbar: React.FC = () => {
                 {userInfo && (
                     <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                         {view !== "home" && (
-                            <Button
-                                startIcon={<HomeIcon sx={{ color: "common.white" }} />}
+                            <IconButton
                                 onClick={handleGoHome}
                                 sx={{
                                     color: alpha(theme.palette.common.white, 0.85),
                                     "&:hover": { color: "common.white", bgcolor: alpha(theme.palette.common.white, 0.08) }
                                 }}
                             >
-                                Ana Sayfa
-                            </Button>
+                                <HomeIcon sx={{ color: "common.white" }} />
+                            </IconButton>
                         )}
                         <IconButton
                             onClick={() => setCartOpen(true)}
