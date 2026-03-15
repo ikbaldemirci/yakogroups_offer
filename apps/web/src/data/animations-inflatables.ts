@@ -28,7 +28,8 @@ export const animationsinflatablesCategory: Category = {
           "price": 34500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=400&h=300&fit=crop",
+          "isPopular": true  
         },
         {
           "id": "a2",
@@ -46,7 +47,8 @@ export const animationsinflatablesCategory: Category = {
           "price": 22500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=400&h=300&fit=crop",
+          "isPopular": true
         },
         {
           "id": "a3",

@@ -41,11 +41,13 @@ export const teamactivitiesCategory: Category = {
             "0-25": 67500,
             "25-50": 67500,
             "50-75": 67500,
-            "75-100": 67500
+            "75-100": 67500,
+            "100+": 67500
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=400&h=300&fit=crop",
+          "isPopular": true
         }
       ]
     },
@@ -81,11 +83,13 @@ export const teamactivitiesCategory: Category = {
             "0-25": 67500,
             "25-50": 67500,
             "50-75": 67500,
-            "75-100": 67500
+            "75-100": 67500,
+            "100+": 67500
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?q=80&w=400&h=300&fit=crop",
+          "isPopular": true 
         },
         {
           "id": "t10",
@@ -116,11 +120,12 @@ export const teamactivitiesCategory: Category = {
             "0-25": 50000,
             "25-50": 50000,
             "50-75": 50000,
-            "75-100": 50000
+            "75-100": 50000,
+            "100+": 50000
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=400&h=300&fit=crop",
         },
         {
           "id": "t16",
@@ -155,7 +160,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 90000,
             "25-50": 90000,
             "50-75": 90000,
-            "75-100": 90000
+            "75-100": 90000,
+            "100+": 90000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -190,7 +196,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 105000,
             "25-50": 105000,
             "50-75": 105000,
-            "75-100": 105000
+            "75-100": 105000,
+            "100+": 105000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -234,11 +241,13 @@ export const teamactivitiesCategory: Category = {
             "0-25": 25000,
             "25-50": 25000,
             "50-75": 25000,
-            "75-100": 25000
+            "75-100": 25000,
+            "100+": 25000
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?q=80&w=400&h=300&fit=crop",
+          "isPopular": true
         }
       ]
     },
@@ -274,11 +283,13 @@ export const teamactivitiesCategory: Category = {
             "0-25": 35000,
             "25-50": 35000,
             "50-75": 35000,
-            "75-100": 35000
+            "75-100": 35000,
+            "100+": 35000
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=400&h=300&fit=crop",
+          "isPopular": true
         }
       ]
     },
@@ -314,11 +325,13 @@ export const teamactivitiesCategory: Category = {
             "0-25": 50000,
             "25-50": 50000,
             "50-75": 50000,
-            "75-100": 50000
+            "75-100": 50000,
+            "100+": 50000
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=400&h=300&fit=crop",
+          "isPopular": true
         },
         {
           "id": "t19",
@@ -349,7 +362,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 80000,
             "25-50": 80000,
             "50-75": 80000,
-            "75-100": 80000
+            "75-100": 80000,
+            "100+": 80000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -389,7 +403,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 60000,
             "25-50": 60000,
             "50-75": 60000,
-            "75-100": 60000
+            "75-100": 60000,
+            "100+": 60000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -425,7 +440,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 40000,
             "25-50": 40000,
             "50-75": 40000,
-            "75-100": 40000
+            "75-100": 40000,
+            "100+": 40000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -460,7 +476,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 95000,
             "25-50": 95000,
             "50-75": 95000,
-            "75-100": 95000
+            "75-100": 95000,
+            "100+": 95000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -495,7 +512,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 50000,
             "25-50": 50000,
             "50-75": 50000,
-            "75-100": 50000
+            "75-100": 50000,
+            "100+": 50000 
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -530,7 +548,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 60000,
             "25-50": 60000,
             "50-75": 60000,
-            "75-100": 60000
+            "75-100": 60000,
+            "100+": 60000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -565,7 +584,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 50000,
             "25-50": 50000,
             "50-75": 50000,
-            "75-100": 50000
+            "75-100": 50000,
+            "100+": 50000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -613,11 +633,13 @@ export const teamactivitiesCategory: Category = {
             "0-25": 50000,
             "25-50": 50000,
             "50-75": 50000,
-            "75-100": 50000
+            "75-100": 50000,
+            "100+": 50000
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=400&h=300&fit=crop",
+          "isPopular": true
         },
         {
           "id": "t11",
@@ -648,7 +670,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 100000,
             "25-50": 100000,
             "50-75": 100000,
-            "75-100": 100000
+            "75-100": 100000,
+            "100+": 100000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -687,7 +710,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 85000,
             "25-50": 85000,
             "50-75": 85000,
-            "75-100": 85000
+            "75-100": 85000,
+            "100+": 85000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -722,7 +746,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 200000,
             "25-50": 200000,
             "50-75": 200000,
-            "75-100": 200000
+            "75-100": 200000,
+            "100+": 200000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -762,7 +787,9 @@ export const teamactivitiesCategory: Category = {
             "0-25": 100000,
             "25-50": 100000,
             "50-75": 100000,
-            "75-100": 100000
+            "75-100": 100000,
+            "100+": 100000
+
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -802,7 +829,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 60000,
             "25-50": 60000,
             "50-75": 60000,
-            "75-100": 60000
+            "75-100": 60000,
+            "100+": 60000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -842,7 +870,9 @@ export const teamactivitiesCategory: Category = {
             "0-25": 85000,
             "25-50": 85000,
             "50-75": 85000,
-            "75-100": 85000
+            "75-100": 85000,
+            "100+": 85000
+
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -885,7 +915,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 2800,
             "25-50": 2800,
             "50-75": 2800,
-            "75-100": 2800
+            "75-100": 2800,
+            "100+": 2800
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -924,7 +955,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 0,
             "25-50": 0,
             "50-75": 0,
-            "75-100": 0
+            "75-100": 0,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -963,7 +995,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 0,
             "25-50": 0,
             "50-75": 0,
-            "75-100": 0
+            "75-100": 0,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1003,7 +1036,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 110000,
             "25-50": 110000,
             "50-75": 110000,
-            "75-100": 110000
+            "75-100": 110000,
+            "100+": 110000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1038,7 +1072,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 25000,
             "25-50": 25000,
             "50-75": 25000,
-            "75-100": 25000
+            "75-100": 25000,
+            "100+": 25000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1090,7 +1125,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 80000,
             "25-50": 80000,
             "50-75": 80000,
-            "75-100": 80000
+            "75-100": 80000,
+            "100+": 80000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1125,11 +1161,13 @@ export const teamactivitiesCategory: Category = {
             "0-25": 65000,
             "25-50": 65000,
             "50-75": 65000,
-            "75-100": 65000
+            "75-100": 65000,
+            "100+": 65000
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=400&h=300&fit=crop",
+          "isPopular": true
         },
         {
           "id": "t25",
@@ -1160,7 +1198,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 60000,
             "25-50": 60000,
             "50-75": 60000,
-            "75-100": 60000
+            "75-100": 60000,
+            "100+": 60000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1208,7 +1247,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 25000,
             "25-50": 25000,
             "50-75": 25000,
-            "75-100": 25000
+            "75-100": 25000,
+            "100+": 25000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1231,7 +1271,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 10000,
             "25-50": 10000,
             "50-75": 10000,
-            "75-100": 10000
+            "75-100": 10000,
+            "100+": 10000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1270,7 +1311,8 @@ export const teamactivitiesCategory: Category = {
             "0-25": 14000,
             "25-50": 14000,
             "50-75": 14000,
-            "75-100": 14000
+            "75-100": 14000,
+            "100+": 14000
           },
           "currency": "TRY",
           "vatIncluded": false,

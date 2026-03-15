@@ -1,7 +1,38 @@
 import { createTheme } from "@mui/material/styles";
 
+declare module "@mui/material/styles" {
+    interface Palette {
+        card: {
+            title: string;
+            priceBg: string;
+            priceText: string;
+            buttonBg: string;
+            buttonText: string;
+            buttonHoverBg: string;
+        };
+    }
+    interface PaletteOptions {
+        card?: {
+            title?: string;
+            priceBg?: string;
+            priceText?: string;
+            buttonBg?: string;
+            buttonText?: string;
+            buttonHoverBg?: string;
+        };
+    }
+}
+
 export const theme = createTheme({
     palette: {
+        card: {
+            title: "#f97316",
+            priceBg: "#22c55e",     
+            priceText: "#ffffff",   
+            buttonBg: "#f97316",    
+            buttonText: "#ffffff",  
+            buttonHoverBg: "#ea580c", 
+        },
         primary: {
             main: "#764ba2",
             light: "#a78bfa",

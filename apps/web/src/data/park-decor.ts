@@ -114,7 +114,8 @@ export const parkdecorCategory: Category = {
           "price": 45000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1504198453319-5ce911bafcde?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://images.unsplash.com/photo-1504198453319-5ce911bafcde?q=80&w=400&h=300&fit=crop",
+          "isPopular": true
         },
         {
           "id": "pd10",
@@ -138,7 +139,8 @@ export const parkdecorCategory: Category = {
           "price": 85000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=400&h=300&fit=crop",
+          "isPopular": true
         },
         {
           "id": "pd12",

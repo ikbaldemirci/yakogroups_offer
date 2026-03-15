@@ -108,7 +108,8 @@ export const menusCategory: Category = {
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=400&h=300&fit=crop",
-          "detail_link": "https://yakogroups.com"
+          "detail_link": "https://yakogroups.com",
+           "isPopular": true
         },
         {
           "id": "m4",
@@ -234,7 +235,8 @@ export const menusCategory: Category = {
           "price": 640,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=400&h=300&fit=crop",
+           "isPopular": true
         },
         {
           "id": "b2",

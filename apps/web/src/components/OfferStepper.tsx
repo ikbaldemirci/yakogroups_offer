@@ -5,15 +5,14 @@ import {
     Step,
     StepLabel,
     Paper,
-    Button
+    Button,
+    Typography
 } from "@mui/material";
 import { categories } from "../types";
 import type { Product } from "../types";
 import { CategoryStep } from "./CategoryStep";
 import { SummaryCard } from "./SummaryCard";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import HomeIcon from "@mui/icons-material/Home";
-
 import { useOffer } from "../context/OfferContext";
 
 export const OfferStepper: React.FC = () => {
@@ -77,9 +76,9 @@ export const OfferStepper: React.FC = () => {
                     <Button startIcon={<ArrowBackIcon />} onClick={handleBack} color="inherit">
                         {activeStep === 0 ? "Ana Sayfa" : "Geri"}
                     </Button>
-                    <Button startIcon={<HomeIcon />} onClick={handleGoHome} color="inherit" sx={{ ml: "auto" }}>
-                        Ana Sayfa
-                    </Button>
+                    <Typography variant="h6" component="div" sx={{ ml: "auto", fontWeight: "bold", color: "primary.main" }}>
+                        {userInfo.companyName} Teklif Dosyası
+                    </Typography>
                 </Box>
 
                 <Stepper activeStep={activeStep} alternativeLabel sx={{ mb: 6 }}>

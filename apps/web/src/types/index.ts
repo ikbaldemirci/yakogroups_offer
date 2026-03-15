@@ -18,6 +18,7 @@ export interface BaseProduct {
   photoUrl: string;
   video_link?: string;
   detail_link?: string;
+  isPopular?: boolean;
 }
 
 export interface FixedPriceProduct extends BaseProduct {
