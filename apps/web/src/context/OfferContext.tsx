@@ -20,6 +20,7 @@ interface OfferContextType {
     handleLogoClick: () => void;
     handleItemDeselect: (productId: string) => void;
     handleCartReset: () => void;
+    handleNavigateToStep: (stepIndex: number) => void;
 }
 
 const OfferContext = createContext<OfferContextType | undefined>(undefined);
@@ -129,6 +130,10 @@ export const OfferProvider: React.FC<{ children: ReactNode }> = ({ children }) =
         localStorage.removeItem("yako_groups_selectedItems");
     };
 
+    const handleNavigateToStep = (index: number) => {
+        setViewWithHistory("stepper", index);
+    };
+
     return (
         <OfferContext.Provider
             value={{
@@ -147,6 +152,7 @@ export const OfferProvider: React.FC<{ children: ReactNode }> = ({ children }) =
                 handleLogoClick,
                 handleItemDeselect,
                 handleCartReset,
+                handleNavigateToStep,
             }}
         >
             {children}

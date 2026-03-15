@@ -52,7 +52,7 @@ function AppContent() {
                 }}
             >
                 {userInfo && (
-                    <SummaryCard />
+                    <SummaryCard isCart />
                 )}
             </Drawer>
         </Box>

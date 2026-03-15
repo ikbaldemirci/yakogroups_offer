@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
     Box,
     Typography,
@@ -11,20 +11,24 @@ import {
     Alert,
     CircularProgress,
     IconButton
-} from '@mui/material';
-import { exportToExcel, sendToCRM } from '../utils/exportUtils';
-import DownloadIcon from '@mui/icons-material/Download';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import DeleteIcon from '@mui/icons-material/Delete';
+} from "@mui/material";
+import { exportToExcel, sendToCRM } from "../utils/exportUtils";
+import DownloadIcon from "@mui/icons-material/Download";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import DeleteIcon from "@mui/icons-material/Delete";
+import CloseIcon from "@mui/icons-material/Close";
 
+import { categories } from "../types";
 import { useOffer } from "../context/OfferContext";
 
-export const SummaryCard: React.FC = () => {
+export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) => {
     const {
         userInfo,
         selectedItems,
         handleCartReset,
-        handleItemDeselect
+        handleItemDeselect,
+        setCartOpen,
+        handleNavigateToStep
     } = useOffer();
 
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -72,10 +76,15 @@ export const SummaryCard: React.FC = () => {
 
     return (
         <Box sx={{ mt: 3 }}>
-            <Typography variant="h5" gutterBottom fontWeight="bold" color="primary">
-                Teklif Özeti
-            </Typography>
-
+            <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mb: 2 }}>
+                <Typography variant="h5" fontWeight="bold" color="primary">
+                    Teklif Özeti
+                </Typography>
+                <IconButton onClick={() => setCartOpen(false)} size="small">
+                    <CloseIcon />
+                </IconButton>
+            </Box>
+            
             <Paper elevation={2} sx={{ p: 3, mb: 4, borderRadius: 2 }}>
                 <Typography variant="h6" gutterBottom>Müşteri Bilgileri</Typography>
                 <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr 1fr', sm: '1fr 1fr 2fr' }, gap: 2 }}>
@@ -140,26 +149,44 @@ export const SummaryCard: React.FC = () => {
             </Paper>
 
             <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 4 }}>
-                <Button
-                    variant="outlined"
-                    startIcon={<DownloadIcon />}
-                    onClick={handleExportExcel}
-                    size="large"
-                    sx={{ borderRadius: 2 }}
-                >
-                    Excel Olarak İndir
-                </Button>
+                {isCart ? (
+                    <Button
+                        variant="contained"
+                        color="primary"
+                        size="large"
+                        fullWidth
+                        onClick={() => {
+                            setCartOpen(false);
+                            handleNavigateToStep(categories.length);
+                        }}
+                        sx={{ borderRadius: 2, fontWeight: "bold" }}
+                    >
+                        Teklif Özeti'ne Git
+                    </Button>
+                ) : (
+                    <>
+                        <Button
+                            variant="outlined"
+                            startIcon={<DownloadIcon />}
+                            onClick={handleExportExcel}
+                            size="large"
+                            sx={{ borderRadius: 2 }}
+                        >
+                            Excel Olarak İndir
+                        </Button>
 
-                <Button
-                    variant="contained"
-                    color="success"
-                    size="large"
-                    onClick={handleConfirm}
-                    disabled={isSubmitting}
-                    sx={{ px: 4, py: 1.5, borderRadius: 2, fontWeight: 'bold' }}
-                >
-                    {isSubmitting ? <CircularProgress size={24} color="inherit" /> : 'Teklifi CRM\'e Gönder'}
-                </Button>
+                        <Button
+                            variant="contained"
+                            color="success"
+                            size="large"
+                            onClick={handleConfirm}
+                            disabled={isSubmitting}
+                            sx={{ px: 4, py: 1.5, borderRadius: 2, fontWeight: 'bold' }}
+                        >
+                            {isSubmitting ? <CircularProgress size={24} color="inherit" /> : 'Teklifi CRM\'e Gönder'}
+                        </Button>
+                    </>
+                )}
             </Box>
         </Box>
     );
