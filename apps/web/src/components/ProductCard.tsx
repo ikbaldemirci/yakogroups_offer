@@ -122,7 +122,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                                 onClick={handleOpenToggle}
                                 sx={{ mt: 1, p: 0, minWidth: 'auto', textTransform: 'none' }}
                             >
-                                Detayları Görüntüle
+                                {product.category === 'menus' ? 'Menü İçeriğini Göster' : 'Detayları Görüntüle'}
                             </Button>
                         )}
                         {product.detail_link && (

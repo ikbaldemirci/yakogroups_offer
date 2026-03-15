@@ -30,28 +30,53 @@ export const CategoryStep: React.FC<CategoryStepProps> = ({
 
     return (
         <Box sx={{ mt: 3 }}>
-            <Typography variant="h4" gutterBottom fontWeight="bold" color="primary">
-                {category.title}
-            </Typography>
-            {category.description && (
-                <Typography variant="h6" color="text.secondary" paragraph>
-                    {category.description}
-                </Typography>
-            )}
+            <Box sx={{ 
+                display: 'flex', 
+                flexDirection: { xs: 'column', md: 'row' }, 
+                justifyContent: 'space-between', 
+                alignItems: { xs: 'flex-start', md: 'center' },
+                gap: 3,
+                mb: 2
+            }}>
+                <Box sx={{ flex: 1 }}>
+                    <Typography variant="h4" gutterBottom fontWeight="bold" color="primary">
+                        {category.title}
+                    </Typography>
+                    {category.description && (
+                        <Typography variant="h6" color="text.secondary" paragraph sx={{ mb: 0 }}>
+                            {category.description}
+                        </Typography>
+                    )}
+                </Box>
+                <Button
+                    variant={!isAnyItemSelected ? "contained" : "outlined"}
+                    color="secondary"
+                    size="large"
+                    onClick={onSkip}
+                    sx={{ 
+                        borderRadius: 2, 
+                        minWidth: { xs: '100%', md: '280px' },
+                        py: 1.5,
+                        px: 3,
+                        fontWeight: 'bold',
+                        fontSize: '1.05rem',
+                        boxShadow: !isAnyItemSelected ? 4 : 0,
+                        borderWidth: 2,
+                        '&:hover': {
+                            borderWidth: 2,
+                            transform: 'translateY(-2px)',
+                            boxShadow: !isAnyItemSelected ? 6 : 2
+                        },
+                        transition: 'all 0.2s ease',
+                        alignSelf: { xs: 'stretch', md: 'center' }
+                    }}
+                >
+                    İstemiyorum (Bu Kategoriyi Atla)
+                </Button>
+            </Box>
 
             <Box sx={{ my: 4 }}>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-                    <Box>
-                        <Button
-                            variant={!isAnyItemSelected ? "contained" : "outlined"}
-                            color="secondary"
-                            size="large"
-                            onClick={onSkip}
-                            sx={{ mb: 2, borderRadius: 2 }}
-                        >
-                            İstemiyorum (Bu Kategoriyi Atla)
-                        </Button>
-                    </Box>
 
                     {category.items && category.items.length > 0 && (
                         <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: '1fr 1fr', md: '1fr 1fr 1fr' }, gap: 4 }}>
