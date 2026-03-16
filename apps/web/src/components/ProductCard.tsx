@@ -75,6 +75,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
+                    position: "relative",
                     border: "2px solid",
                     borderColor: isSelected ? "card.title" : "transparent",
                     transition: "all 0.3s ease",
@@ -82,6 +83,21 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                     boxShadow: isSelected ? 6 : 1
                 }}
             >
+                {product.isPopular && (
+                    <Chip
+                        label="En çok tercih edilen"
+                        color="secondary"
+                        size="small"
+                        sx={{
+                            position: "absolute",
+                            top: 12,
+                            right: 12,
+                            fontWeight: "bold",
+                            pl: 0.5,
+                            zIndex: 1,
+                        }}
+                    />
+                )}
                 <CardMedia
                     component="img"
                     height="200"
