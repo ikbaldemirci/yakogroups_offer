@@ -27,13 +27,25 @@ const OfferContext = createContext<OfferContextType | undefined>(undefined);
 
 export const OfferProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     const [userInfo, setUserInfo] = useState<UserInfo | null>(() => {
-        const savedInfo = localStorage.getItem("yako_groups_userInfo");
-        return savedInfo ? JSON.parse(savedInfo) : null;
+        try {
+            const savedInfo = localStorage.getItem("yako_groups_userInfo");
+            return savedInfo && savedInfo !== "undefined" ? JSON.parse(savedInfo) : null;
+        } catch (error) {
+            console.error("Failed to parse userInfo from localStorage", error);
+            localStorage.removeItem("yako_groups_userInfo");
+            return null;
+        }
     });
     
     const [selectedItems, setSelectedItems] = useState<Record<string, SelectedItem>>(() => {
-        const savedItems = localStorage.getItem("yako_groups_selectedItems");
-        return savedItems ? JSON.parse(savedItems) : {};
+        try {
+            const savedItems = localStorage.getItem("yako_groups_selectedItems");
+            return savedItems && savedItems !== "undefined" ? JSON.parse(savedItems) : {};
+        } catch (error) {
+            console.error("Failed to parse selectedItems from localStorage", error);
+            localStorage.removeItem("yako_groups_selectedItems");
+            return {};
+        }
     });
 
     const [view, setView] = useState<View>("userInfo");
