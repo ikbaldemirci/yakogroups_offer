@@ -13,9 +13,11 @@ import {
     IconButton,
     Accordion,
     AccordionSummary,
-    AccordionDetails
+    AccordionDetails,
+    Snackbar,
+    TextField
 } from "@mui/material";
-import { exportToExcel, sendToCRM } from "../utils/exportUtils";
+import { exportToExcel } from "../utils/exportUtils"; // sendToCRM geçici olarak kaldırıldı
 import DownloadIcon from "@mui/icons-material/Download";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import DeleteIcon from "@mui/icons-material/Delete";
@@ -24,7 +26,8 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import { categories } from "../types";
 import { useOffer } from "../context/OfferContext";
-import { calculateOfferTotals } from "../utils/calculateOfferTotals";
+import { calculateOfferTotals, validatePersonCount } from "../utils/calculateOfferTotals";
+
 
 export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) => {
     const {
@@ -38,20 +41,40 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [success, setSuccess] = useState(false);
+    const [errorOpen, setErrorOpen] = useState(false);
+    const [errorMessage, setErrorMessage] = useState("");
+    const [exactPersonCount, setExactPersonCount] = useState<string>("");  
     const items = Object.values(selectedItems);
+    
+    const parsedCount = parseInt(exactPersonCount, 10);
+    const isNumberValid = !isNaN(parsedCount) && parsedCount > 0;
+    const isRangeValid = userInfo ? validatePersonCount(exactPersonCount, userInfo.personCount) : false;
+    const isValidCount = isNumberValid && isRangeValid;
 
-    const { menuTotal, menuServiceFee, serviceFee, vatAmount: vat, grandTotal } = calculateOfferTotals(items);
-    const hasMenu = menuTotal > 0;
+    const { subtotal, menuServiceFee, serviceFee, vatAmount: vat, grandTotal } = calculateOfferTotals(items, isValidCount ? parsedCount : undefined);
+    const hasMenu = items.some(item => item.product.category === "menus");
 
-    const handleExportExcel = () => {
+    const handleExportOffer = async () => {
         if (!userInfo) return;
+        if (items.length === 0) {
+            setErrorMessage("Lütfen teklif oluşturmak için en az bir hizmet seçiniz.");
+            setErrorOpen(true);
+            return;
+        }
+        if (hasMenu && !validatePersonCount(exactPersonCount, userInfo.personCount)) {
+            setErrorMessage(`${userInfo.personCount} kişilik kategori seçtiniz, onay için kişi sayınızı bu aralığa tam uygun giriniz.`);
+            setErrorOpen(true);
+            return;
+        }
         exportToExcel(userInfo, selectedItems, grandTotal);
-    };
-
-    const handleConfirm = async () => {
-        if (!userInfo) return;
+        console.log("CRM'e gönderme işlemi tetiklendi (Hazırlık aşamasında)...", { 
+            MusteriBilgisi: userInfo,
+            SecilenHizmetler: selectedItems,
+            GenelToplam: grandTotal
+        });
         setIsSubmitting(true);
-        await sendToCRM(userInfo, selectedItems, grandTotal);
+        // await sendToCRM(userInfo, selectedItems, grandTotal);
+        await new Promise(resolve => setTimeout(resolve, 1000));
         setIsSubmitting(false);
         setSuccess(true);
     };
@@ -69,9 +92,6 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                     Seçimleriniz CRM sistemimize kaydedildi. En kısa sürede sizinle iletişime geçeceğiz.
                 </Typography>
                 <Box sx={{ display: "flex", gap: 2, mt: 3 }}>
-                    <Button variant="outlined" onClick={handleExportExcel} startIcon={<DownloadIcon />}>
-                        Kopyasını İndir (Excel)
-                    </Button>
                     <Button variant="contained" onClick={handleCartReset}>
                         Yeni Teklif Oluştur
                     </Button>
@@ -82,6 +102,16 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
 
     return (
         <Box sx={{ mt: 3 }}>
+            <Snackbar 
+                open={errorOpen} 
+                autoHideDuration={4000} 
+                onClose={() => setErrorOpen(false)} 
+                anchorOrigin={{ vertical: "top", horizontal: "center" }}
+            >
+                <Alert onClose={() => setErrorOpen(false)} severity="error" sx={{ width: "100%", fontWeight: "bold" }}>
+                    {errorMessage}
+                </Alert>
+            </Snackbar>
             <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mb: 2 }}>
                 <Typography variant="h5" fontWeight="bold" color="primary">
                     Teklif Özeti
@@ -129,7 +159,11 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
 
                             if (categoryItems.length === 0) return null;
 
-                            const categoryTotal = categoryItems.reduce((sum, item) => sum + item.price, 0);
+                            const isMenu = category.id === "menus";
+                            const baseCategoryTotal = categoryItems.reduce((sum, item) => sum + item.price, 0);
+                            const categoryTotal = isMenu 
+                                ? (isValidCount ? baseCategoryTotal * parsedCount : 0) 
+                                : baseCategoryTotal;
 
                             return (
                                 <Accordion key={category.id} defaultExpanded>
@@ -137,7 +171,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                         <Box sx={{ display: "flex", justifyContent: "space-between", width: "100%", pr: 2, alignItems: "center" }}>
                                             <Typography fontWeight="bold">{category.title}</Typography>
                                             <Typography variant="body2" color="primary" fontWeight="bold">
-                                                {categoryTotal.toLocaleString("tr-TR")} ₺
+                                                {isMenu && !isValidCount ? "Kişi sayısını giriniz" : `${categoryTotal.toLocaleString("tr-TR")} ₺`}
                                             </Typography>
                                         </Box>
                                     </AccordionSummary>
@@ -169,38 +203,78 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                                 </React.Fragment>
                                             ))}
                                         </List>
+                                        <Box sx={{ p: 1.5, px: 3, bgcolor: "card.summaryBg", display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: 1, borderColor: "divider" }}>
+                                            {isMenu ? (
+                                                <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+                                                    <Typography variant="body2" fontWeight="bold" color="text.secondary">
+                                                        Kişi Sayısı:
+                                                    </Typography>
+                                                    <TextField
+                                                        size="small"
+                                                        value={exactPersonCount}
+                                                        onChange={(e) => setExactPersonCount(e.target.value)}
+                                                        type="number"
+                                                        error={exactPersonCount !== "" && !isRangeValid}
+                                                        sx={{ width: 100, bgcolor: "white" }}
+                                                    />
+                                                </Box>
+                                            ) : <Box />}
+                                            <Typography variant="body2" fontWeight="bold" color="text.secondary">
+                                                Ara Toplam: <Box component="span" color="primary.main">
+                                                    {isMenu && !isValidCount ? "Kişi sayısını giriniz" : `${categoryTotal.toLocaleString("tr-TR")} ₺`}
+                                                </Box>
+                                            </Typography>
+                                        </Box>
                                     </AccordionDetails>
                                 </Accordion>
                             );
                         })}
-                        <Box sx={{ bgcolor: "grey.50", p: 3 }}>
-                            {hasMenu && (
-                                <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", py: 1 }}>
-                                    <Typography variant="body1" color="text.secondary">Menü Servis Personel Bedeli</Typography>
-                                    <Typography variant="body1" fontWeight="medium" color="text.secondary">
-                                        {menuServiceFee.toLocaleString("tr-TR", { minimumFractionDigits: 0, maximumFractionDigits: 2 })} ₺
+                        <Box sx={{ bgcolor: "card.summaryBg", p: 3 }}>
+                            {hasMenu && !isValidCount ? (
+                                <Box sx={{ textAlign: "center", py: 2 }}>
+                                    <Typography variant="body1" color="error.main" fontWeight="bold">
+                                        {exactPersonCount !== "" && !isRangeValid 
+                                            ? `${userInfo?.personCount} kişilik form doldurdunuz. Lütfen bu aralığa uygun bir sayı giriniz.` 
+                                            : "Fiyat detaylarını ve genel toplamı görüntülemek için lütfen menü kişi sayısını giriniz."}
                                     </Typography>
                                 </Box>
+                            ) : (
+                                <>
+                                    <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", py: 1 }}>
+                                        <Typography variant="body1" color="text.secondary">Alınan Hizmetler Toplamı (KDV hariç)</Typography>
+                                        <Typography variant="body1" fontWeight="medium" color="text.secondary">
+                                            {subtotal.toLocaleString("tr-TR", { minimumFractionDigits: 0, maximumFractionDigits: 2 })} ₺
+                                        </Typography>
+                                    </Box>
+                                    {hasMenu && (
+                                        <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", py: 1 }}>
+                                            <Typography variant="body1" color="text.secondary">Menü Servis Personel Bedeli</Typography>
+                                            <Typography variant="body1" fontWeight="medium" color="text.secondary">
+                                                {menuServiceFee.toLocaleString("tr-TR", { minimumFractionDigits: 0, maximumFractionDigits: 2 })} ₺
+                                            </Typography>
+                                        </Box>
+                                    )}
+                                    <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", py: 1 }}>
+                                        <Typography variant="body1" color="text.secondary">Hizmet Bedeli</Typography>
+                                        <Typography variant="body1" fontWeight="medium" color="text.secondary">
+                                            {serviceFee.toLocaleString("tr-TR", { minimumFractionDigits: 0, maximumFractionDigits: 2 })} ₺
+                                        </Typography>
+                                    </Box>
+                                    <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", py: 1 }}>
+                                        <Typography variant="body1" color="text.secondary">KDV</Typography>
+                                        <Typography variant="body1" fontWeight="medium" color="text.secondary">
+                                            {vat.toLocaleString("tr-TR", { minimumFractionDigits: 0, maximumFractionDigits: 2 })} ₺
+                                        </Typography>
+                                    </Box>
+                                    <Divider sx={{ my: 1.5 }} />
+                                    <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", pt: 1 }}>
+                                        <Typography variant="h6" fontWeight="bold">Genel Toplam (KDV Dahil)</Typography>
+                                        <Typography variant="h5" fontWeight="bold" color="primary">
+                                            {grandTotal.toLocaleString("tr-TR", { minimumFractionDigits: 0, maximumFractionDigits: 2 })} ₺
+                                        </Typography>
+                                    </Box>
+                                </>
                             )}
-                            <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", py: 1 }}>
-                                <Typography variant="body1" color="text.secondary">Hizmet Bedeli</Typography>
-                                <Typography variant="body1" fontWeight="medium" color="text.secondary">
-                                    {serviceFee.toLocaleString("tr-TR", { minimumFractionDigits: 0, maximumFractionDigits: 2 })} ₺
-                                </Typography>
-                            </Box>
-                            <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", py: 1 }}>
-                                <Typography variant="body1" color="text.secondary">KDV</Typography>
-                                <Typography variant="body1" fontWeight="medium" color="text.secondary">
-                                    {vat.toLocaleString("tr-TR", { minimumFractionDigits: 0, maximumFractionDigits: 2 })} ₺
-                                </Typography>
-                            </Box>
-                            <Divider sx={{ my: 1.5 }} />
-                            <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", pt: 1 }}>
-                                <Typography variant="h6" fontWeight="bold">Genel Toplam (KDV Dahil)</Typography>
-                                <Typography variant="h5" fontWeight="bold" color="primary">
-                                    {grandTotal.toLocaleString("tr-TR", { minimumFractionDigits: 0, maximumFractionDigits: 2 })} ₺
-                                </Typography>
-                            </Box>
                         </Box>
                     </Box>
                 )}
@@ -222,28 +296,17 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                         Teklif Özeti'ne Git
                     </Button>
                 ) : (
-                    <>
-                        <Button
-                            variant="outlined"
-                            startIcon={<DownloadIcon />}
-                            onClick={handleExportExcel}
-                            size="large"
-                            sx={{ borderRadius: 2 }}
-                        >
-                            Excel Olarak İndir
-                        </Button>
-
-                        <Button
-                            variant="contained"
-                            color="success"
-                            size="large"
-                            onClick={handleConfirm}
-                            disabled={isSubmitting}
-                            sx={{ px: 4, py: 1.5, borderRadius: 2, fontWeight: "bold" }}
-                        >
-                            {isSubmitting ? <CircularProgress size={24} color="inherit" /> : "Teklifi CRM\'e Gönder"}
-                        </Button>
-                    </>
+                    <Button
+                        variant="contained"
+                        color="success"
+                        size="large"
+                        startIcon={isSubmitting ? <CircularProgress size={20} color="inherit" /> : <DownloadIcon />}
+                        onClick={handleExportOffer}
+                        disabled={isSubmitting}
+                        sx={{ ml: "auto", px: 4, py: 1.5, borderRadius: 2, fontWeight: "bold" }}
+                    >
+                        {isSubmitting ? "İşleniyor..." : "Excel Olarak İndir"}
+                    </Button>
                 )}
             </Box>
         </Box>

@@ -1,4 +1,3 @@
-import type { Category } from "../types";
 
 export interface SelectedItem {
     product: {
@@ -17,15 +16,34 @@ export interface OfferTotals {
     grandTotal: number;
 }
 
+export const validatePersonCount = (countStr: string, tier: string): boolean => {
+    const num = parseInt(countStr, 10);
+    if (isNaN(num)) return false;
+    if (tier === '0-25') return num > 0 && num <= 25;
+    if (tier === '25-50') return num >= 25 && num <= 50;
+    if (tier === '50-75') return num >= 50 && num <= 75;
+    if (tier === '75-100') return num >= 75 && num <= 100;
+    if (tier === '100+') return num >= 100;
+    return true;
+};
+
 export function calculateOfferTotals(
     items: SelectedItem[],
-    _categories?: Category[]
+    exactPersonCount?: number
 ): OfferTotals {
-    const subtotal = items.reduce((sum, item) => sum + item.price, 0);
+    const otherSubtotal = items
+        .filter((item) => item.product.category !== "menus")
+        .reduce((sum, item) => sum + item.price, 0);
 
-    const menuTotal = items
+    const baseMenuTotal = items
         .filter((item) => item.product.category === "menus")
         .reduce((sum, item) => sum + item.price, 0);
+
+    const menuTotal = baseMenuTotal > 0 && exactPersonCount && exactPersonCount > 0
+        ? baseMenuTotal * exactPersonCount
+        : 0;
+
+    const subtotal = otherSubtotal + menuTotal;
 
     const menuServiceFee = menuTotal > 0 ? menuTotal * 0.1 : 0;
 

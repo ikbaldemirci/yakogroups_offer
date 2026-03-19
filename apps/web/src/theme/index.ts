@@ -9,6 +9,7 @@ declare module "@mui/material/styles" {
             buttonBg: string;
             buttonText: string;
             buttonHoverBg: string;
+            summaryBg: string;
         };
     }
     interface PaletteOptions {
@@ -19,6 +20,7 @@ declare module "@mui/material/styles" {
             buttonBg?: string;
             buttonText?: string;
             buttonHoverBg?: string;
+            summaryBg?: string;
         };
     }
 }
@@ -32,6 +34,7 @@ export const theme = createTheme({
             buttonBg: "#f97316",    
             buttonText: "#ffffff",  
             buttonHoverBg: "#ea580c", 
+            summaryBg: "#fafafa",
         },
         primary: {
             main: "#764ba2",
@@ -50,7 +53,6 @@ export const theme = createTheme({
             default: "#f8f9fa",
             paper: "#ffffff",
         },
-        
         action: {
             hoverOpacity: 0.15,
             selectedOpacity: 0.2,
