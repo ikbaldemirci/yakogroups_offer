@@ -1,4 +1,4 @@
-export type PersonCountTier = '0-25' | '25-50' | '50-75' | '75-100' | '100+';
+export type PersonCountTier = "0-25" | "25-50" | "50-75" | "75-100" | "100+";
 
 export interface ProductDetail {
   title: string;
@@ -19,15 +19,16 @@ export interface BaseProduct {
   video_link?: string;
   detail_link?: string;
   isPopular?: boolean;
+  warning?: string;
 }
 
 export interface FixedPriceProduct extends BaseProduct {
-  type: 'fixed';
+  type: "fixed";
   price: number;
 }
 
 export interface TieredPriceProduct extends BaseProduct {
-  type: 'tiered';
+  type: "tiered";
   priceTiers: Record<PersonCountTier, number>;
 }
 
@@ -47,10 +48,10 @@ export interface Category {
   subcategories?: SubCategory[];
 }
 
-import { menusCategory } from '../data/menus';
-import { animationsinflatablesCategory } from '../data/animations-inflatables';
-import { teamactivitiesCategory } from '../data/team-activities';
-import { parkdecorCategory } from '../data/park-decor';
+import { menusCategory } from "../data/menus";
+import { animationsinflatablesCategory } from "../data/animations-inflatables";
+import { teamactivitiesCategory } from "../data/team-activities";
+import { parkdecorCategory } from "../data/park-decor";
 
 export const categories: Category[] = [
   menusCategory,

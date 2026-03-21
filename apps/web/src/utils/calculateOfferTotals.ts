@@ -19,11 +19,11 @@ export interface OfferTotals {
 export const validatePersonCount = (countStr: string, tier: string): boolean => {
     const num = parseInt(countStr, 10);
     if (isNaN(num)) return false;
-    if (tier === '0-25') return num > 0 && num <= 25;
-    if (tier === '25-50') return num >= 25 && num <= 50;
-    if (tier === '50-75') return num >= 50 && num <= 75;
-    if (tier === '75-100') return num >= 75 && num <= 100;
-    if (tier === '100+') return num >= 100;
+    if (tier === "0-25") return num > 0 && num <= 25;
+    if (tier === "25-50") return num >= 25 && num <= 50;
+    if (tier === "50-75") return num >= 50 && num <= 75;
+    if (tier === "75-100") return num >= 75 && num <= 100;
+    if (tier === "100+") return num >= 100;
     return true;
 };
 

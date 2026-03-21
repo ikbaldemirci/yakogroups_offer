@@ -103,7 +103,22 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                 />
                 <CardContent sx={{ flexGrow: 1, display: "flex", flexDirection: "column" }}>
                     <Box display="flex" justifyContent="space-between" alignItems="flex-start" mb={2}>
-                        <Typography gutterBottom variant="h6" component="div" sx={{ fontWeight: "bold", color: "card.title" }}>
+                        <Typography 
+                            gutterBottom 
+                            variant="h6" 
+                            component="div" 
+                            sx={{ 
+                                fontWeight: "bold", 
+                                color: "card.title",
+                                display: "-webkit-box",
+                                WebkitLineClamp: 2,
+                                WebkitBoxOrient: "vertical",
+                                overflow: "hidden",
+                                minHeight: "3.2em",
+                                lineHeight: "1.6em",
+                                pr: 1
+                            }}
+                        >
                             {product.title}
                         </Typography>
                         <Chip
@@ -130,11 +145,28 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                             WebkitLineClamp: 2,
                             WebkitBoxOrient: "vertical",
                             overflow: "hidden",
-                            textOverflow: "ellipsis"
+                            textOverflow: "ellipsis",
+                            minHeight: "3em",
+                            lineHeight: "1.5em"
                         }}
                     >
                         {product.summary || product.description}
                     </Typography>
+                    
+                    {product.warning && (
+                        <Typography
+                            variant="caption"
+                            sx={{
+                                color: "error.main",
+                                fontWeight: "bold",
+                                mt: 1,
+                                display: "block",
+                                lineHeight: "1.2em"
+                            }}
+                        >
+                            * {product.warning}
+                        </Typography>
+                    )}
                     
                     <Box display="flex" alignItems="center" flexWrap="wrap" gap={1.5} mt="auto">
                         {(product.details || product.description) && (
