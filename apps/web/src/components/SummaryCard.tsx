@@ -51,7 +51,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
     const isRangeValid = userInfo ? validatePersonCount(exactPersonCount, userInfo.personCount) : false;
     const isValidCount = isNumberValid && isRangeValid;
 
-    const { subtotal, menuServiceFee, serviceFee, vatAmount: vat, grandTotal } = calculateOfferTotals(items, isValidCount ? parsedCount : undefined);
+    const { subtotal, menuTotal, menuServiceFee, serviceFee, vatAmount: vat, grandTotal } = calculateOfferTotals(items, isValidCount ? parsedCount : undefined);
     const hasMenu = items.some(item => item.product.category === "menus");
 
     const handleExportOffer = async () => {
@@ -66,7 +66,12 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
             setErrorOpen(true);
             return;
         }
-        exportToExcel(userInfo, selectedItems, grandTotal);
+        exportToExcel(
+            userInfo, 
+            selectedItems, 
+            { subtotal, menuTotal, menuServiceFee, serviceFee, vatAmount: vat, grandTotal }, 
+            isValidCount ? parsedCount : undefined
+        );
         console.log("CRM'e gönderme işlemi tetiklendi (Hazırlık aşamasında)...", { 
             MusteriBilgisi: userInfo,
             SecilenHizmetler: selectedItems,

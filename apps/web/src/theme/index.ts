@@ -11,6 +11,10 @@ declare module "@mui/material/styles" {
             buttonHoverBg: string;
             summaryBg: string;
         };
+        excel: {
+            border: string;
+            text: string;
+        };
     }
     interface PaletteOptions {
         card?: {
@@ -21,6 +25,10 @@ declare module "@mui/material/styles" {
             buttonText?: string;
             buttonHoverBg?: string;
             summaryBg?: string;
+        };
+        excel?: {
+            border?: string;
+            text?: string;
         };
     }
 }
@@ -35,6 +43,10 @@ export const theme = createTheme({
             buttonText: "#ffffff",  
             buttonHoverBg: "#ea580c", 
             summaryBg: "#fafafa",
+        },
+        excel: {
+            border: "#000000",
+            text: "#000000",
         },
         primary: {
             main: "#764ba2",
