@@ -71,7 +71,8 @@ export const OfferProvider: React.FC<{ children: ReactNode }> = ({ children }) =
         if (newView === "stepper" && stepIndex !== undefined) {
              setInitialCategoryIndex(stepIndex);
         }
-        window.history.pushState({ view: newView, stepIndex: stepIndex }, "", `#${newView}`);
+        const hash = newView === "stepper" && stepIndex !== undefined ? `#stepper-step-${stepIndex}` : `#${newView}`;
+        window.history.pushState({ view: newView, stepIndex: stepIndex }, "", hash);
     };
 
     useEffect(() => {

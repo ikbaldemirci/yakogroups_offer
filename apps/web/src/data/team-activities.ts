@@ -400,7 +400,7 @@ export const teamactivitiesCategory: Category = {
           "subcategory": "workshop",
           "type": "tiered",
           "title": "RİTİM PERKÜSYON ATÖLYESİ",
-          "summary": "(Malzemler Hariç) Katılımcıların birlikte ritim üreterek orkestra deneyimi yaşadığı, ekip motivasyonunu artıran müzik atölyesidir.",
+          "summary": "Katılımcıların birlikte ritim üreterek orkestra deneyimi yaşadığı, ekip motivasyonunu artıran müzik atölyesidir.",
           "warning": "Malzemeler Hariç",
           "priceTiers": {
             "0-25": 85000,

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import {
     Box,
     Stepper,
@@ -21,12 +21,13 @@ export const OfferStepper: React.FC = () => {
         handleGoHome,
         initialCategoryIndex,
         selectedItems,
-        setSelectedItems
+        setSelectedItems,
+        handleNavigateToStep
     } = useOffer();
 
     if (!userInfo) return null;
 
-    const [activeStep, setActiveStep] = useState(initialCategoryIndex);
+    const activeStep = initialCategoryIndex;
 
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -36,18 +37,14 @@ export const OfferStepper: React.FC = () => {
     const isCompleted = activeStep === categories.length;
 
     const handleNext = () => {
-        const nextStep = activeStep + 1;
-        setActiveStep(nextStep);
-        window.history.pushState({ view: "stepper", stepIndex: nextStep }, "", `#stepper-step-${nextStep}`);
+        handleNavigateToStep(activeStep + 1);
     };
 
     const handleBack = () => {
         if (activeStep === 0) {
             handleGoHome();
         } else {
-            const prevStep = activeStep - 1;
-            setActiveStep(prevStep);
-            window.history.pushState({ view: "stepper", stepIndex: prevStep }, "", `#stepper-step-${prevStep}`);
+            handleNavigateToStep(activeStep - 1);
         }
     };
 

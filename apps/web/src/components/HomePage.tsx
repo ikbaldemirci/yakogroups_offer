@@ -91,14 +91,21 @@ export const HomePage: React.FC = () => {
                                 }}
                                 onClick={() => handleCategorySelect(index)}
                             >
-                                <CardActionArea sx={{ height: "100%" }}>
-                                    <Box sx={{ position: "relative", height: 160, overflow: "hidden" }}>
+                                <CardActionArea sx={{ 
+                                    height: "100%", 
+                                    display: "flex", 
+                                    flexDirection: "column", 
+                                    alignItems: "stretch",
+                                    justifyContent: "flex-start" 
+                                }}>
+                                    <Box sx={{ position: "relative", height: 160, width: "100%", overflow: "hidden" }}>
                                         <CardMedia
                                             component="img"
                                             image={categoryImages[index]}
                                             alt={cat.title}
                                             sx={{
                                                 height: "100%",
+                                                width: "100%",
                                                 objectFit: "cover",
                                                 transition: "transform 0.4s ease",
                                                 "&:hover": { transform: "scale(1.1)" }
@@ -127,7 +134,14 @@ export const HomePage: React.FC = () => {
                                         </Box>
                                     </Box>
 
-                                    <CardContent sx={{ p: { xs: 1.5, md: 2.5 } }}>
+                                    <CardContent sx={{ 
+                                        p: { xs: 1.5, md: 2.5 }, 
+                                        display: "flex", 
+                                        flexDirection: "column", 
+                                        flexGrow: 1,
+                                        width: "100%",
+                                        boxSizing: "border-box"
+                                    }}>
                                         <Typography
                                             variant="subtitle1"
                                             fontWeight="bold"
@@ -153,7 +167,8 @@ export const HomePage: React.FC = () => {
                                             variant="caption"
                                             sx={{
                                                 display: "block",
-                                                mt: 1.5,
+                                                mt: "auto",
+                                                pt: 1.5,
                                                 color: theme.palette.primary.main,
                                                 fontWeight: "bold",
                                                 fontSize: "0.7rem",

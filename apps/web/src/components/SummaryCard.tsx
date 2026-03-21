@@ -121,9 +121,11 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                 <Typography variant="h5" fontWeight="bold" color="primary">
                     Teklif Özeti
                 </Typography>
-                <IconButton onClick={() => setCartOpen(false)} size="small">
-                    <CloseIcon />
-                </IconButton>
+                {isCart && (
+                    <IconButton onClick={() => setCartOpen(false)} size="small">
+                        <CloseIcon />
+                    </IconButton>
+                )}
             </Box>
             
             <Paper elevation={2} sx={{ p: 3, mb: 4, borderRadius: 2 }}>
