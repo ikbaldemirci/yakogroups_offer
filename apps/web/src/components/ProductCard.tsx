@@ -11,12 +11,8 @@ import {
     Dialog,
     DialogTitle,
     DialogContent,
-    DialogActions,
-    IconButton,
-    Tooltip
+    DialogActions
 } from "@mui/material";
-import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
-import LanguageIcon from "@mui/icons-material/Language";
 import type { Product, PersonCountTier } from "../types";
 
 interface ProductCardProps {
@@ -140,42 +136,35 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                         {product.summary || product.description}
                     </Typography>
                     
-                    <Box display="flex" gap={1} mt="auto">
+                    <Box display="flex" alignItems="center" flexWrap="wrap" gap={1.5} mt="auto">
                         {(product.details || product.description) && (
                             <Button
-                                size="small"
                                 onClick={handleOpenToggle}
-                                sx={{ mt: 1, p: 0, minWidth: "auto", textTransform: "none", color: "card.title" }}
+                                sx={{ mt: 1, p: 0, minWidth: "auto", textTransform: "none", color: "card.title", fontSize: "0.95rem", fontWeight: 600 }}
                             >
                                 {product.category === "menus" ? "Menü İçeriğini Göster" : "Detayları Görüntüle"}
                             </Button>
                         )}
                         {product.detail_link && (
-                            <Tooltip title="İncele">
-                                <IconButton 
-                                    size="small" 
-                                    color="primary" 
-                                    href={product.detail_link} 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    sx={{ bgcolor: "primary.50", "&:hover": { bgcolor: "primary.100" } }}
-                                >
-                                    <LanguageIcon fontSize="small" />
-                                </IconButton>
-                            </Tooltip>
+                            <Button 
+                                href={product.detail_link} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                sx={{ mt: 1, p: 0, minWidth: "auto", textTransform: "none", color: "card.title", fontSize: "0.95rem", fontWeight: 600 }}
+                            >
+                                Aktivite Açıklaması
+                            </Button>
                         )}
-                        
+                        {product.detail_link && product.video_link && youtubeEmbedUrl && (
+                            <Typography color="card.title" sx={{ mt: 1, display: "flex", alignItems: "center", fontSize: "1.1rem" }}>|</Typography>
+                        )}
                         {product.video_link && youtubeEmbedUrl && (
-                            <Tooltip title="Video İzle">
-                                <IconButton 
-                                    size="small" 
-                                    color="error"
-                                    onClick={handleVideoToggle}
-                                    sx={{ bgcolor: "error.50", "&:hover": { bgcolor: "error.100" } }}
-                                >
-                                    <PlayCircleOutlineIcon fontSize="small" />
-                                </IconButton>
-                            </Tooltip>
+                            <Button 
+                                onClick={handleVideoToggle}
+                                sx={{ mt: 1, p: 0, minWidth: "auto", textTransform: "none", color: "card.title", fontSize: "0.95rem", fontWeight: 600 }}
+                            >
+                                Aktivite Videosu
+                            </Button>
                         )}
                     </Box>
                 </CardContent>
