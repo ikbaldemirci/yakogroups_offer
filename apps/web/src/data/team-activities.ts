@@ -14,29 +14,7 @@ export const teamactivitiesCategory: Category = {
           "subcategory": "parkur",
           "type": "tiered",
           "title": "SURVIVOR PARKURLARI",
-          "summary": "Survivor parkurları, takım ruhuyla hareket etmeyi öğretirken bireylerin kişisel motivasyonlarını artırır ve ekip içi iletişimi güçlendirir.",
-          "details": [
-            {
-              "title": "Türkiye’nin En Büyük Parkuru",
-              "text": "Türkiye'nin en büyük ve en etkileyici parkurlarından biridir."
-            },
-            {
-              "title": "Takım Olma",
-              "text": "Katılımcıların takım ruhu ile hareket etmelerini teşvik eder."
-            },
-            {
-              "title": "Proje Yönetimi",
-              "text": "Strateji geliştirme ve planlama becerilerini destekler."
-            },
-            {
-              "title": "Departmanlar Arası İletişim",
-              "text": "Farklı ekiplerin birlikte çalışmasını sağlayarak iletişimi güçlendirir."
-            },
-            {
-              "title": "Tanıtım",
-              "text": "Tanıtım yazısı ve aktivite videosu için ayrıca link verilecektir."
-            }
-          ],
+          "summary": "Survivor parkurları, Türkiye'nin en büyük ve en etkileyici parkurlarından biridir. Takım ruhuyla hareket etmeyi öğretirken bireylerin kişisel motivasyonlarını artırır ve ekip içi iletişimi güçlendirir.",
           "priceTiers": {
             "0-25": 67500,
             "25-50": 67500,
@@ -47,7 +25,9 @@ export const teamactivitiesCategory: Category = {
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=400&h=300&fit=crop",
-          "isPopular": true
+          "isPopular": true,
+          "video_link": "https://www.youtube.com/watch?v=aGwiauxA4hE",
+          "detail_link": "https://yakogroups.com"
         }
       ]
     },
