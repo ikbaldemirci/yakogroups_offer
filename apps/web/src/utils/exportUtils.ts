@@ -67,10 +67,20 @@ export const exportToExcel = async (
         if (categoryItems.length === 0) return;
 
         const isMenu = category.id === "menus";
-        const baseCategoryTotal = categoryItems.reduce((sum, item) => sum + item.price, 0);
+
+        const panayirItems = isMenu 
+            ? categoryItems.filter(item => (item.product as any).subcategory === "panayir")
+            : [];
+        const nonPanayirItems = isMenu
+            ? categoryItems.filter(item => (item.product as any).subcategory !== "panayir")
+            : categoryItems;
+
+        const panayirTotal = panayirItems.reduce((sum, item) => sum + item.price, 0);
+        const baseNonPanayirTotal = nonPanayirItems.reduce((sum, item) => sum + item.price, 0);
+
         let categoryTotal = isMenu && exactPersonCount && exactPersonCount > 0 
-            ? baseCategoryTotal * exactPersonCount 
-            : baseCategoryTotal;
+            ? baseNonPanayirTotal * exactPersonCount + panayirTotal
+            : (isMenu ? panayirTotal : baseNonPanayirTotal);
 
         if (isMenu && totals.menuServiceFee > 0) {
             categoryTotal += totals.menuServiceFee;

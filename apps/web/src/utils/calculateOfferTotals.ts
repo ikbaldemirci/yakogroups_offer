@@ -35,13 +35,17 @@ export function calculateOfferTotals(
         .filter((item) => item.product.category !== "menus")
         .reduce((sum, item) => sum + item.price, 0);
 
+    const panayirTotal = items
+        .filter((item) => item.product.category === "menus" && (item.product as any).subcategory === "panayir")
+        .reduce((sum, item) => sum + item.price, 0);
+
     const baseMenuTotal = items
-        .filter((item) => item.product.category === "menus")
+        .filter((item) => item.product.category === "menus" && (item.product as any).subcategory !== "panayir")
         .reduce((sum, item) => sum + item.price, 0);
 
     const menuTotal = baseMenuTotal > 0 && exactPersonCount && exactPersonCount > 0
-        ? baseMenuTotal * exactPersonCount
-        : 0;
+        ? baseMenuTotal * exactPersonCount + panayirTotal
+        : panayirTotal;
 
     const subtotal = otherSubtotal + menuTotal;
 

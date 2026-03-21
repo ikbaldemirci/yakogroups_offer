@@ -165,10 +165,20 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                             if (categoryItems.length === 0) return null;
 
                             const isMenu = category.id === "menus";
-                            const baseCategoryTotal = categoryItems.reduce((sum, item) => sum + item.price, 0);
+
+                            const panayirCategoryItems = isMenu
+                                ? categoryItems.filter(item => (item.product as any).subcategory === "panayir")
+                                : [];
+                            const nonPanayirCategoryItems = isMenu
+                                ? categoryItems.filter(item => (item.product as any).subcategory !== "panayir")
+                                : categoryItems;
+
+                            const panayirCatTotal = panayirCategoryItems.reduce((sum, item) => sum + item.price, 0);
+                            const baseNonPanayirCatTotal = nonPanayirCategoryItems.reduce((sum, item) => sum + item.price, 0);
+
                             const categoryTotal = isMenu 
-                                ? (isValidCount ? baseCategoryTotal * parsedCount : 0) 
-                                : baseCategoryTotal;
+                                ? (isValidCount ? baseNonPanayirCatTotal * parsedCount + panayirCatTotal + menuServiceFee : panayirCatTotal) 
+                                : baseNonPanayirCatTotal;
 
                             return (
                                 <Accordion key={category.id} defaultExpanded>
@@ -207,6 +217,19 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                                     {index < categoryItems.length - 1 && <Divider />}
                                                 </React.Fragment>
                                             ))}
+                                            {isMenu && isValidCount && menuServiceFee > 0 && (
+                                                <>
+                                                    <Divider />
+                                                    <ListItem sx={{ py: 1.5, px: 3 }}>
+                                                        <ListItemText
+                                                            primary={<Typography color="text.secondary">Menü Servis Personel Bedeli</Typography>}
+                                                        />
+                                                        <Typography variant="body1" fontWeight="bold" color="text.secondary">
+                                                            {menuServiceFee.toLocaleString("tr-TR")} ₺
+                                                        </Typography>
+                                                    </ListItem>
+                                                </>
+                                            )}
                                         </List>
                                         <Box sx={{ p: 1.5, px: 3, bgcolor: "card.summaryBg", display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: 1, borderColor: "divider" }}>
                                             {isMenu ? (
@@ -251,14 +274,6 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                             {subtotal.toLocaleString("tr-TR", { minimumFractionDigits: 0, maximumFractionDigits: 2 })} ₺
                                         </Typography>
                                     </Box>
-                                    {hasMenu && (
-                                        <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", py: 1 }}>
-                                            <Typography variant="body1" color="text.secondary">Menü Servis Personel Bedeli</Typography>
-                                            <Typography variant="body1" fontWeight="medium" color="text.secondary">
-                                                {menuServiceFee.toLocaleString("tr-TR", { minimumFractionDigits: 0, maximumFractionDigits: 2 })} ₺
-                                            </Typography>
-                                        </Box>
-                                    )}
                                     <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", py: 1 }}>
                                         <Typography variant="body1" color="text.secondary">Hizmet Bedeli</Typography>
                                         <Typography variant="body1" fontWeight="medium" color="text.secondary">
