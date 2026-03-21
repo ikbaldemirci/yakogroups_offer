@@ -106,7 +106,17 @@ export const UserInfoForm: React.FC = () => {
     };
 
     return (
-        <Box sx={{ display: "flex", justifyContent: "center", p: 4 }}>
+        <Box sx={{ 
+            display: "flex", 
+            justifyContent: "center", 
+            alignItems: "center",
+            p: 4,
+            minHeight: { xs: "calc(100vh - 56px)", sm: "calc(100vh - 64px)" },
+            backgroundImage: 'url("/images/background.png")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center 20%',
+            backgroundAttachment: 'fixed'
+        }}>
             <Paper elevation={3} sx={{ p: 4, maxWidth: 540, width: "100%", borderRadius: 3 }}>
                 <Typography variant="h5" component="h1" gutterBottom align="center" fontWeight="bold" color="primary">
                     YakoGroups Teklif Al
