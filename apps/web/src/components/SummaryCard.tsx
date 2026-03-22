@@ -133,7 +133,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                 <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr 1fr", sm: "1fr 1fr 2fr" }, gap: 2 }}>
                     <Box>
                         <Typography variant="subtitle2" color="text.secondary">Ad Soyad</Typography>
-                        <Typography variant="body1" fontWeight="medium">{userInfo.firstName} {userInfo.lastName}</Typography>
+                        <Typography variant="body1" fontWeight="medium">{userInfo.fullName}</Typography>
                     </Box>
                     <Box>
                         <Typography variant="subtitle2" color="text.secondary">Şirket</Typography>

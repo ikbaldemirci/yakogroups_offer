@@ -21,6 +21,7 @@ interface OfferContextType {
     handleItemDeselect: (productId: string) => void;
     handleCartReset: () => void;
     handleNavigateToStep: (stepIndex: number) => void;
+    handleEditUserInfo: () => void;
 }
 
 const OfferContext = createContext<OfferContextType | undefined>(undefined);
@@ -147,6 +148,10 @@ export const OfferProvider: React.FC<{ children: ReactNode }> = ({ children }) =
         setViewWithHistory("stepper", index);
     };
 
+    const handleEditUserInfo = () => {
+        setViewWithHistory("userInfo");
+    };
+
     return (
         <OfferContext.Provider
             value={{
@@ -166,6 +171,7 @@ export const OfferProvider: React.FC<{ children: ReactNode }> = ({ children }) =
                 handleItemDeselect,
                 handleCartReset,
                 handleNavigateToStep,
+                handleEditUserInfo,
             }}
         >
             {children}

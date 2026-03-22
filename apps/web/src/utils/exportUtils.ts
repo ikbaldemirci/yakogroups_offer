@@ -35,7 +35,7 @@ export const exportToExcel = async (
         bottom: { style: "thick", color: { argb: getArgb(theme.palette.excel.border) } }
     };
 
-    wsItems.addRow(["Ad Soyad:", `${userInfo.firstName} ${userInfo.lastName}`]);
+    wsItems.addRow(["Ad Soyad:", userInfo.fullName]);
     wsItems.addRow(["Şirket Adı:", userInfo.companyName]);
     wsItems.addRow(["E-posta:", userInfo.email]);
     wsItems.addRow(["Telefon:", userInfo.phone]);
@@ -189,7 +189,7 @@ export const exportToExcel = async (
 
     const buffer = await workbook.xlsx.writeBuffer();
     const blob = new Blob([buffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
-    saveAs(blob, `YakoGroups_Teklif_${userInfo.firstName}_${userInfo.lastName}.xlsx`);
+    saveAs(blob, `YakoGroups_Teklif_${userInfo.fullName.replace(/\s+/g, "_")}.xlsx`);
 };
 
 export const sendToCRM = async (userInfo: UserInfo, selectedItems: Record<string, SelectedItem>, totalAmount: number) => {

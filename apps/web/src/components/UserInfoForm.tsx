@@ -9,15 +9,17 @@ import {
     TextField,
     Typography,
     Paper,
-    Grid
+    IconButton
 } from "@mui/material";
 import type { SelectChangeEvent } from "@mui/material";
+import EditIcon from "@mui/icons-material/Edit";
+import CheckIcon from "@mui/icons-material/Check";
+import CloseIcon from "@mui/icons-material/Close";
 import type { PersonCountTier } from "../types";
 import { useOffer } from "../context/OfferContext";
 
 export interface UserInfo {
-    firstName: string;
-    lastName: string;
+    fullName: string;
     companyName: string;
     email: string;
     phone: string;
@@ -25,11 +27,11 @@ export interface UserInfo {
 }
 
 export const UserInfoForm: React.FC = () => {
-    const { userInfo: globalUserInfo, handleUserInfoSubmit } = useOffer();
+    const { userInfo: globalUserInfo, handleUserInfoSubmit, setUserInfo, setSelectedItems } = useOffer();
+    
     const [formData, setFormData] = useState<UserInfo>(
         globalUserInfo || {
-            firstName: "",
-            lastName: "",
+            fullName: "",
             companyName: "",
             email: "",
             phone: "",
@@ -37,6 +39,7 @@ export const UserInfoForm: React.FC = () => {
         });
 
     const [errors, setErrors] = useState<Partial<Record<keyof UserInfo, string>>>({});
+    const [editingFields, setEditingFields] = useState<Record<string, boolean>>({});
 
     const validateEmail = (email: string) => {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -49,7 +52,7 @@ export const UserInfoForm: React.FC = () => {
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const { name, value } = e.target;
+        const { name, value } = e.target; 
         setFormData((prev) => ({ ...prev, [name]: value }));
         
         if (errors[name as keyof UserInfo]) {
@@ -59,6 +62,85 @@ export const UserInfoForm: React.FC = () => {
 
     const handleSelectChange = (e: SelectChangeEvent<string>) => {
         setFormData((prev) => ({ ...prev, personCount: e.target.value as PersonCountTier }));
+    };
+
+    const handleEditField = (fieldName: string) => {
+        setEditingFields(prev => ({ ...prev, [fieldName]: true }));
+    };
+
+    const handleCancelField = (fieldName: string) => {
+        if (globalUserInfo) {
+            setFormData(prev => ({
+                ...prev,
+                [fieldName]: globalUserInfo[fieldName as keyof UserInfo]
+            }));
+        }
+        setEditingFields(prev => ({ ...prev, [fieldName]: false }));
+        setErrors(prev => ({ ...prev, [fieldName]: undefined }));
+    };
+
+    const handleSaveField = (fieldName: string) => {
+        if (fieldName === "email" && !validateEmail(formData.email)) {
+            setErrors(prev => ({ ...prev, email: "Geçerli bir e-posta adresi giriniz." }));
+            return;
+        }
+        if (fieldName === "phone" && !validatePhone(formData.phone)) {
+            setErrors(prev => ({ ...prev, phone: "Geçerli bir telefon numarası giriniz." }));
+            return;
+        }
+
+        setEditingFields(prev => ({ ...prev, [fieldName]: false }));
+        
+        setSelectedItems({});
+        
+        if (globalUserInfo) {
+            setUserInfo({
+                fullName: formData.fullName,
+                companyName: formData.companyName,
+                email: formData.email,
+                phone: formData.phone,
+                personCount: formData.personCount
+            });
+        }
+    };
+
+    const renderFieldWithAction = (fieldName: string, children: React.ReactNode) => {
+        const isEditing = !globalUserInfo || editingFields[fieldName];
+        return (
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                <Box sx={{ flexGrow: 1 }}>
+                    {children}
+                </Box>
+                {globalUserInfo && (
+                    <Box sx={{ display: 'flex', gap: 0.5 }}>
+                        <IconButton 
+                            color={isEditing ? "success" : "primary"}
+                            onClick={() => isEditing ? handleSaveField(fieldName) : handleEditField(fieldName)}
+                            sx={{ 
+                                border: '1px solid',
+                                borderColor: isEditing ? 'success.main' : 'divider',
+                                bgcolor: 'background.paper'
+                            }}
+                        >
+                            {isEditing ? <CheckIcon /> : <EditIcon />}
+                        </IconButton>
+                        {isEditing && (
+                            <IconButton 
+                                color="error"
+                                onClick={() => handleCancelField(fieldName)}
+                                sx={{ 
+                                    border: '1px solid',
+                                    borderColor: 'error.main',
+                                    bgcolor: 'background.paper'
+                                }}
+                            >
+                                <CloseIcon />
+                            </IconButton>
+                        )}
+                    </Box>
+                )}
+            </Box>
+        );
     };
 
     const handleSubmit = (e: React.FormEvent) => {
@@ -80,8 +162,7 @@ export const UserInfoForm: React.FC = () => {
         }
 
         if (
-            formData.firstName &&
-            formData.lastName &&
+            formData.fullName &&
             formData.companyName &&
             formData.email &&
             formData.phone &&
@@ -93,14 +174,16 @@ export const UserInfoForm: React.FC = () => {
 
     const handleClearData = () => {
         setFormData({
-            firstName: "",
-            lastName: "",
+            fullName: "",
             companyName: "",
             email: "",
             phone: "",
             personCount: ""
         });
         setErrors({});
+        setEditingFields({});
+        setUserInfo(null); 
+        setSelectedItems({});
         localStorage.removeItem("yako_groups_userInfo");
         localStorage.removeItem("yako_groups_selectedItems");
     };
@@ -126,89 +209,88 @@ export const UserInfoForm: React.FC = () => {
                 </Typography>
 
                 <Box component="form" onSubmit={handleSubmit} sx={{ display: "flex", flexDirection: "column", gap: 2.5 }}>
-                    <Grid container spacing={2}>
-                        <Grid size={{ xs: 6 }}>
-                            <TextField
-                                label="Ad"
-                                name="firstName"
-                                value={formData.firstName}
-                                onChange={handleChange}
-                                required
-                                fullWidth
-                                variant="outlined"
-                            />
-                        </Grid>
-                        <Grid size={{ xs: 6 }}>
-                            <TextField
-                                label="Soyad"
-                                name="lastName"
-                                value={formData.lastName}
-                                onChange={handleChange}
-                                required
-                                fullWidth
-                                variant="outlined"
-                            />
-                        </Grid>
-                    </Grid>
+                    {renderFieldWithAction("fullName", (
+                        <TextField
+                            label="Ad Soyad"
+                            name="fullName"
+                            value={formData.fullName}
+                            onChange={handleChange}
+                            required
+                            fullWidth
+                            variant="outlined"
+                            disabled={globalUserInfo ? !editingFields["fullName"] : false}
+                        />
+                    ))}
 
-                    <TextField
-                        label="Şirket Adı"
-                        name="companyName"
-                        value={formData.companyName}
-                        onChange={handleChange}
-                        required
-                        fullWidth
-                        variant="outlined"
-                    />
+                    {renderFieldWithAction("companyName", (
+                        <TextField
+                            label="Şirket Adı"
+                            name="companyName"
+                            value={formData.companyName}
+                            onChange={handleChange}
+                            required
+                            fullWidth
+                            variant="outlined"
+                            disabled={globalUserInfo ? !editingFields["companyName"] : false}
+                        />
+                    ))}
 
-                    <TextField
-                        label="E-posta"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        fullWidth
-                        variant="outlined"
-                        placeholder="ornek@sirket.com"
-                        error={!!errors.email}
-                        helperText={errors.email}
-                    />
+                    {renderFieldWithAction("email", (
+                        <TextField
+                            label="E-posta"
+                            name="email"
+                            type="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            required
+                            fullWidth
+                            variant="outlined"
+                            placeholder="ornek@sirket.com"
+                            error={!!errors.email}
+                            helperText={errors.email}
+                            disabled={globalUserInfo ? !editingFields["email"] : false}
+                        />
+                    ))}
 
-                    <TextField
-                        label="Telefon"
-                        name="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        required
-                        fullWidth
-                        variant="outlined"
-                        placeholder="05XX XXX XX XX"
-                        error={!!errors.phone}
-                        helperText={errors.phone}
-                    />
+                    {renderFieldWithAction("phone", (
+                        <TextField
+                            label="Telefon"
+                            name="phone"
+                            type="tel"
+                            value={formData.phone}
+                            onChange={handleChange}
+                            required
+                            fullWidth
+                            variant="outlined"
+                            placeholder="05XX XXX XX XX"
+                            error={!!errors.phone}
+                            helperText={errors.phone}
+                            disabled={globalUserInfo ? !editingFields["phone"] : false}
+                        />
+                    ))}
 
-                    <FormControl fullWidth required>
-                        <InputLabel id="person-count-label">Kişi Sayısı</InputLabel>
-                        <Select
-                            labelId="person-count-label"
-                            id="person-count"
-                            name="personCount"
-                            value={formData.personCount}
-                            label="Kişi Sayısı"
-                            onChange={handleSelectChange}
-                        >
-                            <MenuItem value="0-25">0 - 25 Kişi</MenuItem>
-                            <MenuItem value="25-50">25 - 50 Kişi</MenuItem>
-                            <MenuItem value="50-75">50 - 75 Kişi</MenuItem>
-                            <MenuItem value="75-100">75 - 100 Kişi</MenuItem>
-                            <MenuItem value="100+">100+ Kişi</MenuItem>
-                        </Select>
-                    </FormControl>
+                    {renderFieldWithAction("personCount", (
+                        <FormControl fullWidth required disabled={globalUserInfo ? !editingFields["personCount"] : false}>
+                            <InputLabel id="person-count-label">Kişi Sayısı</InputLabel>
+                            <Select
+                                labelId="person-count-label"
+                                id="person-count"
+                                name="personCount"
+                                value={formData.personCount}
+                                label="Kişi Sayısı"
+                                onChange={handleSelectChange}
+                            >
+                                <MenuItem value="0-25">0 - 25 Kişi</MenuItem>
+                                <MenuItem value="25-50">25 - 50 Kişi</MenuItem>
+                                <MenuItem value="50-75">50 - 75 Kişi</MenuItem>
+                                <MenuItem value="75-100">75 - 100 Kişi</MenuItem>
+                                <MenuItem value="100+">100+ Kişi</MenuItem>
+                            </Select>
+                        </FormControl>
+                    ))}
 
                     <Box sx={{ display: 'flex', gap: 2, mt: 2 }}>
-                        {formData.firstName && (
+                        {formData.fullName && (
                             <Button
                                 variant="outlined"
                                 color="error"
@@ -225,7 +307,7 @@ export const UserInfoForm: React.FC = () => {
                             size="large"
                             sx={{ py: 1.5, borderRadius: 2, fontWeight: "bold", flex: 2 }}
                         >
-                            {formData.firstName ? "Devam Et" : "Teklif Adımlarına Başla"}
+                            {formData.fullName ? "Devam Et" : "Teklif Adımlarına Başla"}
                         </Button>
                     </Box>
                 </Box>
