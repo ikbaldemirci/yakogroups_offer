@@ -28,7 +28,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 34500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607188/karnavalcad%C4%B1r_qidz5m.jpg",
           "isPopular": true  
         },
         {
@@ -47,7 +47,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 22500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607890/pufgoloyunu_d9ose4.jpg",
           "isPopular": true
         },
         {
@@ -60,7 +60,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 25000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607003/balonfutbolu2_gq2j21.jpg"
         },
         {
           "id": "a12",
@@ -72,7 +72,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 10000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607314/subsoccer_ufsley.jpg"
         }
       ]
     },
@@ -95,7 +95,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1504272017917-32f8d13089b5?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774608205/korsangemisi_w7wp0p.jpg"
         },
         {
           "id": "a5",
@@ -113,7 +113,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517167685284-96a27681ad75?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774608155/labirentkalesi_nlswbs.jpg"
         },
         {
           "id": "a6",
@@ -131,7 +131,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 20000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774608518/merdane_c5nnss.jpg"
         },
         {
           "id": "a7",
@@ -149,7 +149,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 15000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774608635/filvearkada%C5%9Flar%C4%B1_nqhg6d.jpg"
         },
         {
           "id": "a8",
@@ -167,7 +167,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774609521/jetjumbo_hwlmxc.avif"
         },
         {
           "id": "a9",
@@ -185,7 +185,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 15000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774609605/hayvanlaralemi_gnlsa9.jpg"
         },
         {
           "id": "a10",
@@ -203,7 +203,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774609720/kovboyoyunpark%C4%B1_rp2uku.jpg"
         },
         {
           "id": "a11",
@@ -221,7 +221,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 15000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774609875/mickeymousezipzip_voivhs.jpg"
         },
         {
           "id": "a13",
@@ -239,7 +239,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774609992/nuhungemisi_n0tzq5.jpg"
         },
         {
           "id": "a14",
@@ -257,7 +257,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 15000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1500534623283-312aade485b7?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774610003/sungerbob_unjgp8.jpg"
         },
         {
           "id": "a15",
@@ -275,7 +275,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774612554/kamyonkaydirak-artguru_olsk7h.png"
         },
         {
           "id": "a16",
@@ -293,7 +293,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 20500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517167685284-96a27681ad75?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774610338/satolukaydirak_us0s1e.jpg"
         },
         {
           "id": "a17",
@@ -311,7 +311,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774610348/olimpikparkur_ju47ls.jpg"
         },
         {
           "id": "a18",
@@ -329,7 +329,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 16000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607330/sumo_rg4nuz.jpg"
         },
         {
           "id": "a19",
@@ -347,7 +347,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 20000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607285/rollercoaster2_zbon26.jpg"
         },
         {
           "id": "a20",
@@ -365,7 +365,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 16000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607391/trambolin_roeyrq.jpg"
         },
         {
           "id": "a21",
@@ -377,7 +377,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 25500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1547347298-4074fc3086f0?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607054/dekatlon_s1txvj.jpg"
         },
         {
           "id": "a22",
@@ -395,7 +395,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 20000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607383/t%C4%B1rmanmapiramidi_vlgqfs.jpg"
         },
         {
           "id": "a23",
@@ -413,7 +413,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607367/%C5%9Futbecerisi_nawqme.jpg"
         },
         {
           "id": "a24",
@@ -431,7 +431,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 20000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1503095396549-807759245b35?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774612282/sirktreni_hushg4.png"
         },
         {
           "id": "a25",
@@ -449,7 +449,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 16000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607352/%C5%9Fi%C5%9Fmedart_cybqvn.jpg"
         },
         {
           "id": "a26",
@@ -467,7 +467,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607120/futboldart_ujyjxz.jpg"
         },
         {
           "id": "a27",
@@ -485,7 +485,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 15000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517167685284-96a27681ad75?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774611444/tirtilkaydirak_t14u2l.jpg"
         },
         {
           "id": "a28",
@@ -503,7 +503,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774611859/itfaiyee_piq6wo.png"
         },
         {
           "id": "a29",
@@ -521,7 +521,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 47500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607337/superjumper_nugduf.jpg"
         },
         {
           "id": "a30",
@@ -539,7 +539,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1511886929837-354d827aae26?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607345/%C5%9Fi%C5%9Fmeayakbilardosu_alngw3.jpg"
         },
         {
           "id": "a31",
@@ -557,7 +557,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 19500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1504272017917-32f8d13089b5?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774612957/korsankaydirak_vj6rde.jpg"
         },
         {
           "id": "a32",
@@ -575,7 +575,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 20000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1504272017917-32f8d13089b5?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774613040/korsanevi_qt2gin.jpg"
         },
         {
           "id": "a33",
@@ -593,7 +593,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774613158/sarayzipzip_vvfpik.jpg"
         },
         {
           "id": "a34",
@@ -611,7 +611,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 16000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606981/atyar%C4%B1s%C4%B1veminibowling_flcj5t.jpg"
         },
         {
           "id": "a35",
@@ -629,7 +629,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 16000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606953/aslanz%C4%B1pz%C4%B1p_ssrrzt.jpg"
         },
         {
           "id": "a36",
@@ -647,7 +647,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 40000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606967/atl%C4%B1kar%C4%B1nca_wshxj3.jpg"
         },
         {
           "id": "a37",
@@ -665,7 +665,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 15000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607443/z%C4%B1playap%C4%B1%C5%9F_e1aart.jpg"
         },
         {
           "id": "a38",
@@ -683,7 +683,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 16000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606938/ahtapotcad%C4%B1r_2_ttdlbf.jpg"
         },
         {
           "id": "a39",
@@ -701,7 +701,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 22500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1511886929837-354d827aae26?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606989/ayakbilardo_cpadpv.jpg"
         },
         {
           "id": "a40",
@@ -719,7 +719,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774614070/e%C4%9Flencelizipzip-artguru_lswvn5.png"
         },
         {
           "id": "a41",
@@ -737,7 +737,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 15000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606911/2libasketbol_aot7lo.jpg"
         },
         {
           "id": "a42",
@@ -755,7 +755,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 15000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774614289/arena_chizuo.jpg"
         },
         {
           "id": "a43",
@@ -773,7 +773,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 20000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517167685284-96a27681ad75?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774614483/saraykaydirakk_o6lspd.jpg"
         },
         {
           "id": "a44",
@@ -791,7 +791,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774615095/dozerevi_j4ccn7.jpg"
         },
         {
           "id": "a45",
@@ -809,7 +809,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774615352/sekercioyun_lmxx9z.jpg"
         },
         {
           "id": "a46",
@@ -827,7 +827,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 20000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774615521/tophavuzu_nlcwh4.jpg"
         },
         {
           "id": "a47",
@@ -845,7 +845,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 22500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607269/rodeo_kdpxnt.jpg"
         },
         {
           "id": "a48",
@@ -863,7 +863,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1547347298-4074fc3086f0?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607024/bungeerun_oqydyv.jpg"
         },
         {
           "id": "a49",
@@ -881,7 +881,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1518621845118-2fe4f7affedc?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607039/canl%C4%B1lang%C4%B1rt2_fgk2vx.webp"
         },
         {
           "id": "a50",
@@ -899,7 +899,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607135/gladyat%C3%B6r_pf1lsz.jpg"
         },
         {
           "id": "a51",
@@ -917,7 +917,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774615826/kapitaki_rzs7sf.jpg"
         },
         {
           "id": "a52",
@@ -935,7 +935,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 10000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774616063/fly_sfjk50.jpg"
         },
         {
           "id": "a53",
@@ -953,7 +953,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 15000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607233/mickeymouseoyunbah%C3%A7e_wnl2sm.jpg"
         },
         {
           "id": "a54",
@@ -971,7 +971,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 15000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774616344/uzayevi_nq2vgz.png"
         },
         {
           "id": "a55",
@@ -989,7 +989,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 17500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774616649/robotsava%C5%9Flar%C4%B1_xhmjyk.png"
         },
         {
           "id": "a56",
@@ -1007,7 +1007,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 18000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774616822/pandakaydirak_uyqxsg.png"
         }
       ]
     },
@@ -1030,7 +1030,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 45000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607240/minigolf1_c8lxvi.jpg"
         },
         {
           "id": "a58",
@@ -1048,7 +1048,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 25000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1511193311914-0346f16efe90?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606918/2libowling_savg5z.jpg"
         },
         {
           "id": "a59",
@@ -1070,7 +1070,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 10,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1528819622765-d6bcf132f793?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607061/devsatran%C3%A7_k9swdh.jpg"
         }
       ]
     },
@@ -1087,7 +1087,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 15000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1534158914592-062992fbe900?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607218/masatenisi_galbrv.jpg"
         },
         {
           "id": "a61",
@@ -1105,7 +1105,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 250,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774617263/minder_hudnfr.jpg"
         },
         {
           "id": "a62",
@@ -1117,7 +1117,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 3000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774617415/minyat%C3%BCr_q8nap7.avif"
         },
         {
           "id": "a63",
@@ -1129,7 +1129,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 5000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607435/voleybol_qakeon.jpg"
         },
         {
           "id": "a64",
@@ -1141,7 +1141,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 15000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607090/elektronikboks_s64ubx.jpg"
         },
         {
           "id": "a65",
@@ -1153,7 +1153,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 15000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607098/elektronikdart_d3yqt1.jpg"
         },
         {
           "id": "a66",
@@ -1165,7 +1165,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 15000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606960/atari_stahfu.jpg"
         },
         {
           "id": "a67",
@@ -1177,7 +1177,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 7000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1518621845118-2fe4f7affedc?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607210/masalang%C4%B1rt_mbgk7j.jpg"
         },
         {
           "id": "a68",
@@ -1189,7 +1189,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 20000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1511886929837-354d827aae26?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606946/airhockey_qq4mil.jpg"
         },
         {
           "id": "a69",
@@ -1201,7 +1201,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 25000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607113/elektroniktilt2_m8vqrr.jpg"
         },
         {
           "id": "a70",
@@ -1213,7 +1213,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 30000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607173/karaoke_ouddce.jpg"
         },
         {
           "id": "a71",
@@ -1225,7 +1225,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 20000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774618032/Hediye-Kapma-Makinesi_l8qsa2.webp"
         },
         {
           "id": "a72",
@@ -1237,7 +1237,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 9000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774618318/teklibasket_eiotm9.jpg"
         },
         {
           "id": "a73",
@@ -1249,7 +1249,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 20000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607083/elektronikbasket_ci3o1w.jpg"
         }
       ]
     },
@@ -1266,7 +1266,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 5000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607158/jenga2_jixge2.jpg"
         },
         {
           "id": "a75",
@@ -1278,7 +1278,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 5000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607143/halka_at%C4%B1%C5%9F%C4%B1_tmtu2u.webp"
         },
         {
           "id": "a76",
@@ -1290,7 +1290,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 10000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1511886929837-354d827aae26?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607421/twister_rrp4fb.jpg"
         },
         {
           "id": "a77",
@@ -1302,7 +1302,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 5000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1523875194681-bedd468c58bf?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774618861/tavla_sybki1.jpg"
         },
         {
           "id": "a78",
@@ -1314,7 +1314,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 10000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1523875194681-bedd468c58bf?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774619004/okey_ghythz.jpg"
         },
         {
           "id": "a79",
@@ -1326,7 +1326,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 8000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774619876/sapkadenge_zwdrkf.jpg"
         },
         {
           "id": "a80",
@@ -1338,7 +1338,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 8000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774619831/yuruyenyol_o5eqzs.jpg"
         },
         {
           "id": "a81",
@@ -1350,7 +1350,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 8000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774619640/sulupantolon_z8ltbd.jpg"
         },
         {
           "id": "a82",
@@ -1362,7 +1362,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 15000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774620255/ok%C3%A7uluk_ujmd5g.jpg"
         },
         {
           "id": "a83",
@@ -1374,7 +1374,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 7500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774620409/dart_ccfdkw.jpg"
         },
         {
           "id": "a84",
@@ -1386,7 +1386,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 8000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774620270/kasayuruyusu_o2g6se.jpg"
         }
       ]
     },
@@ -1413,7 +1413,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 20000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607047/%C3%A7ocukoyunk%C3%B6%C5%9Fesi_fpgy5x.jpg"
         },
         {
           "id": "a86",
@@ -1425,7 +1425,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 7000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607255/palya%C3%A7o_llrzev.jpg"
         },
         {
           "id": "a87",
@@ -1437,7 +1437,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 25000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1503095396549-807759245b35?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607262/pandomim_fwitfs.jpg"
         },
         {
           "id": "a88",
@@ -1461,7 +1461,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 25000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607017/bubbleshow2_ckewjv.jpg"
         },
         {
           "id": "a90",
@@ -1485,7 +1485,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 25000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607292/sihirbaz_yu9w82.jpg"
         },
         {
           "id": "a92",
@@ -1497,7 +1497,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 20000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607375/tahtabacak_ekokd4.jpg"
         },
         {
           "id": "a93",
@@ -1521,7 +1521,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 15000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607195/kost%C3%BCmkarakter_f7wahi.jpg"
         },
         {
           "id": "a95",
@@ -1533,7 +1533,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 30000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1503095396549-807759245b35?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607202/kukla_g%C3%B6sterisi_vkdqg6.jpg"
         },
         {
           "id": "a96",
@@ -1569,7 +1569,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 25000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1503095396549-807759245b35?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607165/jongl%C3%B6r_bwum8a.jpg"
         }
       ]
     },
@@ -1610,7 +1610,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 35000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1456086272160-b28b0645b729?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607068/ebruat%C3%B6lyesi_khiwth.jpg"
         },
         {
           "id": "a102",
@@ -1634,7 +1634,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 40000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1452860606245-08befc0ff44b?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606925/ah%C5%9Fapboyama_2_s6xdts.jpg"
         },
         {
           "id": "a104",

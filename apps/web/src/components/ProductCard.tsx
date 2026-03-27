@@ -99,6 +99,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                     height="200"
                     image={product.photoUrl}
                     alt={product.title}
+                    loading="lazy"
                     sx={{ objectFit: "cover", width: "100%" }}
                 />
                 <CardContent sx={{ flexGrow: 1, display: "flex", flexDirection: "column" }}>

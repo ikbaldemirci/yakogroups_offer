@@ -24,7 +24,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774602769/survivorparkur_jtkjvk.jpg",
           "isPopular": true,
           "video_link": "https://www.youtube.com/watch?v=H-HbmTaCtdw",
           "detail_link": "https://fitnesstanbull.com/survivor-parkurlari/"
@@ -50,7 +50,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774602282/archerytag_juw7na.jpg",
           "isPopular": true,
           "video_link": "https://www.youtube.com/watch?v=JoloXH5f8Is",
           "detail_link": "https://fitnesstanbull.com/archery-tag/"
@@ -71,7 +71,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774603149/da-vinci-koprusu-etkinligi_ockn4k.png",
           "video_link": "https://www.youtube.com/watch?v=Kd2uRjTHsJA",
           "detail_link": "https://fitnesstanbull.com/leanardo-da-vinci-koprusu/"
         },
@@ -91,7 +91,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774603387/lazer-tag-oyunlari_uuigg5.jpg",
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
           "detail_link": "https://fitnesstanbull.com/lazer-tag/"  
         },
@@ -111,7 +111,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774603607/nerf-etkinligi-1_kywclp.jpg",
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
           "detail_link": "https://fitnesstanbull.com/nerf/"
           
@@ -137,7 +137,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774603761/masauzeriakiloyunlari_qf013h.jpg",
           "isPopular": true,
           "video_link": "https://www.youtube.com/watch?v=CsiVGfZsPvM",
           "detail_link": "https://fitnesstanbull.com/masa-uzeri-akil-oyunlari/"
@@ -163,7 +163,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774603826/team-building-etkinlikleri2_aqcb0u.jpg",
           "isPopular": true,
           "video_link": "https://www.youtube.com/watch?v=KN4JS8jG3vE",
           "detail_link": "https://fitnesstanbull.com/teambulding-aktiviteler/"
@@ -189,7 +189,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774603924/kendi-markani-olustur_qzczej.jpg",
           "isPopular": true,
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
           "detail_link": "https://fitnesstanbull.com/kendi-markani-yarat-reklam-filmi-cek/"
@@ -210,7 +210,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774604100/foto-safari-_dnrdkn.webp",
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
           "detail_link": "https://fitnesstanbull.com/kendi-markani-yarat-reklam-filmi-cek/"
 
@@ -236,7 +236,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1500534623283-312aade485b7?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774604345/kurumsal-egzantrik-salvador-dali2_geegau.jpg",
           "video_link": "https://www.youtube.com/watch?v=Q7MrLW1CJR0",
           "detail_link": "https://fitnesstanbull.com/egzantrik-salvador-dali/"
 
@@ -262,7 +262,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774604417/egg-drop-challenge_bwlrw1.png",
           "video_link": "https://www.youtube.com/watch?v=THyfW-fiOpA",
           "detail_link": "https://fitnesstanbull.com/egg-drop-challange/"
         },
@@ -282,7 +282,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774604500/formula-turka-aktivitesi_w8zw97.jpg",
           "video_link": "https://www.youtube.com/watch?v=m1iadJXLUtg",
           "detail_link": "https://fitnesstanbull.com/formula-turko-challange/"
 
@@ -303,7 +303,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774604556/iskambil-kulesi-sirket-etkinligi_f6cagn.png",
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
           "detail_link": "https://fitnesstanbull.com/iskambil-kulesi/"
 
@@ -324,7 +324,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1634942537034-2531766767d1?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774604802/kurumsal-logo-challange-1-scaled_rbwpgs.jpg",
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
           "detail_link": "https://fitnesstanbull.com/logo-challange/"
         },
@@ -344,7 +344,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774604889/marshmelow-etkinligi_tatbze.jpg",
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
           "detail_link": "https://fitnesstanbull.com/marshmallow-challange/"
         }
@@ -369,7 +369,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774604968/kurumsal-kokteyl-workshop_chinh3.png",
           "isPopular": true,
           "video_link": "https://www.youtube.com/watch?v=OqVcIQh1ECE",
           "detail_link": "https://fitnesstanbull.com/kokteyl-workshop/"
@@ -390,7 +390,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605044/mutfak-atolyesi-aktiviteleri_adzk7j.jpg",
           "video_link": "https://www.youtube.com/watch?v=HRla_c7dw7g",
           "detail_link": "https://fitnesstanbull.com/mutfak-atolyeler/"
         },
@@ -411,7 +411,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605124/ritimperks%C3%BCyon_rna7ft.jpg",
           "video_link": "https://www.youtube.com/watch?v=md78XbjVoAs",
           "detail_link": "https://fitnesstanbull.com/kendi-markani-yarat-reklam-filmi-cek/"
         },
@@ -431,7 +431,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605136/grafiti-calismalari-event_llznhy.jpg",
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
           "detail_link": "https://fitnesstanbull.com/graffiti-workshop/"
         }
@@ -457,7 +457,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1507924538820-ede94a04019d?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605454/suclu-kim-event_csi0mc.webp",
           "video_link": "https://www.youtube.com/watch?v=9HVxovjpH98",
           "detail_link": "https://fitnesstanbull.com/suclu-kim-aktivitesi/"
         }
@@ -482,7 +482,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605612/yogaa_xtikdx.jpg",
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
           "detail_link": "https://fitnesstanbull.com/kendi-markani-yarat-reklam-filmi-cek/"
         }
@@ -507,7 +507,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605682/hazine-avi-aktivitesi-scaled_w1likb.jpg",
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
           "detail_link": "https://fitnesstanbull.com/hazine-avi/"
         },
@@ -528,7 +528,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605817/ormandaesarettenkurtulmaetkinlik_rvtvdw.jpg",
           "video_link": "https://www.youtube.com/watch?v=VUbjJyYbR-8",
           "detail_link": "https://fitnesstanbull.com/dogada-hayatta-kalma-ve-strateji-oyunlari/"
         },
@@ -548,7 +548,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605884/yelken-aktivitesi_igbw5e.jpg",
           "video_link": "https://www.youtube.com/watch?v=yjnvd2zYvJs",
           "detail_link": "https://fitnesstanbull.com/yelken-aktivitesi/"
         },
@@ -568,7 +568,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605928/kurumsal-rafting_ye30kc.jpg",
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
           "detail_link": "https://fitnesstanbull.com/rafting/"
         }
@@ -593,7 +593,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606098/beyaz-yaka-dans-1_tb1hi9.jpg",
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
           "detail_link": "https://www.fitnesstanbull.com/beyaz-yaka-dans-challange"
         },
@@ -613,7 +613,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606110/kareografi-okul_cggzvl.jpg",
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
           "detail_link": "https://www.fitnesstanbull.com/takim-koreografisi/"
         }
@@ -638,7 +638,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1502740479091-635887520276?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606192/bisiklet-atolyesi_ol5etj.jpg",
           "detail_link": "https://fitnesstanbull.com/bisiklet-yapim-atolyesi/",
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM"
         },
@@ -658,7 +658,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606201/barinak-atolyesi_gqwyxr.jpg",
           "isPopular": true,
           "detail_link": "https://fitnesstanbull.com/barinak-yapim-atolyesi/",
           "video_link": "https://www.youtube.com/watch?v=GqKznjkekQo"
@@ -679,7 +679,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1444464666168-49d633b86797?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606216/ku%C5%9Fevi_at%C3%B6lyesi_b7jwiv.jpg",
           "detail_link": "https://fitnesstanbull.com/kendi-markani-yarat-reklam-filmi-cek/",
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM"
         }
@@ -730,7 +730,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606389/ses-sistemi_m7tuzn.jpg"
         },
         {
           "id": "t32",
@@ -754,7 +754,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606636/dekorbrand_vfqcxd.png"
         },
         {
           "id": "t33",
@@ -794,7 +794,7 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606403/prod%C3%BCksiyon_lgjslo.jpg"
         }
       ]
     }
