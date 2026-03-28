@@ -28,6 +28,7 @@ import { categories } from "../types";
 import { useOffer } from "../context/OfferContext";
 import { calculateOfferTotals, validatePersonCount } from "../utils/calculateOfferTotals";
 
+const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER;
 
 export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) => {
     const {
@@ -53,6 +54,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
 
     const { subtotal, menuTotal, menuServiceFee, serviceFee, vatAmount: vat, grandTotal } = calculateOfferTotals(items, isValidCount ? parsedCount : undefined);
     const hasMenu = items.some(item => item.product.category === "menus");
+        const hasZeroPriceItem = items.some(item => item.price === 0);
 
     const handleExportOffer = async () => {
         if (!userInfo) return;
@@ -188,7 +190,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                         <Box sx={{ display: "flex", justifyContent: "space-between", width: "100%", pr: 2, alignItems: "center" }}>
                                             <Typography fontWeight="bold">{category.title}</Typography>
                                             <Typography variant="body2" color="primary" fontWeight="bold">
-                                                {isMenu && !isValidCount ? "Kişi sayısını giriniz" : `${categoryTotal.toLocaleString("tr-TR")} ₺`}
+                                                {hasZeroPriceItem ? "Teklif İsteyiniz" : isMenu && !isValidCount ? "Kişi sayısını giriniz" : `${categoryTotal.toLocaleString("tr-TR")} ₺`}
                                             </Typography>
                                         </Box>
                                     </AccordionSummary>
@@ -251,7 +253,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                             ) : <Box />}
                                             <Typography variant="body2" fontWeight="bold" color="text.secondary">
                                                 Ara Toplam: <Box component="span" color="primary.main">
-                                                    {isMenu && !isValidCount ? "Kişi sayısını giriniz" : `${categoryTotal.toLocaleString("tr-TR")} ₺`}
+                                                    {hasZeroPriceItem ? "Teklif İsteyiniz" : isMenu && !isValidCount ? "Kişi sayısını giriniz" : `${categoryTotal.toLocaleString("tr-TR")} ₺`}
                                                 </Box>
                                             </Typography>
                                         </Box>
@@ -260,7 +262,23 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                             );
                         })}
                         <Box sx={{ bgcolor: "card.summaryBg", p: 3 }}>
-                            {hasMenu && !isValidCount ? (
+                            {hasZeroPriceItem ? (
+                                <Box sx={{ textAlign: "center", py: 2 }}>
+                                    <Typography variant="body1" color="warning.main" fontWeight="bold" gutterBottom>
+                                        Seçimleriniz arasında fiyata tabi özel hizmetler bulunmaktadır. Herhangi bir hesaplama yapılamamaktadır. Lütfen fiyatlandırma ve detaylı teklif için bizimle WhatsApp üzerinden iletişime geçiniz.
+                                    </Typography>
+                                    <Button
+                                        variant="contained"
+                                        color="success"
+                                        size="large"
+                                        href={`https://wa.me/${whatsappNumber}?text=Merhaba,%20web%20sitenizden%20se%C3%A7ti%C4%9Fim%20hizmetler%20i%C3%A7in%20teklif%20almak%20istiyorum.`}
+                                        target="_blank"
+                                        sx={{ mt: 2, borderRadius: 2, fontWeight: "bold", px: 4, py: 1.5 }}
+                                    >
+                                        Teklif Yönlendirme (WhatsApp)
+                                    </Button>
+                                </Box>
+                            ) : hasMenu && !isValidCount ? (
                                 <Box sx={{ textAlign: "center", py: 2 }}>
                                     <Typography variant="body1" color="error.main" fontWeight="bold">
                                         {exactPersonCount !== "" && !isRangeValid 
@@ -317,7 +335,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                     >
                         Teklif Özeti'ne Git
                     </Button>
-                ) : (
+                ) : !hasZeroPriceItem ? (
                     <Button
                         variant="contained"
                         color="success"
@@ -329,7 +347,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                     >
                         {isSubmitting ? "İşleniyor..." : "Excel Olarak İndir"}
                     </Button>
-                )}
+                ) : null}
             </Box>
         </Box>
     );
