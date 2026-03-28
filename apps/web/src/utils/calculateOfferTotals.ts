@@ -31,8 +31,12 @@ export function calculateOfferTotals(
     items: SelectedItem[],
     exactPersonCount?: number
 ): OfferTotals {
+    const t28Total = items
+        .filter((item) => item.product.id === "t28")
+        .reduce((sum, item) => sum + item.price, 0);
+
     const otherSubtotal = items
-        .filter((item) => item.product.category !== "menus")
+        .filter((item) => item.product.category !== "menus" && item.product.id !== "t28")
         .reduce((sum, item) => sum + item.price, 0);
 
     const panayirTotal = items
@@ -47,7 +51,11 @@ export function calculateOfferTotals(
         ? baseMenuTotal * exactPersonCount + panayirTotal
         : panayirTotal;
 
-    const subtotal = otherSubtotal + menuTotal;
+    const t28TotalWithCount = t28Total > 0 && exactPersonCount && exactPersonCount > 0
+        ? t28Total * exactPersonCount
+        : 0;
+
+    const subtotal = otherSubtotal + menuTotal + t28TotalWithCount;
 
     const menuServiceFee = menuTotal > 0 ? menuTotal * 0.1 : 0;
 

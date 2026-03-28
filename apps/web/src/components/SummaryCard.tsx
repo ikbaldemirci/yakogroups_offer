@@ -15,7 +15,9 @@ import {
     AccordionSummary,
     AccordionDetails,
     Snackbar,
-    TextField
+    TextField,
+    Checkbox,
+    FormControlLabel
 } from "@mui/material";
 import { exportToExcel } from "../utils/exportUtils"; // sendToCRM geçici olarak kaldırıldı
 import DownloadIcon from "@mui/icons-material/Download";
@@ -45,8 +47,76 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
     const [errorOpen, setErrorOpen] = useState(false);
     const [errorMessage, setErrorMessage] = useState("");
     const [exactPersonCount, setExactPersonCount] = useState<string>("");  
-    const items = Object.values(selectedItems);
     
+    const [t9Selection, setT9Selection] = useState<"Alkolsüz" | "Alkollü">("Alkolsüz");
+    const [t23Selection, setT23Selection] = useState<"3 Adet" | "5 Adet" | "10 Adet">("3 Adet");
+    const [t31HasDj, setT31HasDj] = useState(false);
+    const [t33Selections, setT33Selections] = useState<string[]>(["Kamera"]);
+
+    const rawItems = Object.values(selectedItems);
+    
+    const items = rawItems.map(item => {
+        if (item.product.id === "t9") {
+            const isAlkollu = t9Selection === "Alkollü";
+            return {
+                ...item,
+                price: isAlkollu ? 75000 : 50000,
+                product: {
+                    ...item.product,
+                    title: `${item.product.title} (${isAlkollu ? 'Alkollü' : 'Alkolsüz'})`
+                }
+            };
+        }
+        if (item.product.id === "t23") {
+            let newPrice = 80000;
+            if (t23Selection === "5 Adet") newPrice = 100000;
+            if (t23Selection === "10 Adet") newPrice = 150000;
+            return {
+                ...item,
+                price: newPrice,
+                product: {
+                    ...item.product,
+                    title: `${item.product.title} (${t23Selection})`
+                }
+            };
+        }
+        if (item.product.id === "t31") {
+            const isDjSelected = t31HasDj;
+            return {
+                ...item,
+                price: isDjSelected ? 40000 : 25000,
+                product: {
+                    ...item.product,
+                    title: isDjSelected ? `${item.product.title} (DJ'li Paket)` : `${item.product.title} (DJ'siz Paket)`
+                }
+            };
+        }
+        if (item.product.id === "t33") {
+            let newPrice = 0;
+            if (t33Selections.includes("Fotoğraf")) newPrice += 14000;
+            if (t33Selections.includes("Kamera")) newPrice += 14000;
+            if (t33Selections.includes("Drone")) newPrice += 10000;
+            if (t33Selections.includes("Montaj")) newPrice += 14000;
+            
+            const selectionText = t33Selections.length > 0 ? ` (${t33Selections.join(', ')})` : "";
+            
+            return {
+                ...item,
+                price: newPrice,
+                product: {
+                    ...item.product,
+                    title: `${item.product.title}${selectionText}`
+                }
+            };
+        }
+        return item;
+    });
+
+    const modifiedSelectedItemsForExport = items.reduce((acc, item) => {
+        acc[item.product.id] = item;
+        return acc;
+    }, {} as typeof selectedItems);
+
     const parsedCount = parseInt(exactPersonCount, 10);
     const isNumberValid = !isNaN(parsedCount) && parsedCount > 0;
     const isRangeValid = userInfo ? validatePersonCount(exactPersonCount, userInfo.personCount) : false;
@@ -54,7 +124,16 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
 
     const { subtotal, menuTotal, menuServiceFee, serviceFee, vatAmount: vat, grandTotal } = calculateOfferTotals(items, isValidCount ? parsedCount : undefined);
     const hasMenu = items.some(item => item.product.category === "menus");
-        const hasZeroPriceItem = items.some(item => item.price === 0);
+    const hasT28 = items.some(item => item.product.id === "t28");
+    const needsPersonCount = hasMenu || hasT28;
+    
+    const zeroPriceItems = items.filter(item => item.price === 0);
+        const hasZeroPriceItem = zeroPriceItems.length > 0;
+        const zeroPriceItemNames = zeroPriceItems.map(item => item.product.title).join(", ");
+        
+    const whatsappText = hasZeroPriceItem 
+        ? `Merhaba, web sitenizden seçtiğim fiyata tabi hizmetler (${zeroPriceItemNames}) için detaylı fiyat teklifi almak istiyorum.` 
+        : "Merhaba, web sitenizden seçtiğim hizmetler için teklif almak istiyorum.";
 
     const handleExportOffer = async () => {
         if (!userInfo) return;
@@ -63,20 +142,20 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
             setErrorOpen(true);
             return;
         }
-        if (hasMenu && !validatePersonCount(exactPersonCount, userInfo.personCount)) {
+        if (needsPersonCount && !validatePersonCount(exactPersonCount, userInfo.personCount)) {
             setErrorMessage(`${userInfo.personCount} kişilik kategori seçtiniz, onay için kişi sayınızı bu aralığa tam uygun giriniz.`);
             setErrorOpen(true);
             return;
         }
         exportToExcel(
             userInfo, 
-            selectedItems, 
+            modifiedSelectedItemsForExport, 
             { subtotal, menuTotal, menuServiceFee, serviceFee, vatAmount: vat, grandTotal }, 
             isValidCount ? parsedCount : undefined
         );
         console.log("CRM'e gönderme işlemi tetiklendi (Hazırlık aşamasında)...", { 
             MusteriBilgisi: userInfo,
-            SecilenHizmetler: selectedItems,
+            SecilenHizmetler: modifiedSelectedItemsForExport,
             GenelToplam: grandTotal
         });
         setIsSubmitting(true);
@@ -169,20 +248,18 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                             if (categoryItems.length === 0) return null;
 
                             const isMenu = category.id === "menus";
+                            const hasT28InCategory = categoryItems.some(item => item.product.id === "t28");
+                            const categoryNeedsPersonCount = isMenu || hasT28InCategory;
 
-                            const panayirCategoryItems = isMenu
-                                ? categoryItems.filter(item => (item.product as any).subcategory === "panayir")
-                                : [];
-                            const nonPanayirCategoryItems = isMenu
-                                ? categoryItems.filter(item => (item.product as any).subcategory !== "panayir")
-                                : categoryItems;
-
-                            const panayirCatTotal = panayirCategoryItems.reduce((sum, item) => sum + item.price, 0);
-                            const baseNonPanayirCatTotal = nonPanayirCategoryItems.reduce((sum, item) => sum + item.price, 0);
-
-                            const categoryTotal = isMenu 
-                                ? (isValidCount ? baseNonPanayirCatTotal * parsedCount + panayirCatTotal + menuServiceFee : panayirCatTotal) 
-                                : baseNonPanayirCatTotal;
+                            const categoryTotal = categoryItems.reduce((sum, item) => {
+                                if (item.product.category === "menus" && (item.product as any).subcategory !== "panayir") {
+                                    return sum + (isValidCount ? item.price * parsedCount : 0);
+                                }
+                                if (item.product.id === "t28") {
+                                    return sum + (isValidCount ? item.price * parsedCount : 0);
+                                }
+                                return sum + item.price;
+                            }, 0) + (isMenu && isValidCount ? menuServiceFee : 0);
 
                             return (
                                 <Accordion key={category.id} defaultExpanded>
@@ -190,7 +267,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                         <Box sx={{ display: "flex", justifyContent: "space-between", width: "100%", pr: 2, alignItems: "center" }}>
                                             <Typography fontWeight="bold">{category.title}</Typography>
                                             <Typography variant="body2" color="primary" fontWeight="bold">
-                                                {hasZeroPriceItem ? "Teklif İsteyiniz" : isMenu && !isValidCount ? "Kişi sayısını giriniz" : `${categoryTotal.toLocaleString("tr-TR")} ₺`}
+                                                {hasZeroPriceItem ? "Teklif İsteyiniz" : categoryNeedsPersonCount && !isValidCount ? "Kişi sayısını giriniz" : `${categoryTotal.toLocaleString("tr-TR")} ₺`}
                                             </Typography>
                                         </Box>
                                     </AccordionSummary>
@@ -198,25 +275,111 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                         <List disablePadding>
                                             {categoryItems.map((item, index) => (
                                                 <React.Fragment key={item.product.id}>
-                                                    <ListItem sx={{ py: 1.5, px: 3 }}>
-                                                        <ListItemText
-                                                            primary={<Typography>{item.product.title}</Typography>}
-                                                            secondary={item.product.description}
-                                                        />
-                                                        <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-                                                            <Typography variant="body1" fontWeight="bold" color="text.secondary">
-                                                                {item.price.toLocaleString("tr-TR")} ₺
-                                                            </Typography>
-                                                            <IconButton
-                                                                edge="end"
-                                                                aria-label="delete"
-                                                                color="error"
-                                                                size="small"
-                                                                onClick={() => handleItemDeselect(item.product.id)}
-                                                            >
-                                                                <DeleteIcon fontSize="small" />
-                                                            </IconButton>
+                                                    <ListItem sx={{ py: 1.5, px: 3, display: "block" }}>
+                                                        <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", width: "100%" }}>
+                                                            <ListItemText
+                                                                primary={<Typography>{item.product.title}</Typography>}
+                                                                secondary={item.product.description}
+                                                            />
+                                                            <Box sx={{ display: "flex", alignItems: "center", gap: 2, ml: 2, mt: 1 }}>
+                                                                <Typography variant="body1" fontWeight="bold" color="text.secondary" sx={{ whiteSpace: "nowrap" }}>
+                                                                    {item.price.toLocaleString("tr-TR")} ₺
+                                                                </Typography>
+                                                                <IconButton
+                                                                    edge="end"
+                                                                    aria-label="delete"
+                                                                    color="error"
+                                                                    size="small"
+                                                                    onClick={() => handleItemDeselect(item.product.id)}
+                                                                >
+                                                                    <DeleteIcon fontSize="small" />
+                                                                </IconButton>
+                                                            </Box>
                                                         </Box>
+
+                                                        {item.product.id === "t23" && (
+                                                            <Box sx={{ mt: 1, display: "flex", gap: 2, flexWrap: "wrap", flexDirection: { xs: "column", sm: "row" } }}>
+                                                                <FormControlLabel
+                                                                    control={<Checkbox checked={t23Selection === "3 Adet"} onChange={() => setT23Selection("3 Adet")} color="primary" />}
+                                                                    label="3 Adet (80.000 ₺)"
+                                                                />
+                                                                <FormControlLabel
+                                                                    control={<Checkbox checked={t23Selection === "5 Adet"} onChange={() => setT23Selection("5 Adet")} color="primary" />}
+                                                                    label="5 Adet (100.000 ₺)"
+                                                                />
+                                                                <FormControlLabel
+                                                                    control={<Checkbox checked={t23Selection === "10 Adet"} onChange={() => setT23Selection("10 Adet")} color="primary" />}
+                                                                    label="10 Adet (150.000 ₺)"
+                                                                />
+                                                            </Box>
+                                                        )}
+
+                                                        {item.product.id === "t9" && (
+                                                            <Box sx={{ mt: 1, display: "flex", gap: 2, flexWrap: "wrap", flexDirection: { xs: "column", sm: "row" } }}>
+                                                                <FormControlLabel
+                                                                    control={
+                                                                        <Checkbox 
+                                                                            checked={t9Selection === "Alkolsüz"} 
+                                                                            onChange={() => setT9Selection("Alkolsüz")} 
+                                                                            color="primary" 
+                                                                        />
+                                                                    }
+                                                                    label="Alkolsüz (50.000 ₺)"
+                                                                />
+                                                                <FormControlLabel
+                                                                    control={
+                                                                        <Checkbox 
+                                                                            checked={t9Selection === "Alkollü"} 
+                                                                            onChange={() => setT9Selection("Alkollü")} 
+                                                                            color="primary" 
+                                                                        />
+                                                                    }
+                                                                    label="Alkollü (75.000 ₺)"
+                                                                />
+                                                            </Box>
+                                                        )}
+
+                                                        {item.product.id === "t31" && (
+                                                            <Box sx={{ mt: 1 }}>
+                                                                <FormControlLabel
+                                                                    control={<Checkbox checked={t31HasDj} onChange={(e) => setT31HasDj(e.target.checked)} color="primary" />}
+                                                                    label="DJ Hizmeti Ekle (+15.000 ₺)"
+                                                                />
+                                                            </Box>
+                                                        )}
+
+                                                        {item.product.id === "t33" && (
+                                                            <Box sx={{ mt: 1, display: "flex", gap: 2, flexWrap: "wrap", flexDirection: { xs: "column", sm: "row" } }}>
+                                                                <FormControlLabel
+                                                                    control={<Checkbox checked={t33Selections.includes("Fotoğraf")} onChange={(e) => {
+                                                                        if (e.target.checked) setT33Selections(prev => [...prev, "Fotoğraf"]);
+                                                                        else setT33Selections(prev => prev.length > 1 ? prev.filter(s => s !== "Fotoğraf") : prev);
+                                                                    }} />}
+                                                                    label="Fotoğraf (14.000 ₺)"
+                                                                />
+                                                                <FormControlLabel
+                                                                    control={<Checkbox checked={t33Selections.includes("Kamera")} onChange={(e) => {
+                                                                        if (e.target.checked) setT33Selections(prev => [...prev, "Kamera"]);
+                                                                        else setT33Selections(prev => prev.length > 1 ? prev.filter(s => s !== "Kamera") : prev);
+                                                                    }} />}
+                                                                    label="Kamera (14.000 ₺)"
+                                                                />
+                                                                <FormControlLabel
+                                                                    control={<Checkbox checked={t33Selections.includes("Drone")} onChange={(e) => {
+                                                                        if (e.target.checked) setT33Selections(prev => [...prev, "Drone"]);
+                                                                        else setT33Selections(prev => prev.length > 1 ? prev.filter(s => s !== "Drone") : prev);
+                                                                    }} />}
+                                                                    label="Drone (10.000 ₺)"
+                                                                />
+                                                                <FormControlLabel
+                                                                    control={<Checkbox checked={t33Selections.includes("Montaj")} onChange={(e) => {
+                                                                        if (e.target.checked) setT33Selections(prev => [...prev, "Montaj"]);
+                                                                        else setT33Selections(prev => prev.length > 1 ? prev.filter(s => s !== "Montaj") : prev);
+                                                                    }} />}
+                                                                    label="Montaj (14.000 ₺)"
+                                                                />
+                                                            </Box>
+                                                        )}
                                                     </ListItem>
                                                     {index < categoryItems.length - 1 && <Divider />}
                                                 </React.Fragment>
@@ -236,7 +399,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                             )}
                                         </List>
                                         <Box sx={{ p: 1.5, px: 3, bgcolor: "card.summaryBg", display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: 1, borderColor: "divider" }}>
-                                            {isMenu ? (
+                                            {categoryNeedsPersonCount ? (
                                                 <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
                                                     <Typography variant="body2" fontWeight="bold" color="text.secondary">
                                                         Kişi Sayısı:
@@ -253,7 +416,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                             ) : <Box />}
                                             <Typography variant="body2" fontWeight="bold" color="text.secondary">
                                                 Ara Toplam: <Box component="span" color="primary.main">
-                                                    {hasZeroPriceItem ? "Teklif İsteyiniz" : isMenu && !isValidCount ? "Kişi sayısını giriniz" : `${categoryTotal.toLocaleString("tr-TR")} ₺`}
+                                                    {hasZeroPriceItem ? "Teklif İsteyiniz" : categoryNeedsPersonCount && !isValidCount ? "Kişi sayısını giriniz" : `${categoryTotal.toLocaleString("tr-TR")} ₺`}
                                                 </Box>
                                             </Typography>
                                         </Box>
@@ -265,25 +428,25 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                             {hasZeroPriceItem ? (
                                 <Box sx={{ textAlign: "center", py: 2 }}>
                                     <Typography variant="body1" color="warning.main" fontWeight="bold" gutterBottom>
-                                        Seçimleriniz arasında fiyata tabi özel hizmetler bulunmaktadır. Herhangi bir hesaplama yapılamamaktadır. Lütfen fiyatlandırma ve detaylı teklif için bizimle WhatsApp üzerinden iletişime geçiniz.
+                                        Seçimleriniz arasında fiyata tabi özel hizmetler ({zeroPriceItemNames}) bulunmaktadır. Herhangi bir hesaplama yapılamamaktadır. Lütfen fiyatlandırma ve detaylı teklif için bizimle WhatsApp üzerinden iletişime geçiniz.
                                     </Typography>
                                     <Button
                                         variant="contained"
                                         color="success"
                                         size="large"
-                                        href={`https://wa.me/${whatsappNumber}?text=Merhaba,%20web%20sitenizden%20se%C3%A7ti%C4%9Fim%20hizmetler%20i%C3%A7in%20teklif%20almak%20istiyorum.`}
+                                        href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`}
                                         target="_blank"
                                         sx={{ mt: 2, borderRadius: 2, fontWeight: "bold", px: 4, py: 1.5 }}
                                     >
                                         Teklif Yönlendirme (WhatsApp)
                                     </Button>
                                 </Box>
-                            ) : hasMenu && !isValidCount ? (
+                            ) : needsPersonCount && !isValidCount ? (
                                 <Box sx={{ textAlign: "center", py: 2 }}>
                                     <Typography variant="body1" color="error.main" fontWeight="bold">
                                         {exactPersonCount !== "" && !isRangeValid 
                                             ? `${userInfo?.personCount} kişilik form doldurdunuz. Lütfen bu aralığa uygun bir sayı giriniz.` 
-                                            : "Fiyat detaylarını ve genel toplamı görüntülemek için lütfen menü kişi sayısını giriniz."}
+                                            : "Fiyat detaylarını ve genel toplamı görüntülemek için lütfen kişi sayısını giriniz."}
                                     </Typography>
                                 </Box>
                             ) : (
