@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import { Box, Typography, Card, CardActionArea, CardMedia, CardContent, Chip, Container, useTheme, alpha, IconButton } from "@mui/material";
+import React, { useRef, useState } from "react";
+import { Box, Typography, Card, CardActionArea, CardMedia, CardContent, Chip, Container, useTheme, alpha, IconButton, Dialog, DialogContent } from "@mui/material";
 import RestaurantMenuIcon from "@mui/icons-material/RestaurantMenu";
 import CelebrationIcon from "@mui/icons-material/Celebration";
 import GroupsIcon from "@mui/icons-material/Groups";
@@ -14,6 +14,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { categories } from "../types";
 import { useOffer } from "../context/OfferContext";
+import { getYouTubeEmbedUrl } from "../utils/youtubeUtils";
+import { categoryImages, campaigns, showcaseVideos } from "../data/homeData";
 
 const categoryIcons = [
     <RestaurantMenuIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
@@ -21,20 +23,6 @@ const categoryIcons = [
     <GroupsIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
     <ParkIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
     <HeadphonesIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />
-];
-
-const categoryImages = [
-    "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1500534623283-312aade485b7?q=80&w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=600&h=400&fit=crop"
-];
-
-const campaigns = [
-    { image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=1200&h=500&fit=crop" },
-    { image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&h=500&fit=crop" },
-    { image: "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=1200&h=500&fit=crop" }
 ];
 
 export const HomePage: React.FC = () => {
@@ -47,6 +35,9 @@ export const HomePage: React.FC = () => {
     } = useOffer();
     const swiperRef = useRef(null);
     const theme = useTheme();
+    const [videoOpen, setVideoOpen] = useState(false);
+    const [activeVideo, setActiveVideo] = useState("");
+    const catalogPdfPath = import.meta.env.VITE_CATALOG_PDF_PATH;
 
     if (!userInfo) return null;
 
@@ -60,11 +51,7 @@ export const HomePage: React.FC = () => {
 
     return (
         <Box sx={{ minHeight: "100vh", bgcolor: "background.default" }}>
-
-
-
             <Container maxWidth="xl" sx={{ py: 5 }}>
-
                 <Box sx={{ mb: 4 }}>
                     <Typography variant="h5" fontWeight="bold" sx={{ mb: 0.5, color: "text.primary" }}>
                         Teklif Kategorileri
@@ -72,7 +59,6 @@ export const HomePage: React.FC = () => {
                     <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
                         İlgilendiğiniz kategoriyi seçerek doğrudan ürün seçimine geçebilirsiniz
                     </Typography>
-
                     <Box
                         sx={{
                             display: "grid",
@@ -189,7 +175,6 @@ export const HomePage: React.FC = () => {
                         ))}
                     </Box>
                 </Box>
-
                  <Box sx={{ mb: 6 }}>
                     <Typography variant="h5" fontWeight="bold" sx={{ mb: 2, color: "text.primary" }}>
                         Kampanyalar & Özel Fırsatlar
@@ -246,8 +231,89 @@ export const HomePage: React.FC = () => {
                         </Swiper>
                     </Box>
                 </Box>
-
-
+                <Box sx={{ mb: 6 }}>
+                    <Typography variant="h5" fontWeight="bold" sx={{ mb: 2, color: "text.primary" }}>
+                        Etkinlik Videoları
+                    </Typography>
+                    <Box
+                        sx={{
+                            display: "grid",
+                            gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr", md: "repeat(4, 1fr)" },
+                            gap: 3
+                        }}
+                    >
+                        {showcaseVideos.map((video, index) => (
+                            <Card
+                                key={index}
+                                elevation={0}
+                                sx={{
+                                    borderRadius: 4,
+                                    overflow: "hidden",
+                                    border: `1px solid ${alpha(theme.palette.common.black, 0.06)}`,
+                                    transition: "all 0.3s ease",
+                                    cursor: "pointer",
+                                    "&:hover": {
+                                        transform: "translateY(-5px)",
+                                        boxShadow: `0 15px 30px ${alpha(theme.palette.common.black, 0.1)}`
+                                    }
+                                }}
+                                onClick={() => {
+                                    setActiveVideo(getYouTubeEmbedUrl(video.videoUrl));
+                                    setVideoOpen(true);
+                                }}
+                            >
+                                <CardActionArea sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
+                                    <CardMedia
+                                        component="img"
+                                        image={video.image}
+                                        sx={{ 
+                                            objectFit: "cover",
+                                            transition: "transform 0.4s ease",
+                                            "&:hover": { transform: "scale(1.05)" }
+                                        }}
+                                    />
+                                    <Box
+                                        sx={{
+                                            position: "absolute",
+                                            inset: 0,
+                                            background: "rgba(0,0,0,0.2)",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            opacity: 0,
+                                            transition: "opacity 0.3s ease",
+                                            "&:hover": { opacity: 1 }
+                                        }}
+                                    >
+                                    </Box>
+                                </CardActionArea>
+                            </Card>
+                        ))}
+                    </Box>
+                </Box>
+                {catalogPdfPath && (
+                    <Box sx={{ mb: 6 }}>
+                        <Typography variant="h5" fontWeight="bold" sx={{ mb: 2, color: "text.primary" }}>
+                            Kurumsal Hizmet Kataloğu
+                        </Typography>
+                        <Box sx={{ 
+                            width: "100%", 
+                            height: { xs: "500px", md: "600px" }, 
+                            borderRadius: 4, 
+                            overflow: "hidden", 
+                            border: `1px solid ${alpha(theme.palette.common.black, 0.06)}`,
+                            boxShadow: `0 15px 30px ${alpha(theme.palette.common.black, 0.1)}`
+                        }}>
+                            <iframe 
+                                src={catalogPdfPath} 
+                                width="100%" 
+                                height="100%" 
+                                style={{ border: "none" }} 
+                                title="Kurumsal Katalog" 
+                            />
+                        </Box>
+                    </Box>
+                )}
                 <Box
                     sx={{
                         mt: 4,
@@ -286,6 +352,25 @@ export const HomePage: React.FC = () => {
                 </Box>
 
             </Container>
+            <Dialog 
+                open={videoOpen} 
+                onClose={() => setVideoOpen(false)} 
+                maxWidth="md" 
+                fullWidth
+            >
+                <DialogContent sx={{ p: 0, overflow: "hidden", bgcolor: "black" }}>
+                    <Box sx={{ position: "relative", paddingTop: "56.25%", width: "100%" }}>
+                        {videoOpen && activeVideo && (
+                            <iframe
+                                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
+                                src={activeVideo}
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            />
+                        )}
+                    </Box>
+                </DialogContent>
+            </Dialog>
         </Box>
     );
 };
