@@ -4,6 +4,7 @@ import RestaurantMenuIcon from "@mui/icons-material/RestaurantMenu";
 import CelebrationIcon from "@mui/icons-material/Celebration";
 import GroupsIcon from "@mui/icons-material/Groups";
 import ParkIcon from "@mui/icons-material/Park";
+import HeadphonesIcon from "@mui/icons-material/Headphones";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import EditIcon from "@mui/icons-material/Edit";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,14 +19,16 @@ const categoryIcons = [
     <RestaurantMenuIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
     <CelebrationIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
     <GroupsIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
-    <ParkIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />
+    <ParkIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
+    <HeadphonesIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />
 ];
 
 const categoryImages = [
     "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=600&h=400&fit=crop",
     "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=600&h=400&fit=crop",
     "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1500534623283-312aade485b7?q=80&w=600&h=400&fit=crop"
+    "https://images.unsplash.com/photo-1500534623283-312aade485b7?q=80&w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=600&h=400&fit=crop"
 ];
 
 const campaigns = [
@@ -52,6 +55,7 @@ export const HomePage: React.FC = () => {
         `linear-gradient(135deg, ${theme.palette.secondary.light}, ${theme.palette.secondary.main})`,
         `linear-gradient(135deg, ${theme.palette.success.light}, ${theme.palette.success.main})`,
         `linear-gradient(135deg, ${theme.palette.info.light}, ${theme.palette.info.main})`,
+        `linear-gradient(135deg, ${theme.palette.warning.light}, ${theme.palette.warning.main})`,
         ];
 
     return (
@@ -72,7 +76,7 @@ export const HomePage: React.FC = () => {
                     <Box
                         sx={{
                             display: "grid",
-                            gridTemplateColumns: { xs: "1fr 1fr", md: "1fr 1fr 1fr 1fr" },
+                            gridTemplateColumns: { xs: "1fr 1fr", sm: "1fr 1fr 1fr", md: "repeat(5, 1fr)" },
                             gap: 3
                         }}
                     >

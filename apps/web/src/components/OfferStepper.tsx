@@ -78,16 +78,26 @@ export const OfferStepper: React.FC = () => {
                     </Typography>
                 </Box>
 
-                <Stepper activeStep={activeStep} alternativeLabel sx={{ mb: 6 }}>
-                    {categories.map((category) => (
-                        <Step key={category.id}>
-                            <StepLabel>{category.title}</StepLabel>
+                <Box sx={{ 
+                    mb: { xs: 4, md: 6 }, 
+                    width: "100%", 
+                    overflowX: "auto",
+                    pb: 1,
+                    "&::-webkit-scrollbar": { height: 6 },
+                    "&::-webkit-scrollbar-track": { backgroundColor: "transparent" },
+                    "&::-webkit-scrollbar-thumb": { backgroundColor: "rgba(0,0,0,0.1)", borderRadius: 4 }
+                }}>
+                    <Stepper activeStep={activeStep} alternativeLabel sx={{ minWidth: { xs: 800, md: "auto" } }}>
+                        {categories.map((category) => (
+                            <Step key={category.id}>
+                                <StepLabel>{category.title}</StepLabel>
+                            </Step>
+                        ))}
+                        <Step>
+                            <StepLabel>Özet ve Onay</StepLabel>
                         </Step>
-                    ))}
-                    <Step>
-                        <StepLabel>Özet ve Onay</StepLabel>
-                    </Step>
-                </Stepper>
+                    </Stepper>
+                </Box>
 
                 <Box>
                     {isCompleted ? (

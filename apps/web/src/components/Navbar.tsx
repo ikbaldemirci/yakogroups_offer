@@ -28,9 +28,11 @@ export const Navbar: React.FC = () => {
 
     return (
         <AppBar
-            position="static"
+            position="sticky"
             elevation={0}
             sx={{
+                top: 0,
+                zIndex: (theme) => theme.zIndex.appBar,
                 background: `linear-gradient(135deg, ${theme.palette.primary.dark} 0%, ${theme.palette.info.dark} 50%, ${theme.palette.secondary.dark} 100%)`,
                 borderBottom: `1px solid ${alpha(theme.palette.common.white, 0.1)}`
             }}
