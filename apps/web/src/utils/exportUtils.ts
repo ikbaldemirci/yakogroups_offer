@@ -1,20 +1,15 @@
 import ExcelJS from "exceljs";
 import { saveAs } from "file-saver";
 import type { UserInfo } from "../components/UserInfoForm";
-import type { Product } from "../types";
-import { categories } from "../types";
-import type { OfferTotals } from "./calculateOfferTotals";
+import type { SelectedItem } from "../types";
+import type { OfferTotals } from "../types";
+import { getOfferBreakdown } from "./calculateOfferTotals";
 import { theme } from "../theme";
 
 const getArgb = (colorString: string) => "FF" + colorString.replace("#", "").toUpperCase();
 
-export interface SelectedItem {
-    product: Product;
-    price: number;
-}
-
 export const exportToExcel = async (
-    userInfo: UserInfo, 
+    userInfo: UserInfo,
     selectedItems: Record<string, SelectedItem>, 
     totals: OfferTotals,
     exactPersonCount?: number
@@ -51,48 +46,20 @@ export const exportToExcel = async (
     headerRow.font = { bold: true, size: 12 };
     headerRow.getCell(2).alignment = { horizontal: "right" };
 
-
-    const items = Object.values(selectedItems);
     const borderColor = getArgb(theme.palette.excel.border);
     const textColor = getArgb(theme.palette.excel.text);
     const primaryColor = getArgb(theme.palette.primary.main);
 
-    categories.forEach((category) => {
-        const categoryItems = items.filter(item => {
-            const inItems = category.items?.some(ci => ci.id === item.product.id) || false;
-            const inSubcats = category.subcategories?.some(sub => sub.items.some(si => si.id === item.product.id)) || false;
-            return inItems || inSubcats;
-        });
+    const breakdown = getOfferBreakdown(Object.values(selectedItems), totals, exactPersonCount);
 
-        if (categoryItems.length === 0) return;
-
-        const isMenu = category.id === "menus";
-
-        const panayirItems = isMenu 
-            ? categoryItems.filter(item => (item.product as any).subcategory === "panayir")
-            : [];
-        const nonPanayirItems = isMenu
-            ? categoryItems.filter(item => (item.product as any).subcategory !== "panayir")
-            : categoryItems;
-
-        const panayirTotal = panayirItems.reduce((sum, item) => sum + item.price, 0);
-        const baseNonPanayirTotal = nonPanayirItems.reduce((sum, item) => sum + item.price, 0);
-
-        let categoryTotal = isMenu && exactPersonCount && exactPersonCount > 0 
-            ? baseNonPanayirTotal * exactPersonCount + panayirTotal
-            : (isMenu ? panayirTotal : baseNonPanayirTotal);
-
-        if (isMenu && totals.menuServiceFee > 0) {
-            categoryTotal += totals.menuServiceFee;
-        }
-
-        const catRow = wsItems.addRow([category.title.toUpperCase(), ""]);
+    breakdown.forEach((catGroup: any) => {
+        const catRow = wsItems.addRow([catGroup.categoryName, ""]);
         catRow.font = { bold: true, size: 11, color: { argb: textColor } };
         catRow.eachCell(c => {
             c.border = { top: { style: "thick", color: { argb: borderColor } } };
         });
 
-        categoryItems.forEach(item => {
+        catGroup.items.forEach((item: SelectedItem) => {
             const row = wsItems.addRow([
                 item.product.title, 
                 `${item.price.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} ₺`
@@ -100,22 +67,22 @@ export const exportToExcel = async (
             row.getCell(2).alignment = { horizontal: "right" };
         });
 
-        if (isMenu && exactPersonCount && exactPersonCount > 0) {
-            const row = wsItems.addRow([`Kişi Sayısı Çarpanı:`, `${exactPersonCount} kişi`]);
+        if (catGroup.personMultiplierApplied) {
+            const row = wsItems.addRow([`Kişi Sayısı Çarpanı:`, `${catGroup.personMultiplierApplied} kişi`]);
             row.getCell(2).alignment = { horizontal: "right" };
         }
 
-        if (isMenu && totals.menuServiceFee > 0) {
+        if (catGroup.menuServiceFeeApplied > 0) {
             const row = wsItems.addRow([
                 `Menü Servis Personel Bedeli:`, 
-                `${totals.menuServiceFee.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} ₺`
+                `${catGroup.menuServiceFeeApplied.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} ₺`
             ]);
             row.getCell(2).alignment = { horizontal: "right" };
         }
 
         const araTopRow = wsItems.addRow([
             "ARA TOPLAM:", 
-            `${categoryTotal.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} ₺`
+            `${catGroup.categoryTotal.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} ₺`
         ]);
         araTopRow.font = { bold: true, color: { argb: primaryColor } };
         araTopRow.getCell(2).alignment = { horizontal: "right" };
@@ -192,15 +159,40 @@ export const exportToExcel = async (
     saveAs(blob, `YakoGroups_Teklif_${userInfo.fullName.replace(/\s+/g, "_")}.xlsx`);
 };
 
-export const sendToCRM = async (userInfo: UserInfo, selectedItems: Record<string, SelectedItem>, totalAmount: number) => {
-    const payload = {
-        customer: userInfo,
-        items: Object.values(selectedItems).map(item => ({
+export const sendToCRM = async (
+    userInfo: UserInfo, 
+    selectedItems: Record<string, SelectedItem>, 
+    totals: OfferTotals,
+    exactPersonCount?: number
+) => {
+    const itemsList = Object.values(selectedItems);
+    const breakdown = getOfferBreakdown(itemsList, totals, exactPersonCount);
+
+    const categorizedItems = breakdown.map((catGroup: any) => ({
+        ...catGroup,
+        items: catGroup.items.map((item: SelectedItem) => ({
             productId: item.product.id,
             productName: item.product.title,
             price: item.price
-        })),
-        totalAmount
+        }))
+    }));
+
+    const payload = {
+        customer: {
+            ...userInfo,
+            exactPersonCount: exactPersonCount || userInfo.personCount
+        },
+        offerDetails: {
+            categorizedItems,
+            summary: {
+                totalServicesPrice: totals.subtotal,
+                menuServicePersonnelFee: totals.menuServiceFee,
+                totalBeforeVatWithServiceFee: totals.subtotal + totals.menuServiceFee,
+                agencyServiceFee: totals.serviceFee,
+                vatAmount: totals.vatAmount,
+                grandTotal: totals.grandTotal
+            }
+        }
     };
 
     // CRM sitemine gönderme işlemi burada yapılacak. Şu an için sadece konsola yazdırıyoruz.

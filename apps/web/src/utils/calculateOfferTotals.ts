@@ -1,20 +1,6 @@
-
-export interface SelectedItem {
-    product: {
-        id: string;
-        category?: string;
-    };
-    price: number;
-}
-
-export interface OfferTotals {
-    subtotal: number;
-    menuTotal: number;
-    menuServiceFee: number;
-    serviceFee: number;
-    vatAmount: number;
-    grandTotal: number;
-}
+import { categories } from "../types";
+import type { SelectedItem } from "../types";
+import type { OfferTotals } from "../types";
 
 export const validatePersonCount = (countStr: string, tier: string): boolean => {
     const num = parseInt(countStr, 10);
@@ -76,3 +62,68 @@ export function calculateOfferTotals(
         grandTotal,
     };
 }
+
+export const getOfferBreakdown = (
+    itemsList: SelectedItem[], 
+    totals: OfferTotals, 
+    exactPersonCount?: number
+) => {
+    return categories.map(category => {
+        const categoryItems = itemsList.filter(item => {
+            const inItems = category.items?.some(ci => ci.id === item.product.id) || false;
+            const inSubcats = category.subcategories?.some(sub => sub.items.some(si => si.id === item.product.id)) || false;
+            return inItems || inSubcats;
+        });
+
+        if (categoryItems.length === 0) return null;
+
+        const isMenu = category.id === "menus";
+        let categoryTotal = 0;
+        let menuServiceFeeApplied = 0;
+        let personMultiplierApplied: number | null = null;
+        
+        if (isMenu) {
+            const panayirItems = categoryItems.filter(item => (item.product as any).subcategory === "panayir");
+            const baseMenuItems = categoryItems.filter(item => (item.product as any).subcategory !== "panayir");
+            
+            const panayirTotal = panayirItems.reduce((sum, item) => sum + item.price, 0);
+            const baseMenuTotal = baseMenuItems.reduce((sum, item) => sum + item.price, 0);
+            
+            if (baseMenuTotal > 0 && exactPersonCount && exactPersonCount > 0) {
+                categoryTotal = (baseMenuTotal * exactPersonCount) + panayirTotal;
+                personMultiplierApplied = exactPersonCount;
+            } else {
+                categoryTotal = baseMenuTotal + panayirTotal;
+            }
+                
+            if (totals.menuServiceFee > 0) {
+                categoryTotal += totals.menuServiceFee;
+                menuServiceFeeApplied = totals.menuServiceFee;
+            }
+        } else {
+            const t28Items = categoryItems.filter(item => item.product.id === "t28");
+            const standardItems = categoryItems.filter(item => item.product.id !== "t28");
+            
+            const t28Total = t28Items.reduce((sum, item) => sum + item.price, 0);
+            const standardTotal = standardItems.reduce((sum, item) => sum + item.price, 0);
+            
+            if (t28Total > 0 && exactPersonCount && exactPersonCount > 0) {
+                categoryTotal = standardTotal + (t28Total * exactPersonCount);
+                personMultiplierApplied = exactPersonCount;
+            } else {
+                categoryTotal = standardTotal + t28Total;
+            }
+        }
+
+        return {
+            categoryId: category.id,
+            categoryName: category.title.toUpperCase(),
+            items: categoryItems,
+            isMenuContext: isMenu,
+            personMultiplierApplied,
+            menuServiceFeeApplied,
+            categoryTotal
+        };
+    }).filter(Boolean);
+};
+

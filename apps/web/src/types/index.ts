@@ -1,3 +1,9 @@
+import { menusCategory } from "../data/menus";
+import { animationsinflatablesCategory } from "../data/animations-inflatables";
+import { teamactivitiesCategory } from "../data/team-activities";
+import { parkdecorCategory } from "../data/park-decor";
+import { teknikekipmanCategory } from "../data/teknikekipman";
+
 export type PersonCountTier = "0-25" | "25-50" | "50-75" | "75-100" | "100+";
 
 export interface ProductDetail {
@@ -47,13 +53,6 @@ export interface Category {
   items?: Product[];
   subcategories?: SubCategory[];
 }
-
-import { menusCategory } from "../data/menus";
-import { animationsinflatablesCategory } from "../data/animations-inflatables";
-import { teamactivitiesCategory } from "../data/team-activities";
-import { parkdecorCategory } from "../data/park-decor";
-import { teknikekipmanCategory } from "../data/teknikekipman";
-
 export const categories: Category[] = [
   menusCategory,
   animationsinflatablesCategory,
@@ -61,3 +60,17 @@ export const categories: Category[] = [
   parkdecorCategory,
   teknikekipmanCategory,
 ];
+
+export interface SelectedItem {
+  product: Product;
+  price: number;
+}
+
+export interface OfferTotals {
+    subtotal: number;
+    menuTotal: number;
+    menuServiceFee: number;
+    serviceFee: number;
+    vatAmount: number;
+    grandTotal: number;
+}
