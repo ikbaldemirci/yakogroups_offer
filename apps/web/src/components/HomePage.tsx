@@ -1,5 +1,26 @@
 import React, { useRef, useState } from "react";
-import { Box, Typography, Card, CardActionArea, CardMedia, CardContent, Chip, Container, useTheme, alpha, IconButton, Dialog, DialogContent } from "@mui/material";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+    Box,
+    Typography,
+    alpha,
+    useTheme,
+    Container,
+    Card,
+    CardActionArea,
+    CardMedia,
+    CardContent,
+    Chip,
+    Dialog,
+    DialogContent,
+    Divider,
+    IconButton,
+} from "@mui/material";
+
 import RestaurantMenuIcon from "@mui/icons-material/RestaurantMenu";
 import CelebrationIcon from "@mui/icons-material/Celebration";
 import GroupsIcon from "@mui/icons-material/Groups";
@@ -7,11 +28,7 @@ import ParkIcon from "@mui/icons-material/Park";
 import HeadphonesIcon from "@mui/icons-material/Headphones";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import EditIcon from "@mui/icons-material/Edit";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+
 import { categories } from "../types";
 import { useOffer } from "../context/OfferContext";
 import { getYouTubeEmbedUrl } from "../utils/youtubeUtils";
@@ -330,8 +347,9 @@ export const HomePage: React.FC = () => {
                 >
                     <Box sx={{ flex: 1 }}>
                         <Typography variant="body2" color="text.secondary" sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: 1 }}>
-                            <strong>👤 {userInfo.fullName}</strong> &nbsp;|&nbsp;
+                            <strong>👤 {userInfo.fullName}</strong> &nbsp;|&nbsp;   
                             <strong>🏢 {userInfo.companyName}</strong> &nbsp;|&nbsp;
+                            <Divider orientation="vertical" flexItem sx={{ borderColor:"primary.main" }} />
                             <strong>👥 {userInfo.personCount} kişi</strong>
                             <IconButton size="small" onClick={handleEditUserInfo} color="primary" sx={{ ml: {xs: 0, sm: 1}, p: 0.5 }}>
                                 <EditIcon fontSize="small" />
