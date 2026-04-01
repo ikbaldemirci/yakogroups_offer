@@ -72,7 +72,7 @@ export const Navbar: React.FC = () => {
                         position: 'absolute',
                         left: '50%',
                         transform: 'translateX(-50%)',
-                        display: 'flex',
+                        display: { xs: 'none', md: 'flex' },
                         flexDirection: 'column',
                         alignItems: 'center',
                         textAlign: 'center',

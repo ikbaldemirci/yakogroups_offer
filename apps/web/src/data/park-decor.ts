@@ -18,7 +18,7 @@ export const parkdecorCategory: Category = {
           "price": 28000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774951188/sahnearkasi_itxcdl.png"
         },
         {
           "id": "pd2",
@@ -30,7 +30,7 @@ export const parkdecorCategory: Category = {
           "price": 24000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774889556/foto%C4%9Fraf%C3%A7ekimpano_hjwymz.png"
         },
         {
           "id": "pd3",
@@ -42,7 +42,7 @@ export const parkdecorCategory: Category = {
           "price": 10000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774889538/countryfotografcekimpano_bs9qy5.png"
         },
         {
           "id": "pd4",
@@ -54,7 +54,7 @@ export const parkdecorCategory: Category = {
           "price": 35000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1472653431158-6364773b2a56?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774956167/elbask%C4%B1hat%C4%B1rapano_wacmil.png"
         },
         {
           "id": "pd5",
@@ -66,7 +66,7 @@ export const parkdecorCategory: Category = {
           "price": 20000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774952213/colordekor_kh0ujs.png"
         },
         {
           "id": "pd6",
@@ -78,7 +78,7 @@ export const parkdecorCategory: Category = {
           "price": 20000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774952702/colordekor2_c3ci3m.png"
         },
         {
           "id": "pd7",
@@ -90,7 +90,7 @@ export const parkdecorCategory: Category = {
           "price": 20000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1519167758481-83f29c1d1b5e?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774954522/colordekor3_tkicm7.png"
         },
         {
           "id": "pd8",
@@ -102,7 +102,7 @@ export const parkdecorCategory: Category = {
           "price": 55000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_400,c_fill,g_auto/v1774954699/ledfotograff_mhzgf7.png"
         },
         {
           "id": "pd9",
@@ -114,7 +114,7 @@ export const parkdecorCategory: Category = {
           "price": 45000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1504198453319-5ce911bafcde?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_500,c_fill,g_auto/v1774955413/selfiepanosu_h5tumm.png",
           "isPopular": true
         },
         {
@@ -127,7 +127,7 @@ export const parkdecorCategory: Category = {
           "price": 20000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774955743/countrydekor_qdp5ly.png"
         },
         {
           "id": "pd11",
@@ -139,7 +139,7 @@ export const parkdecorCategory: Category = {
           "price": 85000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774954207/neondekor_hecxea.png",
           "isPopular": true
         },
         {
@@ -152,7 +152,7 @@ export const parkdecorCategory: Category = {
           "price": 75000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774955205/festivaldekor_ila3aa.png"
         },
         {
           "id": "pd13",
@@ -164,7 +164,7 @@ export const parkdecorCategory: Category = {
           "price": 75000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774954205/fashiondekor_uig81s.png"
         },
         {
           "id": "pd14",
@@ -176,7 +176,7 @@ export const parkdecorCategory: Category = {
           "price": 100000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774955082/havaidekor_wv27gm_enhxbh.png"
         },
         {
           "id": "pd15",
@@ -188,7 +188,7 @@ export const parkdecorCategory: Category = {
           "price": 70000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774954522/elegantdekor_sl8qon.png"
         }
       ]
     }

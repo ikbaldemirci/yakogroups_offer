@@ -14,7 +14,6 @@ export const menusCategory: Category = {
           "subcategory": "kahvalti",
           "type": "fixed",
           "title": "SOKAK LEZZETLERİ KAHVALTI",
-          "summary": "40 kişi altı gruplar için tercih edilebilir.",
           "details": [
             {
               "title": "Sandwich Köşesi",
@@ -29,10 +28,10 @@ export const menusCategory: Category = {
               "text": "Simit ve açma çeşitleri (sade, zeytinli), tatlı ve tuzlu kurabiyeler"
             }
           ],
-          "price": 775,
+          "price": 835,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774889273/sokakmen%C3%BC_mfhuxx.jpg"
         },
         {
           "id": "m2",
@@ -67,10 +66,10 @@ export const menusCategory: Category = {
               "text": "Sigara böreği, menemen, sahanda sucuk"
             }
           ],
-          "price": 800,
+          "price": 1200,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774889345/kahvalt%C4%B1_b%C3%BCfe_kz0wfs.jpg"
         },
         {
           "id": "m3",
@@ -101,10 +100,10 @@ export const menusCategory: Category = {
               "text": "Menemen, su böreği"
             }
           ],
-          "price": 760,
+          "price": 1050,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/v1774977006/kahvalt%C4%B1%C4%B1_puiwh1.jpg",
            "isPopular": true
         },
         {
@@ -144,10 +143,10 @@ export const menusCategory: Category = {
               "text": "Haşlanmış yumurta, menemen, peynirli su böreği"
             }
           ],
-          "price": 830,
+          "price": 1150,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774888507/b%C3%BCfe2_bllvvg.heic"
         },
         {
           "id": "m5",
@@ -194,10 +193,10 @@ export const menusCategory: Category = {
               "text": "Pancake ve Nutella"
             }
           ],
-          "price": 975,
+          "price": 1350,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774889170/b%C3%BCfe_p43rid.jpg"
         }
       ]
     },
@@ -228,10 +227,10 @@ export const menusCategory: Category = {
               "text": "%10 servis bedeli ilave edilecektir"
             }
           ],
-          "price": 640,
+          "price": 960,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=400&h=300&fit=crop",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774889234/k%C3%B6ftetavuk_ooaixk.jpg",
            "isPopular": true
         },
         {
@@ -258,10 +257,10 @@ export const menusCategory: Category = {
               "text": "%10 servis bedeli ilave edilecektir"
             }
           ],
-          "price": 900,
+          "price": 1250,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774888513/%C4%B1zgara_gju77e.jpg"
         },
         {
           "id": "b3",
@@ -287,10 +286,10 @@ export const menusCategory: Category = {
               "text": "%10 servis bedeli ilave edilecektir"
             }
           ],
-          "price": 1180,
+          "price": 1600,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/v1774888518/men%C3%BC_mksqdf.jpg"
         },
         {
           "id": "b4",
@@ -317,10 +316,10 @@ export const menusCategory: Category = {
               "text": "%10 servis bedeli ilave edilecektir"
             }
           ],
-          "price": 1350,
+          "price": 1900,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774976379/barbek%C3%BCm_a5aumf.jpg"
         },
         {
           "id": "b5",
@@ -347,10 +346,10 @@ export const menusCategory: Category = {
               "text": "%10 servis bedeli ilave edilecektir"
             }
           ],
-          "price": 1450,
+          "price": 1950,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774889458/meyvearaba_zeuqti.jpg"
         }
       ]
     },
@@ -363,11 +362,11 @@ export const menusCategory: Category = {
           "subcategory": "panayir",
           "type": "fixed",
           "title": "KÖFTE EKMEK",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 13.000 TL + KDV'dir.",
-          "price": 35000,
+          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
+          "price": 50000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1553909489-cd47e0ef937f?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774888523/pizza-hotdog-kofteekmek_eprwie.jpg"
         },
         {
           "id": "p2",
@@ -375,11 +374,11 @@ export const menusCategory: Category = {
           "subcategory": "panayir",
           "type": "fixed",
           "title": "SOSİSLİ SANDVİÇ (HOT DOG)",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 13.000 TL + KDV'dir.",
-          "price": 28000,
+          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
+          "price": 35000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1612392062798-ef2f13a4f2b9?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774888511/hotdog_lgbooe.jpg"
         },
         {
           "id": "p3",
@@ -387,11 +386,11 @@ export const menusCategory: Category = {
           "subcategory": "panayir",
           "type": "fixed",
           "title": "KOKOREÇ",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 13.000 TL + KDV'dir.",
-          "price": 42000,
+          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
+          "price": 55000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774964808/kokorec_z33zkv.jpg"
         },
         {
           "id": "p4",
@@ -399,23 +398,23 @@ export const menusCategory: Category = {
           "subcategory": "panayir",
           "type": "fixed",
           "title": "SUCUK EKMEK",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 13.000 TL + KDV'dir.",
-          "price": 37000,
+          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
+          "price": 45000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774965482/sucukekmek_enkbvb.jpg"
         },
         {
           "id": "p5",
           "category": "menus",
           "subcategory": "panayir",
           "type": "fixed",
-          "title": "TAVUKLU PİLAV",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 13.000 TL + KDV'dir.",
-          "price": 26000,
+          "title": "ET DÖNER",
+          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
+          "price": 60000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1604908176997-43117a7f88ef?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774965480/etdoner_xplncj.jpg"
         },
         {
           "id": "p6",
@@ -423,11 +422,11 @@ export const menusCategory: Category = {
           "subcategory": "panayir",
           "type": "fixed",
           "title": "TANTUNİ",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 13.000 TL + KDV'dir.",
-          "price": 44000,
+          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
+          "price": 55000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1529042410759-befb1204b468?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774965484/tantuni_vuikic.jpg"
         },
         {
           "id": "p7",
@@ -435,11 +434,11 @@ export const menusCategory: Category = {
           "subcategory": "panayir",
           "type": "fixed",
           "title": "ISLAK HAMBURGER",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 13.000 TL + KDV'dir.",
-          "price": 28000,
+          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
+          "price": 35000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774965481/islakhamburger_tfjsvn.jpg"
         },
         {
           "id": "p8",
@@ -447,11 +446,11 @@ export const menusCategory: Category = {
           "subcategory": "panayir",
           "type": "fixed",
           "title": "POPCORN",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 13.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
+          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
           "price": 17000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1578849278619-e73505e9610f?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774888525/popcorn_o9dwfh.jpg"
         },
         {
           "id": "p9",
@@ -459,23 +458,23 @@ export const menusCategory: Category = {
           "subcategory": "panayir",
           "type": "fixed",
           "title": "KAĞIT HELVA",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 13.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
+          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
           "price": 19000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774976006/kag%C4%B1thelva_ukfshf.jpg"
         },
         {
           "id": "p10",
           "category": "menus",
           "subcategory": "panayir",
           "type": "fixed",
-          "title": "OSMANLI MACUNU",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 13.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 21000,
+          "title": "ÇİKOLATA ŞELALESİ",
+          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
+          "price": 30000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774966428/cikolataselale_lai8jl.jpg"
         },
         {
           "id": "p11",
@@ -483,23 +482,23 @@ export const menusCategory: Category = {
           "subcategory": "panayir",
           "type": "fixed",
           "title": "PAMUK ŞEKER",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 13.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
+          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
           "price": 17000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774888521/pamuk-seker-dondurma_uu6p2j.jpg"
         },
         {
           "id": "p12",
           "category": "menus",
           "subcategory": "panayir",
           "type": "fixed",
-          "title": "OSMANLI ŞERBETİ",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 13.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 25000,
+          "title": "MARAŞ DONDURMASI",
+          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
+          "price": 35000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1544145945-f90425340c7e?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774888508/dondurma_gfs7g9.jpg"
         },
         {
           "id": "p13",
@@ -507,23 +506,35 @@ export const menusCategory: Category = {
           "subcategory": "panayir",
           "type": "fixed",
           "title": "ÇUBUKTA PATATES",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 13.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
+          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
           "price": 25000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1576107232684-1279f390859f?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774976003/cubuktapatates_xu7dja.jpg"
         },
         {
           "id": "p14",
           "category": "menus",
           "subcategory": "panayir",
           "type": "fixed",
-          "title": "VİTAMİN BAR",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 13.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
+          "title": "ÇUBUKTA WAFFLE",
+          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
           "price": 33000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774976004/cubukwaffle_mwxugl.jpg"
+        },
+        {
+          "id": "p14",
+          "category": "menus",
+          "subcategory": "panayir",
+          "type": "fixed",
+          "title": "HALKA TATLISI",
+          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
+          "price": 25000,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774964807/halkatatli_iot3bu.jpg"
         }
       ]
     },
@@ -537,22 +548,22 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "BÜFE SÜRESİ BOYUNCA SOFT İÇECEK",
           "summary": "Kola, meyve suları, soda, limonata, çay ve granül kahve",
-          "price": 200,
+          "price": 250,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774889196/i%C3%A7ecek_wvmeo6.jpg"
         },
         {
           "id": "i2",
           "category": "menus",
           "subcategory": "icecek",
           "type": "fixed",
-          "title": "GÜN BOYU SOFT İÇECEK",
+          "title": "YAKO PARK GÜN BOYU SOFT İÇECEK",
           "summary": "Kola, meyve suları, soda, limonata, çay ve granül kahve",
-          "price": 350,
+          "price": 400,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1546173159-315724a31696?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774889196/i%C3%A7ecek_wvmeo6.jpg"
         },
         {
           "id": "i3",
@@ -561,10 +572,10 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "LİMİTLİ YERLİ ALKOL (2 ADET)",
           "summary": "Bira ve şarap",
-          "price": 600,
+          "price": 700,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774976557/sarapbira_abycvl.jpg"
         },
         {
           "id": "i4",
@@ -573,10 +584,10 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "LİMİTSİZ YERLİ ALKOL (3 SAAT)",
           "summary": "Bira ve şarap",
-          "price": 1850,
+          "price": 1950,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774976557/sarapbira_abycvl.jpg"
         }
       ]
     },
@@ -590,10 +601,10 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "COFFEE BREAK",
           "summary": "Tatlı ve tuzlu kurabiyeler, poğaça çeşitleri, cookies, çay ve granül kahve",
-          "price": 750,
+          "price": 830,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774889393/s%C4%B1cakb%C3%B6l%C3%BCm%C3%BC_chds48.jpg"
         }
       ]
     }

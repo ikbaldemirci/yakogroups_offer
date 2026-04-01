@@ -50,7 +50,7 @@ export const teknikekipmanCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606389/ses-sistemi_m7tuzn.jpg"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill,g_auto/v1774888322/djsahne_sya67a.jpg"
         },
         {
           "id": "te32",

@@ -92,7 +92,7 @@ export const teamactivitiesCategory: Category = {
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774603387/lazer-tag-oyunlari_uuigg5.jpg",
-          "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
+          "video_link": "https://www.youtube.com/watch?v=JY27UL8YaAs&t=7s",
           "detail_link": "https://fitnesstanbull.com/lazer-tag/"  
         },
         {
@@ -115,6 +115,146 @@ export const teamactivitiesCategory: Category = {
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
           "detail_link": "https://fitnesstanbull.com/nerf/"
           
+        },
+        {
+          "id": "t35",
+          "category": "team-activities",
+          "subcategory": "aktivite",
+          "type": "tiered",
+          "title": "PAINTBALL",
+          "summary": "Paintball, adrenalin dolu yapısıyla takım ruhunu en iyi yansıtan aktivitelerden biridir. Katılımcılar strateji geliştirerek birlikte hareket eder, rekabet ederken aynı zamanda güçlü bir ekip deneyimi yaşar. Doğal ortamlarda kurgulanan oyun senaryoları ile hem eğlenceli hem de unutulmaz anlar sunar. Özel koruyucu ekipmanlar ile güvenli bir şekilde oynanır.",
+          "priceTiers": {
+            "0-25": 0,
+            "25-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820872/paintball_uxytjy.jpg",
+          "video_link": "",
+          "detail_link": "https://fitnesstanbull.com/paintball/"
+        },
+        {
+          "id": "t36",
+          "category": "team-activities",
+          "subcategory": "aktivite",
+          "type": "tiered",
+          "title": "OKÇULUK",
+          "summary": "Okçuluk, her yaştan katılımcının deneyimleyebileceği, odak ve koordinasyonu geliştiren keyifli bir aktivitedir. Geleneksel köklerinden ilham alan bu deneyim, modern ekipmanlar ve profesyonel eğitmenler eşliğinde güvenli bir ortamda sunulur. Katılımcılar hem eğlenir hem de dikkat, sabır ve hedef odaklı düşünme becerilerini geliştirir.",
+          "priceTiers": {
+            "0-25": 0,
+            "25-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820860/kurumsalokculuk_vmoast.jpg",
+          "video_link": "https://www.youtube.com/watch?v=JoloXH5f8Is&t=1s",
+          "detail_link": "https://fitnesstanbull.com/okculuk/"
+        },
+        {
+          "id": "t38",
+          "category": "team-activities",
+          "subcategory": "aktivite",
+          "type": "tiered",
+          "title": "KLASİK MOTİVASYON AKTİVİTELERİ",
+          "summary": "Klasik motivasyon aktiviteleri, ekip içi iletişimi güçlendiren ve çalışanların performansını artırmayı hedefleyen eğlenceli ve dinamik etkinliklerden oluşur. Çuval yarışı, halat çekme, koca ayak, top oyunları, balon yarışları ve şişme oyunlar gibi aktivitelerle katılımcılar hem keyifli vakit geçirir hem de takım çalışması becerilerini geliştirir. Eğlence ve rekabeti bir araya getiren bu deneyim, ekip ruhunu güçlendirmek için ideal bir çözümdür.",
+          "priceTiers": {
+            "0-25": 0,
+            "25-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820823/klasik-motivasyon-aktiviteleri_duat8o.jpg",
+          "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
+          "detail_link": "https://fitnesstanbull.com/klasik-motivasyon-aktiviteleri/"
+        },
+        {
+          "id": "t40",
+          "category": "team-activities",
+          "subcategory": "aktivite",
+          "type": "tiered",
+          "title": "KARTING",
+          "summary": "Karting (Go Kart), küçük pistlerde gerçekleştirilen, hız ve rekabeti bir araya getiren eğlenceli bir takım aktivitesidir. Katılımcılar kontrollü ve güvenli araçlarla yarışırken hem adrenalin dolu anlar yaşar hem de keyifli bir rekabet ortamında ekip ruhunu güçlendirir. Belirlenen hız limitleri sayesinde güvenli bir şekilde gerçekleştirilen bu deneyim, eğlence ve heyecanı bir arada sunar.",
+          "priceTiers": {
+            "0-25": 0,
+            "25-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820798/kurumsal-aktivite-karting_dddjck.jpg",
+          "video_link": "https://www.youtube.com/watch?v=EbU3KDRiZ1U",
+          "detail_link": "https://fitnesstanbull.com/karting/"
+        },
+        {
+          "id": "t41",
+          "category": "team-activities",
+          "subcategory": "aktivite",
+          "type": "tiered",
+          "title": "CESUR YÜREK AKTİVİTESİ",
+          "summary": "Cesur Yürek Aktivitesi, geleneksel okçuluk eğitimi ile başlayan ve macera dolu görevlerle devam eden sürükleyici bir takım deneyimidir. Katılımcılar takımlara ayrılarak harita üzerinde belirlenen hedeflere ulaşmaya çalışır, her noktada karşılarına çıkan sürpriz görevlerle hem strateji geliştirir hem de ekip çalışmasını güçlendirir. Nefes kontrolü, odaklanma ve koordinasyon gerektiren bu aktivite, heyecan ve eğlenceyi bir araya getirir.",
+          "priceTiers": {
+            "0-25": 0,
+            "25-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820767/cesur-yurek_q4zadx.jpg",
+          "video_link": "",
+          "detail_link": "https://fitnesstanbull.com/cesur-yurek-aktivitesi/"
+        },
+        {
+          "id": "t42",
+          "category": "team-activities",
+          "subcategory": "aktivite",
+          "type": "tiered",
+          "title": "TAKIM DİNAMİĞİ YARATMA AKTİVİTESİ",
+          "summary": "Takım Dinamiği Yaratma Aktivitesi, ekiplerin iletişim, güven, koordinasyon ve senkronizasyon becerilerini geliştirmeye yönelik çok aşamalı bir parkur deneyimidir. Bu çalışma bir yarıştan çok, ekip uyumu ve birlikte hareket etme becerilerini test eden bir deneyimdir. Katılımcılar farklı istasyonlarda; denge, senkronizasyon, stratejik düşünme ve iletişim süreçlerini deneyimleyerek ekip olmanın gerçek anlamını keşfeder. Her aşama, bireysel başarıdan çok takım başarısına odaklanır ve güçlü bir farkındalık kazandırır.",
+          "priceTiers": {
+            "0-25": 0,
+            "25-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774875998/takimdinamiğiyaratma_cj6pj7.jpg",
+          "video_link": "https://www.youtube.com/watch?v=KN4JS8jG3vE",
+          "detail_link": "https://kurumsalaktivite.com/takim-dinamigi-yaratma-aktivitesi/"
+        },
+        {
+          "id": "t43",
+          "category": "team-activities",
+          "subcategory": "aktivite",
+          "type": "tiered",
+          "title": "CANLI LANGIRT",
+          "summary": "Canlı Langırt, klasik langırt oyununun gerçek boyutlara taşındığı eğlenceli ve rekabet dolu bir takım aktivitesidir. Açık alanda ya da hava koşullarına bağlı olarak kapalı alanlarda kurulabilen bu deneyim, katılımcılara hem eğlence hem de yüksek enerji sunar. Takımlar sahada birlikte hareket ederken, izleyenlerin tezahüratlarıyla heyecan daha da artar. Hız, koordinasyon ve ekip uyumunun ön planda olduğu bu aktivite, unutulmaz anlar yaşatır.",
+          "priceTiers": {
+            "0-25": 0,
+            "25-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774821071/canlilangirtetkinlik_tr7w86.jpg",
+          "video_link": "https://www.youtube.com/watch?v=mimeVMPHnXc",
+          "detail_link": "https://fitnesstanbull.com/canli-langirt/"
         }
       ]
     },
@@ -471,8 +611,8 @@ export const teamactivitiesCategory: Category = {
           "category": "team-activities",
           "subcategory": "wellness",
           "type": "tiered",
-          "title": "YOGA TERAPİ",
-          "summary": "Yoga duruşları ve nefes teknikleri ile beden ve zihni dengelemeye yönelik kurumsal terapi aktivitesidir.",
+          "title": "Doğada Fitness | Yoga | Zumba ",
+          "summary":"Doğada Yoga Aktivitesi, katılımcıların profesyonel eğitmen eşliğinde açık havada nefes, esneklik ve odak çalışmaları yaptığı, stres azaltıcı ve denge kazandırıcı bir kurumsal wellbeing deneyimidir. Fitness, yoga ve zumba gibi aktivitelerle ekip ruhunu güçlendiren, enerjik ve sağlıklı bir deneyim sunuyoruz.",
           "priceTiers": {
             "0-25": 60000,
             "25-50": 60000,
@@ -482,9 +622,29 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605612/yogaa_xtikdx.jpg",
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820917/dogada-fitness-event_mlnvff.jpg",
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
-          "detail_link": "https://fitnesstanbull.com/kendi-markani-yarat-reklam-filmi-cek/"
+          "detail_link": "https://fitnesstanbull.com/dogada-fitness-yoga-zumba/"
+        },
+        {
+          "id": "t34",
+          "category": "team-activities",
+          "subcategory": "wellness",
+          "type": "tiered",
+          "title": "BOOT CAMP WORKOUT",
+          "summary": "Boot Camp Workout, askeri antrenman disiplininden ilham alan, yüksek tempolu ve ekip ruhunu güçlendiren bir egzersiz programıdır. Vücudun tüm kas gruplarını çalıştıran bu aletsiz antrenman; dayanıklılık, güç ve koordinasyonu artırırken aynı zamanda katılımcılara enerjik ve motive edici bir deneyim sunar.",
+          "priceTiers": {
+            "0-25": 0,
+            "25-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820882/bootcampworkout_ajiiqb.jpg",
+          "video_link": "",
+          "detail_link": "https://fitnesstanbull.com/boot-camp-workout/"
         }
       ]
     },
@@ -508,7 +668,7 @@ export const teamactivitiesCategory: Category = {
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605682/hazine-avi-aktivitesi-scaled_w1likb.jpg",
-          "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
+          "video_link": "https://www.youtube.com/watch?v=PXJVZDrBJXc",
           "detail_link": "https://fitnesstanbull.com/hazine-avi/"
         },
         {
@@ -571,7 +731,87 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605928/kurumsal-rafting_ye30kc.jpg",
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
           "detail_link": "https://fitnesstanbull.com/rafting/"
-        }
+        },
+        {
+          "id": "t31",
+          "category": "team-activities",
+          "subcategory": "outdoor",
+          "type": "tiered",
+          "title": "ŞİRKET ÇADIR KAMPI",
+          "summary": "Günümüzün gürültülü ve yorucu şehir hayatından kaçmak için en güzel yöntemlerden biri olan çadır kampı, doğa ile iç içe huzurlu vakit geçirme fırsatı sunar. Kamp alanlarında gitar çalmak, şarkı söylemek, çeşitli oyunlar oynamak ve birçok farklı aktiviteyi gerçekleştirmek mümkündür. Fitnesstanbull olarak sizlere tüm bu aktiviteleri yapabilmeniz için harika bir kamp fırsatı sunuyoruz.",
+          "priceTiers": {
+            "0-25": 0,
+            "25-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774875978/sirketçadirkamp_ybae5l.jpg",
+          "video_link": "",
+          "detail_link": "https://fitnesstanbull.com/sirket-cadir-kampi/"
+        },
+        {
+          "id": "t33",
+          "category": "team-activities",
+          "subcategory": "outdoor",
+          "type": "tiered",
+          "title": "EBEVEYN & ÇOCUK KAMPI",
+          "summary": "Ebeveyn & Çocuk Kampı, ailelerin doğa ile iç içe vakit geçirerek birlikte unutulmaz anılar biriktirdiği özel bir deneyimdir. Kamp süresince çocuklar ve ebeveynler; oyunlar, doğa aktiviteleri ve sosyal etkileşimlerle bağlarını güçlendirirken aynı zamanda eğlenceli ve öğretici bir süreç yaşar. Aile içi iletişimi artıran, keyifli ve anlamlı bir kamp deneyimi sunuyoruz.",
+          "priceTiers": {
+            "0-25": 0,
+            "25-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820931/ebeveyn-cocuk-kamplari_mavbky.jpg",
+          "video_link": "",
+          "detail_link": "https://fitnesstanbull.com/ebeveyn-cocuk-kampi/"
+        },
+        {
+          "id": "t37",
+          "category": "team-activities",
+          "subcategory": "outdoor",
+          "type": "tiered",
+          "title": "OFF ROAD",
+          "summary": "Off Road, zorlu arazi koşullarında gerçekleştirilen, adrenalin ve macera dolu bir sürüş deneyimidir. Çamurlu, engebeli ve kayalık parkurlarda ilerlerken katılımcılar hem heyecanı doruklarda yaşar hem de takım halinde hareket etmenin önemini keşfeder. Doğa ile iç içe gerçekleşen bu aktivite, sınırları zorlamak ve unutulmaz anlar yaşamak isteyenler için eşsiz bir deneyim sunar.",
+          "priceTiers": {
+            "0-25": 0,
+            "25-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820835/offroad_pvbsaw.jpg",
+          "video_link": "https://www.youtube.com/watch?v=xtXSvNPDvXo",
+          "detail_link": "https://fitnesstanbull.com/off-road/"
+       },
+       {
+          "id": "t39",
+          "category": "team-activities",
+          "subcategory": "outdoor",
+          "type": "tiered",
+          "title": "KAYAK",
+          "summary": "Kayak, kış sporları denildiğinde akla gelen en keyifli ve adrenalin dolu aktivitelerden biridir. Karlı doğa ortamında gerçekleştirilen bu etkinlik, katılımcılara hem eğlence hem de heyecan dolu anlar yaşatır. Profesyonel rehberlik ve uygun ekipmanlarla güvenli bir şekilde gerçekleştirilen kayak deneyimi, ekip olarak unutulmaz bir kış aktivitesi sunar.",
+          "priceTiers": {
+            "0-25": 0,
+            "25-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820810/kayak-aktivite_qgfbh7.jpg",
+          "video_link": "",
+          "detail_link": "https://fitnesstanbull.com/kayak/"
+    }
       ]
     },
     {
@@ -680,10 +920,37 @@ export const teamactivitiesCategory: Category = {
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606216/ku%C5%9Fevi_at%C3%B6lyesi_b7jwiv.jpg",
-          "detail_link": "https://fitnesstanbull.com/kendi-markani-yarat-reklam-filmi-cek/",
-          "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM"
+          "detail_link": "https://fitnesstanbull.com/barinak-yapim-atolyesi/",
+          "video_link": "https://www.youtube.com/watch?v=KXI4FE5NXqU"
         }
       ]
-    }
+    },
+    {
+      title: "Pazarlama & Organizasyon",
+      items: [
+        {
+          "id": "t32",
+          "category": "team-activities",
+          "subcategory": "marketing",
+          "type": "tiered",
+          "title": "ROAD SHOW",
+          "summary": "Siz istiyorsunuz biz hayallerinizi gerçeğe dönüştürüyoruz. Road show, pazarlama teknikleri arasında en heyecan uyandıran ve en akılda kalan yöntemlerden biridir. Sıradan bir reklam fikri herkes tarafından düşünülebilir, ancak farklı olmak cesaret ister. Markanızı sahaya taşıyarak hedef kitlenizle birebir etkileşim kurabileceğiniz unutulmaz bir deneyim sunuyoruz.",
+          "priceTiers": {
+            "0-25": 0,
+            "25-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820946/roadshowevent_nqxltc.jpg",
+          "video_link": "",
+          "detail_link": "https://fitnesstanbull.com/road-show/"
+        }
+      ]
+  }
+
+
   ]
 };

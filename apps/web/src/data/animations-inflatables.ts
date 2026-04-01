@@ -1105,7 +1105,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 250,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774617263/minder_hudnfr.jpg"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill,g_auto/v1774888323/minder_vl0oh3.jpg"
         },
         {
           "id": "a62",
@@ -1237,7 +1237,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 9000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774618318/teklibasket_eiotm9.jpg"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774886916/pota_l6axzx.jpg"
         },
         {
           "id": "a73",
@@ -1374,7 +1374,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 7500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774620409/dart_ccfdkw.jpg"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill,g_auto/v1774886900/dart2_tfpzf1.jpg"
         },
         {
           "id": "a84",
@@ -1449,7 +1449,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 20000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774883793/balonkatlamaa_ofm9z3.jpg"
         },
         {
           "id": "a89",
@@ -1473,7 +1473,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 25000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774693611/karikat%C3%BCrist_gsr8kl.png"
         },
         {
           "id": "a91",
@@ -1509,7 +1509,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 30000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774693945/tarot_squwbc.png"
         },
         {
           "id": "a94",
@@ -1545,7 +1545,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 30000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill,g_auto/v1774887281/moderat%C3%B6r_pfgvsm.png"
         },
         {
           "id": "a97",
@@ -1557,7 +1557,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 30000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774695152/hintk%C4%B1na_adxxbs.png"
         },
         {
           "id": "a98",
@@ -1586,7 +1586,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 31250,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774695165/tak%C4%B1tasar%C4%B1m_rqzule.png"
         },
         {
           "id": "a100",
@@ -1598,7 +1598,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 45000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607406/tsh%C4%B1rtboyama_dzezmb.jpg"
         },
         {
           "id": "a101",
@@ -1622,7 +1622,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 30000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill,g_auto/v1774887923/kumlaboyama_fee5zl.png"
         },
         {
           "id": "a103",
@@ -1646,7 +1646,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 40000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill,g_auto/v1774886891/cicekdikim_wxlmiq.png"
         },
         {
           "id": "a105",
@@ -1658,7 +1658,7 @@ export const animationsinflatablesCategory: Category = {
           "price": 40000,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://images.unsplash.com/photo-1501139083538-0139583c060f?q=80&w=400&h=300&fit=crop"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill,g_auto/v1774887934/saatboyama_zoxwql.png"
         }
       ]
     }
