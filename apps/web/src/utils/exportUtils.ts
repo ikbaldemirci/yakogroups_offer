@@ -138,12 +138,12 @@ export const exportToExcel = async (
     }
 
     try {
-        const response = await fetch('/images/kase.png');
+        const response = await fetch("/images/kase.png");
         if (response.ok) {
             const imageBuffer = await response.arrayBuffer();
             const imageId = workbook.addImage({
                 buffer: imageBuffer,
-                extension: 'png',
+                extension: "png",
             });
             wsItems.addImage(imageId, {
                 tl: { col: 1, row: wsItems.rowCount + 1 },

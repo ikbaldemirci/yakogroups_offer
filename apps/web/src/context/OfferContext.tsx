@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import type { ReactNode } from "react";
 import type { UserInfo } from "../components/UserInfoForm";
-import type { SelectedItem } from "../utils/exportUtils";
+import type { SelectedItem } from "../types";
 import type { View } from "../components/Navbar";
 
 interface OfferContextType {

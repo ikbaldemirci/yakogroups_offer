@@ -26,7 +26,7 @@ import CelebrationIcon from "@mui/icons-material/Celebration";
 import GroupsIcon from "@mui/icons-material/Groups";
 import ParkIcon from "@mui/icons-material/Park";
 import HeadphonesIcon from "@mui/icons-material/Headphones";
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import EditIcon from "@mui/icons-material/Edit";
 import PersonIcon from "@mui/icons-material/Person";
 import BusinessIcon from "@mui/icons-material/Business";
@@ -347,19 +347,19 @@ export const HomePage: React.FC = () => {
                         boxShadow: `0 4px 20px ${alpha(theme.palette.common.black, 0.06)}`
                     }}
                 >
-                    <Box sx={{ flex: 1, minWidth: { xs: '100%', sm: 'auto' } }}>
-                        <Typography component="div" variant="body2" color="text.secondary" sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: { xs: 1.5, sm: 1 } }}>
-                            <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
+                    <Box sx={{ flex: 1, minWidth: { xs: "100%", sm: "auto" } }}>
+                        <Typography component="div" variant="body2" color="text.secondary" sx={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: { xs: 1.5, sm: 1 } }}>
+                            <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
                                 <PersonIcon fontSize="small" color="primary" />
                                 <strong>{userInfo.fullName}</strong>
                             </Box>
-                            <Divider orientation="vertical" flexItem sx={{ display: { xs: 'none', sm: 'block' }, borderColor:"primary.main" }} />
-                            <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
+                            <Divider orientation="vertical" flexItem sx={{ display: { xs: "none", sm: "block" }, borderColor:"primary.main" }} />
+                            <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
                                 <BusinessIcon fontSize="small" color="primary" />
                                 <strong>{userInfo.companyName}</strong>
                             </Box>
-                            <Divider orientation="vertical" flexItem sx={{ display: { xs: 'none', sm: 'block' }, borderColor:"primary.main" }} />
-                            <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
+                            <Divider orientation="vertical" flexItem sx={{ display: { xs: "none", sm: "block" }, borderColor:"primary.main" }} />
+                            <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
                                 <GroupsIcon fontSize="small" color="primary" />
                                 <strong>{userInfo.personCount} kişi</strong>
                             </Box>

@@ -48,7 +48,7 @@ export const UserInfoForm: React.FC = () => {
 
     const validatePhone = (phone: string) => {
         const re = /^(?:\+?90\s?)?(?:0)?5\d{2}\s?\d{3}\s?\d{2}\s?\d{2}$/;
-        return re.test(phone.replace(/[\s-]/g, ''));
+        return re.test(phone.replace(/[\s-]/g, ""));
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -107,19 +107,19 @@ export const UserInfoForm: React.FC = () => {
     const renderFieldWithAction = (fieldName: string, children: React.ReactNode) => {
         const isEditing = !globalUserInfo || editingFields[fieldName];
         return (
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                 <Box sx={{ flexGrow: 1 }}>
                     {children}
                 </Box>
                 {globalUserInfo && (
-                    <Box sx={{ display: 'flex', gap: 0.5 }}>
+                    <Box sx={{ display: "flex", gap: 0.5 }}>
                         <IconButton 
                             color={isEditing ? "success" : "primary"}
                             onClick={() => isEditing ? handleSaveField(fieldName) : handleEditField(fieldName)}
                             sx={{ 
-                                border: '1px solid',
-                                borderColor: isEditing ? 'success.main' : 'divider',
-                                bgcolor: 'background.paper'
+                                border: "1px solid",
+                                borderColor: isEditing ? "success.main" : "divider",
+                                bgcolor: "background.paper"
                             }}
                         >
                             {isEditing ? <CheckIcon /> : <EditIcon />}
@@ -129,9 +129,9 @@ export const UserInfoForm: React.FC = () => {
                                 color="error"
                                 onClick={() => handleCancelField(fieldName)}
                                 sx={{ 
-                                    border: '1px solid',
-                                    borderColor: 'error.main',
-                                    bgcolor: 'background.paper'
+                                    border: "1px solid",
+                                    borderColor: "error.main",
+                                    bgcolor: "background.paper"
                                 }}
                             >
                                 <CloseIcon />
@@ -195,10 +195,10 @@ export const UserInfoForm: React.FC = () => {
             alignItems: "center",
             p: 4,
             minHeight: { xs: "calc(100vh - 56px)", sm: "calc(100vh - 64px)" },
-            backgroundImage: 'url("/images/background.png")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center 20%',
-            backgroundAttachment: 'fixed'
+            backgroundImage: "url(\"/images/background.png\")",
+            backgroundSize: "cover",
+            backgroundPosition: "center 20%",
+            backgroundAttachment: "fixed"
         }}>
             <Paper elevation={3} sx={{ p: 4, maxWidth: 540, width: "100%", borderRadius: 3 }}>
                 <Typography variant="h5" component="h1" gutterBottom align="center" fontWeight="bold" color="primary">
@@ -289,7 +289,7 @@ export const UserInfoForm: React.FC = () => {
                         </FormControl>
                     ))}
 
-                    <Box sx={{ display: 'flex', gap: 2, mt: 2 }}>
+                    <Box sx={{ display: "flex", gap: 2, mt: 2 }}>
                         {formData.fullName && (
                             <Button
                                 variant="outlined"

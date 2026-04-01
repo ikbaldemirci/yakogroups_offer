@@ -69,14 +69,14 @@ export const Navbar: React.FC = () => {
 
                 {userInfo && view === "home" && (
                     <Box sx={{
-                        position: 'absolute',
-                        left: '50%',
-                        transform: 'translateX(-50%)',
-                        display: { xs: 'none', md: 'flex' },
-                        flexDirection: 'column',
-                        alignItems: 'center',
-                        textAlign: 'center',
-                        width: 'max-content'
+                        position: "absolute",
+                        left: "50%",
+                        transform: "translateX(-50%)",
+                        display: { xs: "none", md: "flex" },
+                        flexDirection: "column",
+                        alignItems: "center",
+                        textAlign: "center",
+                        width: "max-content"
                     }}>
                         <Typography
                             variant="overline"
