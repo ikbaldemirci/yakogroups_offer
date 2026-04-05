@@ -147,7 +147,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
             setErrorOpen(true);
             return;
         }
-        exportToExcel(
+        const { blob, fileName } = await exportToExcel(
             userInfo, 
             modifiedSelectedItemsForExport, 
             { subtotal, menuTotal, menuServiceFee, serviceFee, vatAmount: vat, grandTotal }, 
@@ -159,12 +159,13 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
             GenelToplam: grandTotal
         });
         setIsSubmitting(true);
-        // await sendToCRM(userInfo, selectedItems, grandTotal);
         await sendOfferToWebhook(
             userInfo,
             modifiedSelectedItemsForExport,
             { subtotal, menuTotal, menuServiceFee, serviceFee, vatAmount: vat, grandTotal },
-            isValidCount ? parsedCount : undefined
+            isValidCount ? parsedCount : undefined,
+            blob,
+            fileName
         );
         setIsSubmitting(false);
         setSuccess(true);

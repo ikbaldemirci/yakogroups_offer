@@ -8,7 +8,7 @@ import { theme } from "../theme";
 
 const getArgb = (colorString: string) => "FF" + colorString.replace("#", "").toUpperCase();
 
-export const exportToExcel = async (
+export const generateOfferWorkbook = async (
     userInfo: UserInfo,
     selectedItems: Record<string, SelectedItem>, 
     totals: OfferTotals,
@@ -155,8 +155,21 @@ export const exportToExcel = async (
     }
 
     const buffer = await workbook.xlsx.writeBuffer();
+    const fileName = `YakoGroups_Teklif_${userInfo.fullName.replace(/\s+/g, "_")}.xlsx`;
     const blob = new Blob([buffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
-    saveAs(blob, `YakoGroups_Teklif_${userInfo.fullName.replace(/\s+/g, "_")}.xlsx`);
+    
+    return { blob, fileName };
+};
+
+export const exportToExcel = async (
+    userInfo: UserInfo,
+    selectedItems: Record<string, SelectedItem>, 
+    totals: OfferTotals,
+    exactPersonCount?: number
+) => {
+    const { blob, fileName } = await generateOfferWorkbook(userInfo, selectedItems, totals, exactPersonCount);
+    saveAs(blob, fileName);
+    return { blob, fileName };
 };
 
 // export const sendToCRM = async (
@@ -205,7 +218,9 @@ export const sendOfferToWebhook = async (
     userInfo: UserInfo, 
     selectedItems: Record<string, SelectedItem>, 
     totals: OfferTotals,
-    exactPersonCount?: number
+    exactPersonCount?: number,
+    fileBlob?: Blob,
+    fileName?: string
 ) => {
     const webhookUrl = import.meta.env.VITE_MAKE_WEBHOOK_URL;
     if (!webhookUrl) {
@@ -274,19 +289,22 @@ export const sendOfferToWebhook = async (
         timestamp: new Date().toISOString()
     };
 
+    const formData = new FormData();
+    formData.append("payload", JSON.stringify(payload));
+    if (fileBlob && fileName) {
+        formData.append("file", fileBlob, fileName);
+    }
+
     try {
         const response = await fetch(webhookUrl, {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(payload)
+            body: formData
         });
 
         if (!response.ok) {
             console.error("Webhook gönderim hatası:", response.statusText);
         } else {
-            console.log("Teklif webhook'a başarıyla gönderildi!");
+            console.log("Teklif ve dosya webhook'a başarıyla gönderildi!");
         }
     } catch (error) {
         console.error("Webhook isteği sırasında hata oluştu:", error);
