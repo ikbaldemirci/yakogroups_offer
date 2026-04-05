@@ -159,12 +159,60 @@ export const exportToExcel = async (
     saveAs(blob, `YakoGroups_Teklif_${userInfo.fullName.replace(/\s+/g, "_")}.xlsx`);
 };
 
-export const sendToCRM = async (
+// export const sendToCRM = async (
+//     userInfo: UserInfo, 
+//     selectedItems: Record<string, SelectedItem>, 
+//     totals: OfferTotals,
+//     exactPersonCount?: number
+// ) => {
+//     const itemsList = Object.values(selectedItems);
+//     const breakdown = getOfferBreakdown(itemsList, totals, exactPersonCount);
+
+//     const categorizedItems = breakdown.map((catGroup: any) => ({
+//         ...catGroup,
+//         items: catGroup.items.map((item: SelectedItem) => ({
+//             productId: item.product.id,
+//             productName: item.product.title,
+//             price: item.price
+//         }))
+//     }));
+
+//     const payload = {
+//         customer: {
+//             ...userInfo,
+//             exactPersonCount: exactPersonCount || userInfo.personCount
+//         },
+//         offerDetails: {
+//             categorizedItems,
+//             summary: {
+//                 totalServicesPrice: totals.subtotal,
+//                 menuServicePersonnelFee: totals.menuServiceFee,
+//                 totalBeforeVatWithServiceFee: totals.subtotal + totals.menuServiceFee,
+//                 agencyServiceFee: totals.serviceFee,
+//                 vatAmount: totals.vatAmount,
+//                 grandTotal: totals.grandTotal
+//             }
+//         }
+//     };
+
+//     // CRM sitemine gönderme işlemi burada yapılacak. Şu an için sadece konsola yazdırıyoruz.
+//     console.log(JSON.stringify(payload, null, 2));
+
+//     return new Promise(resolve => setTimeout(resolve, 1500));
+// };
+
+export const sendOfferToWebhook = async (
     userInfo: UserInfo, 
     selectedItems: Record<string, SelectedItem>, 
     totals: OfferTotals,
     exactPersonCount?: number
 ) => {
+    const webhookUrl = import.meta.env.VITE_MAKE_WEBHOOK_URL;
+    if (!webhookUrl) {
+        console.warn("Webhook URL tanımlı değil (VITE_MAKE_WEBHOOK_URL). Sadece konsola yazdırılıyor.");
+        return;
+    }
+
     const itemsList = Object.values(selectedItems);
     const breakdown = getOfferBreakdown(itemsList, totals, exactPersonCount);
 
@@ -177,7 +225,37 @@ export const sendToCRM = async (
         }))
     }));
 
+    let formattedMessage = "🚨 *YENİ BİR TEKLİF OLUŞTURULDU* 🚨\n\n";
+    formattedMessage += "👤 *Müşteri Bilgileri:*\n";
+    formattedMessage += "*Ad Soyad:* " + userInfo.fullName + "\n";
+    formattedMessage += "*Şirket:* " + userInfo.companyName + "\n";
+    formattedMessage += "*E-Posta:* " + userInfo.email + "\n";
+    formattedMessage += "*Telefon:* " + userInfo.phone + "\n";
+    formattedMessage += "*Kişi Sayısı:* " + (exactPersonCount || userInfo.personCount) + "\n\n";
+
+    formattedMessage += "🛒 *Seçilen Hizmetler:*\n";
+    
+    categorizedItems.forEach((cat: any) => {
+        formattedMessage += "\n🔹 _" + cat.categoryName + "_:\n";
+        cat.items.forEach((item: any) => {
+            formattedMessage += "  - " + item.productName + " (" + item.price.toLocaleString("tr-TR") + " ₺)\n";
+        });
+        if (cat.menuServiceFeeApplied > 0) {
+            formattedMessage += "  - Menü Servis Bedeli: " + cat.menuServiceFeeApplied.toLocaleString("tr-TR") + " ₺\n";
+        }
+        formattedMessage += "  *Ara Toplam: " + cat.categoryTotal.toLocaleString("tr-TR") + " ₺*\n";
+    });
+
+    formattedMessage += "\n💰 *Fiyat Özeti:*\n";
+    formattedMessage += "Hizmetler Toplamı: " + totals.subtotal.toLocaleString("tr-TR") + " ₺\n";
+    formattedMessage += "Personel/Servis: " + totals.menuServiceFee.toLocaleString("tr-TR") + " ₺\n";
+    formattedMessage += "Hizmet Bedeli: " + totals.serviceFee.toLocaleString("tr-TR") + " ₺\n";
+    formattedMessage += "KDV: " + totals.vatAmount.toLocaleString("tr-TR") + " ₺\n";
+    formattedMessage += "*GENEL TOPLAM: " + totals.grandTotal.toLocaleString("tr-TR") + " ₺*";
+
     const payload = {
+        source: "yakogroups_offer_web",
+        formattedMessage: formattedMessage,
         customer: {
             ...userInfo,
             exactPersonCount: exactPersonCount || userInfo.personCount
@@ -192,11 +270,25 @@ export const sendToCRM = async (
                 vatAmount: totals.vatAmount,
                 grandTotal: totals.grandTotal
             }
-        }
+        },
+        timestamp: new Date().toISOString()
     };
 
-    // CRM sitemine gönderme işlemi burada yapılacak. Şu an için sadece konsola yazdırıyoruz.
-    console.log(JSON.stringify(payload, null, 2));
+    try {
+        const response = await fetch(webhookUrl, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload)
+        });
 
-    return new Promise(resolve => setTimeout(resolve, 1500));
+        if (!response.ok) {
+            console.error("Webhook gönderim hatası:", response.statusText);
+        } else {
+            console.log("Teklif webhook'a başarıyla gönderildi!");
+        }
+    } catch (error) {
+        console.error("Webhook isteği sırasında hata oluştu:", error);
+    }
 };

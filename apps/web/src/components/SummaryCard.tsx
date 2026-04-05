@@ -19,7 +19,7 @@ import {
     Checkbox,
     FormControlLabel
 } from "@mui/material";
-import { exportToExcel } from "../utils/exportUtils"; // sendToCRM geçici olarak kaldırıldı
+import { exportToExcel, sendOfferToWebhook } from "../utils/exportUtils"; 
 import DownloadIcon from "@mui/icons-material/Download";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import DeleteIcon from "@mui/icons-material/Delete";
@@ -160,7 +160,12 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
         });
         setIsSubmitting(true);
         // await sendToCRM(userInfo, selectedItems, grandTotal);
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await sendOfferToWebhook(
+            userInfo,
+            modifiedSelectedItemsForExport,
+            { subtotal, menuTotal, menuServiceFee, serviceFee, vatAmount: vat, grandTotal },
+            isValidCount ? parsedCount : undefined
+        );
         setIsSubmitting(false);
         setSuccess(true);
     };
