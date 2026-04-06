@@ -404,9 +404,20 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                                 </>
                                             )}
                                         </List>
-                                        <Box sx={{ p: 1.5, px: 3, bgcolor: "card.summaryBg", display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: 1, borderColor: "divider" }}>
+                                        <Box sx={{ 
+                                            p: 1.5, 
+                                            px: { xs: 2, sm: 3 }, 
+                                            bgcolor: "card.summaryBg", 
+                                            display: "flex", 
+                                            flexDirection: { xs: "column", sm: "row" },
+                                            justifyContent: "space-between", 
+                                            alignItems: { xs: "flex-start", sm: "center" }, 
+                                            gap: { xs: 2, sm: 0 },
+                                            borderTop: 1, 
+                                            borderColor: "divider" 
+                                        }}>
                                             {categoryNeedsPersonCount ? (
-                                                <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+                                                <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
                                                     <Typography variant="body2" fontWeight="bold" color="text.secondary">
                                                         Kişi Sayısı:
                                                     </Typography>
@@ -416,11 +427,11 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                                         onChange={(e) => setExactPersonCount(e.target.value)}
                                                         type="number"
                                                         error={exactPersonCount !== "" && !isRangeValid}
-                                                        sx={{ width: 100, bgcolor: "white" }}
+                                                        sx={{ width: { xs: "100%", sm: 100 }, maxWidth: 120, bgcolor: "white" }}
                                                     />
                                                 </Box>
                                             ) : <Box />}
-                                            <Typography variant="body2" fontWeight="bold" color="text.secondary">
+                                            <Typography variant="body2" fontWeight="bold" color="text.secondary" sx={{ textAlign: { xs: "left", sm: "right" } }}>
                                                 Ara Toplam: <Box component="span" color="primary.main">
                                                     {hasZeroPriceItem ? "Teklif İsteyiniz" : categoryNeedsPersonCount && !isValidCount ? "Kişi sayısını giriniz" : `${categoryTotal.toLocaleString("tr-TR")} ₺`}
                                                 </Box>

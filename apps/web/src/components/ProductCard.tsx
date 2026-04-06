@@ -52,7 +52,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         <>
             <Card
                 sx={{
-                    maxWidth: 345,
+                    width: "100%",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",

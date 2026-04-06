@@ -18,7 +18,7 @@ import {
     Dialog,
     DialogContent,
     Divider,
-    IconButton,
+    Button,
 } from "@mui/material";
 
 import RestaurantMenuIcon from "@mui/icons-material/RestaurantMenu";
@@ -340,45 +340,96 @@ export const HomePage: React.FC = () => {
                         borderRadius: 3,
                         bgcolor: "background.paper",
                         border: `1px solid ${alpha(theme.palette.common.black, 0.06)}`,
-                        display: "flex",
-                        alignItems: "center",
-                        flexWrap: "wrap",
-                        gap: 2,
                         boxShadow: `0 4px 20px ${alpha(theme.palette.common.black, 0.06)}`
                     }}
                 >
-                    <Box sx={{ flex: 1, minWidth: { xs: "100%", sm: "auto" } }}>
-                        <Typography component="div" variant="body2" color="text.secondary" sx={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: { xs: 1.5, sm: 1 } }}>
-                            <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-                                <PersonIcon fontSize="small" color="primary" />
-                                <strong>{userInfo.fullName}</strong>
-                            </Box>
-                            <Divider orientation="vertical" flexItem sx={{ display: { xs: "none", sm: "block" }, borderColor:"primary.main" }} />
-                            <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-                                <BusinessIcon fontSize="small" color="primary" />
-                                <strong>{userInfo.companyName}</strong>
-                            </Box>
-                            <Divider orientation="vertical" flexItem sx={{ display: { xs: "none", sm: "block" }, borderColor:"primary.main" }} />
-                            <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-                                <GroupsIcon fontSize="small" color="primary" />
-                                <strong>{userInfo.personCount} kişi</strong>
-                            </Box>
-                            <IconButton size="small" onClick={handleEditUserInfo} color="primary" sx={{ ml: {xs: 0, sm: 1}, p: 0.5 }}>
-                                <EditIcon fontSize="small" />
-                            </IconButton>
-                        </Typography>
+                    <Box sx={{ display: { xs: "none", sm: "flex" }, alignItems: "center", flexWrap: "wrap", gap: 2, width: "100%" }}>
+                        <Box sx={{ flex: 1, minWidth: "auto" }}>
+                            <Typography component="div" variant="body2" color="text.secondary" sx={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: 1 }}>
+                                <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
+                                    <PersonIcon fontSize="small" color="primary" />
+                                    <strong>{userInfo.fullName}</strong>
+                                </Box>
+                                <Divider orientation="vertical" flexItem sx={{ borderColor:"primary.main" }} />
+                                <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
+                                    <BusinessIcon fontSize="small" color="primary" />
+                                    <strong>{userInfo.companyName}</strong>
+                                </Box>
+                                <Divider orientation="vertical" flexItem sx={{ borderColor:"primary.main" }} />
+                                <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
+                                    <GroupsIcon fontSize="small" color="primary" />
+                                    <strong>{userInfo.personCount} kişi</strong>
+                                </Box>
+                                <Button 
+                                    size="small" 
+                                    onClick={handleEditUserInfo} 
+                                    color="primary" 
+                                    startIcon={<EditIcon fontSize="small" />}
+                                    sx={{ ml: 1, px: 1, py: 0.5, textTransform: "none", fontWeight: "bold", minWidth: "auto", lineHeight: 1 }}
+                                >
+                                    Düzenle
+                                </Button>
+                            </Typography>
+                        </Box>
+                        {selectedItemCount > 0 && (
+                            <Chip
+                                icon={<ShoppingCartIcon />}
+                                label={`${selectedItemCount} ürün seçildi`}
+                                color="primary"
+                                variant="filled"
+                                onClick={() => setCartOpen(true)}
+                                sx={{ fontWeight: "bold", cursor: "pointer" }}
+                                clickable
+                            />
+                        )}
                     </Box>
-                    {selectedItemCount > 0 && (
-                        <Chip
-                            icon={<ShoppingCartIcon />}
-                            label={`${selectedItemCount} ürün seçildi`}
-                            color="primary"
-                            variant="filled"
-                            onClick={() => setCartOpen(true)}
-                            sx={{ fontWeight: "bold", cursor: "pointer" }}
-                            clickable
-                        />
-                    )}
+
+                    <Box sx={{ display: { xs: "grid", sm: "none" }, gridTemplateColumns: "1fr auto", gap: 2, alignItems: "center", width: "100%" }}>
+                        <Box sx={{ display: "flex", flexDirection: "column", gap: 1, justifyContent: "center", minWidth: 0, overflow: "hidden" }}>
+                            <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                                <PersonIcon fontSize="small" color="primary" />
+                                <Typography variant="body2" color="text.secondary" >
+                                    <strong>{userInfo.fullName}</strong>
+                                </Typography>
+                            </Box>
+                            <Box sx={{ display: "flex", alignItems: "center", gap: 1}}>
+                                <BusinessIcon fontSize="small" color="primary"/>
+                                <Typography variant="body2" color="text.secondary">
+                                    <strong>{userInfo.companyName}</strong>
+                                </Typography>
+                            </Box>
+                            <Box sx={{ display: "flex", alignItems: "center", gap: 1}}>
+                                <GroupsIcon fontSize="small" color="primary"/>
+                                <Typography variant="body2" color="text.secondary">
+                                    <strong>{userInfo.personCount} kişi</strong>
+                                </Typography>
+                            </Box>
+                        </Box>
+
+                        <Box sx={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 1.5, pl: 1.5, borderLeft: `1px solid ${theme.palette.primary.main}`, height: "100%", justifyContent: "center" }}>
+                            <Button 
+                                size="small" 
+                                onClick={handleEditUserInfo} 
+                                color="primary" 
+                                startIcon={<EditIcon fontSize="small" />}
+                                sx={{ px: 1, py: 0.5, textTransform: "none", fontWeight: "bold", minWidth: "auto", lineHeight: 1 }}
+                            >
+                                Düzenle
+                            </Button>
+                            
+                            {selectedItemCount > 0 && (
+                                <Chip
+                                    icon={<ShoppingCartIcon />}
+                                    label={`${selectedItemCount} ürün`}
+                                    color="primary"
+                                    variant="filled"
+                                    onClick={() => setCartOpen(true)}
+                                    sx={{ fontWeight: "bold", cursor: "pointer", height: 28 }}
+                                    clickable
+                                />
+                            )}
+                        </Box>
+                    </Box>
                 </Box>
 
             </Container>
