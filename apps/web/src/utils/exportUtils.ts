@@ -223,8 +223,10 @@ export const sendOfferToWebhook = async (
     fileName?: string
 ) => {
     const webhookUrl = import.meta.env.VITE_MAKE_WEBHOOK_URL;
-    if (!webhookUrl) {
-        console.warn("Webhook URL tanımlı değil (VITE_MAKE_WEBHOOK_URL). Sadece konsola yazdırılıyor.");
+    const emailWebhookUrl = import.meta.env.VITE_EMAIL_WEBHOOK_URL;
+
+    if (!webhookUrl && !emailWebhookUrl) {
+        console.warn("Hiçbir Webhook URL tanımlı değil (VITE_MAKE_WEBHOOK_URL veya VITE_EMAIL_WEBHOOK_URL). Sadece konsola yazdırılıyor.");
         return;
     }
 
@@ -295,18 +297,37 @@ export const sendOfferToWebhook = async (
         formData.append("file", fileBlob, fileName);
     }
 
-    try {
-        const response = await fetch(webhookUrl, {
-            method: "POST",
-            body: formData
-        });
+    if (webhookUrl) {
+        try {
+            const response = await fetch(webhookUrl, {
+                method: "POST",
+                body: formData
+            });
 
-        if (!response.ok) {
-            console.error("Webhook gönderim hatası:", response.statusText);
-        } else {
-            console.log("Teklif ve dosya webhook'a başarıyla gönderildi!");
+            if (!response.ok) {
+                console.error("Ana Webhook gönderim hatası:", response.statusText);
+            } else {
+                console.log("Teklif ve dosya ana webhook'a başarıyla gönderildi!");
+            }
+        } catch (error) {
+            console.error("Ana webhook isteği sırasında hata oluştu:", error);
         }
-    } catch (error) {
-        console.error("Webhook isteği sırasında hata oluştu:", error);
+    }
+
+    if (emailWebhookUrl) {
+        try {
+            const response = await fetch(emailWebhookUrl, {
+                method: "POST",
+                body: formData
+            });
+
+            if (!response.ok) {
+                console.error("Email Webhook gönderim hatası:", response.statusText);
+            } else {
+                console.log("Teklif ve dosya email webhook'una başarıyla gönderildi!");
+            }
+        } catch (error) {
+            console.error("Email webhook isteği sırasında hata oluştu:", error);
+        }
     }
 };
