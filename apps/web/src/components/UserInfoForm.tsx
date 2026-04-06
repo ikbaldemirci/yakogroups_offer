@@ -195,7 +195,7 @@ export const UserInfoForm: React.FC = () => {
             alignItems: "center",
             p: 4,
             minHeight: { xs: "calc(100vh - 56px)", sm: "calc(100vh - 64px)" },
-            backgroundImage: "url(\"/images/background.png\")",
+            backgroundImage: `url("${import.meta.env.BASE_URL}images/background.png")`,
             backgroundSize: "cover",
             backgroundPosition: "center 20%",
             backgroundAttachment: "fixed"

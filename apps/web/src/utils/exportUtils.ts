@@ -138,7 +138,7 @@ export const generateOfferWorkbook = async (
     }
 
     try {
-        const response = await fetch("/images/kase.png");
+        const response = await fetch(`${import.meta.env.BASE_URL}images/kase.png`);
         if (response.ok) {
             const imageBuffer = await response.arrayBuffer();
             const imageId = workbook.addImage({
