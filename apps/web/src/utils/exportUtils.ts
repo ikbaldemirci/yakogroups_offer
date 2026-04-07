@@ -137,6 +137,8 @@ export const generateOfferWorkbook = async (
         }
     }
 
+    const targetRowForImages = wsItems.rowCount + 1;
+
     try {
         const response = await fetch(`${import.meta.env.BASE_URL}images/kase.png`);
         if (response.ok) {
@@ -146,12 +148,29 @@ export const generateOfferWorkbook = async (
                 extension: "png",
             });
             wsItems.addImage(imageId, {
-                tl: { col: 1, row: wsItems.rowCount + 1 },
-                ext: { width: 150, height: 100 }
+                tl: { col: 0, row: targetRowForImages } as any,
+                br: { col: 1, row: targetRowForImages + 6 } as any
             });
         }
     } catch (err) {
         console.error("Kaşe resmi eklenirken hata oluştu:", err);
+    }
+
+    try {
+        const response = await fetch(`${import.meta.env.BASE_URL}images/signature.png`);
+        if (response.ok) {
+            const imageBuffer = await response.arrayBuffer();
+            const imageId = workbook.addImage({
+                buffer: imageBuffer,
+                extension: "png",
+            });
+            wsItems.addImage(imageId, {
+                tl: { col: 1, row: targetRowForImages } as any,
+                br: { col: 2, row: targetRowForImages + 6 } as any
+            });
+        }
+    } catch (err) {
+        console.error("İmza resmi eklenirken hata oluştu:", err);
     }
 
     const buffer = await workbook.xlsx.writeBuffer();
