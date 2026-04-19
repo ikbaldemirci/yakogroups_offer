@@ -22,10 +22,20 @@ function AppContent() {
     } = useOffer();
 
     return (
-        <Box sx={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+        <Box sx={{ minHeight: "100dvh", display: "flex", flexDirection: "column" }}>
             <Navbar />
 
-            <Box component="main" sx={{ flexGrow: 1 }}>
+            <Box component="main" sx={{ 
+                flexGrow: 1,
+                display: "flex",
+                flexDirection: "column",
+                ...(view === "userInfo" && {
+                    backgroundImage: `url("${import.meta.env.BASE_URL}images/background.png")`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundAttachment: { xs: "scroll", md: "fixed" },
+                })
+            }}>
                 {view === "userInfo" && (
                     <UserInfoForm />
                 )}

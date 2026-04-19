@@ -191,6 +191,119 @@ export const parkdecorCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774954522/elegantdekor_sl8qon.png"
         }
       ]
+    },
+    {
+      "title": "Branding İhtiyaçları",
+      "items": [
+        {
+          "id": "pd16",
+          "category": "park-decor",
+          "subcategory": "branding-ihtiyaclari",
+          "type": "fixed",
+          "title": "Bandana Yapımı",
+          "summary": "Etkinlik konseptine özel bandana üretimi ve tasarımı.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776517294/Bandana-Yapimi_ghesnl.jpg"
+        },
+        {
+          "id": "pd17",
+          "category": "park-decor",
+          "subcategory": "branding-ihtiyaclari",
+          "type": "fixed",
+          "title": "Şapka Yapımı",
+          "summary": "Markanıza özel şapka üretimi ve baskı uygulaması.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776517479/sapka-yapimi_rrs7ci.png"
+        },
+        {
+          "id": "pd18",
+          "category": "park-decor",
+          "subcategory": "branding-ihtiyaclari",
+          "type": "fixed",
+          "title": "Sweat T-Shirt Yapımı",
+          "summary": "Etkinlikler için özel sweatshirt üretimi ve tasarımı.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776517483/Sweat-T-Shirt-Yapimi_d3aixn.jpg"
+        },
+        {
+          "id": "pd19",
+          "category": "park-decor",
+          "subcategory": "branding-ihtiyaclari",
+          "type": "fixed",
+          "title": "Tshirt Yapımı",
+          "summary": "Kurumsal etkinlikler için özel t-shirt üretimi.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776518845/Tshirt-Yapimi_nsjslt.jpg"
+        },
+        {
+          "id": "pd20",
+          "category": "park-decor",
+          "subcategory": "branding-ihtiyaclari",
+          "type": "fixed",
+          "title": "Yelken Bayrak",
+          "summary": "Dış mekan tanıtım ve yönlendirme için yelken bayrak üretimi.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776517500/yelken-bayrak_lckbx9.jpg"
+        },
+        {
+          "id": "pd21",
+          "category": "park-decor",
+          "subcategory": "branding-ihtiyaclari",
+          "type": "fixed",
+          "title": "Kırlangıç Bayraklar",
+          "summary": "Marka görünürlüğü için kırlangıç bayrak üretimi.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_500,h_400,c_fill/v1776517345/kirlangic-bayrak_cfocuf.png"
+        },
+        {
+          "id": "pd22",
+          "category": "park-decor",
+          "subcategory": "branding-ihtiyaclari",
+          "type": "fixed",
+          "title": "Masa Bayrağı",
+          "summary": "Masa üstü kullanım için kurumsal bayrak üretimi.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776517464/masa-bayrak_rzx5ou.png"
+        },
+        {
+          "id": "pd23",
+          "category": "park-decor",
+          "subcategory": "branding-ihtiyaclari",
+          "type": "fixed",
+          "title": "Üçgen Bayrak",
+          "summary": "Etkinlik alanı süsleme ve tanıtım amaçlı üçgen bayrak.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776517296/ipe-dizili-flama-bayrak-ucgen-bayrak-acilis-bayragi_j5fzvh.png"
+        },
+        {
+          "id": "pd24",
+          "category": "park-decor",
+          "subcategory": "branding-ihtiyaclari",
+          "type": "fixed",
+          "title": "Sky Reklam İçerikleri",
+          "summary": "Geniş alan görünürlüğü için sky reklam tasarım ve üretimi.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776517481/sky-reklam-branding_nvg87r.jpg"
+        }
+      ]
     }
-  ]
-};
+  ] 
+    };

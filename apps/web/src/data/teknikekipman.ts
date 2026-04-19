@@ -74,7 +74,7 @@ export const teknikekipmanCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606636/dekorbrand_vfqcxd.png"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill,g_auto/v1774606636/dekorbrand_vfqcxd.png"
         },
         {
           "id": "te33",
@@ -114,9 +114,117 @@ export const teknikekipmanCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606403/prod%C3%BCksiyon_lgjslo.jpg"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill,g_auto/v1774606403/prod%C3%BCksiyon_lgjslo.jpg"
+        },
+        {
+          "id": "te34",
+          "category": "teknik-ekipman",
+          "subcategory": "destek-hizmetleri",
+          "type": "fixed",
+          "title": "AMBULANS KİRALAMA",
+          "summary": "Etkinliklerde acil durumlar için ambulans kiralama hizmeti.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776520615/Ambulans-Kiralama_binwop.jpg"
+        },
+        {
+          "id": "te35",
+          "category": "teknik-ekipman",
+          "subcategory": "destek-hizmetleri",
+          "type": "fixed",
+          "title": "RETRO KOLTUKLAR",
+          "summary": "Etkinlik alanı için konsept retro koltuk kiralama hizmeti.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill/v1776520660/Retro-Koltuklar_okd2cw.jpg"
+        },
+        {
+          "id": "te36",
+          "category": "teknik-ekipman",
+          "subcategory": "destek-hizmetleri",
+          "type": "fixed",
+          "title": "BİSTRO MASA VE BAR SANDALYESİ",
+          "summary": "Organizasyonlar için bistro masa ve bar sandalyesi kiralama.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill/v1776520642/Ekran-goruntusu-2026-03-31-153516_v2ysqz.png"
+        },
+        {
+          "id": "te37",
+          "category": "teknik-ekipman",
+          "subcategory": "destek-hizmetleri",
+          "type": "fixed",
+          "title": "MC SUNUCU",
+          "summary": "Etkinlik akışını yöneten profesyonel sunucu hizmeti.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill/v1776520647/MC-Sunucu_wimtgq.jpg"
+        },
+        {
+          "id": "te38",
+          "category": "teknik-ekipman",
+          "subcategory": "destek-hizmetleri",
+          "type": "fixed",
+          "title": "ŞEMSİYE",
+          "summary": "Açık alan etkinlikleri için gölgelik şemsiye kiralama.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_400,c_fill/v1776520661/semsiye_giv5f0.png"
+        },
+        {
+          "id": "te39",
+          "category": "teknik-ekipman",
+          "subcategory": "destek-hizmetleri",
+          "type": "fixed",
+          "title": "YER MİNDERİ",
+          "summary": "Oturma alanları için yer minderleri kiralama hizmeti.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776520927/minder_zxkxpl.jpg"
+        },
+        {
+          "id": "te40",
+          "category": "teknik-ekipman",
+          "subcategory": "destek-hizmetleri",
+          "type": "fixed",
+          "title": "ARMUT MİNDER",
+          "summary": "Konforlu oturum alanı için armut minder kiralama.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776520617/armutminder_uj5iep.png"
+        },
+        {
+          "id": "te41",
+          "category": "teknik-ekipman",
+          "subcategory": "destek-hizmetleri",
+          "type": "fixed",
+          "title": "JENERATÖR",
+          "summary": "Elektrik ihtiyacı için jeneratör kiralama hizmeti.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill/v1776520644/kiralik-jenerator-1_yg1rvt.jpg"
+        },
+        {
+          "id": "te42",
+          "category": "teknik-ekipman",
+          "subcategory": "destek-hizmetleri",
+          "type": "fixed",
+          "title": "ÇADIR",
+          "summary": "Etkinlik alanı için farklı ölçülerde çadır kurulum hizmeti.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776520619/cad%C4%B1r_tackfq.png"
         }
       ]
     }
-  ]
-};
+      ]
+    };

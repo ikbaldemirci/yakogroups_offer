@@ -1,6 +1,7 @@
 import { menusCategory } from "../data/menus";
 import { animationsinflatablesCategory } from "../data/animations-inflatables";
 import { teamactivitiesCategory } from "../data/team-activities";
+import { kidsActivitiesCategory } from "../data/kids-activities";
 import { parkdecorCategory } from "../data/park-decor";
 import { teknikekipmanCategory } from "../data/teknikekipman";
 
@@ -57,6 +58,7 @@ export const categories: Category[] = [
   menusCategory,
   animationsinflatablesCategory,
   teamactivitiesCategory,
+  kidsActivitiesCategory,
   parkdecorCategory,
   teknikekipmanCategory,
 ];

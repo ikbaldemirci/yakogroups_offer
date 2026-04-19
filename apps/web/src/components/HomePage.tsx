@@ -30,16 +30,18 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import EditIcon from "@mui/icons-material/Edit";
 import PersonIcon from "@mui/icons-material/Person";
 import BusinessIcon from "@mui/icons-material/Business";
+import ToysIcon from "@mui/icons-material/Toys";
 
 import { categories } from "../types";
 import { useOffer } from "../context/OfferContext";
 import { getYouTubeEmbedUrl } from "../utils/youtubeUtils";
-import { categoryImages, campaigns, showcaseVideos } from "../data/homeData";
+import { categoryImages, campaigns, showcaseVideos, catalogImages } from "../data/homeData";
 
 const categoryIcons = [
     <RestaurantMenuIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
     <CelebrationIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
     <GroupsIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
+    <ToysIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
     <ParkIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
     <HeadphonesIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />
 ];
@@ -56,7 +58,6 @@ export const HomePage: React.FC = () => {
     const theme = useTheme();
     const [videoOpen, setVideoOpen] = useState(false);
     const [activeVideo, setActiveVideo] = useState("");
-    const catalogPdfPath = import.meta.env.VITE_CATALOG_PDF_PATH;
 
     if (!userInfo) return null;
 
@@ -64,6 +65,7 @@ export const HomePage: React.FC = () => {
         `linear-gradient(135deg, ${theme.palette.primary.light}, ${theme.palette.primary.main})`,
         `linear-gradient(135deg, ${theme.palette.secondary.light}, ${theme.palette.secondary.main})`,
         `linear-gradient(135deg, ${theme.palette.success.light}, ${theme.palette.success.main})`,
+        `linear-gradient(135deg, ${theme.palette.error.light}, ${theme.palette.error.main})`,
         `linear-gradient(135deg, ${theme.palette.info.light}, ${theme.palette.info.main})`,
         `linear-gradient(135deg, ${theme.palette.warning.light}, ${theme.palette.warning.main})`,
         ];
@@ -81,7 +83,7 @@ export const HomePage: React.FC = () => {
                     <Box
                         sx={{
                             display: "grid",
-                            gridTemplateColumns: { xs: "1fr 1fr", sm: "1fr 1fr 1fr", md: "repeat(5, 1fr)" },
+                            gridTemplateColumns: { xs: "1fr 1fr", sm: "1fr 1fr 1fr", md: "repeat(3, 1fr)" },
                             gap: 3
                         }}
                     >
@@ -310,26 +312,56 @@ export const HomePage: React.FC = () => {
                         ))}
                     </Box>
                 </Box>
-                {catalogPdfPath && (
+                {catalogImages && catalogImages.length > 0 && (
                     <Box sx={{ mb: 6 }}>
                         <Typography variant="h5" fontWeight="bold" sx={{ mb: 2, color: "text.primary" }}>
                             Kurumsal Hizmet Kataloğu
                         </Typography>
                         <Box sx={{ 
                             width: "100%", 
-                            height: { xs: "500px", md: "600px" }, 
                             borderRadius: 4, 
                             overflow: "hidden", 
                             border: `1px solid ${alpha(theme.palette.common.black, 0.06)}`,
-                            boxShadow: `0 15px 30px ${alpha(theme.palette.common.black, 0.1)}`
+                            boxShadow: `0 15px 30px ${alpha(theme.palette.common.black, 0.1)}`,
+                            "& .swiper-pagination-bullet-active": {
+                                background: theme.palette.primary.main
+                            },
+                            "& .swiper-button-next, & .swiper-button-prev": {
+                                color: "white",
+                                background: alpha(theme.palette.common.black, 0.3),
+                                borderRadius: "50%",
+                                width: { xs: 36, md: 44 },
+                                height: { xs: 36, md: 44 },
+                                transition: "all 0.2s ease",
+                                "&::after": { fontSize: { xs: "14px", md: "16px" }, fontWeight: "bold" },
+                                "&:hover": { background: alpha(theme.palette.common.black, 0.5) }
+                            }
                         }}>
-                            <iframe 
-                                src={catalogPdfPath} 
-                                width="100%" 
-                                height="100%" 
-                                style={{ border: "none" }} 
-                                title="Kurumsal Katalog" 
-                            />
+                             <Swiper
+                                modules={[Navigation, Pagination]}
+                                navigation
+                                pagination={{ clickable: true, dynamicBullets: true }}
+                                spaceBetween={0}
+                                slidesPerView={1}
+                            >
+                                {catalogImages.map((img, idx) => (
+                                    <SwiperSlide key={idx}>
+                                        <Box
+                                            component="img"
+                                            src={img.photoUrl}
+                                            alt={`Kurumsal Katalog Sayfa ${idx + 1}`}
+                                            sx={{
+                                                width: "100%",
+                                                height: "auto",
+                                                display: "block",
+                                                objectFit: "contain",
+                                                maxHeight: { xs: "70vh", md: "85vh" },
+                                                bgcolor: "#f5f5f5"
+                                            }}
+                                        />
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
                         </Box>
                     </Box>
                 )}
