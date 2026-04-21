@@ -50,8 +50,8 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
     
     const [t9Selection, setT9Selection] = useState<"Alkolsüz" | "Alkollü">("Alkolsüz");
     const [t23Selection, setT23Selection] = useState<"3 Adet" | "5 Adet" | "10 Adet">("3 Adet");
-    const [te31HasDj, setTe31HasDj] = useState(false);
-    const [te33Selections, setTe33Selections] = useState<string[]>(["Kamera"]);
+    const [pe1HasDj, setPe1HasDj] = useState(false);
+    const [pe3Selections, setPe3Selections] = useState<string[]>(["Kamera"]);
 
     const rawItems = Object.values(selectedItems);
     
@@ -80,8 +80,8 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                 }
             };
         }
-        if (item.product.id === "te31") {
-            const isDjSelected = te31HasDj;
+        if (item.product.id === "pe1") {
+            const isDjSelected = pe1HasDj;
             return {
                 ...item,
                 price: isDjSelected ? 40000 : 25000,
@@ -91,14 +91,14 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                 }
             };
         }
-        if (item.product.id === "te33") {
+        if (item.product.id === "pe3") {
             let newPrice = 0;
-            if (te33Selections.includes("Fotoğraf")) newPrice += 14000;
-            if (te33Selections.includes("Kamera")) newPrice += 14000;
-            if (te33Selections.includes("Drone")) newPrice += 10000;
-            if (te33Selections.includes("Montaj")) newPrice += 14000;
+            if (pe3Selections.includes("Fotoğraf")) newPrice += 14000;
+            if (pe3Selections.includes("Kamera")) newPrice += 14000;
+            if (pe3Selections.includes("Drone")) newPrice += 10000;
+            if (pe3Selections.includes("Montaj")) newPrice += 14000;
             
-            const selectionText = te33Selections.length > 0 ? ` (${te33Selections.join(', ')})` : "";
+            const selectionText = pe3Selections.length > 0 ? ` (${pe3Selections.join(', ')})` : "";
             
             return {
                 ...item,
@@ -345,42 +345,42 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                                             </Box>
                                                         )}
 
-                                                        {item.product.id === "te31" && (
+                                                        {item.product.id === "pe1" && (
                                                             <Box sx={{ mt: 1 }}>
                                                                 <FormControlLabel
-                                                                    control={<Checkbox checked={te31HasDj} onChange={(e) => setTe31HasDj(e.target.checked)} color="primary" />}
+                                                                    control={<Checkbox checked={pe1HasDj} onChange={(e) => setPe1HasDj(e.target.checked)} color="primary" />}
                                                                     label="DJ Hizmeti Ekle (+15.000 ₺)"
                                                                 />
                                                             </Box>
                                                         )}
 
-                                                        {item.product.id === "te33" && (
+                                                        {item.product.id === "pe3" && (
                                                             <Box sx={{ mt: 1, display: "flex", gap: 2, flexWrap: "wrap", flexDirection: { xs: "column", sm: "row" } }}>
                                                                 <FormControlLabel
-                                                                    control={<Checkbox checked={te33Selections.includes("Fotoğraf")} onChange={(e) => {
-                                                                        if (e.target.checked) setTe33Selections(prev => [...prev, "Fotoğraf"]);
-                                                                        else setTe33Selections(prev => prev.length > 1 ? prev.filter(s => s !== "Fotoğraf") : prev);
+                                                                    control={<Checkbox checked={pe3Selections.includes("Fotoğraf")} onChange={(e) => {
+                                                                        if (e.target.checked) setPe3Selections(prev => [...prev, "Fotoğraf"]);
+                                                                        else setPe3Selections(prev => prev.length > 1 ? prev.filter(s => s !== "Fotoğraf") : prev);
                                                                     }} />}
                                                                     label="Fotoğraf (14.000 ₺)"
                                                                 />
                                                                 <FormControlLabel
-                                                                    control={<Checkbox checked={te33Selections.includes("Kamera")} onChange={(e) => {
-                                                                        if (e.target.checked) setTe33Selections(prev => [...prev, "Kamera"]);
-                                                                        else setTe33Selections(prev => prev.length > 1 ? prev.filter(s => s !== "Kamera") : prev);
+                                                                    control={<Checkbox checked={pe3Selections.includes("Kamera")} onChange={(e) => {
+                                                                        if (e.target.checked) setPe3Selections(prev => [...prev, "Kamera"]);
+                                                                        else setPe3Selections(prev => prev.length > 1 ? prev.filter(s => s !== "Kamera") : prev);
                                                                     }} />}
                                                                     label="Kamera (14.000 ₺)"
                                                                 />
                                                                 <FormControlLabel
-                                                                    control={<Checkbox checked={te33Selections.includes("Drone")} onChange={(e) => {
-                                                                        if (e.target.checked) setTe33Selections(prev => [...prev, "Drone"]);
-                                                                        else setTe33Selections(prev => prev.length > 1 ? prev.filter(s => s !== "Drone") : prev);
+                                                                    control={<Checkbox checked={pe3Selections.includes("Drone")} onChange={(e) => {
+                                                                        if (e.target.checked) setPe3Selections(prev => [...prev, "Drone"]);
+                                                                        else setPe3Selections(prev => prev.length > 1 ? prev.filter(s => s !== "Drone") : prev);
                                                                     }} />}
                                                                     label="Drone (10.000 ₺)"
                                                                 />
                                                                 <FormControlLabel
-                                                                    control={<Checkbox checked={te33Selections.includes("Montaj")} onChange={(e) => {
-                                                                        if (e.target.checked) setTe33Selections(prev => [...prev, "Montaj"]);
-                                                                        else setTe33Selections(prev => prev.length > 1 ? prev.filter(s => s !== "Montaj") : prev);
+                                                                    control={<Checkbox checked={pe3Selections.includes("Montaj")} onChange={(e) => {
+                                                                        if (e.target.checked) setPe3Selections(prev => [...prev, "Montaj"]);
+                                                                        else setPe3Selections(prev => prev.length > 1 ? prev.filter(s => s !== "Montaj") : prev);
                                                                     }} />}
                                                                     label="Montaj (14.000 ₺)"
                                                                 />
