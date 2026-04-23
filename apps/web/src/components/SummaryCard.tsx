@@ -52,6 +52,11 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
     const [t23Selection, setT23Selection] = useState<"3 Adet" | "5 Adet" | "10 Adet">("3 Adet");
     const [pe1HasDj, setPe1HasDj] = useState(false);
     const [pe3Selections, setPe3Selections] = useState<string[]>(["Kamera"]);
+    const [dc12Package, setDc12Package] = useState<"Basic" | "Medium" | "Premium">("Basic");
+    const [dc13Package, setDc13Package] = useState<"Basic" | "Medium" | "Premium">("Basic");
+    const [dc14Package, setDc14Package] = useState<"Basic" | "Medium" | "Premium">("Basic");
+    const [dc15Package, setDc15Package] = useState<"Basic" | "Medium" | "Premium">("Basic");
+    const conceptIds = ["dc12", "dc13", "dc14", "dc15"];
 
     const rawItems = Object.values(selectedItems);
     
@@ -68,8 +73,8 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
             };
         }
         if (item.product.id === "t23") {
-            let newPrice = 80000;
-            if (t23Selection === "5 Adet") newPrice = 100000;
+            let newPrice = 45000;
+            if (t23Selection === "5 Adet") newPrice = 75000;
             if (t23Selection === "10 Adet") newPrice = 150000;
             return {
                 ...item,
@@ -109,6 +114,27 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                 }
             };
         }
+       
+
+            if (conceptIds.includes(item.product.id)) {
+                const selectedPackage =
+                    item.product.id === "dc12" ? dc12Package :
+                    item.product.id === "dc13" ? dc13Package :
+                    item.product.id === "dc14" ? dc14Package :
+                    dc15Package;
+
+                const pkgs = (item.product as any).packages as { label: string; price: number }[] | undefined;
+                const pkg = pkgs?.find(p => p.label === selectedPackage);
+
+                return {
+                    ...item,
+                    price: pkg?.price ?? item.price,
+                    product: {
+                        ...item.product,
+                        title: `${item.product.title} (${selectedPackage})`
+                    }
+                };
+            }
         return item;
     });
 
@@ -307,11 +333,11 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                                             <Box sx={{ mt: 1, display: "flex", gap: 2, flexWrap: "wrap", flexDirection: { xs: "column", sm: "row" } }}>
                                                                 <FormControlLabel
                                                                     control={<Checkbox checked={t23Selection === "3 Adet"} onChange={() => setT23Selection("3 Adet")} color="primary" />}
-                                                                    label="3 Adet (80.000 ₺)"
+                                                                    label="3 Adet (45.000 ₺)"
                                                                 />
                                                                 <FormControlLabel
                                                                     control={<Checkbox checked={t23Selection === "5 Adet"} onChange={() => setT23Selection("5 Adet")} color="primary" />}
-                                                                    label="5 Adet (100.000 ₺)"
+                                                                    label="5 Adet (75.000 ₺)"
                                                                 />
                                                                 <FormControlLabel
                                                                     control={<Checkbox checked={t23Selection === "10 Adet"} onChange={() => setT23Selection("10 Adet")} color="primary" />}
@@ -351,6 +377,42 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                                                     control={<Checkbox checked={pe1HasDj} onChange={(e) => setPe1HasDj(e.target.checked)} color="primary" />}
                                                                     label="DJ Hizmeti Ekle (+15.000 ₺)"
                                                                 />
+                                                            </Box>
+                                                        )}
+
+                                                        {conceptIds.includes(item.product.id) && (
+                                                            <Box sx={{ mt: 1, display: "flex", gap: 2, flexWrap: "wrap", flexDirection: { xs: "column", sm: "row" } }}>
+                                                                {(["Basic", "Medium", "Premium"] as const).map((label) => {
+                                                                    const pkgs = (item.product as any).packages as { label: string; price: number }[] | undefined;
+                                                                    const pkg = pkgs?.find(p => p.label === label);
+
+                                                                    const checked =
+                                                                        item.product.id === "dc12" ? dc12Package === label :
+                                                                        item.product.id === "dc13" ? dc13Package === label :
+                                                                        item.product.id === "dc14" ? dc14Package === label :
+                                                                        dc15Package === label;
+
+                                                                    const handleChange = () => {
+                                                                        if (item.product.id === "dc12") setDc12Package(label);
+                                                                        else if (item.product.id === "dc13") setDc13Package(label);
+                                                                        else if (item.product.id === "dc14") setDc14Package(label);
+                                                                        else setDc15Package(label);
+                                                                    };
+
+                                                                    return (
+                                                                        <FormControlLabel
+                                                                            key={label}
+                                                                            control={
+                                                                                <Checkbox
+                                                                                    checked={checked}
+                                                                                    onChange={handleChange}
+                                                                                    color="primary"
+                                                                                />
+                                                                            }
+                                                                            label={`${label}${pkg ? ` (${pkg.price.toLocaleString("tr-TR")} ₺)` : ""}`}
+                                                                        />
+                                                                    );
+                                                                })}
                                                             </Box>
                                                         )}
 

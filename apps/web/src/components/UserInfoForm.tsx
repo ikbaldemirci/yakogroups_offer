@@ -276,8 +276,9 @@ export const UserInfoForm: React.FC = () => {
                                 label="Kişi Sayısı"
                                 onChange={handleSelectChange}
                             >
-                                <MenuItem value="0-25">0 - 25 Kişi</MenuItem>
-                                <MenuItem value="25-50">25 - 50 Kişi</MenuItem>
+                                <MenuItem value="0-15">0 - 15 Kişi</MenuItem>
+                                <MenuItem value="15-30">15 - 30 Kişi</MenuItem>
+                                <MenuItem value="30-50">30 - 50 Kişi</MenuItem>
                                 <MenuItem value="50-75">50 - 75 Kişi</MenuItem>
                                 <MenuItem value="75-100">75 - 100 Kişi</MenuItem>
                                 <MenuItem value="100+">100+ Kişi</MenuItem>

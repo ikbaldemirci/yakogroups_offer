@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 import {
     Card,
-    CardMedia,
     CardContent,
-    Typography,
     CardActions,
+    Typography,
     Button,
     Box,
     Chip,
     Dialog,
     DialogTitle,
     DialogContent,
-    DialogActions
+    DialogActions,
+    IconButton
 } from "@mui/material";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import type { Product, PersonCountTier } from "../types";
 import { getYouTubeEmbedUrl } from "../utils/youtubeUtils";
 
@@ -42,6 +44,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
     const [openDialog, setOpenDialog] = useState(false);
     const [videoOpen, setVideoOpen] = useState(false);
+    const [photoOpen, setPhotoOpen] = useState(false);
+    const [carouselIdx, setCarouselIdx] = useState(0);
+
+    const photos = (product as any).photoUrls as string[] | undefined;
+    const activePhoto = photos ? photos[carouselIdx] : product.photoUrl;
 
     const handleOpenToggle = () => setOpenDialog(!openDialog);
     const handleVideoToggle = () => setVideoOpen(!videoOpen);
@@ -79,14 +86,67 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                         }}
                     />
                 )}
-                <CardMedia
-                    component="img"
-                    height="200"
-                    image={product.photoUrl}
-                    alt={product.title}
-                    loading="lazy"
-                    sx={{ objectFit: "cover", width: "100%" }}
-                />
+                <Box
+                    sx={{ position: "relative", height: 200, overflow: "hidden", cursor: product.category === "decor-concept" ? "zoom-in" : "default" }}
+                    onClick={() => { if (product.category === "decor-concept") setPhotoOpen(true); }}
+                >
+                    <Box
+                        component="img"
+                        src={activePhoto}
+                        alt={product.title}
+                        loading="lazy"
+                        sx={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                    />
+                    {photos && photos.length > 1 && (
+                        <>
+                           <IconButton
+                            size="small"
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                setCarouselIdx(i => (i - 1 + photos.length) % photos.length);
+                            }}
+                            sx={{
+                                position: "absolute",
+                                left: 16,
+                                top: "50%",
+                                transform: "translateY(-50%)",
+                                bgcolor: "rgba(0,0,0,0.45)",
+                                color: "#fff",
+                                "&:hover": {
+                                bgcolor: "rgba(0,0,0,0.7)",
+                                }
+                            }}
+                            >
+                            <ChevronLeftIcon/>
+                            </IconButton>
+                            <IconButton 
+                            size="small"
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                setCarouselIdx(i => (i + 1) % photos.length);
+                            }}
+                            sx={{
+                                position: "absolute",
+                                right: 16,
+                                top: "50%",
+                                transform: "translateY(-50%)",
+                                bgcolor: "rgba(0,0,0,0.45)",
+                                color: "#fff",
+                                "&:hover": {
+                                bgcolor: "rgba(0,0,0,0.7)",
+                                }
+                            }}
+                            >
+                            <ChevronRightIcon/>
+                            </IconButton>
+                            <Box sx={{ position: "absolute", bottom: 6, width: "100%", display: "flex", justifyContent: "center", gap: 0.5 }}>
+                                {photos.map((_, i) => (
+                                    <Box key={i} onClick={(e) => { e.stopPropagation(); setCarouselIdx(i); }} sx={{ width: 6, height: 6, borderRadius: "50%", bgcolor: i === carouselIdx ? "#fff" : "rgba(255,255,255,0.5)", cursor: "pointer" }} />
+                                ))}
+                            </Box>
+                        </>
+                    )}
+                </Box>
                 <CardContent sx={{ flexGrow: 1, display: "flex", flexDirection: "column" }}>
                     <Box display="flex" justifyContent="space-between" alignItems="flex-start" mb={2}>
                         <Typography 
@@ -284,6 +344,58 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                         )}
                     </Box>
                 </DialogContent>
+            </Dialog>
+            <Dialog open={photoOpen} onClose={() => setPhotoOpen(false)} maxWidth="md" fullWidth>
+                <DialogContent sx={{ p: 0, bgcolor: "#000", position: "relative" }}>
+                    <Box component="img" src={activePhoto} alt={product.title} sx={{ width: "100%", height: "auto", display: "block" }} />
+                    {photos && photos.length > 1 && (
+                        <>
+                            <IconButton
+                            size="small"
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                setCarouselIdx(i => (i - 1 + photos.length) % photos.length);
+                            }}
+                            sx={{
+                                position: "absolute",
+                                left: 16,
+                                top: "50%",
+                                transform: "translateY(-50%)",
+                                bgcolor: "rgba(0,0,0,0.45)",
+                                color: "#fff",
+                                "&:hover": {
+                                bgcolor: "rgba(0,0,0,0.7)",
+                                }
+                            }}
+                            >
+                            <ChevronLeftIcon/>
+                            </IconButton>
+                            <IconButton 
+                            size="small"
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                setCarouselIdx(i => (i + 1) % photos.length);
+                            }}
+                            sx={{
+                                position: "absolute",
+                                right: 16,
+                                top: "50%",
+                                transform: "translateY(-50%)",
+                                bgcolor: "rgba(0,0,0,0.45)",
+                                color: "#fff",
+                                "&:hover": {
+                                bgcolor: "rgba(0,0,0,0.7)",
+                                }
+                            }}
+                            >
+                            <ChevronRightIcon/>
+                            </IconButton>
+                        </>
+                    )}
+                </DialogContent>
+                <DialogActions sx={{ bgcolor: "#000", py: 0.5 }}>
+                    <Button onClick={() => setPhotoOpen(false)} sx={{ color: "#fff" }}>Kapat</Button>
+                </DialogActions>
             </Dialog>
         </>
     );
