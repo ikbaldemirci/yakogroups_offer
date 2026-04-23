@@ -42,11 +42,12 @@ export const piknikihtiyaclarCategory: Category = {
             }
           ],
           "priceTiers": {
-            "0-25": 25000,
-            "25-50": 25000,
-            "50-75": 25000,
-            "75-100": 25000,
-            "100+": 25000
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -94,11 +95,12 @@ export const piknikihtiyaclarCategory: Category = {
             }
           ],
           "priceTiers": {
-            "0-25": 14000,
-            "25-50": 14000,
-            "50-75": 14000,
-            "75-100": 14000,
-            "100+": 14000
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,

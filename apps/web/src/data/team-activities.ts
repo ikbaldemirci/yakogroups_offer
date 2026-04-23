@@ -16,11 +16,12 @@ export const teamactivitiesCategory: Category = {
           "title": "SURVIVOR PARKURLARI",
           "summary": "Survivor parkurları, Türkiye'nin en büyük ve en etkileyici parkurlarından biridir. Takım ruhuyla hareket etmeyi öğretirken bireylerin kişisel motivasyonlarını artırır ve ekip içi iletişimi güçlendirir.",
           "priceTiers": {
-            "0-25": 67500,
-            "25-50": 67500,
-            "50-75": 67500,
+            "0-15": 45000,
+            "15-30": 47500,
+            "30-50": 50000,
+            "50-75": 57500,
             "75-100": 67500,
-            "100+": 67500
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -42,11 +43,12 @@ export const teamactivitiesCategory: Category = {
           "title": "ARCHERY TAG",
           "summary": "Okçuluk workshop'u ile başlayan aktivitede katılımcılar klasik ok atışını öğrenir, hedeflere atış yaparak deneyim kazanır ve ardından takımlara ayrılarak Archery Tag mücadelesine katılır.",
           "priceTiers": {
-            "0-25": 67500,
-            "25-50": 67500,
-            "50-75": 67500,
-            "75-100": 67500,
-            "100+": 67500
+            "0-15": 45000,
+            "15-30": 45000,
+            "30-50": 65000,
+            "50-75": 75000,
+            "75-100": 75000,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -63,11 +65,12 @@ export const teamactivitiesCategory: Category = {
           "title": "LEONARDO DA VINCI KÖPRÜSÜ",
           "summary": "Katılımcıların Leonardo Da Vinci'nin tasarım mantığını kullanarak birlikte köprü kurduğu takım aktivitesidir.",
           "priceTiers": {
-            "0-25": 50000,
-            "25-50": 50000,
-            "50-75": 50000,
-            "75-100": 50000,
-            "100+": 50000
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -83,11 +86,12 @@ export const teamactivitiesCategory: Category = {
           "title": "LAZER TAG",
           "summary": "Paintball mücadelesinin güvenli versiyonu olan bu aktivitede takımlar lazer sensörlerle stratejik mücadele eder.",
           "priceTiers": {
-            "0-25": 90000,
-            "25-50": 90000,
-            "50-75": 90000,
+            "0-15": 70000,
+            "15-30": 75000,
+            "30-50": 80000,
+            "50-75": 85000,
             "75-100": 90000,
-            "100+": 90000
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -103,11 +107,12 @@ export const teamactivitiesCategory: Category = {
           "title": "HAZİNE AVI",
           "summary": "Takımların görevleri tamamlayarak dayanışma ve yardımlaşma içinde ilerlediği macera dolu kurumsal aktivitedir.",
           "priceTiers": {
-            "0-25": 85000,
-            "25-50": 85000,
-            "50-75": 85000,
-            "75-100": 85000,
-            "100+": 85000
+            "0-15": 45000,
+            "15-30": 45000,
+            "30-50": 50000,
+            "50-75": 75000,
+            "75-100": 100000,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -123,11 +128,12 @@ export const teamactivitiesCategory: Category = {
           "title": "NERF",
           "summary": "Aksiyon dolu, stres atmaya ve enerjiyi boşaltmaya yönelik takım rekabeti sunan popüler aktivitedir.",
           "priceTiers": {
-            "0-25": 105000,
-            "25-50": 105000,
-            "50-75": 105000,
-            "75-100": 105000,
-            "100+": 105000
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -145,11 +151,12 @@ export const teamactivitiesCategory: Category = {
           "summary": "Şifre çözme, görev tamamlama, harita okuma ve liderlik becerilerini test eden açık hava macera aktivitesidir.",
           "warning": "Kişi Sayısı: Min 24 kişi- max 48 kişi ile Oynanmaktadır",
           "priceTiers": {
-            "0-25": 2800,
-            "25-50": 2800,
-            "50-75": 2800,
-            "75-100": 2800,
-            "100+": 2800
+            "0-15": 60000,
+            "15-30": 90000,
+            "30-50": 90000,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -165,8 +172,9 @@ export const teamactivitiesCategory: Category = {
           "title": "PAINTBALL",
           "summary": "Paintball, adrenalin dolu yapısıyla takım ruhunu en iyi yansıtan aktivitelerden biridir. Katılımcılar strateji geliştirerek birlikte hareket eder, rekabet ederken aynı zamanda güçlü bir ekip deneyimi yaşar. Doğal ortamlarda kurgulanan oyun senaryoları ile hem eğlenceli hem de unutulmaz anlar sunar. Özel koruyucu ekipmanlar ile güvenli bir şekilde oynanır.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -185,9 +193,10 @@ export const teamactivitiesCategory: Category = {
           "title": "OKÇULUK",
           "summary": "Okçuluk, her yaştan katılımcının deneyimleyebileceği, odak ve koordinasyonu geliştiren keyifli bir aktivitedir. Geleneksel köklerinden ilham alan bu deneyim, modern ekipmanlar ve profesyonel eğitmenler eşliğinde güvenli bir ortamda sunulur. Katılımcılar hem eğlenir hem de dikkat, sabır ve hedef odaklı düşünme becerilerini geliştirir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
+            "0-15": 30000,
+            "15-30": 30000,
+            "30-50": 50000,
+            "50-75": 50000,
             "75-100": 0,
             "100+": 0
           },
@@ -205,8 +214,9 @@ export const teamactivitiesCategory: Category = {
           "title": "OFF ROAD",
           "summary": "Off Road, zorlu arazi koşullarında gerçekleştirilen, adrenalin ve macera dolu bir sürüş deneyimidir. Çamurlu, engebeli ve kayalık parkurlarda ilerlerken katılımcılar hem heyecanı doruklarda yaşar hem de takım halinde hareket etmenin önemini keşfeder. Doğa ile iç içe gerçekleşen bu aktivite, sınırları zorlamak ve unutulmaz anlar yaşamak isteyenler için eşsiz bir deneyim sunar.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -225,10 +235,11 @@ export const teamactivitiesCategory: Category = {
           "title": "TAKIM DİNAMİĞİ YARATMA AKTİVİTESİ",
           "summary": "Takım Dinamiği Yaratma Aktivitesi, ekiplerin iletişim, güven, koordinasyon ve senkronizasyon becerilerini geliştirmeye yönelik çok aşamalı bir parkur deneyimidir. Bu çalışma bir yarıştan çok, ekip uyumu ve birlikte hareket etme becerilerini test eden bir deneyimdir. Katılımcılar farklı istasyonlarda; denge, senkronizasyon, stratejik düşünme ve iletişim süreçlerini deneyimleyerek ekip olmanın gerçek anlamını keşfeder. Her aşama, bireysel başarıdan çok takım başarısına odaklanır ve güçlü bir farkındalık kazandırır.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
+            "0-15": 45000,
+            "15-30": 45000,
+            "30-50": 45000,
+            "50-75": 45000,
+            "75-100": 45000,
             "100+": 0
           },
           "currency": "TRY",
@@ -250,11 +261,12 @@ export const teamactivitiesCategory: Category = {
           "title": "KENDİ MARKANI YARAT REKLAM FİLMİ ÇEK AKTİVİTESİ",
           "summary": "Takımların kendi markalarını oluşturup ürünlerine özel reklam filmi tasarladığı yaratıcı ekip aktivitesidir.",
           "priceTiers": {
-            "0-25": 50000,
-            "25-50": 50000,
-            "50-75": 50000,
-            "75-100": 50000,
-            "100+": 50000
+            "0-15": 35000,
+            "15-30": 45000,
+            "30-50": 50000,
+            "50-75": 60000,
+            "75-100": 80000,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -271,11 +283,12 @@ export const teamactivitiesCategory: Category = {
           "title": "FOTO SAFARİ CHALLENGE",
           "summary": "Katılımcıların eğitim sonrası görev listesine göre en iyi kareleri yakalamaya çalıştığı yaratıcı takım aktivitesidir.",
           "priceTiers": {
-            "0-25": 80000,
-            "25-50": 80000,
-            "50-75": 80000,
-            "75-100": 80000,
-            "100+": 80000
+            "0-15": 60000,
+            "15-30": 75000,
+            "30-50": 100000,
+            "50-75": 100000,
+            "75-100": 150000,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -291,7 +304,14 @@ export const teamactivitiesCategory: Category = {
           "type": "tiered",
           "title": "SÜRDÜRÜLEBİLİR TABAK AKTİVİTESİ",
           "summary": "Katılımcıların geleceğin çevre dostu ve düşük karbon ayak izine sahip yemek modelini tasarladığı yaratıcı ve stratejik takım çalışması deneyimidir.",
-          "priceTiers": { "0-25": 0, "25-50": 0, "50-75": 0, "75-100": 0, "100+": 0 },
+          "priceTiers": {
+            "0-15": 30000,
+            "15-30": 30000,
+            "30-50": 50000,
+            "50-75": 50000,
+            "75-100": 75000,
+            "100+": 0
+          },
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776589060/s%C3%BCrd%C3%BCr%C3%BClebilirtabak_iejkje.png",
@@ -311,11 +331,12 @@ export const teamactivitiesCategory: Category = {
           "title": "EKSANTRİK SALVADOR DALİ AKTİVİTESİ",
           "summary": "Takımların birlikte büyük bir resmi tamamladığı, iş birliği ve koordinasyon gerektiren yaratıcı sanat aktivitesidir.",
           "priceTiers": {
-            "0-25": 60000,
-            "25-50": 60000,
-            "50-75": 60000,
-            "75-100": 60000,
-            "100+": 60000
+            "0-15": 45000,
+            "15-30": 50000,
+            "30-50": 55000,
+            "50-75": 57500,
+            "75-100": 75000,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -332,11 +353,12 @@ export const teamactivitiesCategory: Category = {
           "title": "EGG DROP CHALLENGE",
           "summary": "Katılımcıların sınırlı kaynaklarla yumurtayı yüksekten düşmeye dayanıklı hale getirmeye çalıştığı proje bazlı takım oyunudur.",
           "priceTiers": {
-            "0-25": 40000,
-            "25-50": 40000,
-            "50-75": 40000,
-            "75-100": 40000,
-            "100+": 40000
+            "0-15": 30000,
+            "15-30": 35000,
+            "30-50": 40000,
+            "50-75": 45000,
+            "75-100": 50000,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -352,11 +374,12 @@ export const teamactivitiesCategory: Category = {
           "title": "FORMULA TURKO CHALLENGE",
           "summary": "Takımların kendi araçlarını inşa edip tasarladığı yaratıcı ve rekabetçi takım aktivitesidir.",
           "priceTiers": {
-            "0-25": 95000,
-            "25-50": 95000,
-            "50-75": 95000,
-            "75-100": 95000,
-            "100+": 95000
+            "0-15": 75000,
+            "15-30": 75000,
+            "30-50": 150000,
+            "50-75": 175000,
+            "75-100": 250000,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -373,11 +396,12 @@ export const teamactivitiesCategory: Category = {
           "title": "İSKAMBİL KULESİ",
           "summary": "Katılımcıların sınırlı kaynakla en yüksek kuleyi yapmaya çalıştığı, planlama ve sabır gerektiren takım aktivitesidir.",
           "priceTiers": {
-            "0-25": 50000,
-            "25-50": 50000,
-            "50-75": 50000,
+            "0-15": 30000,
+            "15-30": 35000,
+            "30-50": 40000,
+            "50-75": 45000,
             "75-100": 50000,
-            "100+": 50000 
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -394,11 +418,12 @@ export const teamactivitiesCategory: Category = {
           "title": "LOGO CHALLENGE",
           "summary": "Katılımcıların şirket logosunu yeniden yorumlayıp yaratıcı fikirlerle ortaya çıkardığı takım aktivitesidir.",
           "priceTiers": {
-            "0-25": 60000,
-            "25-50": 60000,
-            "50-75": 60000,
-            "75-100": 60000,
-            "100+": 60000
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -414,11 +439,12 @@ export const teamactivitiesCategory: Category = {
           "title": "MARSHMALLOW CHALLENGE",
           "summary": "Takımların sınırlı malzemelerle en yüksek kuleyi yapmaya çalıştığı rekabetçi ve yaratıcı takım oyunudur.",
           "priceTiers": {
-            "0-25": 50000,
-            "25-50": 50000,
-            "50-75": 50000,
+            "0-15": 30000,
+            "15-30": 35000,
+            "30-50": 40000,
+            "50-75": 45000,
             "75-100": 50000,
-            "100+": 50000
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -434,12 +460,12 @@ export const teamactivitiesCategory: Category = {
           "title": "SUÇLU KİM AKTİVİTESİ",
           "summary": "Katılımcıların ipuçlarını birleştirerek olay çözmeye çalıştığı strateji ve analiz odaklı takım aktivitesidir.",
           "priceTiers": {
-            "0-25": 100000,
-            "25-50": 100000,
-            "50-75": 100000,
-            "75-100": 100000,
-            "100+": 100000
-
+            "0-15": 90000,
+            "15-30": 90000,
+            "30-50": 150000,
+            "50-75": 200000,
+            "75-100": 250000,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -454,7 +480,14 @@ export const teamactivitiesCategory: Category = {
           "type": "tiered",
           "title": "İSRAF AVI AKTİVİTESİ",
           "summary": "Bu bir oyun değil. Bu bir farkındalık yolculuğu. Her gün çöpe giden gıdalar, görmezden gelinen küçük kayıplar ve aslında büyük bir küresel soruna dikkat çeken sürdürülebilirlik temalı takım aktivitesidir.",
-          "priceTiers": { "0-25": 0, "25-50": 0, "50-75": 0, "75-100": 0, "100+": 0 },
+          "priceTiers": {
+            "0-15": 30000,
+            "15-30": 30000,
+            "30-50": 50000,
+            "50-75": 70000,
+            "75-100": 80000,
+            "100+": 0
+          },
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776589057/israfavi_czhhcj.jpg",
@@ -468,7 +501,14 @@ export const teamactivitiesCategory: Category = {
           "type": "tiered",
           "title": "GIDA ZİNCİRİ AKTİVİTESİ",
           "summary": "Katılımcıların gerçek dünya senaryoları üzerinden kriz yönetimi, stratejik karar alma ve iş birliği becerilerini deneyimlediği oyunlaştırılmış sürdürülebilirlik simülasyonudur.",
-          "priceTiers": { "0-25": 0, "25-50": 0, "50-75": 0, "75-100": 0, "100+": 0 },
+          "priceTiers": {
+            "0-15": 30000,
+            "15-30": 30000,
+            "30-50": 50000,
+            "50-75": 50000,
+            "75-100": 75000,
+            "100+": 0
+          },
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776589055/gidazinciri_qdipud.jpg",
@@ -488,11 +528,12 @@ export const teamactivitiesCategory: Category = {
           "title": "KOKTEYL WORKSHOP",
           "summary": "Katılımcıların yaratıcı kokteyller hazırladığı eğlenceli ve interaktif bir workshop aktivitesidir. Alkolsüz 50.000 TL, alkollü 75.000 TL'dir.",
           "priceTiers": {
-            "0-25": 50000,
-            "25-50": 50000,
-            "50-75": 50000,
-            "75-100": 50000,
-            "100+": 50000
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -509,11 +550,12 @@ export const teamactivitiesCategory: Category = {
           "title": "CHEF SENSİN",
           "summary": "Katılımcıların deneyimli şeflerle birlikte mutfak kültürlerini keşfettiği, ekip olarak üretim yaptığı atölye aktivitesidir.",
           "priceTiers": {
-            "0-25": 100000,
-            "25-50": 100000,
-            "50-75": 100000,
-            "75-100": 100000,
-            "100+": 100000
+            "0-15": 75000,
+            "15-30": 75000,
+            "30-50": 85000,
+            "50-75": 95000,
+            "75-100": 120000,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -530,11 +572,12 @@ export const teamactivitiesCategory: Category = {
           "summary": "Katılımcıların birlikte ritim üreterek orkestra deneyimi yaşadığı, ekip motivasyonunu artıran müzik atölyesidir.",
           "warning": "Malzemeler Hariç",
           "priceTiers": {
-            "0-25": 85000,
-            "25-50": 85000,
-            "50-75": 85000,
-            "75-100": 85000,
-            "100+": 85000
+            "0-15": 55000,
+            "15-30": 55000,
+            "30-50": 55000,
+            "50-75": 55000,
+            "75-100": 55000,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -550,11 +593,12 @@ export const teamactivitiesCategory: Category = {
           "title": "GRAFFITI WORKSHOP",
           "summary": "Katılımcıların birlikte üretim yaparak graffiti sanatını deneyimlediği yaratıcı atölye çalışmasıdır.",
           "priceTiers": {
-            "0-25": 200000,
-            "25-50": 200000,
-            "50-75": 200000,
+            "0-15": 130000,
+            "15-30": 150000,
+            "30-50": 170000,
+            "50-75": 180000,
             "75-100": 200000,
-            "100+": 200000
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -569,7 +613,14 @@ export const teamactivitiesCategory: Category = {
           "type": "tiered",
           "title": "SIFIR ATIK MUTFAĞI AKTİVİTESİ",
           "summary": "Katılımcıların atık olarak görülen gıda parçalarını kullanarak yaratıcı ve lezzetli tarifler ürettiği, sürdürülebilir beslenme farkındalığı oluşturan interaktif kurumsal yarışma deneyimidir.",
-          "priceTiers": { "0-25": 0, "25-50": 0, "50-75": 0, "75-100": 0, "100+": 0 },
+          "priceTiers": {
+            "0-15": 30000,
+            "15-30": 30000,
+            "30-50": 50000,
+            "50-75": 50000,
+            "75-100": 75000,
+            "100+": 0
+          },
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776589059/sifiratik_dlu850.png",
@@ -583,7 +634,14 @@ export const teamactivitiesCategory: Category = {
           "type": "tiered",
           "title": "FOOD SECURITY WORLD CAFÉ AKTİVİTESİ",
           "summary": "Katılımcıların gıda güvenliği konusunu farklı perspektiflerden tartıştığı, fikir ürettiği ve kolektif bilinç oluşturduğu yapılandırılmış masa rotasyon formatıdır.",
-          "priceTiers": { "0-25": 0, "25-50": 0, "50-75": 0, "75-100": 0, "100+": 0 },
+          "priceTiers": {
+            "0-15": 30000,
+            "15-30": 30000,
+            "30-50": 50000,
+            "50-75": 50000,
+            "75-100": 75000,
+            "100+": 0
+          },
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776589054/foodsecuritywordlcafe_umqmxl.jpg",
@@ -603,11 +661,12 @@ export const teamactivitiesCategory: Category = {
           "title": "Doğada Fitness | Yoga | Zumba ",
           "summary":"Doğada Yoga Aktivitesi, katılımcıların profesyonel eğitmen eşliğinde açık havada nefes, esneklik ve odak çalışmaları yaptığı, stres azaltıcı ve denge kazandırıcı bir kurumsal wellbeing deneyimidir. Fitness, yoga ve zumba gibi aktivitelerle ekip ruhunu güçlendiren, enerjik ve sağlıklı bir deneyim sunuyoruz.",
           "priceTiers": {
-            "0-25": 60000,
-            "25-50": 60000,
-            "50-75": 60000,
-            "75-100": 60000,
-            "100+": 60000
+            "0-15": 40000,
+            "15-30": 40000,
+            "30-50": 40000,
+            "50-75": 40000,
+            "75-100": 40000,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -628,11 +687,12 @@ export const teamactivitiesCategory: Category = {
           "title": "BEYAZ YAKA DANS CHALLENGE",
           "summary": "Katılımcıların müzik ve dans eşliğinde takım halinde eğlendiği, motivasyonu yükselten performans aktivitesidir.",
           "priceTiers": {
-            "0-25": 110000,
-            "25-50": 110000,
-            "50-75": 110000,
-            "75-100": 110000,
-            "100+": 110000
+            "0-15": 60000,
+            "15-30": 75000,
+            "30-50": 100000,
+            "50-75": 100000,
+            "75-100": 150000,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -648,11 +708,12 @@ export const teamactivitiesCategory: Category = {
           "title": "TAKIM KOREOGRAFİSİ",
           "summary": "Katılımcıların birlikte oluşturduğu koreografi ve havadan çekimlerle unutulmaz anılar yaratan takım aktivitesidir.",
           "priceTiers": {
-            "0-25": 25000,
-            "25-50": 25000,
-            "50-75": 25000,
-            "75-100": 25000,
-            "100+": 25000
+            "0-15": 50000,
+            "15-30": 50000,
+            "30-50": 50000,
+            "50-75": 50000,
+            "75-100": 50000,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -673,11 +734,12 @@ export const teamactivitiesCategory: Category = {
           "title": "BİSİKLET YAPIM ATÖLYESİ",
           "summary": "Kurumsal sosyal sorumluluk ve takım çalışmasını birleştiren, demonte bisikletlerin monte edilip ihtiyaç sahibi çocuklara hediye edildiği atölyedir.",
           "priceTiers": {
-            "0-25": 80000,
-            "25-50": 80000,
-            "50-75": 80000,
-            "75-100": 80000,
-            "100+": 80000
+            "0-15": 45000,
+            "15-30": 45000,
+            "30-50": 45000,
+            "50-75": 45000,
+            "75-100": 45000,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -693,11 +755,12 @@ export const teamactivitiesCategory: Category = {
           "title": "BARINAK YAPIM ATÖLYESİ",
           "summary": "Sokakta yaşayan hayvanlar için barınaklar tasarlanıp üretilen sosyal sorumluluk odaklı takım atölyesidir.",
           "priceTiers": {
-            "0-25": 65000,
-            "25-50": 65000,
-            "50-75": 65000,
-            "75-100": 65000,
-            "100+": 65000
+            "0-15": 60000,
+            "15-30": 90000,
+            "30-50": 120000,
+            "50-75": 150000,
+            "75-100": 200000,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -714,11 +777,12 @@ export const teamactivitiesCategory: Category = {
           "title": "KUŞ EVİ YAPIM ATÖLYESİ",
           "summary": "Katılımcıların kuşların yaşamına uygun korunaklı evler tasarlayıp ürettiği sosyal sorumluluk atölyesidir.",
           "priceTiers": {
-            "0-25": 60000,
-            "25-50": 60000,
-            "50-75": 60000,
-            "75-100": 60000,
-            "100+": 60000
+            "0-15": 50000,
+            "15-30": 75000,
+            "30-50": 100000,
+            "50-75": 120000,
+            "75-100": 175000,
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -734,10 +798,11 @@ export const teamactivitiesCategory: Category = {
           "title": "TEKERLEKLİ SANDALYE YAPIMI ATÖLYESİ",
           "summary": "Ekiplerin gerçek bir tekerlekli sandalye monte ederek sosyal sorumluluk kapsamında bağış yaptığı anlamlı takım etkinliğidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
+            "0-15": 45000,
+            "15-30": 60000,
+            "30-50": 70000,
+            "50-75": 90000,
+            "75-100": 120000,
             "100+": 0
           },
           "currency": "TRY",
@@ -758,11 +823,12 @@ export const teamactivitiesCategory: Category = {
           "title": "MASA ÜZERİ AKIL OYUNLARI",
           "summary": "Oyunlaştırarak öğrenme yaklaşımıyla takım uyumu ve motivasyonu artıran masa üstü aktivite setidir. 4 Oyun İstasyonu.",
           "priceTiers": {
-            "0-25": 25000,
-            "25-50": 25000,
+            "0-15": 25000,
+            "15-30": 25000,
+            "30-50": 25000,
             "50-75": 25000,
             "75-100": 25000,
-            "100+": 25000
+            "100+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -779,11 +845,12 @@ export const teamactivitiesCategory: Category = {
           "title": "TEAMBUILDING AKTİVİTELER",
           "summary": "Şirket veya kurumlara özel geliştirilen, takım oluşturma ve ekip iletişimini güçlendiren motivasyonel aktivitelerdir.",
           "priceTiers": {
-            "0-25": 35000,
-            "25-50": 35000,
-            "50-75": 35000,
-            "75-100": 35000,
-            "100+": 35000
+            "0-15": 35000,
+            "15-30": 35000,
+            "30-50": 45000,
+            "50-75": 45000,
+            "75-100": 45000,
+            "100+": 45000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -800,10 +867,11 @@ export const teamactivitiesCategory: Category = {
           "title": "KLASİK MOTİVASYON AKTİVİTELERİ",
           "summary": "Klasik motivasyon aktiviteleri, ekip içi iletişimi güçlendiren ve çalışanların performansını artırmayı hedefleyen eğlenceli ve dinamik etkinliklerden oluşur. Çuval yarışı, halat çekme, koca ayak, top oyunları, balon yarışları ve şişme oyunlar gibi aktivitelerle katılımcılar hem keyifli vakit geçirir hem de takım çalışması becerilerini geliştirir. Eğlence ve rekabeti bir araya getiren bu deneyim, ekip ruhunu güçlendirmek için ideal bir çözümdür.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
+            "0-15": 30000,
+            "15-30": 30000,
+            "30-50": 30000,
+            "50-75": 30000,
+            "75-100": 30000,
             "100+": 0
           },
           "currency": "TRY",
@@ -820,10 +888,11 @@ export const teamactivitiesCategory: Category = {
           "title": "ICE BREAKING",
           "summary": "Ice Breaking aktiviteleri, ekipler arasındaki ilk çekingenliği ortadan kaldıran, iletişimi hızlandıran ve ortam enerjisini yükselten kısa süreli ama etkisi yüksek kurumsal oyunlardır.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
+            "0-15": 30000,
+            "15-30": 30000,
+            "30-50": 37500,
+            "50-75": 56250,
+            "75-100": 50000,
             "100+": 0
           },
           "currency": "TRY",
@@ -840,10 +909,11 @@ export const teamactivitiesCategory: Category = {
           "title": "KARNAVAL ÇADIRI",
           "summary": "Tam İsabet Oyunu, Labut Devirme Oyunu, Halka Atışı Oyunu ve Bardağa Pinpon Atışı Oyunu içeren dörtlü aktivite çadırı. Organizasyonlarınızı karnaval havasına çevirir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
+            "0-15": 30000,
+            "15-30": 30000,
+            "30-50": 30000,
+            "50-75": 30000,
+            "75-100": 30000,
             "100+": 0
           },
           "currency": "TRY",
@@ -860,8 +930,9 @@ export const teamactivitiesCategory: Category = {
           "title": "DEV JENGA",
           "summary": "Üst üste dizilmiş dev jenga bloklarını kuleyi devirmeden çekme oyunudur.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -887,8 +958,9 @@ export const teamactivitiesCategory: Category = {
           "title": "ARTIRILMIŞ GERÇEKLİK AÇIK HAVA TANITIMI",
           "summary": "Artırılmış gerçeklik teknolojisi ile açık hava alanlarında gerçekleştirilen, markaları yenilikçi ve dikkat çekici şekilde tanıtan interaktif deneyim aktivitesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -907,8 +979,9 @@ export const teamactivitiesCategory: Category = {
           "title": "HOLOGRAM AI KABİNLER",
           "summary": "Katılımcılara yapay zeka destekli hologram teknolojisi ile etkileşimli karşılama, tanıtım ve deneyim sunan yenilikçi etkinlik çözümüdür.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -927,8 +1000,9 @@ export const teamactivitiesCategory: Category = {
           "title": "CGI ANİMASYON İNOVASYON",
           "summary": "CGI teknolojileri kullanılarak markalara özel dikkat çekici dijital kampanya, lansman ve inovasyon deneyimleri sunan yaratıcı aktivitedir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -947,8 +1021,9 @@ export const teamactivitiesCategory: Category = {
           "title": "AI PHOTO BOOTH",
           "summary": "Katılımcıların yapay zeka destekli özel efektler ve yaratıcı temalarla fotoğraf deneyimi yaşadığı interaktif etkinlik alanıdır.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -972,8 +1047,9 @@ export const teamactivitiesCategory: Category = {
           "title": "PIXAR CHARACTER",
           "summary": "Katılımcıların Pixar tarzı karakterlere dönüştüğü eğlenceli ve interaktif dijital deneyim aktivitesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -990,8 +1066,9 @@ export const teamactivitiesCategory: Category = {
           "title": "GREENBOX",
           "summary": "Katılımcıların farklı sanal arka planlarda eğlenceli içerikler oluşturduğu dijital stüdyo aktivitesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1008,8 +1085,9 @@ export const teamactivitiesCategory: Category = {
           "title": "FACE SWAP",
           "summary": "Katılımcıların yüz değiştirme teknolojisiyle eğlenceli görseller oluşturduğu interaktif dijital aktivitedir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1026,8 +1104,9 @@ export const teamactivitiesCategory: Category = {
           "title": "ROBOGOL",
           "summary": "Katılımcıların dijital kaleye şut çekerek skor elde ettiği rekabet dolu interaktif oyun aktivitesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1044,8 +1123,9 @@ export const teamactivitiesCategory: Category = {
           "title": "PENALTI USTASI",
           "summary": "Katılımcıların sanal kaleye penaltı atışları yaptığı heyecanlı dijital spor deneyimidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1062,8 +1142,9 @@ export const teamactivitiesCategory: Category = {
           "title": "SAYI KRALI",
           "summary": "Katılımcıların refleks ve dikkat becerilerini kullanarak sayı hedeflerini yakaladığı dijital yarışma aktivitesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1080,8 +1161,9 @@ export const teamactivitiesCategory: Category = {
           "title": "HEDİYE YAĞMURU",
           "summary": "Katılımcıların ekranda yağan hediyeleri yakalayarak puan topladığı eğlenceli dijital refleks aktivitesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1098,8 +1180,9 @@ export const teamactivitiesCategory: Category = {
           "title": "ALTIN ELDİVEN",
           "summary": "Katılımcıların kalecilik reflekslerini test ederek şutları kurtarmaya çalıştığı interaktif spor aktivitesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1116,8 +1199,9 @@ export const teamactivitiesCategory: Category = {
           "title": "UÇAN NESNE",
           "summary": "Katılımcıların havada beliren hedefleri yakalayarak puan topladığı hızlı tempolu dijital oyun deneyimidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1134,8 +1218,9 @@ export const teamactivitiesCategory: Category = {
           "title": "JETPACK",
           "summary": "Katılımcıların jetpack ile sanal engelleri aşarak ilerlediği heyecan dolu dijital macera aktivitesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1152,8 +1237,9 @@ export const teamactivitiesCategory: Category = {
           "title": "HIZ TUTKUSU",
           "summary": "Katılımcıların yüksek tempolu yarış atmosferinde rekabet ettiği dijital hız deneyimidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1170,8 +1256,9 @@ export const teamactivitiesCategory: Category = {
           "title": "ÇİZ BAKALIM",
           "summary": "Katılımcıların çizim yaparak takım arkadaşlarına anlatmaya çalıştığı eğlenceli dijital tahmin aktivitesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1188,8 +1275,9 @@ export const teamactivitiesCategory: Category = {
           "title": "SÜRAT TEKNESİ",
           "summary": "Katılımcıların sanal parkurda sürat teknesi kullanarak yarıştığı eğlenceli su sporları deneyimidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1206,8 +1294,9 @@ export const teamactivitiesCategory: Category = {
           "title": "MİNİ GOLF",
           "summary": "Katılımcıların eğlenceli parkurlarda golf becerilerini test ettiği interaktif dijital spor aktivitesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1224,8 +1313,9 @@ export const teamactivitiesCategory: Category = {
           "title": "SU KAYAĞI",
           "summary": "Katılımcıların sanal su parkurunda denge ve refleks becerilerini kullanarak yarıştığı eğlenceli dijital deneyimdir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1242,8 +1332,9 @@ export const teamactivitiesCategory: Category = {
           "title": "HEDİYE AĞACI",
           "summary": "Katılımcıların dijital ağaç üzerindeki sürpriz hediyeleri toplayarak puan kazandığı interaktif eğlence aktivitesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1260,8 +1351,9 @@ export const teamactivitiesCategory: Category = {
           "title": "BASKETBOL",
           "summary": "Katılımcıların potaya atış yaparak skor elde ettiği rekabet dolu dijital spor aktivitesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1278,8 +1370,9 @@ export const teamactivitiesCategory: Category = {
           "title": "ALIŞVERİŞ SEPETİ",
           "summary": "Katılımcıların hareket ederek ürünleri doğru sepete toplamaya çalıştığı eğlenceli dijital oyun deneyimidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1296,8 +1389,9 @@ export const teamactivitiesCategory: Category = {
           "title": "VR PONG",
           "summary": "Katılımcıların sanal masa tenisi deneyimi yaşayarak reflekslerini test ettiği interaktif VR aktivitesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1314,8 +1408,9 @@ export const teamactivitiesCategory: Category = {
           "title": "ORTA KAFA GOL",
           "summary": "Katılımcıların gelen ortaları kafa vuruşuyla gole çevirmeye çalıştığı eğlenceli futbol aktivitesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1332,8 +1427,9 @@ export const teamactivitiesCategory: Category = {
           "title": "SNOWBOARD",
           "summary": "Katılımcıların sanal karlı parkurda snowboard yaparak denge ve hız becerilerini test ettiği dijital aktivitedir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1350,8 +1446,9 @@ export const teamactivitiesCategory: Category = {
           "title": "PARAŞÜT",
           "summary": "Katılımcıların sanal gökyüzünde paraşüt deneyimi yaşayarak heyecan dolu anlar yaşadığı VR aktivitesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1368,8 +1465,9 @@ export const teamactivitiesCategory: Category = {
           "title": "OKÇULUK",
           "summary": "Katılımcıların sanal hedeflere ok atışı yaparak dikkat ve odak becerilerini geliştirdiği dijital spor aktivitesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1386,8 +1484,9 @@ export const teamactivitiesCategory: Category = {
           "title": "VERTIGO 2",
           "summary": "Katılımcıların yükseklik ve denge hissini deneyimlediği adrenalini yüksek sanal gerçeklik aktivitesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1404,8 +1503,9 @@ export const teamactivitiesCategory: Category = {
           "title": "KANO",
           "summary": "Katılımcıların sanal su rotasında kano kullanarak koordinasyon ve denge becerilerini test ettiği dijital aktivitedir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1427,8 +1527,9 @@ export const teamactivitiesCategory: Category = {
           "title": "PEBBLE ART ATÖLYESİ",
           "summary": "Pebble Art Atölyesi, katılımcıların doğal taşları kullanarak özgün ve yaratıcı sanat çalışmaları oluşturdukları keyifli bir tasarım etkinliğidir. Bu atölyede farklı boyut ve şekillerdeki doğal taşlar, çeşitli dekoratif materyaller ile bir araya getirilerek estetik ve anlamlı kompozisyonlar oluşturulur.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1447,8 +1548,9 @@ export const teamactivitiesCategory: Category = {
           "title": "SES MEDİTASYONU ATÖLYESİ",
           "summary": "Ses meditasyonu, titreşim ve frekansların insan bedeni ve zihni üzerindeki dengeleyici etkisini kullanarak derin bir gevşeme ve farkındalık hali oluşturan özel bir meditasyon pratiğidir. Tibet çanakları, gong, doğal titreşim enstrümanları ve ritmik sesler sayesinde sinir sistemi yavaşlar, zihinsel gerginlik azalır ve beden doğal bir rahatlama sürecine girer.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1467,8 +1569,9 @@ export const teamactivitiesCategory: Category = {
           "title": "KINTSUGI ATÖLYESİ",
           "summary": "Kintsugi, kökeni 15. yüzyıl Japonya’sına dayanan ve kırılan seramiklerin altın tozu ile onarılması prensibine dayanan özel bir sanat ve felsefe yaklaşımıdır. Bu teknik yalnızca bir onarım yöntemi değil, aynı zamanda kusurların ve kırılmaların gizlenmesi yerine görünür kılınarak güzelliğe dönüştürülmesini anlatan güçlü bir yaşam metaforudur.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1487,8 +1590,9 @@ export const teamactivitiesCategory: Category = {
           "title": "KONSEPT MUM ATÖLYESİ",
           "summary": "Konsept Mum Atölyesi, katılımcıların farklı renk, koku ve dekoratif malzemeler kullanarak kendi tasarımlarını oluşturdukları yaratıcı ve keyifli bir üretim deneyimi sunar. Bu atolyede belırlenen özel bır gün konseptıne baglı kalarak çalışılır. ",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1507,8 +1611,9 @@ export const teamactivitiesCategory: Category = {
           "title": "MOZAİK LAMBA ATÖLYESİ",
           "summary": "Mozaik lamba sanatı, renkli cam parçalarının bir araya getirilmesiyle oluşturulan ve ışıkla birlikte büyüleyici bir atmosfer yaratan dekoratif sanat tekniğidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1526,8 +1631,9 @@ export const teamactivitiesCategory: Category = {
           "title": "MANDALA ATÖLYESİ",
           "summary": "Mandala, felsefe, matematik ve sanatın birleştiği; zihni sakinleştiren ve odağı güçlendiren dairesel desen çalışmasıdır.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1545,8 +1651,9 @@ export const teamactivitiesCategory: Category = {
           "title": "DERİ EL YAPIMI AKSESUAR ATÖLYESİ",
           "summary": "Deri, dayanıklılığı ve estetik görünümüyle el yapımı aksesuar üretiminde kullanılan özel bir doğal malzemedir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1564,8 +1671,9 @@ export const teamactivitiesCategory: Category = {
           "title": "HASIR ÇANTA BOYAMA ATÖLYESİ",
           "summary": "Hasır çantaların kişisel tasarımlarla boyanarak özgün hale getirildiği yaratıcı sanat atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1583,8 +1691,9 @@ export const teamactivitiesCategory: Category = {
           "title": "AROMA TERAPİ CİLT BAKIM ATÖLYESİ",
           "summary": "Bitkilerden elde edilen uçucu yağların beden ve zihin üzerindeki etkileriyle doğal bakım ve iyilik hali sağlayan aroma terapi deneyimidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1602,8 +1711,9 @@ export const teamactivitiesCategory: Category = {
           "title": "MINDFULNESS MEDİTASYON ATÖLYESİ",
           "summary": "Bilinçli farkındalık pratiği ile dikkati ana yönlendirmeyi ve zihinsel dengeyi güçlendirmeyi amaçlayan meditasyon atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1621,8 +1731,9 @@ export const teamactivitiesCategory: Category = {
           "title": "NEFES TEKNİKLERİ ATÖLYESİ",
           "summary": "Doğru nefes alma teknikleri ile beden, zihin ve stres yönetimini geliştirmeye odaklanan farkındalık çalışmasıdır.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1640,8 +1751,9 @@ export const teamactivitiesCategory: Category = {
           "title": "TERMOS BOYAMA ATÖLYESİ",
           "summary": "Günlük kullanılan termosların renkler ve desenlerle kişiselleştirildiği yaratıcı tasarım atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1659,8 +1771,9 @@ export const teamactivitiesCategory: Category = {
           "title": "QUILLING ATÖLYESİ",
           "summary": "İnce kağıt şeritlerinin kıvrılıp şekillendirilerek estetik kompozisyonlara dönüştürüldüğü el sanatıdır.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1678,8 +1791,9 @@ export const teamactivitiesCategory: Category = {
           "title": "ATKI ÖRME ATÖLYESİ",
           "summary": "Yumuşak iplerle kendi atkısını örerek hem üretim hem de rahatlama deneyimi sunan yaratıcı atölyedir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1697,8 +1811,9 @@ export const teamactivitiesCategory: Category = {
           "title": "AYNA BOYAMA ATÖLYESİ",
           "summary": "Sıradan aynaların renkler ve desenlerle kişiselleştirilerek sanatsal objelere dönüştürüldüğü yaratıcı atölyedir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1716,8 +1831,9 @@ export const teamactivitiesCategory: Category = {
           "title": "VISION BOARD ATÖLYESİ",
           "summary": "Hedeflerin görsel olarak somutlaştırıldığı, motivasyonu ve odaklanmayı artıran yaratıcı planlama atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1735,8 +1851,9 @@ export const teamactivitiesCategory: Category = {
           "title": "HEYKEL ATÖLYESİ",
           "summary": "Katılımcıların kil ve benzeri materyallerle üç boyutlu sanat eserleri oluşturduğu yaratıcı üretim deneyimidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1754,10 +1871,11 @@ export const teamactivitiesCategory: Category = {
           "title": "EL İZİ HATIRA PANOSU AKTİVİTESİ",
           "summary": "Katılımcıların el izleriyle ortak bir sanat eseri oluşturarak takım ruhunu simgelediği interaktif etkinliktir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
+            "0-15": 40000,
+            "15-30": 40000,
+            "30-50": 40000,
+            "50-75": 40000,
+            "75-100": 40000,
             "100+": 0
           },
           "currency": "TRY",
@@ -1773,8 +1891,9 @@ export const teamactivitiesCategory: Category = {
           "title": "T-SHIRT TASARLAMA VE BOYAMA ATÖLYESİ",
           "summary": "Katılımcıların kendi tişört tasarımlarını oluşturduğu ve kişisel yaratıcılıklarını ifade ettiği sanat atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1792,8 +1911,9 @@ export const teamactivitiesCategory: Category = {
           "title": "KAHKAHA YOGASI",
           "summary": "Bilinçli kahkaha egzersizleri ve nefes çalışmalarıyla stres azaltan eğlenceli grup etkinliğidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1811,8 +1931,9 @@ export const teamactivitiesCategory: Category = {
           "title": "DOĞAL SABUN YAPIM ATÖLYESİ",
           "summary": "Doğal içeriklerle kişisel sabun üretimi yapılan hem öğretici hem yaratıcı bir üretim atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1830,8 +1951,9 @@ export const teamactivitiesCategory: Category = {
           "title": "SERAMİK YAPIM ATÖLYESİ",
           "summary": "Katılımcıların kil ile kendi seramik tasarımlarını oluşturduğu yaratıcı sanat deneyimidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1849,8 +1971,9 @@ export const teamactivitiesCategory: Category = {
           "title": "BEZ ÇANTA TASARIM ATÖLYESİ",
           "summary": "Bez çantaların boyama ve tasarım teknikleriyle kişiselleştirildiği yaratıcı sürdürülebilirlik atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1868,8 +1991,9 @@ export const teamactivitiesCategory: Category = {
           "title": "VİTRAY BOYAMA ATÖLYESİ",
           "summary": "Cam yüzeyler üzerinde renklerle çalışarak ışıkla etkileşen dekoratif tasarımlar oluşturulan sanat atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1887,8 +2011,9 @@ export const teamactivitiesCategory: Category = {
           "title": "TELEFON VE GÖZLÜK ASKISI TASARIM ATÖLYESİ",
           "summary": "Günlük kullanım aksesuarlarının boncuk ve iplerle tasarlanarak kişiselleştirildiği yaratıcı üretim atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1906,8 +2031,9 @@ export const teamactivitiesCategory: Category = {
           "title": "MAKROME TASARIM ATÖLYESİ",
           "summary": "Katılımcıların ipleri düğümleme teknikleriyle birleştirerek dekoratif ve yaratıcı tasarımlar oluşturduğu el sanatları deneyimidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1925,8 +2051,9 @@ export const teamactivitiesCategory: Category = {
           "title": "POLİMER KİL TASARIM ATÖLYESİ",
           "summary": "Katılımcıların renkli polimer kil ile özgün objeler tasarladığı yaratıcı üretim atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1944,8 +2071,9 @@ export const teamactivitiesCategory: Category = {
           "title": "HASIR ŞAPKA BOYAMA ATÖLYESİ",
           "summary": "Katılımcıların hasır şapkaları renk ve desenlerle kişiselleştirdiği yaratıcı sanat deneyimidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1963,8 +2091,9 @@ export const teamactivitiesCategory: Category = {
           "title": "PUNCH NAKIŞ ATÖLYESİ",
           "summary": "Kumaş üzerinde punch iğne tekniğiyle dokulu ve dekoratif tasarımlar oluşturulan el sanatları atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -1982,8 +2111,9 @@ export const teamactivitiesCategory: Category = {
           "title": "ÇİÇEK TAÇ TASARIM ATÖLYESİ",
           "summary": "Katılımcıların çiçekler ve dekoratif materyallerle özgün taç tasarımları oluşturduğu yaratıcı atölyedir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -2001,8 +2131,9 @@ export const teamactivitiesCategory: Category = {
           "title": "SERAMİK – ÇİNİ BOYAMA ATÖLYESİ",
           "summary": "Seramik yüzeyler üzerinde renk ve desenlerle özgün tasarımlar oluşturulan sanat atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -2020,8 +2151,9 @@ export const teamactivitiesCategory: Category = {
           "title": "PARFÜM TASARIM ATÖLYESİ",
           "summary": "Katılımcıların farklı esansları birleştirerek kendi kişisel parfümlerini oluşturduğu duyusal deneyim atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -2039,8 +2171,9 @@ export const teamactivitiesCategory: Category = {
           "title": "KARİKATÜR ÇİZİM ATÖLYESİ",
           "summary": "Katılımcıların mizahi bakış açısıyla yaratıcı karikatür çizimleri yaptığı eğlenceli sanat atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -2058,8 +2191,9 @@ export const teamactivitiesCategory: Category = {
           "title": "MUM ATÖLYESİ",
           "summary": "Katılımcıların kendi mumlarını tasarlayarak hem yaratıcı üretim hem de rahatlatıcı bir deneyim yaşadığı sanat atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -2077,8 +2211,9 @@ export const teamactivitiesCategory: Category = {
           "title": "KAR KÜRESİ ATÖLYESİ",
           "summary": "Katılımcıların kış temalı dekoratif kar küreleri tasarladığı yaratıcı ve eğlenceli sanat deneyimidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -2096,8 +2231,9 @@ export const teamactivitiesCategory: Category = {
           "title": "AHŞAP TABLO BOYAMA ATÖLYESİ",
           "summary": "Katılımcıların ahşap yüzeyler üzerinde renklerle özgün tablolar oluşturduğu yaratıcı sanat atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -2115,8 +2251,9 @@ export const teamactivitiesCategory: Category = {
           "title": "EBRU ATÖLYESİ",
           "summary": "Su yüzeyinde oluşturulan desenlerin kağıda aktarıldığı geleneksel ve meditatif sanat deneyimidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -2134,8 +2271,9 @@ export const teamactivitiesCategory: Category = {
           "title": "ÇİÇEK TABLO TASARIM ATÖLYESİ",
           "summary": "Katılımcıların doğal ve dekoratif materyallerle özgün tablo tasarımları oluşturduğu yaratıcı sanat atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -2153,8 +2291,9 @@ export const teamactivitiesCategory: Category = {
           "title": "STRING ART ATÖLYESİ",
           "summary": "İp ve çivilerle geometrik ve görsel kompozisyonlar oluşturulan odak ve sabır geliştiren sanat atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -2172,8 +2311,9 @@ export const teamactivitiesCategory: Category = {
           "title": "RESİM ATÖLYESİ",
           "summary": "Katılımcıların özgürce yaratıcılıklarını ifade edebildikleri ilham verici resim deneyimi sunan sanat atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0
@@ -2191,8 +2331,9 @@ export const teamactivitiesCategory: Category = {
           "title": "TERARYUM ATÖLYESİ",
           "summary": "Katılımcıların cam bahçeler oluşturarak doğayla bağ kurduğu yaratıcı ve dekoratif üretim atölyesidir.",
           "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
+            "0-15": 0,
+            "15-30": 0,
+            "30-50": 0,
             "50-75": 0,
             "75-100": 0,
             "100+": 0

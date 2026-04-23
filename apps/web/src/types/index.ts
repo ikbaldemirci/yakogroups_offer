@@ -2,10 +2,10 @@ import { menusCategory } from "../data/menus";
 import { animationsinflatablesCategory } from "../data/animations-inflatables";
 import { teamactivitiesCategory } from "../data/team-activities";
 import { kidsActivitiesCategory } from "../data/kids-activities";
-import { parkdecorCategory } from "../data/park-decor";
+import { decorconceptCategory } from "../data/decor-concept";
 import { piknikihtiyaclarCategory } from "../data/picnic-essentials";
 
-export type PersonCountTier = "0-25" | "25-50" | "50-75" | "75-100" | "100+";
+export type PersonCountTier = "0-15" | "15-30" | "30-50" | "50-75" | "75-100" | "100+";
 
 export interface ProductDetail {
   title: string;
@@ -23,6 +23,8 @@ export interface BaseProduct {
   currency?: string;
   vatIncluded?: boolean;
   photoUrl: string;
+  photoUrls?: string[];
+  packages?: { label: string; price: number }[];
   video_link?: string;
   detail_link?: string;
   isPopular?: boolean;
@@ -59,7 +61,7 @@ export const categories: Category[] = [
   animationsinflatablesCategory,
   teamactivitiesCategory,
   kidsActivitiesCategory,
-  parkdecorCategory,
+  decorconceptCategory,
   piknikihtiyaclarCategory,
 ];
 
