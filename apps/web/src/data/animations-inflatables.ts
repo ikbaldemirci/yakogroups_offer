@@ -8,28 +8,28 @@ export const animationsinflatablesCategory: Category = {
     {
       "title": "Aktivite Oyunları",
       "items": [
-        {
+         {
           "id": "a1",
           "category": "animations-inflatables",
           "subcategory": "aktivite-oyunlari",
           "type": "fixed",
-          "title": "KARNAVAL ÇADIRI",
-          "summary": "Tam İsabet Oyunu, Labut Devirme Oyunu, Halka Atışı Oyunu ve Bardağa Pinpon Atışı Oyunu içeren dörtlü aktivite çadırı. Organizasyonlarınızı karnaval havasına çevirir.",
+          "title": "CANLI LANGIRT",
+          "summary": "Canlı Langırt, klasik langırt oyununun gerçek boyutlara taşındığı eğlenceli ve rekabet dolu bir takım aktivitesidir. Açık alanda ya da hava koşullarına bağlı olarak kapalı alanlarda kurulabilen bu deneyim, katılımcılara hem eğlence hem de yüksek enerji sunar. Takımlar sahada birlikte hareket ederken, izleyenlerin tezahüratlarıyla heyecan daha da artar. Hız, koordinasyon ve ekip uyumunun ön planda olduğu bu aktivite, unutulmaz anlar yaşatır.",
           "details": [
-            {
-              "title": "İçerik",
-              "text": "Tam isabet oyunu, labut devirme oyunu, halka atışı oyunu, bardağa pinpon atışı oyunu"
-            },
-            {
-              "title": "Ebat",
-              "text": "3 x 3 x 3,5 m"
-            }
-          ],
-          "price": 34500,
+        {
+          "title": "İçerik",
+          "text": "Canlı Langırt, 5’er kişilik takımlar halinde oynanan, klasik langırt oyununun gerçek boyutlara taşındığı eğlenceli ve rekabet dolu bir takım aktivitesidir. Katılımcılar bellerinden kemerlerle çubuklara bağlanır ve sadece sağa sola hareket edebilir şekilde klasik langırt düzeninde futbol oynarlar. Açık alanda ya da hava koşullarına bağlı olarak kapalı alanlarda kurulabilen bu deneyim, yüksek enerji ve takım ruhunu bir araya getirir. Bel hizasındaki yan duvarlar sayesinde küçük yaştaki oyuncuların da katılımına uygundur. İzleyenlerin tezahüratlarıyla heyecan daha da artar; hız, koordinasyon ve ekip uyumu ön plandadır."
+        },
+        {
+          "title": "Ebat",
+          "text": "12 m x 6.3 m x 0.8 m"
+        }
+      ],
+          "price": 0,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607188/karnavalcad%C4%B1r_qidz5m.jpg",
-          "isPopular": true  
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776672318/canlilangirt_fiyur1.jpg",
+          "isPopular":true
         },
         {
           "id": "a2",
@@ -169,27 +169,8 @@ export const animationsinflatablesCategory: Category = {
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774609875/mickeymousezipzip_voivhs.jpg"
         },
-        
         {
           "id": "a9",
-          "category": "animations-inflatables",
-          "subcategory": "sisme-oyunlar",
-          "type": "fixed",
-          "title": "SÜNGER BOB",
-          "summary": "Sünger Bob temalı, iki bölümlü kaydıraklı oyun evi. Hem zıpzıp hem kaydıraklı çıkış sunar.",
-          "details": [
-            {
-              "title": "Ebat",
-              "text": "4 x 6 x 3,5 m"
-            }
-          ],
-          "price": 15000,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774610003/sungerbob_unjgp8.jpg"
-        },
-        {
-          "id": "a10",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -207,7 +188,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774610338/satolukaydirak_us0s1e.jpg"
         },
         {
-          "id": "a11",
+          "id": "a10",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -225,7 +206,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774610348/olimpikparkur_ju47ls.jpg"
         },
         {
-          "id": "a13",
+          "id": "a11",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -243,7 +224,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607330/sumo_rg4nuz.jpg"
         },
         {
-          "id": "a14",
+          "id": "a13",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -261,7 +242,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607391/trambolin_roeyrq.jpg"
         },
         {
-          "id": "a15",
+          "id": "a14",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -279,7 +260,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607383/t%C4%B1rmanmapiramidi_vlgqfs.jpg"
         },
         {
-          "id": "a16",
+          "id": "a15",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -297,7 +278,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607367/%C5%9Futbecerisi_nawqme.jpg"
         },
         {
-          "id": "a17",
+          "id": "a16",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -315,7 +296,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607352/%C5%9Fi%C5%9Fmedart_cybqvn.jpg"
         },
         {
-          "id": "a18",
+          "id": "a17",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -333,25 +314,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607120/futboldart_ujyjxz.jpg"
         },
         {
-          "id": "a19",
-          "category": "animations-inflatables",
-          "subcategory": "sisme-oyunlar",
-          "type": "fixed",
-          "title": "TIRTIL KAYDIRAK",
-          "summary": "Dev tırtıla tırmanıp zirveye ulaştıktan sonra aşağı kayarak eğlenilen tematik bir kaydıraktır.",
-          "details": [
-            {
-              "title": "Ebat",
-              "text": "5 m x 3 m x 2.8 m"
-            }
-          ],
-          "price": 15000,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774611444/tirtilkaydirak_t14u2l.jpg"
-        },
-        {
-          "id": "a20",
+          "id": "a18",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -369,7 +332,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607337/superjumper_nugduf.jpg"
         },
         {
-          "id": "a21",
+          "id": "a19",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -387,7 +350,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774613158/sarayzipzip_vvfpik.jpg"
         },
         {
-          "id": "a22",
+          "id": "a20",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -405,25 +368,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606981/atyar%C4%B1s%C4%B1veminibowling_flcj5t.jpg"
         },
         {
-          "id": "a23",
-          "category": "animations-inflatables",
-          "subcategory": "sisme-oyunlar",
-          "type": "fixed",
-          "title": "ASLAN ZIPZIP",
-          "summary": "Fantastik karakter görselleri ve renkli şişme sütunlarıyla dikkat çeken eğlenceli bir zıpzıp oyunudur.",
-          "details": [
-            {
-              "title": "Boyut",
-              "text": "3 x 4 x 2.1"
-            }
-          ],
-          "price": 16000,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606953/aslanz%C4%B1pz%C4%B1p_ssrrzt.jpg"
-        },
-        {
-          "id": "a24",
+          "id": "a21",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -441,7 +386,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606967/atl%C4%B1kar%C4%B1nca_wshxj3.jpg"
         },
         {
-          "id": "a25",
+          "id": "a22",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -459,7 +404,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607443/z%C4%B1playap%C4%B1%C5%9F_e1aart.jpg"
         },
         {
-          "id": "a26",
+          "id": "a23",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -477,7 +422,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606938/ahtapotcad%C4%B1r_2_ttdlbf.jpg"
         },
         {
-          "id": "a27",
+          "id": "a24",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -495,7 +440,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774614070/e%C4%9Flencelizipzip-artguru_lswvn5.png"
         },
         {
-          "id": "a28",
+          "id": "a25",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -513,7 +458,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606911/2libasketbol_aot7lo.jpg"
         },
         {
-          "id": "a29",
+          "id": "a26",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -531,7 +476,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774615352/sekercioyun_lmxx9z.jpg"
         },
         {
-          "id": "a30",
+          "id": "a27",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -549,7 +494,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774615521/tophavuzu_nlcwh4.jpg"
         },
         {
-          "id": "a31",
+          "id": "a28",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -567,7 +512,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607269/rodeo_kdpxnt.jpg"
         },
         {
-          "id": "a32",
+          "id": "a29",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -585,7 +530,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607024/bungeerun_oqydyv.jpg"
         },
         {
-          "id": "a33",
+          "id": "a30",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -603,43 +548,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607135/gladyat%C3%B6r_pf1lsz.jpg"
         },
         {
-          "id": "a34",
-          "category": "animations-inflatables",
-          "subcategory": "sisme-oyunlar",
-          "type": "fixed",
-          "title": "KAPI TAKI",
-          "summary": "Etkinlik alanlarının giriş kapısı olarak kullanılan, misafirleri etkileyici şekilde karşılama amaçlı dekoratif şişme ürünüdür.",
-          "details": [
-            {
-              "title": "Çap",
-              "text": "9 m"
-            }
-          ],
-          "price": 17500,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774615826/kapitaki_rzs7sf.jpg"
-        },
-        {
-          "id": "a35",
-          "category": "animations-inflatables",
-          "subcategory": "sisme-oyunlar",
-          "type": "fixed",
-          "title": "FLY TÜP",
-          "summary": "Etkinlik alanlarının girişinde dikkat çeken, karşılamayı görsel olarak güçlendiren şişme tanıtım ürünüdür.",
-          "details": [
-            {
-              "title": "Çap",
-              "text": "9 m"
-            }
-          ],
-          "price": 10000,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774616063/fly_sfjk50.jpg"
-        },
-        {
-          "id": "a36",
+          "id": "a31",
           "category": "animations-inflatables",
           "subcategory": "sisme-oyunlar",
           "type": "fixed",
@@ -659,10 +568,10 @@ export const animationsinflatablesCategory: Category = {
       ]
     },
     {
-      "title": "Mini Golf Ekipmanları",
+      "title": "Mini Golf Ve Dev Satranç",
       "items": [
         {
-          "id": "a37",
+          "id": "a32",
           "category": "animations-inflatables",
           "subcategory": "mini-golf-ekipmanlari",
           "type": "fixed",
@@ -680,7 +589,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607240/minigolf1_c8lxvi.jpg"
         },
         {
-          "id": "a38",
+          "id": "a33",
           "category": "animations-inflatables",
           "subcategory": "mini-golf-ekipmanlari",
           "type": "fixed",
@@ -698,7 +607,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606918/2libowling_savg5z.jpg"
         },
         {
-          "id": "a39",
+          "id": "a34",
           "category": "animations-inflatables",
           "subcategory": "mini-golf-ekipmanlari",
           "type": "fixed",
@@ -725,7 +634,7 @@ export const animationsinflatablesCategory: Category = {
       "title": "Panayır ve Eğlence Oyunları",
       "items": [
         {
-          "id": "a40",
+          "id": "a35",
           "category": "animations-inflatables",
           "subcategory": "panayir-eglence-oyunlari",
           "type": "fixed",
@@ -737,7 +646,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607218/masatenisi_galbrv.jpg"
         },
         {
-          "id": "a41",
+          "id": "a36",
           "category": "animations-inflatables",
           "subcategory": "panayir-eglence-oyunlari",
           "type": "fixed",
@@ -749,7 +658,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774617415/minyat%C3%BCr_q8nap7.avif"
         },
         {
-          "id": "a42",
+          "id": "a37",
           "category": "animations-inflatables",
           "subcategory": "panayir-eglence-oyunlari",
           "type": "fixed",
@@ -761,7 +670,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607435/voleybol_qakeon.jpg"
         },
         {
-          "id": "a43",
+          "id": "a38",
           "category": "animations-inflatables",
           "subcategory": "panayir-eglence-oyunlari",
           "type": "fixed",
@@ -773,7 +682,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607090/elektronikboks_s64ubx.jpg"
         },
         {
-          "id": "a44",
+          "id": "a39",
           "category": "animations-inflatables",
           "subcategory": "panayir-eglence-oyunlari",
           "type": "fixed",
@@ -785,7 +694,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607098/elektronikdart_d3yqt1.jpg"
         },
         {
-          "id": "a45",
+          "id": "a40",
           "category": "animations-inflatables",
           "subcategory": "panayir-eglence-oyunlari",
           "type": "fixed",
@@ -797,7 +706,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606960/atari_stahfu.jpg"
         },
         {
-          "id": "a46",
+          "id": "a41",
           "category": "animations-inflatables",
           "subcategory": "panayir-eglence-oyunlari",
           "type": "fixed",
@@ -809,7 +718,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607210/masalang%C4%B1rt_mbgk7j.jpg"
         },
         {
-          "id": "a47",
+          "id": "a42",
           "category": "animations-inflatables",
           "subcategory": "panayir-eglence-oyunlari",
           "type": "fixed",
@@ -821,7 +730,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606946/airhockey_qq4mil.jpg"
         },
         {
-          "id": "a48",
+          "id": "a43",
           "category": "animations-inflatables",
           "subcategory": "panayir-eglence-oyunlari",
           "type": "fixed",
@@ -833,7 +742,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607113/elektroniktilt2_m8vqrr.jpg"
         },
         {
-          "id": "a49",
+          "id": "a44",
           "category": "animations-inflatables",
           "subcategory": "panayir-eglence-oyunlari",
           "type": "fixed",
@@ -845,7 +754,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607173/karaoke_ouddce.jpg"
         },
         {
-          "id": "a50",
+          "id": "a45",
           "category": "animations-inflatables",
           "subcategory": "panayir-eglence-oyunlari",
           "type": "fixed",
@@ -857,7 +766,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774618032/Hediye-Kapma-Makinesi_l8qsa2.webp"
         },
         {
-          "id": "a51",
+          "id": "a46",
           "category": "animations-inflatables",
           "subcategory": "panayir-eglence-oyunlari",
           "type": "fixed",
@@ -869,7 +778,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774886916/pota_l6axzx.jpg"
         },
         {
-          "id": "a52",
+          "id": "a47",
           "category": "animations-inflatables",
           "subcategory": "panayir-eglence-oyunlari",
           "type": "fixed",
@@ -886,19 +795,7 @@ export const animationsinflatablesCategory: Category = {
       "title": "Karnaval Oyunları",
       "items": [
         {
-          "id": "a53",
-          "category": "animations-inflatables",
-          "subcategory": "karnaval-oyunlari",
-          "type": "fixed",
-          "title": "DEV JENGA",
-          "summary": "Üst üste dizilmiş dev jenga bloklarını kuleyi devirmeden çekme oyunudur.",
-          "price": 5000,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607158/jenga2_jixge2.jpg"
-        },
-        {
-          "id": "a54",
+          "id": "a48",
           "category": "animations-inflatables",
           "subcategory": "karnaval-oyunlari",
           "type": "fixed",
@@ -910,7 +807,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607143/halka_at%C4%B1%C5%9F%C4%B1_tmtu2u.webp"
         },
         {
-          "id": "a55",
+          "id": "a49",
           "category": "animations-inflatables",
           "subcategory": "karnaval-oyunlari",
           "type": "fixed",
@@ -922,7 +819,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607421/twister_rrp4fb.jpg"
         },
         {
-          "id": "a56",
+          "id": "a50",
           "category": "animations-inflatables",
           "subcategory": "karnaval-oyunlari",
           "type": "fixed",
@@ -934,7 +831,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774618861/tavla_sybki1.jpg"
         },
         {
-          "id": "a57",
+          "id": "a51",
           "category": "animations-inflatables",
           "subcategory": "karnaval-oyunlari",
           "type": "fixed",
@@ -946,7 +843,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774619004/okey_ghythz.jpg"
         },
         {
-          "id": "a58",
+          "id": "a52",
           "category": "animations-inflatables",
           "subcategory": "karnaval-oyunlari",
           "type": "fixed",
@@ -958,7 +855,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774619876/sapkadenge_zwdrkf.jpg"
         },
         {
-          "id": "a59",
+          "id": "a53",
           "category": "animations-inflatables",
           "subcategory": "karnaval-oyunlari",
           "type": "fixed",
@@ -970,7 +867,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774619831/yuruyenyol_o5eqzs.jpg"
         },
         {
-          "id": "a60",
+          "id": "a54",
           "category": "animations-inflatables",
           "subcategory": "karnaval-oyunlari",
           "type": "fixed",
@@ -982,7 +879,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774619640/sulupantolon_z8ltbd.jpg"
         },
         {
-          "id": "a61",
+          "id": "a55",
           "category": "animations-inflatables",
           "subcategory": "karnaval-oyunlari",
           "type": "fixed",
@@ -994,7 +891,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774620255/ok%C3%A7uluk_ujmd5g.jpg"
         },
         {
-          "id": "a62",
+          "id": "a56",
           "category": "animations-inflatables",
           "subcategory": "karnaval-oyunlari",
           "type": "fixed",
@@ -1006,7 +903,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill,g_auto/v1774886900/dart2_tfpzf1.jpg"
         },
         {
-          "id": "a63",
+          "id": "a57",
           "category": "animations-inflatables",
           "subcategory": "karnaval-oyunlari",
           "type": "fixed",
@@ -1023,7 +920,7 @@ export const animationsinflatablesCategory: Category = {
       "title": "Görsel Şovlar",
       "items": [
         {
-          "id": "a64",
+          "id": "a58",
           "category": "animations-inflatables",
           "subcategory": "gorsel-sovlar",
           "type": "fixed",
@@ -1035,7 +932,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774883793/balonkatlamaa_ofm9z3.jpg"
         },
         {
-          "id": "a65",
+          "id": "a59",
           "category": "animations-inflatables",
           "subcategory": "gorsel-sovlar",
           "type": "fixed",
@@ -1047,7 +944,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774693611/karikat%C3%BCrist_gsr8kl.png"
         },
         {
-          "id": "a66",
+          "id": "a60",
           "category": "animations-inflatables",
           "subcategory": "gorsel-sovlar",
           "type": "fixed",
@@ -1059,7 +956,7 @@ export const animationsinflatablesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774693945/tarot_squwbc.png"
         },
         {
-          "id": "a67",
+          "id": "a61",
           "category": "animations-inflatables",
           "subcategory": "gorsel-sovlar",
           "type": "fixed",
@@ -1072,82 +969,5 @@ export const animationsinflatablesCategory: Category = {
         },
       ]
     },
-    {
-      "title": "Atölye Çalışmaları",
-      "items": [
-        {
-          "id": "a68",
-          "category": "animations-inflatables",
-          "subcategory": "atolye-calismalari",
-          "type": "fixed",
-          "title": "TAKI TASARIMI",
-          "summary": "Eğitmen eşliğinde çocukların farklı çeşit ve renkte boncuklardan takı tasarladığı atölye çalışmasıdır. 0–40 çocuk arası için geçerlidir.",
-          "price": 31250,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774695165/tak%C4%B1tasar%C4%B1m_rqzule.png"
-        },
-        {
-          "id": "a69",
-          "category": "animations-inflatables",
-          "subcategory": "atolye-calismalari",
-          "type": "fixed",
-          "title": "TİŞÖRT BOYAMA",
-          "summary": "Eğitmen eşliğinde özel baskılı tişörtlerin kumaş boyaları ile renklendirildiği atölye çalışmasıdır.",
-          "price": 45000,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607406/tsh%C4%B1rtboyama_dzezmb.jpg"
-        },
-        {
-          "id": "a70",
-          "category": "animations-inflatables",
-          "subcategory": "atolye-calismalari",
-          "type": "fixed",
-          "title": "EBRU ATÖLYESİ",
-          "summary": "Profesyonel bir ebru ustasının kontrolünde, gerekli tüm özel boyalar ve ekipmanlarla yapılan ebru atölyesidir.",
-          "price": 35000,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607068/ebruat%C3%B6lyesi_khiwth.jpg"
-        },
-        {
-          "id": "a71",
-          "category": "animations-inflatables",
-          "subcategory": "atolye-calismalari",
-          "type": "fixed",
-          "title": "KUMLA BOYAMA",
-          "summary": "4–10 yaş grubu çocuklara eğitmen eşliğinde kumla boyama yaptırılan atölye çalışmasıdır. 100 adet boyama kartonu kullanılır.",
-          "price": 30000,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill,g_auto/v1774887923/kumlaboyama_fee5zl.png"
-        },
-        {
-          "id": "a72",
-          "category": "animations-inflatables",
-          "subcategory": "atolye-calismalari",
-          "type": "fixed",
-          "title": "ÇİÇEK DİKİM ATÖLYESİ",
-          "summary": "Çocuk misafirlerle saksılara çeşitli çiçeklerin dikildiği ve sonunda çiçeklerin hediye edildiği atölye çalışmasıdır.",
-          "price": 40000,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill,g_auto/v1774886891/cicekdikim_wxlmiq.png"
-        },
-        {
-          "id": "a73",
-          "category": "animations-inflatables",
-          "subcategory": "atolye-calismalari",
-          "type": "fixed",
-          "title": "SAAT BOYAMA ATÖLYESİ",
-          "summary": "Çocuk misafirlerle ahşap saatlerin boyandığı ve çalışmaların hediye edildiği atölye çalışmasıdır.",
-          "price": 40000,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill,g_auto/v1774887934/saatboyama_zoxwql.png"
-        }
-      ]
-    }
   ]
 };

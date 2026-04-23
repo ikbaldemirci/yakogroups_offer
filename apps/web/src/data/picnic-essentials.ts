@@ -1,16 +1,16 @@
 import type { Category } from "../types";
 
-export const teknikekipmanCategory: Category = {
-  "id": "teknik-ekipman",
-  "title": "Teknik Ekipman",
+export const piknikihtiyaclarCategory: Category = {
+  "id": "piknik-ihtiyaclar",
+  "title": "Piknik İçin Diğer İhtiyaçlar",
   "description": "Organizasyonlar için gerekli profesyonel teknik donanım ve hizmetler",
   "subcategories": [
     {
       "title": "Destek Hizmetleri",
       "items": [
         {
-          "id": "te31",
-          "category": "teknik-ekipman",
+          "id": "pe1",
+          "category": "piknik-ihtiyaclar",
           "subcategory": "destek-hizmetleri",
           "type": "tiered",
           "title": "SES SİSTEMİ VE TEKNİK",
@@ -53,32 +53,20 @@ export const teknikekipmanCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill,g_auto/v1774888322/djsahne_sya67a.jpg"
         },
         {
-          "id": "te32",
-          "category": "teknik-ekipman",
+          "id": "pe2",
+          "category": "piknik-ihtiyaclar",
           "subcategory": "destek-hizmetleri",
-          "type": "tiered",
-          "title": "DEKOR - BRANDING",
-          "summary": "Takım veya marka logosunun yer aldığı country backdrop önünde fotoğraf çekimi ve paylaşım için ideal branding çözümüdür.",
-          "details": [
-            {
-              "title": "Aktivite Açıklaması",
-              "text": "Ekipçe marka logonuzun ve mottomuzun yer aldığı country backdrop önünde fotoğraf çektirmek ve paylaşmak için ideal bir seçenektir."
-            }
-          ],
-          "priceTiers": {
-            "0-25": 10000,
-            "25-50": 10000,
-            "50-75": 10000,
-            "75-100": 10000,
-            "100+": 10000
-          },
+          "type": "fixed",
+          "title": "ÇADIR",
+          "summary": "Etkinlik alanı için farklı ölçülerde çadır kurulum hizmeti.",
+          "price": 0,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill,g_auto/v1774606636/dekorbrand_vfqcxd.png"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776520619/cad%C4%B1r_tackfq.png"
         },
         {
-          "id": "te33",
-          "category": "teknik-ekipman",
+          "id": "pe3",
+          "category": "piknik-ihtiyaclar",
           "subcategory": "destek-hizmetleri",
           "type": "tiered",
           "title": "PRODÜKSİYON",
@@ -117,8 +105,8 @@ export const teknikekipmanCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill,g_auto/v1774606403/prod%C3%BCksiyon_lgjslo.jpg"
         },
         {
-          "id": "te34",
-          "category": "teknik-ekipman",
+          "id": "pe4",
+          "category": "piknik-ihtiyaclar",
           "subcategory": "destek-hizmetleri",
           "type": "fixed",
           "title": "AMBULANS KİRALAMA",
@@ -129,8 +117,8 @@ export const teknikekipmanCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776520615/Ambulans-Kiralama_binwop.jpg"
         },
         {
-          "id": "te35",
-          "category": "teknik-ekipman",
+          "id": "pe5",
+          "category": "piknik-ihtiyaclar",
           "subcategory": "destek-hizmetleri",
           "type": "fixed",
           "title": "RETRO KOLTUKLAR",
@@ -141,8 +129,8 @@ export const teknikekipmanCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill/v1776520660/Retro-Koltuklar_okd2cw.jpg"
         },
         {
-          "id": "te36",
-          "category": "teknik-ekipman",
+          "id": "pe6",
+          "category": "piknik-ihtiyaclar",
           "subcategory": "destek-hizmetleri",
           "type": "fixed",
           "title": "BİSTRO MASA VE BAR SANDALYESİ",
@@ -153,8 +141,8 @@ export const teknikekipmanCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill/v1776520642/Ekran-goruntusu-2026-03-31-153516_v2ysqz.png"
         },
         {
-          "id": "te37",
-          "category": "teknik-ekipman",
+          "id": "pe7",
+          "category": "piknik-ihtiyaclar",
           "subcategory": "destek-hizmetleri",
           "type": "fixed",
           "title": "MC SUNUCU",
@@ -162,23 +150,23 @@ export const teknikekipmanCategory: Category = {
           "price": 0,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill/v1776520647/MC-Sunucu_wimtgq.jpg"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776706618/moderat%C3%B6r_omr9n6.jpg"
         },
         {
-          "id": "te38",
-          "category": "teknik-ekipman",
+          "id": "pe8",
+          "category": "piknik-ihtiyaclar",
           "subcategory": "destek-hizmetleri",
           "type": "fixed",
-          "title": "ŞEMSİYE",
+          "title": "TENTE",
           "summary": "Açık alan etkinlikleri için gölgelik şemsiye kiralama.",
           "price": 0,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_400,c_fill/v1776520661/semsiye_giv5f0.png"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776706619/tente_fhdlkf.jpg"
         },
         {
-          "id": "te39",
-          "category": "teknik-ekipman",
+          "id": "pe9",
+          "category": "piknik-ihtiyaclar",
           "subcategory": "destek-hizmetleri",
           "type": "fixed",
           "title": "YER MİNDERİ",
@@ -189,8 +177,8 @@ export const teknikekipmanCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776520927/minder_zxkxpl.jpg"
         },
         {
-          "id": "te40",
-          "category": "teknik-ekipman",
+          "id": "pe10",
+          "category": "piknik-ihtiyaclar",
           "subcategory": "destek-hizmetleri",
           "type": "fixed",
           "title": "ARMUT MİNDER",
@@ -201,8 +189,8 @@ export const teknikekipmanCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776520617/armutminder_uj5iep.png"
         },
         {
-          "id": "te41",
-          "category": "teknik-ekipman",
+          "id": "pe11",
+          "category": "piknik-ihtiyaclar",
           "subcategory": "destek-hizmetleri",
           "type": "fixed",
           "title": "JENERATÖR",
@@ -212,19 +200,121 @@ export const teknikekipmanCategory: Category = {
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill/v1776520644/kiralik-jenerator-1_yg1rvt.jpg"
         },
+      ]
+      },
+      {
+      "title": "Branding İhtiyaçları",
+      "items": [
         {
-          "id": "te42",
-          "category": "teknik-ekipman",
-          "subcategory": "destek-hizmetleri",
+          "id": "pe12",
+          "category": "piknik-ihtiyaclar",
+          "subcategory": "branding-ihtiyaclari",
           "type": "fixed",
-          "title": "ÇADIR",
-          "summary": "Etkinlik alanı için farklı ölçülerde çadır kurulum hizmeti.",
+          "title": "Bandana Yapımı",
+          "summary": "Etkinlik konseptine özel bandana üretimi ve tasarımı.",
           "price": 0,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776520619/cad%C4%B1r_tackfq.png"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776706618/bandana_fsaslz.jpg"
+        },
+        {
+          "id": "pe13",
+          "category": "piknik-ihtiyaclar",
+          "subcategory": "branding-ihtiyaclari",
+          "type": "fixed",
+          "title": "Şapka Yapımı",
+          "summary": "Markanıza özel şapka üretimi ve baskı uygulaması.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776706618/sapka_u9tz3k.jpg"
+        },
+        {
+          "id": "pe14",
+          "category": "piknik-ihtiyaclar",
+          "subcategory": "branding-ihtiyaclari",
+          "type": "fixed",
+          "title": "Sweat T-Shirt Yapımı",
+          "summary": "Etkinlikler için özel sweatshirt üretimi ve tasarımı.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776706619/sweatshirt_zeeddv.jpg"
+        },
+        {
+          "id": "pe15",
+          "category": "piknik-ihtiyaclar",
+          "subcategory": "branding-ihtiyaclari",
+          "type": "fixed",
+          "title": "Tshirt Yapımı",
+          "summary": "Kurumsal etkinlikler için özel t-shirt üretimi.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776706620/tshirt_xqeluy.jpg"
+        },
+        {
+          "id": "pe16",
+          "category": "piknik-ihtiyaclar",
+          "subcategory": "branding-ihtiyaclari",
+          "type": "fixed",
+          "title": "Yelken Bayrak - Yeniden Yaptırma",
+          "summary": "Markaya özel tasarım, Dış mekan tanıtım ve yönlendirme için yelken bayrak üretimi.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776517500/yelken-bayrak_lckbx9.jpg"
+        },
+        {
+          "id": "pe17",
+          "category": "piknik-ihtiyaclar",
+          "subcategory": "branding-ihtiyaclari",
+          "type": "fixed",
+          "title": "Yelken Bayrak - Hazır Enerji Temalı",
+          "summary": "Hazır enerji temalı yazılarla marka adı olmadan 20 adet.",
+          "price": 10000,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776707460/yelkenbayrakenerji_efrtyv.jpg"
+        },
+        {
+          "id": "pe18",
+          "category": "piknik-ihtiyaclar",
+          "subcategory": "branding-ihtiyaclari",
+          "type": "fixed",
+          "title": "Kırlangıç Bayraklar",
+          "summary": "Marka görünürlüğü için kırlangıç bayrak üretimi.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_500,h_400,c_fill/v1776517345/kirlangic-bayrak_cfocuf.png"
+        },
+        {
+          "id": "pe19",
+          "category": "piknik-ihtiyaclar",
+          "subcategory": "branding-ihtiyaclari",
+          "type": "fixed",
+          "title": "Masa Bayrağı",
+          "summary": "Masa üstü kullanım için kurumsal bayrak üretimi.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776517464/masa-bayrak_rzx5ou.png"
+        },
+        {
+          "id": "pe20",
+          "category": "piknik-ihtiyaclar",
+          "subcategory": "branding-ihtiyaclari",
+          "type": "fixed",
+          "title": "Üçgen Bayrak",
+          "summary": "Etkinlik alanı süsleme ve tanıtım amaçlı üçgen bayrak.",
+          "price": 0,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776517296/ipe-dizili-flama-bayrak-ucgen-bayrak-acilis-bayragi_j5fzvh.png"
         }
       ]
     }
+
       ]
     };

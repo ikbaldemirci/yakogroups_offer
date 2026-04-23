@@ -3,7 +3,7 @@ import { animationsinflatablesCategory } from "../data/animations-inflatables";
 import { teamactivitiesCategory } from "../data/team-activities";
 import { kidsActivitiesCategory } from "../data/kids-activities";
 import { parkdecorCategory } from "../data/park-decor";
-import { teknikekipmanCategory } from "../data/teknikekipman";
+import { piknikihtiyaclarCategory } from "../data/picnic-essentials";
 
 export type PersonCountTier = "0-25" | "25-50" | "50-75" | "75-100" | "100+";
 
@@ -60,7 +60,7 @@ export const categories: Category[] = [
   teamactivitiesCategory,
   kidsActivitiesCategory,
   parkdecorCategory,
-  teknikekipmanCategory,
+  piknikihtiyaclarCategory,
 ];
 
 export interface SelectedItem {

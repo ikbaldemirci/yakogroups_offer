@@ -96,6 +96,26 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/lazer-tag/"  
         },
         {
+          "id": "t18",
+          "category": "team-activities",
+          "subcategory": "aktivite",
+          "type": "tiered",
+          "title": "HAZİNE AVI",
+          "summary": "Takımların görevleri tamamlayarak dayanışma ve yardımlaşma içinde ilerlediği macera dolu kurumsal aktivitedir.",
+          "priceTiers": {
+            "0-25": 85000,
+            "25-50": 85000,
+            "50-75": 85000,
+            "75-100": 85000,
+            "100+": 85000
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605682/hazine-avi-aktivitesi-scaled_w1likb.jpg",
+          "video_link": "https://www.youtube.com/watch?v=PXJVZDrBJXc",
+          "detail_link": "https://kurumsalaktivite.com/hazine-avi/"
+        },
+        {
           "id": "t26",
           "category": "team-activities",
           "subcategory": "aktivite",
@@ -115,6 +135,27 @@ export const teamactivitiesCategory: Category = {
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
           "detail_link": "https://kurumsalaktivite.com/nerf/"
           
+        },
+        {
+          "id": "t28",
+          "category": "team-activities",
+          "subcategory": "aktivite",
+          "type": "tiered",
+          "title": "ORMANDA ESARETTEN KURTULMA",
+          "summary": "Şifre çözme, görev tamamlama, harita okuma ve liderlik becerilerini test eden açık hava macera aktivitesidir.",
+          "warning": "Kişi Sayısı: Min 24 kişi- max 48 kişi ile Oynanmaktadır",
+          "priceTiers": {
+            "0-25": 2800,
+            "25-50": 2800,
+            "50-75": 2800,
+            "75-100": 2800,
+            "100+": 2800
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605817/ormandaesarettenkurtulmaetkinlik_rvtvdw.jpg",
+          "video_link": "https://www.youtube.com/watch?v=VUbjJyYbR-8",
+          "detail_link": "https://kurumsalaktivite.com/dogada-hayatta-kalma-ve-strateji-oyunlari/"
         },
         {
           "id": "t35",
@@ -157,12 +198,12 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/okculuk/"
         },
         {
-          "id": "t38",
+          "id": "t37",
           "category": "team-activities",
           "subcategory": "aktivite",
           "type": "tiered",
-          "title": "KLASİK MOTİVASYON AKTİVİTELERİ",
-          "summary": "Klasik motivasyon aktiviteleri, ekip içi iletişimi güçlendiren ve çalışanların performansını artırmayı hedefleyen eğlenceli ve dinamik etkinliklerden oluşur. Çuval yarışı, halat çekme, koca ayak, top oyunları, balon yarışları ve şişme oyunlar gibi aktivitelerle katılımcılar hem keyifli vakit geçirir hem de takım çalışması becerilerini geliştirir. Eğlence ve rekabeti bir araya getiren bu deneyim, ekip ruhunu güçlendirmek için ideal bir çözümdür.",
+          "title": "OFF ROAD",
+          "summary": "Off Road, zorlu arazi koşullarında gerçekleştirilen, adrenalin ve macera dolu bir sürüş deneyimidir. Çamurlu, engebeli ve kayalık parkurlarda ilerlerken katılımcılar hem heyecanı doruklarda yaşar hem de takım halinde hareket etmenin önemini keşfeder. Doğa ile iç içe gerçekleşen bu aktivite, sınırları zorlamak ve unutulmaz anlar yaşamak isteyenler için eşsiz bir deneyim sunar.",
           "priceTiers": {
             "0-25": 0,
             "25-50": 0,
@@ -172,50 +213,10 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820823/klasik-motivasyon-aktiviteleri_duat8o.jpg",
-          "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
-          "detail_link": "https://kurumsalaktivite.com/klasik-motivasyon-aktiviteleri/"
-        },
-        {
-          "id": "t40",
-          "category": "team-activities",
-          "subcategory": "aktivite",
-          "type": "tiered",
-          "title": "KARTING",
-          "summary": "Karting (Go Kart), küçük pistlerde gerçekleştirilen, hız ve rekabeti bir araya getiren eğlenceli bir takım aktivitesidir. Katılımcılar kontrollü ve güvenli araçlarla yarışırken hem adrenalin dolu anlar yaşar hem de keyifli bir rekabet ortamında ekip ruhunu güçlendirir. Belirlenen hız limitleri sayesinde güvenli bir şekilde gerçekleştirilen bu deneyim, eğlence ve heyecanı bir arada sunar.",
-          "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
-            "100+": 0
-          },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820798/kurumsal-aktivite-karting_dddjck.jpg",
-          "video_link": "https://www.youtube.com/watch?v=EbU3KDRiZ1U",
-          "detail_link": "https://kurumsalaktivite.com/karting/"
-        },
-        {
-          "id": "t41",
-          "category": "team-activities",
-          "subcategory": "aktivite",
-          "type": "tiered",
-          "title": "CESUR YÜREK AKTİVİTESİ",
-          "summary": "Cesur Yürek Aktivitesi, geleneksel okçuluk eğitimi ile başlayan ve macera dolu görevlerle devam eden sürükleyici bir takım deneyimidir. Katılımcılar takımlara ayrılarak harita üzerinde belirlenen hedeflere ulaşmaya çalışır, her noktada karşılarına çıkan sürpriz görevlerle hem strateji geliştirir hem de ekip çalışmasını güçlendirir. Nefes kontrolü, odaklanma ve koordinasyon gerektiren bu aktivite, heyecan ve eğlenceyi bir araya getirir.",
-          "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
-            "100+": 0
-          },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820767/cesur-yurek_q4zadx.jpg",
-          "video_link": "",
-          "detail_link": "https://kurumsalaktivite.com/cesur-yurek-aktivitesi/"
-        },
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820835/offroad_pvbsaw.jpg",
+          "video_link": "https://www.youtube.com/watch?v=xtXSvNPDvXo",
+          "detail_link": "https://kurumsalaktivite.com/off-road/"
+       },
         {
           "id": "t42",
           "category": "team-activities",
@@ -235,92 +236,6 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774875998/takimdinamiğiyaratma_cj6pj7.jpg",
           "video_link": "https://www.youtube.com/watch?v=KN4JS8jG3vE",
           "detail_link": "https://kurumsalaktivite.com/takim-dinamigi-yaratma-aktivitesi/"
-        },
-        {
-          "id": "t43",
-          "category": "team-activities",
-          "subcategory": "aktivite",
-          "type": "tiered",
-          "title": "CANLI LANGIRT",
-          "summary": "Canlı Langırt, klasik langırt oyununun gerçek boyutlara taşındığı eğlenceli ve rekabet dolu bir takım aktivitesidir. Açık alanda ya da hava koşullarına bağlı olarak kapalı alanlarda kurulabilen bu deneyim, katılımcılara hem eğlence hem de yüksek enerji sunar. Takımlar sahada birlikte hareket ederken, izleyenlerin tezahüratlarıyla heyecan daha da artar. Hız, koordinasyon ve ekip uyumunun ön planda olduğu bu aktivite, unutulmaz anlar yaşatır.",
-          "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
-            "100+": 0
-          },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774821071/canlilangirtetkinlik_tr7w86.jpg",
-          "video_link": "https://www.youtube.com/watch?v=mimeVMPHnXc",
-          "detail_link": "https://fitnesstanbull.com/canli-langirt/"
-        }
-      ]
-    },
-    {
-      "title": "Zeka Oyunları",
-      "items": [
-        {
-          "id": "t3",
-          "category": "team-activities",
-          "subcategory": "zeka-oyunlari",
-          "type": "tiered",
-          "title": "MASA ÜZERİ AKIL OYUNLARI",
-          "summary": "Oyunlaştırarak öğrenme yaklaşımıyla takım uyumu ve motivasyonu artıran masa üstü aktivite setidir. 4 Oyun İstasyonu.",
-          "priceTiers": {
-            "0-25": 25000,
-            "25-50": 25000,
-            "50-75": 25000,
-            "75-100": 25000,
-            "100+": 25000
-          },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774603761/masauzeriakiloyunlari_qf013h.jpg",
-          "isPopular": true,
-          "video_link": "https://www.youtube.com/watch?v=CsiVGfZsPvM",
-          "detail_link": "https://kurumsalaktivite.com/masa-uzeri-akil-oyunlari/"
-        }
-      ]
-    },
-    {
-      "title": "Teambuilding",
-      "items": [
-        {
-          "id": "t4",
-          "category": "team-activities",
-          "subcategory": "teambuilding",
-          "type": "tiered",
-          "title": "TEAMBUILDING AKTİVİTELER",
-          "summary": "Şirket veya kurumlara özel geliştirilen, takım oluşturma ve ekip iletişimini güçlendiren motivasyonel aktivitelerdir.",
-          "priceTiers": {
-            "0-25": 35000,
-            "25-50": 35000,
-            "50-75": 35000,
-            "75-100": 35000,
-            "100+": 35000
-          },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774603826/team-building-etkinlikleri2_aqcb0u.jpg",
-          "isPopular": true,
-          "video_link": "https://www.youtube.com/watch?v=KN4JS8jG3vE",
-          "detail_link": "https://kurumsalaktivite.com/teambulding-aktiviteler/"
-        },
-        {
-          "id": "t47",
-          "category": "team-activities",
-          "subcategory": "teambuilding",
-          "type": "tiered",
-          "title": "ICE BREAKING",
-          "summary": "Ice Breaking aktiviteleri, ekipler arasındaki ilk çekingenliği ortadan kaldıran, iletişimi hızlandıran ve ortam enerjisini yükselten kısa süreli ama etkisi yüksek kurumsal oyunlardır.",
-          "priceTiers": { "0-25": 0, "25-50": 0, "50-75": 0, "75-100": 0, "100+": 0 },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776589055/icebreaking_fqukvn.jpg",
-          "video_link": "",
-          "detail_link": "https://kurumsalaktivite.com/ice-breaking/"
         },
       ]
     },
@@ -370,7 +285,7 @@ export const teamactivitiesCategory: Category = {
 
         },
         {
-          "id": "t50",
+          "id": "t49",
           "category": "team-activities",
           "subcategory": "yaratici-aktivite",
           "type": "tiered",
@@ -386,12 +301,12 @@ export const teamactivitiesCategory: Category = {
       ]
     },
     {
-      "title": "Sanat Aktivitesi",
+      "title": "Challenge-Proje-Takım Aktiviteleri",
       "items": [
         {
           "id": "t6",
           "category": "team-activities",
-          "subcategory": "sanat-aktivitesi",
+          "subcategory": "challenge",
           "type": "tiered",
           "title": "EKSANTRİK SALVADOR DALİ AKTİVİTESİ",
           "summary": "Takımların birlikte büyük bir resmi tamamladığı, iş birliği ve koordinasyon gerektiren yaratıcı sanat aktivitesidir.",
@@ -408,12 +323,7 @@ export const teamactivitiesCategory: Category = {
           "video_link": "https://www.youtube.com/watch?v=Q7MrLW1CJR0",
           "detail_link": "https://kurumsalaktivite.com/egzantrik-salvador-dali/"
 
-        }
-      ]
-    },
-    {
-      "title": "Challenge",
-      "items": [
+        },
         {
           "id": "t7",
           "category": "team-activities",
@@ -517,7 +427,28 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/marshmallow-challange/"
         },
         {
-          "id": "t45",
+          "id": "t15",
+          "category": "team-activities",
+          "subcategory": "challenge",
+          "type": "tiered",
+          "title": "SUÇLU KİM AKTİVİTESİ",
+          "summary": "Katılımcıların ipuçlarını birleştirerek olay çözmeye çalıştığı strateji ve analiz odaklı takım aktivitesidir.",
+          "priceTiers": {
+            "0-25": 100000,
+            "25-50": 100000,
+            "50-75": 100000,
+            "75-100": 100000,
+            "100+": 100000
+
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605454/suclu-kim-event_csi0mc.webp",
+          "video_link": "https://www.youtube.com/watch?v=9HVxovjpH98",
+          "detail_link": "https://kurumsalaktivite.com/suclu-kim-aktivitesi/"
+        },
+        {
+          "id": "t44",
           "category": "team-activities",
           "subcategory": "challenge",
           "type": "tiered",
@@ -531,7 +462,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/israf-avi-aktivitesi/"
         },
         {
-          "id": "t48",
+          "id": "t47",
           "category": "team-activities",
           "subcategory": "challenge",
           "type": "tiered",
@@ -632,7 +563,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/graffiti-workshop/"
         },
         {
-          "id": "t46",
+          "id": "t45",
           "category": "team-activities",
           "subcategory": "workshop",
           "type": "tiered",
@@ -646,7 +577,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/sifir-atik-mutfagi-aktivitesi/"
         },
         {
-          "id": "t49",
+          "id": "t48",
           "category": "team-activities",
           "subcategory": "workshop",
           "type": "tiered",
@@ -659,32 +590,6 @@ export const teamactivitiesCategory: Category = {
           "video_link": "",
           "detail_link": "https://kurumsalaktivite.com/food-security-world-cafe-aktivitesi/"
         },
-      ]
-    },
-    {
-      "title": "Dedektif Oyunu",
-      "items": [
-        {
-          "id": "t15",
-          "category": "team-activities",
-          "subcategory": "dedektif-oyunu",
-          "type": "tiered",
-          "title": "SUÇLU KİM AKTİVİTESİ",
-          "summary": "Katılımcıların ipuçlarını birleştirerek olay çözmeye çalıştığı strateji ve analiz odaklı takım aktivitesidir.",
-          "priceTiers": {
-            "0-25": 100000,
-            "25-50": 100000,
-            "50-75": 100000,
-            "75-100": 100000,
-            "100+": 100000
-
-          },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605454/suclu-kim-event_csi0mc.webp",
-          "video_link": "https://www.youtube.com/watch?v=9HVxovjpH98",
-          "detail_link": "https://kurumsalaktivite.com/suclu-kim-aktivitesi/"
-        }
       ]
     },
     {
@@ -710,212 +615,6 @@ export const teamactivitiesCategory: Category = {
           "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
           "detail_link": "https://kurumsalaktivite.com/dogada-fitness-yoga-zumba/"
         },
-        {
-          "id": "t34",
-          "category": "team-activities",
-          "subcategory": "wellness",
-          "type": "tiered",
-          "title": "BOOT CAMP WORKOUT",
-          "summary": "Boot Camp Workout, askeri antrenman disiplininden ilham alan, yüksek tempolu ve ekip ruhunu güçlendiren bir egzersiz programıdır. Vücudun tüm kas gruplarını çalıştıran bu aletsiz antrenman; dayanıklılık, güç ve koordinasyonu artırırken aynı zamanda katılımcılara enerjik ve motive edici bir deneyim sunar.",
-          "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
-            "100+": 0
-          },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820882/bootcampworkout_ajiiqb.jpg",
-          "video_link": "",
-          "detail_link": "https://kurumsalaktivite.com/boot-camp-workout/"
-        }
-      ]
-    },
-    {
-      "title": "Outdoor",
-      "items": [
-        {
-          "id": "t18",
-          "category": "team-activities",
-          "subcategory": "outdoor",
-          "type": "tiered",
-          "title": "HAZİNE AVI",
-          "summary": "Takımların görevleri tamamlayarak dayanışma ve yardımlaşma içinde ilerlediği macera dolu kurumsal aktivitedir.",
-          "priceTiers": {
-            "0-25": 85000,
-            "25-50": 85000,
-            "50-75": 85000,
-            "75-100": 85000,
-            "100+": 85000
-          },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605682/hazine-avi-aktivitesi-scaled_w1likb.jpg",
-          "video_link": "https://www.youtube.com/watch?v=PXJVZDrBJXc",
-          "detail_link": "https://kurumsalaktivite.com/hazine-avi/"
-        },
-        {
-          "id": "t28",
-          "category": "team-activities",
-          "subcategory": "outdoor",
-          "type": "tiered",
-          "title": "ORMANDA ESARETTEN KURTULMA",
-          "summary": "Şifre çözme, görev tamamlama, harita okuma ve liderlik becerilerini test eden açık hava macera aktivitesidir.",
-          "warning": "Kişi Sayısı: Min 24 kişi- max 48 kişi ile Oynanmaktadır",
-          "priceTiers": {
-            "0-25": 2800,
-            "25-50": 2800,
-            "50-75": 2800,
-            "75-100": 2800,
-            "100+": 2800
-          },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605817/ormandaesarettenkurtulmaetkinlik_rvtvdw.jpg",
-          "video_link": "https://www.youtube.com/watch?v=VUbjJyYbR-8",
-          "detail_link": "https://kurumsalaktivite.com/dogada-hayatta-kalma-ve-strateji-oyunlari/"
-        },
-        {
-          "id": "t29",
-          "category": "team-activities",
-          "subcategory": "outdoor",
-          "type": "tiered",
-          "title": "YELKEN AKTİVİTESİ",
-          "summary": "Takım çalışması, ekip motivasyonu ve iletişim odaklı su sporları aktivitesidir.",
-          "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
-            "100+": 0
-          },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605884/yelken-aktivitesi_igbw5e.jpg",
-          "video_link": "https://www.youtube.com/watch?v=yjnvd2zYvJs",
-          "detail_link": "https://kurumsalaktivite.com/yelken-aktivitesi/"
-        },
-        {
-          "id": "t30",
-          "category": "team-activities",
-          "subcategory": "outdoor",
-          "type": "tiered",
-          "title": "RAFTING",
-          "summary": "Debisi yüksek nehirlerde yapılan, takım uyumu ve heyecanı ön plana çıkaran adrenalin dolu su sporudur.",
-          "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
-            "100+": 0
-          },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774605928/kurumsal-rafting_ye30kc.jpg",
-          "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
-          "detail_link": "https://kurumsalaktivite.com/rafting/"
-        },
-        {
-          "id": "t31",
-          "category": "team-activities",
-          "subcategory": "outdoor",
-          "type": "tiered",
-          "title": "ŞİRKET ÇADIR KAMPI",
-          "summary": "Günümüzün gürültülü ve yorucu şehir hayatından kaçmak için en güzel yöntemlerden biri olan çadır kampı, doğa ile iç içe huzurlu vakit geçirme fırsatı sunar. Kamp alanlarında gitar çalmak, şarkı söylemek, çeşitli oyunlar oynamak ve birçok farklı aktiviteyi gerçekleştirmek mümkündür. Sizlere tüm bu aktiviteleri yapabilmeniz için harika bir kamp fırsatı sunuyoruz.",
-          "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
-            "100+": 0
-          },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774875978/sirketçadirkamp_ybae5l.jpg",
-          "video_link": "",
-          "detail_link": "https://kurumsalaktivite.com/sirket-cadir-kampi/"
-        },
-        {
-          "id": "t33",
-          "category": "team-activities",
-          "subcategory": "outdoor",
-          "type": "tiered",
-          "title": "EBEVEYN & ÇOCUK KAMPI",
-          "summary": "Ebeveyn & Çocuk Kampı, ailelerin doğa ile iç içe vakit geçirerek birlikte unutulmaz anılar biriktirdiği özel bir deneyimdir. Kamp süresince çocuklar ve ebeveynler; oyunlar, doğa aktiviteleri ve sosyal etkileşimlerle bağlarını güçlendirirken aynı zamanda eğlenceli ve öğretici bir süreç yaşar. Aile içi iletişimi artıran, keyifli ve anlamlı bir kamp deneyimi sunuyoruz.",
-          "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
-            "100+": 0
-          },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820931/ebeveyn-cocuk-kamplari_mavbky.jpg",
-          "video_link": "",
-          "detail_link": "https://kurumsalaktivite.com/ebeveyn-cocuk-kampi/"
-        },
-        {
-          "id": "t37",
-          "category": "team-activities",
-          "subcategory": "outdoor",
-          "type": "tiered",
-          "title": "OFF ROAD",
-          "summary": "Off Road, zorlu arazi koşullarında gerçekleştirilen, adrenalin ve macera dolu bir sürüş deneyimidir. Çamurlu, engebeli ve kayalık parkurlarda ilerlerken katılımcılar hem heyecanı doruklarda yaşar hem de takım halinde hareket etmenin önemini keşfeder. Doğa ile iç içe gerçekleşen bu aktivite, sınırları zorlamak ve unutulmaz anlar yaşamak isteyenler için eşsiz bir deneyim sunar.",
-          "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
-            "100+": 0
-          },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820835/offroad_pvbsaw.jpg",
-          "video_link": "https://www.youtube.com/watch?v=xtXSvNPDvXo",
-          "detail_link": "https://kurumsalaktivite.com/off-road/"
-       },
-       {
-          "id": "t39",
-          "category": "team-activities",
-          "subcategory": "outdoor",
-          "type": "tiered",
-          "title": "KAYAK",
-          "summary": "Kayak, kış sporları denildiğinde akla gelen en keyifli ve adrenalin dolu aktivitelerden biridir. Karlı doğa ortamında gerçekleştirilen bu etkinlik, katılımcılara hem eğlence hem de heyecan dolu anlar yaşatır. Profesyonel rehberlik ve uygun ekipmanlarla güvenli bir şekilde gerçekleştirilen kayak deneyimi, ekip olarak unutulmaz bir kış aktivitesi sunar.",
-          "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
-            "100+": 0
-          },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820810/kayak-aktivite_qgfbh7.jpg",
-          "video_link": "",
-          "detail_link": "https://kurumsalaktivite.com/kayak/"
-    },
-    {
-          "id": "t44",
-          "category": "team-activities",
-          "subcategory": "outdoor",
-          "type": "tiered",
-          "title": "AT BİNİCİLİĞİ DENEYİMİ",
-          "summary": "At biniciliği; denge, koordinasyon ve özgüven gelişimini destekleyen, aynı zamanda doğayla iç içe keyifli bir deneyim sunan özel bir aktivitedir.",
-          "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
-            "100+": 0
-          },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776588416/at-binme_ndejwm.jpg",
-          "video_link": "",
-          "detail_link": "https://kurumsalaktivite.com/at-biniciligi-deneyimi/"
-},
       ]
     },
     {
@@ -1026,19 +725,14 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606216/ku%C5%9Fevi_at%C3%B6lyesi_b7jwiv.jpg",
           "video_link": "https://www.youtube.com/watch?v=KXI4FE5NXqU",
           "detail_link": "https://kurumsalaktivite.com/kus-evi-yapim-atolyesi/"
-        }
-      ]
-    },
-    {
-      title: "Pazarlama & Organizasyon",
-      items: [
+        },
         {
-          "id": "t32",
+          "id": "t96",
           "category": "team-activities",
-          "subcategory": "marketing",
+          "subcategory": "sosyal-sorumluluk",
           "type": "tiered",
-          "title": "ROAD SHOW",
-          "summary": "Siz istiyorsunuz biz hayallerinizi gerçeğe dönüştürüyoruz. Road show, pazarlama teknikleri arasında en heyecan uyandıran ve en akılda kalan yöntemlerden biridir. Sıradan bir reklam fikri herkes tarafından düşünülebilir, ancak farklı olmak cesaret ister. Markanızı sahaya taşıyarak hedef kitlenizle birebir etkileşim kurabileceğiniz unutulmaz bir deneyim sunuyoruz.",
+          "title": "TEKERLEKLİ SANDALYE YAPIMI ATÖLYESİ",
+          "summary": "Ekiplerin gerçek bir tekerlekli sandalye monte ederek sosyal sorumluluk kapsamında bağış yaptığı anlamlı takım etkinliğidir.",
           "priceTiers": {
             "0-25": 0,
             "25-50": 0,
@@ -1048,17 +742,145 @@ export const teamactivitiesCategory: Category = {
           },
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820946/roadshowevent_nqxltc.jpg",
-          "video_link": "",
-          "detail_link": "https://kurumsalaktivite.com/road-show/"
-        }
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776596209/tekerleklisandalye_rg53zb.jpg",
+          "detail_link": "https://kurumsalaktivite.com/tekerlekli-sandalye-yapimi-atolyesi/"
+        },
       ]
-  },
+      },
+      {
+      "title": "Tam Pikniğe Göre Aktiviteler",
+      "items": [
+        {
+          "id": "t3",
+          "category": "team-activities",
+          "subcategory": "tam-piknik-aktiviteleri",
+          "type": "tiered",
+          "title": "MASA ÜZERİ AKIL OYUNLARI",
+          "summary": "Oyunlaştırarak öğrenme yaklaşımıyla takım uyumu ve motivasyonu artıran masa üstü aktivite setidir. 4 Oyun İstasyonu.",
+          "priceTiers": {
+            "0-25": 25000,
+            "25-50": 25000,
+            "50-75": 25000,
+            "75-100": 25000,
+            "100+": 25000
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774603761/masauzeriakiloyunlari_qf013h.jpg",
+          "isPopular": true,
+          "video_link": "https://www.youtube.com/watch?v=CsiVGfZsPvM",
+          "detail_link": "https://kurumsalaktivite.com/masa-uzeri-akil-oyunlari/"
+        },
+        {
+          "id": "t4",
+          "category": "team-activities",
+          "subcategory": "tam-piknik-aktiviteleri",
+          "type": "tiered",
+          "title": "TEAMBUILDING AKTİVİTELER",
+          "summary": "Şirket veya kurumlara özel geliştirilen, takım oluşturma ve ekip iletişimini güçlendiren motivasyonel aktivitelerdir.",
+          "priceTiers": {
+            "0-25": 35000,
+            "25-50": 35000,
+            "50-75": 35000,
+            "75-100": 35000,
+            "100+": 35000
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774603826/team-building-etkinlikleri2_aqcb0u.jpg",
+          "isPopular": true,
+          "video_link": "https://www.youtube.com/watch?v=KN4JS8jG3vE",
+          "detail_link": "https://kurumsalaktivite.com/teambulding-aktiviteler/"
+        },
+        {
+          "id": "t38",
+          "category": "team-activities",
+          "subcategory": "tam-piknik-aktiviteleri",
+          "type": "tiered",
+          "title": "KLASİK MOTİVASYON AKTİVİTELERİ",
+          "summary": "Klasik motivasyon aktiviteleri, ekip içi iletişimi güçlendiren ve çalışanların performansını artırmayı hedefleyen eğlenceli ve dinamik etkinliklerden oluşur. Çuval yarışı, halat çekme, koca ayak, top oyunları, balon yarışları ve şişme oyunlar gibi aktivitelerle katılımcılar hem keyifli vakit geçirir hem de takım çalışması becerilerini geliştirir. Eğlence ve rekabeti bir araya getiren bu deneyim, ekip ruhunu güçlendirmek için ideal bir çözümdür.",
+          "priceTiers": {
+            "0-25": 0,
+            "25-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774820823/klasik-motivasyon-aktiviteleri_duat8o.jpg",
+          "video_link": "https://www.youtube.com/watch?v=BGUhbhYdhvM",
+          "detail_link": "https://kurumsalaktivite.com/klasik-motivasyon-aktiviteleri/"
+        },
+        {
+          "id": "t46",
+          "category": "team-activities",
+          "subcategory": "tam-piknik-aktiviteleri",
+          "type": "tiered",
+          "title": "ICE BREAKING",
+          "summary": "Ice Breaking aktiviteleri, ekipler arasındaki ilk çekingenliği ortadan kaldıran, iletişimi hızlandıran ve ortam enerjisini yükselten kısa süreli ama etkisi yüksek kurumsal oyunlardır.",
+          "priceTiers": {
+            "0-25": 0,
+            "25-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776589055/icebreaking_fqukvn.jpg",
+          "video_link": "",
+          "detail_link": "https://kurumsalaktivite.com/ice-breaking/"
+        },
+        {
+          "id": "t29",
+          "category": "team-activities",
+          "subcategory": "tam-piknik-aktiviteleri",
+          "type": "tiered",
+          "title": "KARNAVAL ÇADIRI",
+          "summary": "Tam İsabet Oyunu, Labut Devirme Oyunu, Halka Atışı Oyunu ve Bardağa Pinpon Atışı Oyunu içeren dörtlü aktivite çadırı. Organizasyonlarınızı karnaval havasına çevirir.",
+          "priceTiers": {
+            "0-25": 0,
+            "25-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607188/karnavalcad%C4%B1r_qidz5m.jpg", 
+          "video_link": "",
+          "detail_link": "https://kurumsalaktivite.com/karnaval-cadirlari-2/"  
+        },
+        {
+          "id": "t30",
+          "category": "team-activities",
+          "subcategory": "tam-piknik-aktiviteleri",
+          "type": "tiered",
+          "title": "DEV JENGA",
+          "summary": "Üst üste dizilmiş dev jenga bloklarını kuleyi devirmeden çekme oyunudur.",
+          "priceTiers": {
+            "0-25": 0,
+            "25-50": 0,
+            "50-75": 0,
+            "75-100": 0,
+            "100+": 0
+          },
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607158/jenga2_jixge2.jpg"
+        },
+
+
+        
+        
+      ]
+     },
       {
       "title": "Yapay Zeka Aktiviteleri",
       "items": [
         {
-          "id": "t51",
+          "id": "t50",
           "category": "team-activities",
           "subcategory": "yapay-zeka-aktiviteleri",
           "type": "tiered",
@@ -1078,7 +900,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/artirilmis-gerceklik-acik-hava-tanitim/"
         },
         {
-          "id": "t52",
+          "id": "t51",
           "category": "team-activities",
           "subcategory": "yapay-zeka-aktiviteleri",
           "type": "tiered",
@@ -1098,7 +920,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/hologram-ai-kabinler/"
         },
         {
-          "id": "t53",
+          "id": "t52",
           "category": "team-activities",
           "subcategory": "yapay-zeka-aktiviteleri",
           "type": "tiered",
@@ -1118,7 +940,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/cgi-animasyon-inovasyon/"
         },
         {
-          "id": "t54",
+          "id": "t53",
           "category": "team-activities",
           "subcategory": "yapay-zeka-aktiviteleri",
           "type": "tiered",
@@ -1143,7 +965,7 @@ export const teamactivitiesCategory: Category = {
       "title": "Dijital / VR Aktiviteler",
       "items": [
         {
-          "id": "t55",
+          "id": "t54",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1161,7 +983,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776594335/pixar_tr6p07.png"
         },
         {
-          "id": "t56",
+          "id": "t55",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1179,7 +1001,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776593331/greenbox_tobgh6.jpg"
         },
         {
-          "id": "t57",
+          "id": "t56",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1197,7 +1019,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776593330/faceswap_ij9mhc.jpg"
         },
         {
-          "id": "t58",
+          "id": "t57",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1215,7 +1037,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776594455/robogol_vruexl.png"
         },
         {
-          "id": "t59",
+          "id": "t58",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1233,7 +1055,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776594214/penalt%C4%B1ustas%C4%B1_dbckgc.png"
         },
         {
-          "id": "t60",
+          "id": "t59",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1251,7 +1073,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776594563/say%C4%B1kral%C4%B1_eb1yp3.png"
         },
         {
-          "id": "t61",
+          "id": "t60",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1269,7 +1091,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776593336/hediyeyagmuru_kz2eqw.png"
         },
         {
-          "id": "t62",
+          "id": "t61",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1287,7 +1109,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776594578/altineldiven_tghmie.png"
         },
         {
-          "id": "t63",
+          "id": "t62",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1305,7 +1127,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776594570/ucannesne_w5tmhb.png"
         },
         {
-          "id": "t64",
+          "id": "t63",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1323,7 +1145,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776593489/jetpack_kuswk6.jpg"
         },
         {
-          "id": "t65",
+          "id": "t64",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1341,7 +1163,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776593368/h%C4%B1ztutkusu_rzwkwh.jpg"
         },
         {
-          "id": "t66",
+          "id": "t65",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1359,7 +1181,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776594581/%C3%A7izbakal%C4%B1m_xru5c1.jpg"
         },
         {
-          "id": "t67",
+          "id": "t66",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1377,7 +1199,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776594567/suratteknesi_o7hye1.jpg"
         },
         {
-          "id": "t68",
+          "id": "t67",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1395,7 +1217,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776593732/minigolf_h84x4e.jpg"
         },
         {
-          "id": "t69",
+          "id": "t68",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1413,7 +1235,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776594566/sukayag%C4%B1_mwrhbw.jpg"
         },
         {
-          "id": "t70",
+          "id": "t69",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1431,7 +1253,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776593333/hediyeagac%C4%B1_ktte4d.jpg"
         },
         {
-          "id": "t71",
+          "id": "t70",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1449,7 +1271,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776594579/basketbol_jr5pxt.jpg"
         },
         {
-          "id": "t72",
+          "id": "t71",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1467,7 +1289,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776594575/alisverissepeti_mrziyl.jpg"
         },
         {
-          "id": "t73",
+          "id": "t72",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1485,7 +1307,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776594573/vrpong_nbldri.jpg"
         },
         {
-          "id": "t74",
+          "id": "t73",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1503,7 +1325,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776593973/ortakafagol_gooang.webp"
         },
         {
-          "id": "t75",
+          "id": "t74",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1521,7 +1343,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776594563/snowboard_x023xp.jpg"
         },
         {
-          "id": "t76",
+          "id": "t75",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1539,7 +1361,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776594093/parasut_sst1l7.jpg"
         },
         {
-          "id": "t77",
+          "id": "t76",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1557,7 +1379,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776593853/okculuk_yh9pnl.jpg"
         },
         {
-          "id": "t78",
+          "id": "t77",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1575,7 +1397,7 @@ export const teamactivitiesCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776594571/vertigo_nm1hwr.jpg"
         },
         {
-          "id": "t79",
+          "id": "t78",
           "category": "team-activities",
           "subcategory": "digital-vr-activities",
           "type": "tiered",
@@ -1598,7 +1420,7 @@ export const teamactivitiesCategory: Category = {
   "title": "Sanat ve Deneyim Atölyeleri",
   "items": [
         {
-          "id": "t80",
+          "id": "t79",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -1618,7 +1440,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/pebble-art-atolyesi/"
         },
         {
-          "id": "t81",
+          "id": "t80",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -1638,7 +1460,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/ses-meditasyonu-atolyesi/"
         },
         {
-          "id": "t82",
+          "id": "t81",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -1658,7 +1480,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/kintsugi-atolyesi/"
         },
         {
-          "id": "t83",
+          "id": "t82",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -1678,7 +1500,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/konsept-mum-atolyesi/"
         },
         {
-          "id": "t84",
+          "id": "t83",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -1697,7 +1519,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/mozaik-lamba-atolyesi/"
         },
         {
-          "id": "t85",
+          "id": "t84",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -1716,7 +1538,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/mandala-atolyesi/"
         },
         {
-          "id": "t86",
+          "id": "t85",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -1735,7 +1557,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/deri-el-yapimi-aksesuar-atolyesi/"
         },
         {
-          "id": "t87",
+          "id": "t86",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -1754,7 +1576,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/hasir-canta-boyama-atolyesi/"
         },
         {
-          "id": "t88",
+          "id": "t87",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -1773,7 +1595,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/aroma-terapi-cilt-bakim-atolyesi/"
         },
         {
-          "id": "t89",
+          "id": "t88",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -1792,7 +1614,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/mindfulness-meditasyon-atolyesi/"
         },
         {
-          "id": "t90",
+          "id": "t89",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -1811,7 +1633,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/nefes-teknikleri-atolyesi/"
         },
         {
-          "id": "t91",
+          "id": "t90",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -1830,7 +1652,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/termos-boyama-atolyesi/"
         },
         {
-          "id": "t92",
+          "id": "t91",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -1849,7 +1671,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/quilling-atolyesi/"
         },
         {
-          "id": "t93",
+          "id": "t92",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -1868,7 +1690,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/atki-orme-atolyesi/"
         },
         {
-          "id": "t94",
+          "id": "t93",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -1887,7 +1709,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/ayna-boyama-atolyesi/"
         },
         {
-          "id": "t95",
+          "id": "t94",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -1906,7 +1728,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/vision-board-atolyesi/"
         },
         {
-          "id": "t96",
+          "id": "t95",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -1929,25 +1751,6 @@ export const teamactivitiesCategory: Category = {
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
-          "title": "TEKERLEKLİ SANDALYE YAPIMI ATÖLYESİ",
-          "summary": "Ekiplerin gerçek bir tekerlekli sandalye monte ederek sosyal sorumluluk kapsamında bağış yaptığı anlamlı takım etkinliğidir.",
-          "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
-            "100+": 0
-          },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776596209/tekerleklisandalye_rg53zb.jpg",
-          "detail_link": "https://kurumsalaktivite.com/tekerlekli-sandalye-yapimi-atolyesi/"
-        },
-        {
-          "id": "t98",
-          "category": "team-activities",
-          "subcategory": "sanat-ve-deneyim-atolyeleri",
-          "type": "tiered",
           "title": "EL İZİ HATIRA PANOSU AKTİVİTESİ",
           "summary": "Katılımcıların el izleriyle ortak bir sanat eseri oluşturarak takım ruhunu simgelediği interaktif etkinliktir.",
           "priceTiers": {
@@ -1963,7 +1766,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/el-izi-hatira-panosu-aktivitesi/"
         },
         {
-          "id": "t99",
+          "id": "t98",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -1986,25 +1789,6 @@ export const teamactivitiesCategory: Category = {
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
-          "title": "OFİS YOGASI",
-          "summary": "Masa başı çalışanlar için tasarlanmış esneme, nefes ve rahatlama egzersizlerinden oluşan wellness programıdır.",
-          "priceTiers": {
-            "0-25": 0,
-            "25-50": 0,
-            "50-75": 0,
-            "75-100": 0,
-            "100+": 0
-          },
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776596199/ofisyoga_cjwzz5.jpg",
-          "detail_link": "https://kurumsalaktivite.com/ofis-yogasi/"
-        },
-        {
-          "id": "t101",
-          "category": "team-activities",
-          "subcategory": "sanat-ve-deneyim-atolyeleri",
-          "type": "tiered",
           "title": "KAHKAHA YOGASI",
           "summary": "Bilinçli kahkaha egzersizleri ve nefes çalışmalarıyla stres azaltan eğlenceli grup etkinliğidir.",
           "priceTiers": {
@@ -2020,7 +1804,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/kahkaha-yogasi/"
         },
         {
-          "id": "t102",
+          "id": "t101",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2039,7 +1823,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/dogal-sabun-yapim-atolyesi/"
         },
         {
-          "id": "t103",
+          "id": "t102",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2058,7 +1842,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/seramik-yapim-atolyesi/"
         },
         {
-          "id": "t104",
+          "id": "t103",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2077,7 +1861,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/bez-canta-tasarim-atolyesi/"
         },
         {
-          "id": "t105",
+          "id": "t104",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2096,7 +1880,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/vitray-boyama-atolyesi/"
         },
         {
-          "id": "t106",
+          "id": "t105",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2115,7 +1899,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/telefon-ve-gozluk-askisi-tasarim-atolyesi/"
         },
         {
-          "id": "t107",
+          "id": "t106",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2134,7 +1918,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/makrome-tasarim-atolyesi/"
         },
         {
-          "id": "t108",
+          "id": "t107",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2153,7 +1937,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/polimer-kil-tasarim-atolyesi/"
         },
         {
-          "id": "t109",
+          "id": "t108",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2172,7 +1956,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/hasir-sapka-boyama-atolyesi/"
         },
         {
-          "id": "t110",
+          "id": "t109",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2191,7 +1975,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/punch-nakis-atolyesi/"
         },
         {
-          "id": "t111",
+          "id": "t110",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2210,7 +1994,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/cicek-tac-tasarim-atolyesi/"
         },
         {
-          "id": "t112",
+          "id": "t111",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2229,7 +2013,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/seramik-cini-boyama-atolyesi/"
         },
         {
-          "id": "t113",
+          "id": "t31",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2248,7 +2032,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/parfum-tasarim-atolyesi/"
         },
         {
-          "id": "t114",
+          "id": "t32",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2267,7 +2051,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/karikatur-cizim-atolyesi/"
         },
         {
-          "id": "t115",
+          "id": "t33",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2286,7 +2070,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/mum-atolyesi/"
         },
         {
-          "id": "t116",
+          "id": "t34",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2305,7 +2089,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/kar-kuresi-atolyesi/"
         },
         {
-          "id": "t117",
+          "id": "t39",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2324,7 +2108,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/ahsap-tablo-boyama-atolyesi/"
         },
         {
-          "id": "t118",
+          "id": "t40",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2343,7 +2127,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/ebru-atolyesi/"
         },
         {
-          "id": "t119",
+          "id": "t41",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2362,7 +2146,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/cicek-tablo-tasarimi-atolyesi/"
         },
         {
-          "id": "t120",
+          "id": "t43",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2381,7 +2165,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/string-art-atolyesi/"
         },
         {
-          "id": "t121",
+          "id": "t99",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2400,7 +2184,7 @@ export const teamactivitiesCategory: Category = {
           "detail_link": "https://kurumsalaktivite.com/resim-atolyesi/"
         },
         {
-          "id": "t122",
+          "id": "t112",
           "category": "team-activities",
           "subcategory": "sanat-ve-deneyim-atolyeleri",
           "type": "tiered",
@@ -2421,10 +2205,5 @@ export const teamactivitiesCategory: Category = {
 
   ]
 },
-
-   
-   
-
-
   ]
 };
