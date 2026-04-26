@@ -18,12 +18,17 @@ export function calculateOfferTotals(
     items: SelectedItem[],
     exactPersonCount?: number
 ): OfferTotals {
-    const t28Total = items
-        .filter((item) => item.product.id === "t28")
+    const isMultipliedItem = (item: SelectedItem) =>
+        item.product.id === "t28" ||
+        item.product.subcategory === "sanat-ve-deneyim-atolyeleri" ||
+        ["pe16", "pe17", "pe18", "pe19", "pe20"].includes(item.product.id);
+
+    const multipliedItemsTotal = items
+        .filter(isMultipliedItem)
         .reduce((sum, item) => sum + item.price, 0);
 
     const otherSubtotal = items
-        .filter((item) => item.product.category !== "menus" && item.product.id !== "t28")
+        .filter((item) => item.product.category !== "menus" && !isMultipliedItem(item))
         .reduce((sum, item) => sum + item.price, 0);
 
     const panayirTotal = items
@@ -38,11 +43,11 @@ export function calculateOfferTotals(
         ? baseMenuTotal * exactPersonCount + panayirTotal
         : panayirTotal;
 
-    const t28TotalWithCount = t28Total > 0 && exactPersonCount && exactPersonCount > 0
-        ? t28Total * exactPersonCount
+    const multipliedItemsTotalWithCount = multipliedItemsTotal > 0 && exactPersonCount && exactPersonCount > 0
+        ? multipliedItemsTotal * exactPersonCount
         : 0;
 
-    const subtotal = otherSubtotal + menuTotal + t28TotalWithCount;
+    const subtotal = otherSubtotal + menuTotal + multipliedItemsTotalWithCount;
 
     const menuServiceFee = menuTotal > 0 ? menuTotal * 0.1 : 0;
 
@@ -102,17 +107,25 @@ export const getOfferBreakdown = (
                 menuServiceFeeApplied = totals.menuServiceFee;
             }
         } else {
-            const t28Items = categoryItems.filter(item => item.product.id === "t28");
-            const standardItems = categoryItems.filter(item => item.product.id !== "t28");
+            const multipliedItems = categoryItems.filter(item => 
+                item.product.id === "t28" || 
+                item.product.subcategory === "sanat-ve-deneyim-atolyeleri" ||
+                ["pe16", "pe17", "pe18", "pe19", "pe20"].includes(item.product.id)
+            );
+            const standardItems = categoryItems.filter(item => 
+                item.product.id !== "t28" && 
+                item.product.subcategory !== "sanat-ve-deneyim-atolyeleri" &&
+                !["pe16", "pe17", "pe18", "pe19", "pe20"].includes(item.product.id)
+            );
             
-            const t28Total = t28Items.reduce((sum, item) => sum + item.price, 0);
+            const multipliedTotal = multipliedItems.reduce((sum, item) => sum + item.price, 0);
             const standardTotal = standardItems.reduce((sum, item) => sum + item.price, 0);
             
-            if (t28Total > 0 && exactPersonCount && exactPersonCount > 0) {
-                categoryTotal = standardTotal + (t28Total * exactPersonCount);
+            if (multipliedTotal > 0 && exactPersonCount && exactPersonCount > 0) {
+                categoryTotal = standardTotal + (multipliedTotal * exactPersonCount);
                 personMultiplierApplied = exactPersonCount;
             } else {
-                categoryTotal = standardTotal + t28Total;
+                categoryTotal = standardTotal + multipliedTotal;
             }
         }
 

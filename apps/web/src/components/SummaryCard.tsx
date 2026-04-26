@@ -48,7 +48,6 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
     const [errorMessage, setErrorMessage] = useState("");
     const [exactPersonCount, setExactPersonCount] = useState<string>("");  
     
-    const [t9Selection, setT9Selection] = useState<"Alkolsüz" | "Alkollü">("Alkolsüz");
     const [t23Selection, setT23Selection] = useState<"3 Adet" | "5 Adet" | "10 Adet">("3 Adet");
     const [pe1HasDj, setPe1HasDj] = useState(false);
     const [pe3Selections, setPe3Selections] = useState<string[]>(["Kamera"]);
@@ -57,18 +56,23 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
     const [dc14Package, setDc14Package] = useState<"Basic" | "Medium" | "Premium">("Basic");
     const [dc15Package, setDc15Package] = useState<"Basic" | "Medium" | "Premium">("Basic");
     const conceptIds = ["dc12", "dc13", "dc14", "dc15"];
+    const [ka10Selection, setKa10Selection] = useState<"Çadırsız" | "Çadırlı">("Çadırsız");
+    const [itemQuantities, setItemQuantities] = useState<Record<string, number>>({});
+
+    const pieceBasedIds = ["pe6", "pe7", "pe8", "pe9", "pe12", "pe13", "pe21", "pe22", "pe23", "pe24", "pe25", "pe26"];
+
 
     const rawItems = Object.values(selectedItems);
     
     const items = rawItems.map(item => {
-        if (item.product.id === "t9") {
-            const isAlkollu = t9Selection === "Alkollü";
+        if (pieceBasedIds.includes(item.product.id)) {
+            const qty = itemQuantities[item.product.id] === undefined ? 1 : itemQuantities[item.product.id];
             return {
                 ...item,
-                price: isAlkollu ? 75000 : 50000,
+                price: item.price * qty,
                 product: {
                     ...item.product,
-                    title: `${item.product.title} (${isAlkollu ? 'Alkollü' : 'Alkolsüz'})`
+                    title: `${item.product.title} (${qty} Adet)`
                 }
             };
         }
@@ -93,6 +97,17 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                 product: {
                     ...item.product,
                     title: isDjSelected ? `${item.product.title} (DJ'li Paket)` : `${item.product.title} (DJ'siz Paket)`
+                }
+            };
+        }
+        if (item.product.id === "ka10") {
+            const isCadirli = ka10Selection === "Çadırlı";
+            return {
+                ...item,
+                price: isCadirli ? 20000 : 15000,
+                product: {
+                    ...item.product,
+                    title: `${item.product.title} (${ka10Selection})`
                 }
             };
         }
@@ -151,7 +166,9 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
     const { subtotal, menuTotal, menuServiceFee, serviceFee, vatAmount: vat, grandTotal } = calculateOfferTotals(items, isValidCount ? parsedCount : undefined);
     const hasMenu = items.some(item => item.product.category === "menus");
     const hasT28 = items.some(item => item.product.id === "t28");
-    const needsPersonCount = hasMenu || hasT28;
+    const hasSanatVeDeneyimAtolyeleri = items.some(item => item.product.subcategory === "sanat-ve-deneyim-atolyeleri");
+    const hasMultipliedItems = items.some(item => ["pe16", "pe17", "pe18", "pe19", "pe20"].includes(item.product.id));
+    const needsPersonCount = hasMenu || hasT28 || hasSanatVeDeneyimAtolyeleri || hasMultipliedItems;
     
     const zeroPriceItems = items.filter(item => item.price === 0);
         const hasZeroPriceItem = zeroPriceItems.length > 0;
@@ -173,6 +190,26 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
             setErrorOpen(true);
             return;
         }
+
+        for (const item of rawItems) {
+            if (item.product.id === "pe24") {
+                const qty = itemQuantities["pe24"] === undefined ? 1 : itemQuantities["pe24"];
+                if (qty < 20) {
+                    setErrorMessage("Masa Bayrağı için en az 20 adet seçmelisiniz.");
+                    setErrorOpen(true);
+                    return;
+                }
+            }
+            if (item.product.id === "pe21") {
+                const qty = itemQuantities["pe21"] === undefined ? 1 : itemQuantities["pe21"];
+                if (qty < 2) {
+                    setErrorMessage(`${item.product.title} için en az 2 adet seçmelisiniz.`);
+                    setErrorOpen(true);
+                    return;
+                }
+            }
+        }
+
         const { blob, fileName } = await exportToExcel(
             userInfo, 
             modifiedSelectedItemsForExport, 
@@ -281,13 +318,15 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
 
                             const isMenu = category.id === "menus";
                             const hasT28InCategory = categoryItems.some(item => item.product.id === "t28");
-                            const categoryNeedsPersonCount = isMenu || hasT28InCategory;
+                            const hasSanatVeDeneyimAtolyeleriInCategory = categoryItems.some(item => item.product.subcategory === "sanat-ve-deneyim-atolyeleri");
+                            const hasMultipliedItemsInCategory = categoryItems.some(item => ["pe16", "pe17", "pe18", "pe19", "pe20"].includes(item.product.id));
+                            const categoryNeedsPersonCount = isMenu || hasT28InCategory || hasSanatVeDeneyimAtolyeleriInCategory || hasMultipliedItemsInCategory;
 
                             const categoryTotal = categoryItems.reduce((sum, item) => {
                                 if (item.product.category === "menus" && (item.product as any).subcategory !== "panayir") {
                                     return sum + (isValidCount ? item.price * parsedCount : 0);
                                 }
-                                if (item.product.id === "t28") {
+                                if (item.product.id === "t28" || item.product.subcategory === "sanat-ve-deneyim-atolyeleri" || ["pe16", "pe17", "pe18", "pe19", "pe20"].includes(item.product.id)) {
                                     return sum + (isValidCount ? item.price * parsedCount : 0);
                                 }
                                 return sum + item.price;
@@ -346,31 +385,64 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                                             </Box>
                                                         )}
 
-                                                        {item.product.id === "t9" && (
+                                                        {pieceBasedIds.includes(item.product.id) && (
+                                                            <Box sx={{ mt: 1 }}>
+                                                                <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
+                                                                    <Typography variant="body2" color="text.secondary">
+                                                                        Adet (1-100):
+                                                                    </Typography>
+                                                                    <TextField
+                                                                        size="small"
+                                                                        type="number"
+                                                                        inputProps={{ min: 1, max: 100 }}
+                                                                        value={itemQuantities[item.product.id] === undefined ? 1 : itemQuantities[item.product.id]}
+                                                                        onChange={(e) => {
+                                                                            let val = parseInt(e.target.value, 10);
+                                                                            if (isNaN(val)) val = 1;
+                                                                            if (val < 1) val = 1;
+                                                                            if (val > 100) val = 100;
+                                                                            setItemQuantities(prev => ({ ...prev, [item.product.id]: val }));
+                                                                        }}
+                                                                        sx={{ width: 80, bgcolor: "white" }}
+                                                                    />
+                                                                </Box>
+                                                                {item.product.id === "pe24" && (itemQuantities[item.product.id] === undefined ? 1 : itemQuantities[item.product.id]) < 20 && (
+                                                                    <Typography variant="caption" color="error" sx={{ display: "block", mt: 0.5 }}>
+                                                                        En az 20 adet yazabilirsiniz.
+                                                                    </Typography>
+                                                                )}                                                            
+                                                                {item.product.id === "pe21" && (itemQuantities[item.product.id] === undefined ? 1 : itemQuantities[item.product.id]) < 2 && (
+                                                                    <Typography variant="caption" color="error" sx={{ display: "block", mt: 0.5 }}>
+                                                                        En az 2 adet yazabilirsiniz.
+                                                                    </Typography>
+                                                                )}
+                                                            </Box>
+                                                        )}
+
+                                                        {item.product.id === "ka10" && (
                                                             <Box sx={{ mt: 1, display: "flex", gap: 2, flexWrap: "wrap", flexDirection: { xs: "column", sm: "row" } }}>
                                                                 <FormControlLabel
                                                                     control={
                                                                         <Checkbox 
-                                                                            checked={t9Selection === "Alkolsüz"} 
-                                                                            onChange={() => setT9Selection("Alkolsüz")} 
+                                                                            checked={ka10Selection === "Çadırsız"} 
+                                                                            onChange={() => setKa10Selection("Çadırsız")} 
                                                                             color="primary" 
                                                                         />
                                                                     }
-                                                                    label="Alkolsüz (50.000 ₺)"
+                                                                    label="Çadırsız (15.000 ₺)"
                                                                 />
                                                                 <FormControlLabel
                                                                     control={
                                                                         <Checkbox 
-                                                                            checked={t9Selection === "Alkollü"} 
-                                                                            onChange={() => setT9Selection("Alkollü")} 
+                                                                            checked={ka10Selection === "Çadırlı"} 
+                                                                            onChange={() => setKa10Selection("Çadırlı")} 
                                                                             color="primary" 
                                                                         />
                                                                     }
-                                                                    label="Alkollü (75.000 ₺)"
+                                                                    label="Çadırlı (20.000 ₺)"
                                                                 />
                                                             </Box>
                                                         )}
-
                                                         {item.product.id === "pe1" && (
                                                             <Box sx={{ mt: 1 }}>
                                                                 <FormControlLabel

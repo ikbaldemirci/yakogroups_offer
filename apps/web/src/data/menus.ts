@@ -363,7 +363,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "KÖFTE EKMEK",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 50000,
+          "price": 45500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_500,h_300,c_fill,g_auto/v1776510938/kofte-ekmek_jgduz9.png"
@@ -375,7 +375,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "SOSİSLİ SANDVİÇ (HOT DOG)",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 35000,
+          "price": 29120,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774888511/hotdog_lgbooe.jpg"
@@ -387,7 +387,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "KOKOREÇ",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 55000,
+          "price": 52780,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_500,h_300,c_fill,g_auto/v1776510940/kokorec_onf6nw.png"
@@ -399,7 +399,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "SUCUK EKMEK",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 45000,
+          "price": 49140,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill,g_auto/v1776510962/sucuk-ekmek_fvrkqt.png"
@@ -411,7 +411,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "ET DÖNER",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 60000,
+          "price": 52780,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776510925/doner_dlay9w.png"
@@ -423,7 +423,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "PİZZA",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 0,
+          "price": 29120,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_500,h_300,c_fill,g_auto/v1776510954/pizza_pastsw.png"
@@ -435,7 +435,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "TAVUKLU PİLAV",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 0,
+          "price": 29120,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776510967/tavuklu-pilav_ytsi7z.png"
@@ -447,7 +447,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "HAMBURGER",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 0,
+          "price": 45500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776510932/hamburger_ulofco.png"
@@ -459,7 +459,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "TANTUNİ",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 55000,
+          "price": 52780,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto/v1776510965/tantuni_g1tkz6.jpg"
@@ -471,7 +471,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "ÇİĞ KÖFTE",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 0,
+          "price": 29120,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_500,h_300,c_fill,g_auto/v1776510918/cig-kofte_kt3bvb.png"
@@ -483,7 +483,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "ISLAK HAMBURGER",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 35000,
+          "price": 29120,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill,g_auto/v1776510935/islak-hamburger_ptxudc.png"
@@ -495,7 +495,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "KUMPİR",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 0,
+          "price": 54600,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_500,h_300,c_fill,g_auto/v1776510941/kumpir_bdccbk.jpg"
@@ -507,7 +507,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "POPCORN",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 17000,
+          "price": 13650,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774888525/popcorn_o9dwfh.jpg"
@@ -519,7 +519,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "KAĞIT HELVA",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 19000,
+          "price": 13650,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774976006/kag%C4%B1thelva_ukfshf.jpg"
@@ -531,7 +531,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "ÇİKOLATA ŞELALESİ",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 30000,
+          "price": 33600,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776510919/cikolata-selalesi_w6asza.png"
@@ -543,7 +543,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "PAMUK ŞEKER",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 17000,
+          "price": 12600,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774888521/pamuk-seker-dondurma_uu6p2j.jpg"
@@ -555,7 +555,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "MARAŞ DONDURMASI",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 35000,
+          "price": 31185,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774888508/dondurma_gfs7g9.jpg"
@@ -567,7 +567,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "ÇUBUKTA PATATES",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 25000,
+          "price": 26250,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776510921/cubukta-patates_l8dwe6.png"
@@ -579,7 +579,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "ÇUBUKTA WAFFLE",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 33000,
+          "price": 39900,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill,g_auto/v1776510922/cubukta-waffle_runnqj.png"
@@ -591,7 +591,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "HALKA TATLISI",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 25000,
+          "price": 26250,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1774964807/halkatatli_iot3bu.jpg"
@@ -603,7 +603,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "NOHUT PİLAV",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 0,
+          "price": 27300,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill,g_auto/v1776510949/nohut-pilav_ezcnjy.png"
@@ -615,7 +615,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "FALAFEL",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 0,
+          "price": 29120,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_500,h_400,c_fill,g_auto/v1776510927/falafel_mlidm3.png"
@@ -627,7 +627,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "YAYIK AYRAN",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 0,
+          "price": 26250,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill,g_auto/v1776510974/yayik-ayran_s4ae01.png"
@@ -639,7 +639,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "SMOOTHIE & MILKSHAKE",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 0,
+          "price": 40950,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_500,h_300,c_fill,g_auto/v1776510961/smoti-milkshake_j0plcf.png"
@@ -651,7 +651,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "LİMONATA",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 0,
+          "price": 26250,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill,g_auto/v1776510944/limonata_f1ndep.png"
@@ -661,27 +661,40 @@ export const menusCategory: Category = {
           "category": "menus",
           "subcategory": "panayir",
           "type": "fixed",
-          "title": "KAHVE",
+          "title": "TÜRK KAHVESİ",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 0,
+          "price": 29.400,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill,g_auto/v1776510937/kahve_gbox8f.png"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill,g_auto/v1776510971/turk-kahvesi_qga7s0.png"
         },
         {
           "id": "p27",
           "category": "menus",
           "subcategory": "panayir",
           "type": "fixed",
-          "title": "TÜRK KAHVESİ",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 0,
+          "title": "TOST EKMEK",
+          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
+          "price": 29120,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill,g_auto/v1776510971/turk-kahvesi_qga7s0.png"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776510968/tost-ekmek_k1kctz.jpg"
         },
         {
           "id": "p28",
+          "category": "menus",
+          "subcategory": "panayir",
+          "type": "fixed",
+          "title": "GÖZLEME",
+          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
+          "price": 29120,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776510929/gozleme_kkglen.jpg"
+        },
+        
+        {
+          "id": "p29",
           "category": "menus",
           "subcategory": "panayir",
           "type": "fixed",
@@ -693,43 +706,43 @@ export const menusCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776510910/baklava_ija1sz.png"
         },
         {
-          "id": "p29",
+          "id": "p30",
           "category": "menus",
           "subcategory": "panayir",
           "type": "fixed",
           "title": "TULUMBA TATLISI",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 0,
+          "price": 33600,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill,g_auto/v1776510970/tulumba_hylw4q.png"
-        },
-        {
-          "id": "p30",
-          "category": "menus",
-          "subcategory": "panayir",
-          "type": "fixed",
-          "title": "DONDURMALI İRMİK HELVASI",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 0,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_500,h_300,c_fill,g_auto/v1776510923/dondurmali-irmik-helvasi_jiakly.png"
         },
         {
           "id": "p31",
           "category": "menus",
           "subcategory": "panayir",
           "type": "fixed",
+          "title": "DONDURMALI İRMİK HELVASI",
+          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
+          "price": 30450,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_500,h_300,c_fill,g_auto/v1776510923/dondurmali-irmik-helvasi_jiakly.png"
+        },
+        {
+          "id": "p32",
+          "category": "menus",
+          "subcategory": "panayir",
+          "type": "fixed",
           "title": "LOKMA",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 0,
+          "price": 33600,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_500,h_400,c_fill,g_auto/v1776510946/lokma_vdw1nl.png"
         },
         {
-          "id": "p32",
+          "id": "p33",
           "category": "menus",
           "subcategory": "panayir",
           "type": "fixed",
@@ -741,7 +754,7 @@ export const menusCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_500,h_300,c_fill,g_auto/v1776510915/bici-bici_tbrr7z.png"
         },
         {
-          "id": "p33",
+          "id": "p34",
           "category": "menus",
           "subcategory": "panayir",
           "type": "fixed",
@@ -753,28 +766,16 @@ export const menusCategory: Category = {
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill,g_auto/v1776510909/asure_prebl3.png"
         },
         {
-          "id": "p34",
+          "id": "p35",
           "category": "menus",
           "subcategory": "panayir",
           "type": "fixed",
           "title": "BARDAKTA MISIR",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 0,
+          "price": 22050,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776510913/bardakmisir_cvkqhj.png"
-        },
-        {
-          "id": "p35",
-          "category": "menus",
-          "subcategory": "panayir",
-          "type": "fixed",
-          "title": "FROZEN YOĞURT",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 0,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill,g_auto/v1776510928/frozen-yogurt_zcqeip.png"
         },
         {
           "id": "p36",
@@ -783,7 +784,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "SAHLEP",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 0,
+          "price": 24150,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776510956/sahlep_ziwman.png"
@@ -795,7 +796,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "OSMANLI MACUNU",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 0,
+          "price": 13650,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_500,h_300,c_fill,g_auto/v1776510950/osmanli-macunu_pz8ztl.png"
@@ -807,7 +808,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "WAFFLE",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir. Fiyat seçilen tek ürün içindir.",
-          "price": 0,
+          "price": 57750,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill,g_auto/v1776510973/waffle_hgdskj.png"
@@ -819,7 +820,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "SEBZELİ NOODLE",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 0,
+          "price": 29120,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_500,h_400,c_fill,g_auto/v1776510958/sebzeli-noodle_jfxihk.png"
@@ -831,7 +832,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "APARATİF TABAĞI",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 0,
+          "price": 23400,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_500,h_400,c_fill,g_auto/v1776510907/aparatif-tabagi_nnhzym.png"
@@ -855,7 +856,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "BÖREK",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 0,
+          "price": 30940,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_300,c_fill,g_auto/v1776510916/borekci_jg9a65.png"
@@ -867,7 +868,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "SİMİT",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 0,
+          "price": 20930,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto,f_auto,w_400,h_400,c_fill,g_auto/v1776510959/simitci_g635i7.png"
@@ -879,7 +880,7 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "KUMRU",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 0,
+          "price": 45500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776510942/kumru_xvk5br.jpg"
@@ -891,38 +892,11 @@ export const menusCategory: Category = {
           "type": "fixed",
           "title": "AMSTERDAM PATATESİ",
           "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 0,
+          "price": 27300,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776510906/amsterdam-patates_xguyig.png"
         },
-        {
-          "id": "p46",
-          "category": "menus",
-          "subcategory": "panayir",
-          "type": "fixed",
-          "title": "TOST EKMEK",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 0,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776510968/tost-ekmek_k1kctz.jpg"
-        },
-        
-        {
-          "id": "p47",
-          "category": "menus",
-          "subcategory": "panayir",
-          "type": "fixed",
-          "title": "GÖZLEME",
-          "summary": "Ürünler 100 kişiliktir. Nakliye bedeli 19.000 TL + KDV'dir.",
-          "price": 0,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776510929/gozleme_kkglen.jpg"
-        },
-        
-
       ]
     },
     {
