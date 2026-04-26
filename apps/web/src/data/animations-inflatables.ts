@@ -25,7 +25,7 @@ export const animationsinflatablesCategory: Category = {
           "text": "12 m x 6.3 m x 0.8 m"
         }
       ],
-          "price": 0,
+          "price": 19500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776672318/canlilangirt_fiyur1.jpg",
@@ -44,7 +44,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "3 x 5 m"
             }
           ],
-          "price": 22500,
+          "price": 32500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607890/pufgoloyunu_d9ose4.jpg",
@@ -57,7 +57,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "BALON FUTBOLU",
           "summary": "Şişme balonların vücuda giyilerek futbol oynandığı eğlenceli bir takım oyunudur. Oyuncular birbirine çarparak müdahalelerde bulunur ve ortaya oldukça eğlenceli sahneler çıkar. Kapalı ve açık mekanlar için uygundur.",
-          "price": 25000,
+          "price": 39000,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607003/balonfutbolu2_gq2j21.jpg"
@@ -69,7 +69,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "SUBSOCCER",
           "summary": "2 kişinin karşılıklı mücadele ettiği eğlenceli masa futbolu oyunudur. Oyuncular kaleyi temsil eden banklar üzerinde oturarak rakip kaleye gol atmaya çalışır.",
-          "price": 10000,
+          "price": 19500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607314/subsoccer_ufsley.jpg"
@@ -92,7 +92,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "9 x 5 x 6,5 m"
             }
           ],
-          "price": 17500,
+          "price": 26000,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774608205/korsangemisi_w7wp0p.jpg"
@@ -110,7 +110,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "6 x 6 m"
             }
           ],
-          "price": 20000,
+          "price": 26000,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774608518/merdane_c5nnss.jpg"
@@ -128,7 +128,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "7,5 x 6,5 x 4,5 m"
             }
           ],
-          "price": 15000,
+          "price": 19500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774609605/hayvanlaralemi_gnlsa9.jpg"
@@ -146,7 +146,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "9 x 4,5 x 5 m"
             }
           ],
-          "price": 17500,
+          "price": 26000,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774609720/kovboyoyunpark%C4%B1_rp2uku.jpg"
@@ -164,7 +164,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "4,5 x 5 x 3,5 m"
             }
           ],
-          "price": 15000,
+          "price": 19500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774609875/mickeymousezipzip_voivhs.jpg"
@@ -200,7 +200,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "3 m x 12 m x 2,5 m"
             }
           ],
-          "price": 17500,
+          "price": 19500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774610348/olimpikparkur_ju47ls.jpg"
@@ -218,7 +218,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "3 m x 3 m"
             }
           ],
-          "price": 16000,
+          "price": 16250,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607330/sumo_rg4nuz.jpg"
@@ -236,7 +236,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "3.6 m çap"
             }
           ],
-          "price": 16000,
+          "price": 13000,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607391/trambolin_roeyrq.jpg"
@@ -254,7 +254,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "7.6 m x 7.6 m x 5.2 m"
             }
           ],
-          "price": 20000,
+          "price": 26000,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607383/t%C4%B1rmanmapiramidi_vlgqfs.jpg"
@@ -308,7 +308,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "6.5 x 5.5 x 4.5 m"
             }
           ],
-          "price": 17500,
+          "price": 19500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607120/futboldart_ujyjxz.jpg"
@@ -326,7 +326,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "12 m x 12 m x 7 m"
             }
           ],
-          "price": 47500,
+          "price": 78000,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607337/superjumper_nugduf.jpg"
@@ -344,7 +344,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "6 m x 5 m x 3,5 m"
             }
           ],
-          "price": 17500,
+          "price": 19500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774613158/sarayzipzip_vvfpik.jpg"
@@ -362,7 +362,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "2,5 m x 4 m x 2,5 m"
             }
           ],
-          "price": 16000,
+          "price": 16250,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606981/atyar%C4%B1s%C4%B1veminibowling_flcj5t.jpg"
@@ -380,7 +380,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "3.60 m"
             }
           ],
-          "price": 40000,
+          "price": 45500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606967/atl%C4%B1kar%C4%B1nca_wshxj3.jpg"
@@ -398,7 +398,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "6.4 x 4 x 3"
             }
           ],
-          "price": 15000,
+          "price": 19500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607443/z%C4%B1playap%C4%B1%C5%9F_e1aart.jpg"
@@ -416,7 +416,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "9 m"
             }
           ],
-          "price": 16000,
+          "price": 13000,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606938/ahtapotcad%C4%B1r_2_ttdlbf.jpg"
@@ -434,7 +434,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "6 x 6 x 4 m"
             }
           ],
-          "price": 17500,
+          "price": 19500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774614070/e%C4%9Flencelizipzip-artguru_lswvn5.png"
@@ -452,7 +452,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "2.5 x 3 x 3"
             }
           ],
-          "price": 15000,
+          "price": 19500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606911/2libasketbol_aot7lo.jpg"
@@ -488,7 +488,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "4 m x 4 m x 1 m"
             }
           ],
-          "price": 20000,
+          "price": 19500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774615521/tophavuzu_nlcwh4.jpg"
@@ -506,7 +506,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "6 m x 5 m x 2.7 m"
             }
           ],
-          "price": 22500,
+          "price": 26000,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607269/rodeo_kdpxnt.jpg"
@@ -524,7 +524,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "10.6 m x 3.6 m x 3.6 m"
             }
           ],
-          "price": 17500,
+          "price": 19500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607024/bungeerun_oqydyv.jpg"
@@ -542,7 +542,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "5.5 m x 5.5 m x 1.5 m"
             }
           ],
-          "price": 17500,
+          "price": 19500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607135/gladyat%C3%B6r_pf1lsz.jpg"
@@ -560,7 +560,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "5 x 6 m"
             }
           ],
-          "price": 15000,
+          "price": 22750,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607233/mickeymouseoyunbah%C3%A7e_wnl2sm.jpg"
@@ -583,7 +583,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "12 adet golf sopası, 30 adet golf topu, 6 adet bayrak, skor kartı, golf topu dolabı"
             }
           ],
-          "price": 45000,
+          "price": 58500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607240/minigolf1_c8lxvi.jpg"
@@ -601,7 +601,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "2 adet oyun alanı, 4 adet top, 12 adet labut"
             }
           ],
-          "price": 25000,
+          "price": 32500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606918/2libowling_savg5z.jpg"
@@ -623,7 +623,7 @@ export const animationsinflatablesCategory: Category = {
               "text": "255 cm x 255 cm"
             }
           ],
-          "price": 10,
+          "price": 19500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607061/devsatran%C3%A7_k9swdh.jpg"
@@ -640,7 +640,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "MASA TENİSİ",
           "summary": "2 kişilik oynanan etkinliklerin vazgeçilmez masa oyunu.",
-          "price": 15000,
+          "price": 11700,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607218/masatenisi_galbrv.jpg"
@@ -652,7 +652,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "MİNYATÜR KALE",
           "summary": "Minyatür penaltı kalesi, ağı ve futbol topundan oluşan eğlenceli bir oyundur.",
-          "price": 3000,
+          "price": 6500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774617415/minyat%C3%BCr_q8nap7.avif"
@@ -664,7 +664,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "VOLEYBOL",
           "summary": "Yetişkinlere yönelik takım oyunlarından biridir.",
-          "price": 5000,
+          "price": 16250,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607435/voleybol_qakeon.jpg"
@@ -676,7 +676,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "ELEKTRONİK BOKS",
           "summary": "Işıklı dijital göstergeli ve ses efektli makinede kuvvet ölçme oyunudur.",
-          "price": 15000,
+          "price": 16250,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607090/elektronikboks_s64ubx.jpg"
@@ -688,7 +688,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "ELEKTRONİK DART",
           "summary": "Plastik uçlu oklarla hedefi vurma oyunudur. Makine dijital göstergelidir.",
-          "price": 15000,
+          "price": 16250,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607098/elektronikdart_d3yqt1.jpg"
@@ -700,7 +700,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "ATARİ",
           "summary": "Nostalji ve adrenalin yaşatacak klasik oyun deneyimi.",
-          "price": 15000,
+          "price": 16250,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606960/atari_stahfu.jpg"
@@ -712,7 +712,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "MASA LANGIRTI",
           "summary": "Standart 4 kişilik langırt masası. 2'şer kişilik 2 takımın aynı anda oynamasına olanak sağlar.",
-          "price": 7000,
+          "price": 6500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607210/masalang%C4%B1rt_mbgk7j.jpg"
@@ -724,7 +724,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "AIR HOCKEY",
           "summary": "Masa üzerinde bulunan diski tutamaç ile vurup karşı kaleye gol atma oyunudur.",
-          "price": 20000,
+          "price": 19500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774606946/airhockey_qq4mil.jpg"
@@ -736,7 +736,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "ELEKTRONİK TİLT",
           "summary": "Bir kişinin iki kolu kontrol ederek oynayabildiği elektronik oyundur.",
-          "price": 25000,
+          "price": 22750,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607113/elektroniktilt2_m8vqrr.jpg"
@@ -748,7 +748,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "KARAOKE",
           "summary": "Açık ve kapalı alanlarda misafirlerinizle karaoke eğlencesi yaşamanızı sağlar.",
-          "price": 30000,
+          "price": 52000,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607173/karaoke_ouddce.jpg"
@@ -760,7 +760,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "OYUNCAK YAKALAMA",
           "summary": "Joystick yardımıyla kontrol edilen mekanik kol ile hazne içindeki oyuncak veya hediyeleri yakalama oyunudur. Oyuncak hariçtir.",
-          "price": 20000,
+          "price": 26000,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774618032/Hediye-Kapma-Makinesi_l8qsa2.webp"
@@ -772,7 +772,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "TEKLİ BASKET POTASI",
           "summary": "Misafirlerinizin hem eğlenmesini hem de spor yapmasını sağlayan tekli basket potası.",
-          "price": 9000,
+          "price": 9750,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774886916/pota_l6axzx.jpg"
@@ -784,7 +784,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "ELEKTRONİK BASKET",
           "summary": "Etrafı parmaklıklarla çevrili, dijital göstergeli basket potasından top atma oyunudur.",
-          "price": 20000,
+          "price": 19500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607083/elektronikbasket_ci3o1w.jpg"
@@ -801,7 +801,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "HALKA ATIŞI",
           "summary": "Dizilmiş şişelerin boynuna minik halkaları geçirme oyunudur.",
-          "price": 5000,
+          "price": 16250,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607143/halka_at%C4%B1%C5%9F%C4%B1_tmtu2u.webp"
@@ -813,7 +813,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "TWISTER",
           "summary": "Aynı anda 4 kişinin oynayabildiği klasik denge ve yönlendirme oyunudur.",
-          "price": 10000,
+          "price": 13000,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774607421/twister_rrp4fb.jpg"
@@ -825,7 +825,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "TAVLA İSTASYONLARI (5 ADET)",
           "summary": "Organizasyonlarda ziyaretçilere klasik tavla deneyimi sunar.",
-          "price": 5000,
+          "price": 13000,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774618861/tavla_sybki1.jpg"
@@ -837,7 +837,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "OKEY İSTASYONLARI",
           "summary": "Rekabeti keyifle yaşatacak klasik okey oyunu deneyimi sunar.",
-          "price": 10000,
+          "price": 13000,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774619004/okey_ghythz.jpg"
@@ -849,7 +849,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "DENGELİ ŞAPKALAR",
           "summary": "Takımların başlarındaki aparata yerleştirilen kovadaki malzemeyi dökmeden parkur boyunca taşıdığı eğlenceli takım oyunudur.",
-          "price": 8000,
+          "price": 9750,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774619876/sapkadenge_zwdrkf.jpg"
@@ -861,7 +861,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "YÜRÜYEN YOL",
           "summary": "Takımların dev bir brandanın içinde uyumlu hareket ederek ilerlediği takım oyunudur.",
-          "price": 8000,
+          "price": 9750,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774619831/yuruyenyol_o5eqzs.jpg"
@@ -873,7 +873,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "SULU PANTALON",
           "summary": "Takımların süngerle su taşıyarak belirli sürede en fazla suyu aktarmaya çalıştığı eğlenceli yarışma oyunudur.",
-          "price": 8000,
+          "price": 9750,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774619640/sulupantolon_z8ltbd.jpg"
@@ -885,7 +885,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "OK ATIŞI",
           "summary": "Belli bir mesafeden karşıdaki kavanozlara pinpon topu atma oyunudur.",
-          "price": 15000,
+          "price": 13000,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774620255/ok%C3%A7uluk_ujmd5g.jpg"
@@ -897,7 +897,7 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "DART",
           "summary": "Hedefe atış odaklı eğlenceli bir karnaval oyunudur.",
-          "price": 7500,
+          "price": 13000,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill,g_auto/v1774886900/dart2_tfpzf1.jpg"
@@ -909,60 +909,73 @@ export const animationsinflatablesCategory: Category = {
           "type": "fixed",
           "title": "KASA YÜRÜYÜŞÜ",
           "summary": "5'er kişilik 2 takım halinde oynanan, zamana karşı eğlenceli bir takım oyunudur.",
-          "price": 8000,
+          "price": 9750,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774620270/kasayuruyusu_o2g6se.jpg"
+        },
+        {
+          "id": "a58",
+          "category": "animations-inflatables",
+          "subcategory": "karnaval-oyunlari",
+          "type": "fixed",
+          "title": "XOX Oyunu",
+          "summary": "XOX iki oyuncunun sırayla 3x3’lük bir oyun tahtasına kendi sembollerini (X veya O) yerleştirdiği klasik bir strateji oyunudur.",
+          "price": 1000,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto/q_auto/v1777054470/xox_lsr5hz.jpg"
         }
+
       ]
     },
     {
       "title": "Görsel Şovlar",
       "items": [
         {
-          "id": "a58",
+          "id": "a59",
           "category": "animations-inflatables",
           "subcategory": "gorsel-sovlar",
           "type": "fixed",
           "title": "BALON KATLAMA",
           "summary": "Uzman animatör tarafından çeşitli balon katlama figürlerinin gerçekleştirildiği görsel etkinliktir.",
-          "price": 20000,
+          "price": 26000,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774883793/balonkatlamaa_ofm9z3.jpg"
-        },
-        {
-          "id": "a59",
-          "category": "animations-inflatables",
-          "subcategory": "gorsel-sovlar",
-          "type": "fixed",
-          "title": "KARİKATÜRİST",
-          "summary": "Karakalem portre veya karikatür çizimi yapılıp misafirlere hediye edilen etkinliktir.",
-          "price": 25000,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774693611/karikat%C3%BCrist_gsr8kl.png"
         },
         {
           "id": "a60",
           "category": "animations-inflatables",
           "subcategory": "gorsel-sovlar",
           "type": "fixed",
-          "title": "TAROT FALI",
-          "summary": "Profesyonel tarot yorumcusu tarafından katılımcılara eğlence amaçlı tarot falı bakılır.",
-          "price": 30000,
+          "title": "KARİKATÜRİST",
+          "summary": "Karakalem portre veya karikatür çizimi yapılıp misafirlere hediye edilen etkinliktir.",
+          "price": 32500,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774693945/tarot_squwbc.png"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774693611/karikat%C3%BCrist_gsr8kl.png"
         },
         {
           "id": "a61",
           "category": "animations-inflatables",
           "subcategory": "gorsel-sovlar",
           "type": "fixed",
+          "title": "TAROT FALI",
+          "summary": "Profesyonel tarot yorumcusu tarafından katılımcılara eğlence amaçlı tarot falı bakılır.",
+          "price": 32500,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774693945/tarot_squwbc.png"
+        },
+        {
+          "id": "a62",
+          "category": "animations-inflatables",
+          "subcategory": "gorsel-sovlar",
+          "type": "fixed",
           "title": "HİNT KINACISI",
           "summary": "Profesyonel bir kınacı tarafından katılımcılara çıkabilen hint kınası uygulanır.",
-          "price": 30000,
+          "price": 32500,
           "currency": "TRY",
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_400,h_300,c_fill/v1774695152/hintk%C4%B1na_adxxbs.png"

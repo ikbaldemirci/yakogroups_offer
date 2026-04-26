@@ -168,7 +168,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                             {product.title}
                         </Typography>
                         <Chip
-                            label={`${currentPrice.toLocaleString("tr-TR")} ₺`}
+                            label={currentPrice === 0 ? "Fiyat Alınız" : `${currentPrice.toLocaleString("tr-TR")} ₺`}
                             variant={isSelected ? "filled" : "outlined"}
                             sx={{
                                 fontWeight: "bold",
@@ -312,7 +312,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
                     <Box display="flex" justifyContent="space-between" alignItems="center" mt={3} p={2} sx={{ bgcolor: "card.priceBg", color: "card.priceText", borderRadius: 2 }}>
                         <Typography variant="subtitle1" fontWeight="bold">Hizmet Bedeli:</Typography>
-                        <Typography variant="h6" fontWeight="bold">{currentPrice.toLocaleString("tr-TR")} ₺</Typography>
+                        <Typography variant="h6" fontWeight="bold">{currentPrice === 0 ? "Fiyat Alınız" : `${currentPrice.toLocaleString("tr-TR")} ₺`}</Typography>
                     </Box>
                 </DialogContent>
                 <DialogActions sx={{ p: 2 }}>

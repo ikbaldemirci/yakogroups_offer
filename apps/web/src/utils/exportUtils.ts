@@ -22,7 +22,7 @@ export const generateOfferWorkbook = async (
         { width: 25 },
     ];
 
-    const customerHeaderRow = wsItems.addRow(["MÜŞTERİ BİLGİLERİ", ""]);
+    const customerHeaderRow = wsItems.addRow(["YAKO GROUPS MÜŞTERİ BİLGİLERİ", ""]);
     customerHeaderRow.font = { bold: true, size: 12 };
     customerHeaderRow.alignment = { horizontal: "center" };
     wsItems.mergeCells(`A${customerHeaderRow.number}:B${customerHeaderRow.number}`);
