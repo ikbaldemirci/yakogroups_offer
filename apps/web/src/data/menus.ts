@@ -103,7 +103,7 @@ export const menusCategory: Category = {
           "price": 1050,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/v1774977006/kahvalt%C4%B1%C4%B1_puiwh1.jpg"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto/q_auto/v1777211181/rodos_ymbudq.jpg"
         },
         {
           "id": "m4",
@@ -145,7 +145,7 @@ export const menusCategory: Category = {
           "price": 1150,
           "currency": "TRY",
           "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774888507/b%C3%BCfe2_bllvvg.heic"
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto/q_auto/v1777211175/mikanos_yzlgea.jpg"
         },
         {
           "id": "m5",
@@ -350,6 +350,59 @@ export const menusCategory: Category = {
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776669553/BBQ2_l4d01o.jpg",
           "isPopular":true
+        }
+      ]
+    },
+    {
+      "title": "İçecek Menüleri",
+      "items": [
+        {
+          "id": "i1",
+          "category": "menus",
+          "subcategory": "icecek",
+          "type": "fixed",
+          "title": "BÜFE SÜRESİ BOYUNCA SOFT İÇECEK",
+          "summary": "Kola, meyve suları, soda, limonata, çay ve granül kahve",
+          "price": 250,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776670562/softicecek_xmlfl3.jpg"
+        },
+        {
+          "id": "i2",
+          "category": "menus",
+          "subcategory": "icecek",
+          "type": "fixed",
+          "title": "YAKO PARK GÜN BOYU SOFT İÇECEK",
+          "summary": "Kola, meyve suları, soda, limonata, çay ve granül kahve",
+          "price": 400,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776670562/softicecek_xmlfl3.jpg"
+        },
+        {
+          "id": "i3",
+          "category": "menus",
+          "subcategory": "icecek",
+          "type": "fixed",
+          "title": "LİMİTLİ YERLİ ALKOL (2 ADET)",
+          "summary": "Bira ve şarap",
+          "price": 700,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774976557/sarapbira_abycvl.jpg"
+        },
+        {
+          "id": "i4",
+          "category": "menus",
+          "subcategory": "icecek",
+          "type": "fixed",
+          "title": "LİMİTSİZ YERLİ ALKOL (3 SAAT)",
+          "summary": "Bira ve şarap",
+          "price": 1950,
+          "currency": "TRY",
+          "vatIncluded": false,
+          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774976557/sarapbira_abycvl.jpg"
         }
       ]
     },
@@ -897,59 +950,6 @@ export const menusCategory: Category = {
           "vatIncluded": false,
           "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776510906/amsterdam-patates_xguyig.png"
         },
-      ]
-    },
-    {
-      "title": "İçecek Menüleri",
-      "items": [
-        {
-          "id": "i1",
-          "category": "menus",
-          "subcategory": "icecek",
-          "type": "fixed",
-          "title": "BÜFE SÜRESİ BOYUNCA SOFT İÇECEK",
-          "summary": "Kola, meyve suları, soda, limonata, çay ve granül kahve",
-          "price": 250,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776670562/softicecek_xmlfl3.jpg"
-        },
-        {
-          "id": "i2",
-          "category": "menus",
-          "subcategory": "icecek",
-          "type": "fixed",
-          "title": "YAKO PARK GÜN BOYU SOFT İÇECEK",
-          "summary": "Kola, meyve suları, soda, limonata, çay ve granül kahve",
-          "price": 400,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/q_auto/f_auto/v1776670562/softicecek_xmlfl3.jpg"
-        },
-        {
-          "id": "i3",
-          "category": "menus",
-          "subcategory": "icecek",
-          "type": "fixed",
-          "title": "LİMİTLİ YERLİ ALKOL (2 ADET)",
-          "summary": "Bira ve şarap",
-          "price": 700,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774976557/sarapbira_abycvl.jpg"
-        },
-        {
-          "id": "i4",
-          "category": "menus",
-          "subcategory": "icecek",
-          "type": "fixed",
-          "title": "LİMİTSİZ YERLİ ALKOL (3 SAAT)",
-          "summary": "Bira ve şarap",
-          "price": 1950,
-          "currency": "TRY",
-          "vatIncluded": false,
-          "photoUrl": "https://res.cloudinary.com/deb8zn714/image/upload/f_auto,q_auto,w_500,h_300,c_fill,g_auto/v1774976557/sarapbira_abycvl.jpg"
-        }
       ]
     },
     {

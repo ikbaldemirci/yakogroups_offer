@@ -20,8 +20,7 @@ export function calculateOfferTotals(
 ): OfferTotals {
     const isMultipliedItem = (item: SelectedItem) =>
         item.product.id === "t28" ||
-        item.product.subcategory === "sanat-ve-deneyim-atolyeleri" ||
-        ["pe16", "pe17", "pe18", "pe19", "pe20"].includes(item.product.id);
+        item.product.subcategory === "sanat-ve-deneyim-atolyeleri";
 
     const multipliedItemsTotal = items
         .filter(isMultipliedItem)
@@ -109,13 +108,11 @@ export const getOfferBreakdown = (
         } else {
             const multipliedItems = categoryItems.filter(item => 
                 item.product.id === "t28" || 
-                item.product.subcategory === "sanat-ve-deneyim-atolyeleri" ||
-                ["pe16", "pe17", "pe18", "pe19", "pe20"].includes(item.product.id)
+                item.product.subcategory === "sanat-ve-deneyim-atolyeleri"
             );
             const standardItems = categoryItems.filter(item => 
                 item.product.id !== "t28" && 
-                item.product.subcategory !== "sanat-ve-deneyim-atolyeleri" &&
-                !["pe16", "pe17", "pe18", "pe19", "pe20"].includes(item.product.id)
+                item.product.subcategory !== "sanat-ve-deneyim-atolyeleri"
             );
             
             const multipliedTotal = multipliedItems.reduce((sum, item) => sum + item.price, 0);

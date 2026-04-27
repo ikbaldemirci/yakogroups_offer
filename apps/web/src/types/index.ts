@@ -58,8 +58,8 @@ export interface Category {
 }
 export const categories: Category[] = [
   menusCategory,
-  animationsinflatablesCategory,
   teamactivitiesCategory,
+  animationsinflatablesCategory,
   kidsActivitiesCategory,
   decorconceptCategory,
   piknikihtiyaclarCategory,

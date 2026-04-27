@@ -1,7 +1,7 @@
 export const categoryImages = [
     "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=600&h=400&fit=crop",
     "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=600&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=600&h=400&fit=crop",
     "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=2638&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1500534623283-312aade485b7?q=80&w=600&h=400&fit=crop",
     "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=600&h=400&fit=crop"

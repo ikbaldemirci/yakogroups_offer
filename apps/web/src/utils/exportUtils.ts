@@ -173,6 +173,36 @@ export const generateOfferWorkbook = async (
         console.error("İmza resmi eklenirken hata oluştu:", err);
     }
 
+   
+
+    const explanations = [
+        "Açıklamalar:",
+        "* Teklifin geçerlilik süresi 5 gündür.",
+        "* İstenilen tarih ile ilgili opsiyon sağlanamamaktadır.",
+        "* Nakliye-Hammaliye Bedeli hariç olup, seçilen hizmet kalemine göre belirlenecektir.",
+        "* Tesisimizde Jenaratör bulunmadığından Elektrik kesinti ihtimaline karşın",
+        " jeneratör eklenmesi önerilmektedir.",
+        "* Teklifin onaylanması halinde tarafınıza sözleşme gönderilecek ve %50 ön ödeme talep",
+        "edilecektir. Kalan %50 oranındaki tutar Etkinlik tarihinden 3 gün önce kapatılmalıdır.",
+        "* Bu teklif bilgilendirme amaçlıdır, sözleşme imzalanana kadar bağlayıcı değildir.",
+        "* Bu teklif bilgilendirme amaçlı hazırlanmıştır ve taraflar arasında sözleşme imzalanana",
+        " kadar bağlayıcı değildir. Onay için lütfen teklif numarasını belirterek tarafımızla",
+        " iletişime geçiniz.",
+        "* İletişim: Kurumsal Aktivite | teklif@kurumsalaktivite.com |",
+        " [0552 163 1907 - 0505 454 8280] |"
+    ];
+
+    explanations.forEach((text, index) => {
+        const row = wsItems.addRow([text, ""]);
+        wsItems.mergeCells(`A${row.number}:B${row.number}`);
+        row.getCell(1).alignment = { wrapText: true, vertical: "top" };
+        if (index === 0) {
+            row.font = { bold: true, size: 11, color: { argb: textColor } };
+        } else {
+            row.font = { size: 10, color: { argb: textColor } };
+        }
+    });
+
     const buffer = await workbook.xlsx.writeBuffer();
     const fileName = `YakoGroups_Teklif_${userInfo.fullName.replace(/\s+/g, "_")}.xlsx`;
     const blob = new Blob([buffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
