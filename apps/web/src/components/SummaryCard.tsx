@@ -163,7 +163,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
     const isRangeValid = userInfo ? validatePersonCount(exactPersonCount, userInfo.personCount) : false;
     const isValidCount = isNumberValid && isRangeValid;
 
-    const { subtotal, menuTotal, menuServiceFee, serviceFee, vatAmount: vat, grandTotal } = calculateOfferTotals(items, isValidCount ? parsedCount : undefined);
+    const { subtotal, menuTotal, menuServiceFee, crewCateringFee, serviceFee, vatAmount: vat, grandTotal } = calculateOfferTotals(items, isValidCount ? parsedCount : undefined, userInfo?.personCount);
     const hasMenu = items.some(item => item.product.category === "menus");
     const hasT28 = items.some(item => item.product.id === "t28");
     const hasSanatVeDeneyimAtolyeleri = items.some(item => item.product.subcategory === "sanat-ve-deneyim-atolyeleri");
@@ -212,7 +212,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
         const { blob, fileName } = await exportToExcel(
             userInfo, 
             modifiedSelectedItemsForExport, 
-            { subtotal, menuTotal, menuServiceFee, serviceFee, vatAmount: vat, grandTotal }, 
+            { subtotal, menuTotal, menuServiceFee, crewCateringFee, serviceFee, vatAmount: vat, grandTotal }, 
             isValidCount ? parsedCount : undefined
         );
         console.log("CRM'e gönderme işlemi tetiklendi (Hazırlık aşamasında)...", { 
@@ -224,7 +224,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
         await sendOfferToWebhook(
             userInfo,
             modifiedSelectedItemsForExport,
-            { subtotal, menuTotal, menuServiceFee, serviceFee, vatAmount: vat, grandTotal },
+            { subtotal, menuTotal, menuServiceFee, crewCateringFee, serviceFee, vatAmount: vat, grandTotal },
             isValidCount ? parsedCount : undefined,
             blob,
             fileName
@@ -606,6 +606,14 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                             {subtotal.toLocaleString("tr-TR", { minimumFractionDigits: 0, maximumFractionDigits: 2 })} ₺
                                         </Typography>
                                     </Box>
+                                    {crewCateringFee > 0 && (
+                                        <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", py: 1 }}>
+                                            <Typography variant="body1" color="text.secondary">Ekip-İaşe Bedeli</Typography>
+                                            <Typography variant="body1" fontWeight="medium" color="text.secondary">
+                                                {crewCateringFee.toLocaleString("tr-TR", { minimumFractionDigits: 0, maximumFractionDigits: 2 })} ₺
+                                            </Typography>
+                                        </Box>
+                                    )}
                                     <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", py: 1 }}>
                                         <Typography variant="body1" color="text.secondary">Hizmet Bedeli</Typography>
                                         <Typography variant="body1" fontWeight="medium" color="text.secondary">
@@ -631,7 +639,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                     </Box>
                 )}
             </Paper>
-
+            
             <Box sx={{ display: "flex", justifyContent: "space-between", mt: 4 }}>
                 {isCart ? (
                     <Button

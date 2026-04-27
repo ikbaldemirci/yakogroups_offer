@@ -91,9 +91,11 @@ export const UserInfoForm: React.FC = () => {
 
         setEditingFields(prev => ({ ...prev, [fieldName]: false }));
         
-        setSelectedItems({});
-        
         if (globalUserInfo) {
+            if (globalUserInfo[fieldName as keyof UserInfo] !== formData[fieldName as keyof UserInfo]) {
+                setSelectedItems({});
+            }
+            
             setUserInfo({
                 fullName: formData.fullName,
                 companyName: formData.companyName,
@@ -302,6 +304,7 @@ export const UserInfoForm: React.FC = () => {
                             type="submit"
                             variant="contained"
                             size="large"
+                            disabled={!!globalUserInfo && Object.values(editingFields).some(Boolean)}
                             sx={{ py: 1.5, borderRadius: 2, fontWeight: "bold", flex: 2 }}
                         >
                             {formData.fullName ? "Devam Et" : "Teklif Adımlarına Başla"}

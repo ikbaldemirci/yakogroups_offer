@@ -74,6 +74,7 @@ export interface OfferTotals {
     subtotal: number;
     menuTotal: number;
     menuServiceFee: number;
+    crewCateringFee: number;
     serviceFee: number;
     vatAmount: number;
     grandTotal: number;
