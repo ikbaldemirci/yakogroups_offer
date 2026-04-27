@@ -171,7 +171,7 @@ export const decorconceptCategory: Category = {
           "packages": [
             { "label": "Basic",   "price": 80000 },
             { "label": "Medium",  "price": 120000 },
-            { "label": "Premium", "price": 130000 }
+            { "label": "Premium", "price": 160000 }
           ]
         },
         {
@@ -202,7 +202,7 @@ export const decorconceptCategory: Category = {
           "packages": [
             { "label": "Basic",   "price": 80000 },
             { "label": "Medium",  "price": 120000 },
-            { "label": "Premium", "price": 130000 }
+            { "label": "Premium", "price": 160000 }
           ]
         },
          {
@@ -228,7 +228,7 @@ export const decorconceptCategory: Category = {
           "packages": [
             { "label": "Basic",   "price": 80000 },
             { "label": "Medium",  "price": 120000 },
-            { "label": "Premium", "price": 130000 }
+            { "label": "Premium", "price": 160000 }
           ]
         },
          {
@@ -258,7 +258,7 @@ export const decorconceptCategory: Category = {
           "packages": [
             { "label": "Basic",   "price": 80000 },
             { "label": "Medium",  "price": 120000 },
-            { "label": "Premium", "price": 130000 }
+            { "label": "Premium", "price": 160000 }
           ]
         }
       ] 

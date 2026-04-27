@@ -59,7 +59,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
     const [ka10Selection, setKa10Selection] = useState<"Çadırsız" | "Çadırlı">("Çadırsız");
     const [itemQuantities, setItemQuantities] = useState<Record<string, number>>({});
 
-    const pieceBasedIds = ["pe6", "pe7", "pe8", "pe9", "pe12", "pe13", "pe21", "pe22", "pe23", "pe24", "pe25", "pe26"];
+    const pieceBasedIds = ["pe6", "pe7", "pe8", "pe9", "pe12", "pe13", "pe16", "pe17", "pe18", "pe19", "pe20", "pe21", "pe22", "pe23", "pe24", "pe25", "pe26"];
 
 
     const rawItems = Object.values(selectedItems);
@@ -167,8 +167,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
     const hasMenu = items.some(item => item.product.category === "menus");
     const hasT28 = items.some(item => item.product.id === "t28");
     const hasSanatVeDeneyimAtolyeleri = items.some(item => item.product.subcategory === "sanat-ve-deneyim-atolyeleri");
-    const hasMultipliedItems = items.some(item => ["pe16", "pe17", "pe18", "pe19", "pe20"].includes(item.product.id));
-    const needsPersonCount = hasMenu || hasT28 || hasSanatVeDeneyimAtolyeleri || hasMultipliedItems;
+    const needsPersonCount = hasMenu || hasT28 || hasSanatVeDeneyimAtolyeleri;
     
     const zeroPriceItems = items.filter(item => item.price === 0);
         const hasZeroPriceItem = zeroPriceItems.length > 0;
@@ -319,14 +318,13 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                             const isMenu = category.id === "menus";
                             const hasT28InCategory = categoryItems.some(item => item.product.id === "t28");
                             const hasSanatVeDeneyimAtolyeleriInCategory = categoryItems.some(item => item.product.subcategory === "sanat-ve-deneyim-atolyeleri");
-                            const hasMultipliedItemsInCategory = categoryItems.some(item => ["pe16", "pe17", "pe18", "pe19", "pe20"].includes(item.product.id));
-                            const categoryNeedsPersonCount = isMenu || hasT28InCategory || hasSanatVeDeneyimAtolyeleriInCategory || hasMultipliedItemsInCategory;
+                            const categoryNeedsPersonCount = isMenu || hasT28InCategory || hasSanatVeDeneyimAtolyeleriInCategory;
 
                             const categoryTotal = categoryItems.reduce((sum, item) => {
                                 if (item.product.category === "menus" && (item.product as any).subcategory !== "panayir") {
                                     return sum + (isValidCount ? item.price * parsedCount : 0);
                                 }
-                                if (item.product.id === "t28" || item.product.subcategory === "sanat-ve-deneyim-atolyeleri" || ["pe16", "pe17", "pe18", "pe19", "pe20"].includes(item.product.id)) {
+                                if (item.product.id === "t28" || item.product.subcategory === "sanat-ve-deneyim-atolyeleri") {
                                     return sum + (isValidCount ? item.price * parsedCount : 0);
                                 }
                                 return sum + item.price;

@@ -39,8 +39,8 @@ import { categoryImages, campaigns, showcaseVideos, catalogImages } from "../dat
 
 const categoryIcons = [
     <RestaurantMenuIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
-    <CelebrationIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
     <GroupsIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
+    <CelebrationIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
     <ToysIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
     <ParkIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />,
     <HeadphonesIcon sx={{ fontSize: { xs: "2.5rem", md: "3rem" }, color: "white"}} />
@@ -63,8 +63,8 @@ export const HomePage: React.FC = () => {
 
     const categoryColors = [
         `linear-gradient(135deg, ${theme.palette.primary.light}, ${theme.palette.primary.main})`,
-        `linear-gradient(135deg, ${theme.palette.secondary.light}, ${theme.palette.secondary.main})`,
         `linear-gradient(135deg, ${theme.palette.success.light}, ${theme.palette.success.main})`,
+        `linear-gradient(135deg, ${theme.palette.secondary.light}, ${theme.palette.secondary.main})`,
         `linear-gradient(135deg, ${theme.palette.error.light}, ${theme.palette.error.main})`,
         `linear-gradient(135deg, ${theme.palette.info.light}, ${theme.palette.info.main})`,
         `linear-gradient(135deg, ${theme.palette.warning.light}, ${theme.palette.warning.main})`,
