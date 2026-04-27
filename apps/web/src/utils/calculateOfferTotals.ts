@@ -16,7 +16,8 @@ export const validatePersonCount = (countStr: string, tier: string): boolean => 
 
 export function calculateOfferTotals(
     items: SelectedItem[],
-    exactPersonCount?: number
+    exactPersonCount?: number,
+    personCountTier?: string
 ): OfferTotals {
     const isMultipliedItem = (item: SelectedItem) =>
         item.product.id === "t28" ||
@@ -46,22 +47,43 @@ export function calculateOfferTotals(
         ? multipliedItemsTotal * exactPersonCount
         : 0;
 
+    let crewCateringFee = 0;
+    if (items.length > 0) {
+        let count = 0;
+        if (exactPersonCount && exactPersonCount > 0) {
+            count = exactPersonCount;
+        } else if (personCountTier) {
+            if (personCountTier === "0-15") count = 15;
+            else if (personCountTier === "15-30") count = 30;
+            else if (personCountTier === "30-50") count = 50;
+            else if (personCountTier === "50-75") count = 75;
+            else if (personCountTier === "75-100") count = 100;
+            else if (personCountTier === "100+") count = 101;
+        }
+
+        if (count > 0 && count <= 50) crewCateringFee = 9000;
+        else if (count > 50 && count <= 75) crewCateringFee = 15000;
+        else if (count > 75) crewCateringFee = 18000;
+        else if (count === 0 && personCountTier) crewCateringFee = 9000; 
+    }
+
     const subtotal = otherSubtotal + menuTotal + multipliedItemsTotalWithCount;
 
     const menuServiceFee = menuTotal > 0 ? menuTotal * 0.1 : 0;
 
-    const serviceFeeBase = subtotal + menuServiceFee;
+    const serviceFeeBase = subtotal + menuServiceFee + crewCateringFee;
     const serviceFee = serviceFeeBase * 0.07;
 
-    const vatBase = subtotal + menuServiceFee + serviceFee;
+    const vatBase = subtotal + menuServiceFee + crewCateringFee + serviceFee;
     const vatAmount = vatBase * 0.2;
 
-    const grandTotal = subtotal + menuServiceFee + serviceFee + vatAmount;
+    const grandTotal = subtotal + menuServiceFee + crewCateringFee + serviceFee + vatAmount;
 
     return {
         subtotal,
         menuTotal,
         menuServiceFee,
+        crewCateringFee,
         serviceFee,
         vatAmount,
         grandTotal,

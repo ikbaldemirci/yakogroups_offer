@@ -97,6 +97,11 @@ export const generateOfferWorkbook = async (
         
         const r1 = wsItems.addRow(["Alınan Hizmetler Toplamı (KDV hariç):", `${adjustedSubtotal.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} ₺`]);
         r1.getCell(2).alignment = { horizontal: "right" };
+
+        if (totals.crewCateringFee > 0) {
+            const rCrew = wsItems.addRow(["Ekip-İaşe Bedeli:", `${totals.crewCateringFee.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} ₺`]);
+            rCrew.getCell(2).alignment = { horizontal: "right" };
+        }
         
         const r2 = wsItems.addRow(["Hizmet Bedeli:", `${totals.serviceFee.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} ₺`]);
         r2.getCell(2).alignment = { horizontal: "right" };
@@ -314,7 +319,12 @@ export const sendOfferToWebhook = async (
 
     formattedMessage += "\n💰 *Fiyat Özeti:*\n";
     formattedMessage += "Hizmetler Toplamı: " + totals.subtotal.toLocaleString("tr-TR") + " ₺\n";
-    formattedMessage += "Personel/Servis: " + totals.menuServiceFee.toLocaleString("tr-TR") + " ₺\n";
+    if (totals.menuServiceFee > 0) {
+        formattedMessage += "Personel/Servis: " + totals.menuServiceFee.toLocaleString("tr-TR") + " ₺\n";
+    }
+    if (totals.crewCateringFee > 0) {
+        formattedMessage += "Ekip-İaşe Bedeli: " + totals.crewCateringFee.toLocaleString("tr-TR") + " ₺\n";
+    }
     formattedMessage += "Hizmet Bedeli: " + totals.serviceFee.toLocaleString("tr-TR") + " ₺\n";
     formattedMessage += "KDV: " + totals.vatAmount.toLocaleString("tr-TR") + " ₺\n";
     formattedMessage += "*GENEL TOPLAM: " + totals.grandTotal.toLocaleString("tr-TR") + " ₺*";
@@ -331,7 +341,8 @@ export const sendOfferToWebhook = async (
             summary: {
                 totalServicesPrice: totals.subtotal,
                 menuServicePersonnelFee: totals.menuServiceFee,
-                totalBeforeVatWithServiceFee: totals.subtotal + totals.menuServiceFee,
+                crewCateringFee: totals.crewCateringFee,
+                totalBeforeVatWithServiceFee: totals.subtotal + totals.menuServiceFee + totals.crewCateringFee,
                 agencyServiceFee: totals.serviceFee,
                 vatAmount: totals.vatAmount,
                 grandTotal: totals.grandTotal
