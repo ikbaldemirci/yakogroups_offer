@@ -9,7 +9,11 @@ import {
     TextField,
     Typography,
     Paper,
-    IconButton
+    IconButton,
+    Checkbox,
+    FormControlLabel,
+    Link,
+    Modal
 } from "@mui/material";
 import type { SelectChangeEvent } from "@mui/material";
 import EditIcon from "@mui/icons-material/Edit";
@@ -17,6 +21,7 @@ import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import type { PersonCountTier } from "../types";
 import { useOffer } from "../context/OfferContext";
+import { cookiePolicyText, kvkkText } from "../data/agreements";
 
 export interface UserInfo {
     fullName: string;
@@ -40,6 +45,12 @@ export const UserInfoForm: React.FC = () => {
 
     const [errors, setErrors] = useState<Partial<Record<keyof UserInfo, string>>>({});
     const [editingFields, setEditingFields] = useState<Record<string, boolean>>({});
+
+    const [hasOpenedCookiePolicy, setHasOpenedCookiePolicy] = useState(!!globalUserInfo);
+    const [hasOpenedKvkk, setHasOpenedKvkk] = useState(!!globalUserInfo);
+    const [isCookiePolicyAccepted, setIsCookiePolicyAccepted] = useState(!!globalUserInfo);
+    const [isKvkkAccepted, setIsKvkkAccepted] = useState(!!globalUserInfo);
+    const [activeModal, setActiveModal] = useState<'cookiePolicy' | 'kvkk' | null>(null);
 
     const validateEmail = (email: string) => {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -188,6 +199,10 @@ export const UserInfoForm: React.FC = () => {
         setSelectedItems({});
         localStorage.removeItem("yako_groups_userInfo");
         localStorage.removeItem("yako_groups_selectedItems");
+        setIsCookiePolicyAccepted(false);
+        setIsKvkkAccepted(false);
+        setHasOpenedCookiePolicy(false);
+        setHasOpenedKvkk(false);
     };
 
     return (
@@ -278,15 +293,70 @@ export const UserInfoForm: React.FC = () => {
                                 label="Kişi Sayısı"
                                 onChange={handleSelectChange}
                             >
-                                <MenuItem value="0-15">0 - 15 Kişi</MenuItem>
-                                <MenuItem value="15-30">15 - 30 Kişi</MenuItem>
-                                <MenuItem value="30-50">30 - 50 Kişi</MenuItem>
-                                <MenuItem value="50-75">50 - 75 Kişi</MenuItem>
-                                <MenuItem value="75-100">75 - 100 Kişi</MenuItem>
+                                <MenuItem value="0-14">0 - 14 Kişi</MenuItem>
+                                <MenuItem value="15-29">15 - 29 Kişi</MenuItem>
+                                <MenuItem value="30-49">30 - 49 Kişi</MenuItem>
+                                <MenuItem value="50-74">50 - 74 Kişi</MenuItem>
+                                <MenuItem value="75-99">75 - 99 Kişi</MenuItem>
                                 <MenuItem value="100+">100+ Kişi</MenuItem>
                             </Select>
                         </FormControl>
                     ))}
+
+                    <Box sx={{ mt: 1, display: "flex", flexDirection: "column", gap: 0.5 }}>
+                        <FormControlLabel
+                            control={
+                                <Checkbox
+                                    checked={isCookiePolicyAccepted}
+                                    onChange={(e) => setIsCookiePolicyAccepted(e.target.checked)}
+                                    disabled={!hasOpenedCookiePolicy}
+                                    color="primary"
+                                />
+                            }
+                            label={
+                                <Typography variant="body2" color={!hasOpenedCookiePolicy ? "text.secondary" : "text.primary"}>
+                                    <Link
+                                        component="button"
+                                        type="button"
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            setActiveModal('cookiePolicy');
+                                        }}
+                                        sx={{ cursor: "pointer", mr: 0.5, verticalAlign: "baseline", fontSize: "inherit", fontWeight: "bold" }}
+                                    >
+                                        Çerez Politikası
+                                    </Link>
+                                    'ni okudum ve kabul ediyorum.
+                                </Typography>
+                            }
+                        />
+                        <FormControlLabel
+                            control={
+                                <Checkbox
+                                    checked={isKvkkAccepted}
+                                    onChange={(e) => setIsKvkkAccepted(e.target.checked)}
+                                    disabled={!hasOpenedKvkk}
+                                    color="primary"
+                                />
+                            }
+                            label={
+                                <Typography variant="body2" color={!hasOpenedKvkk ? "text.secondary" : "text.primary"}>
+                                    <Link
+                                        component="button"
+                                        type="button"
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            setActiveModal('kvkk');
+                                        }}
+                                        sx={{ cursor: "pointer", mr: 0.5, verticalAlign: "baseline", fontSize: "inherit", fontWeight: "bold" }}
+                                    >
+                                        Aydınlatma Metni
+                                    </Link>
+                                    'ni okudum ve kabul ediyorum.
+                                </Typography>
+                            }
+                        />
+                    </Box>
 
                     <Box sx={{ display: "flex", gap: 2, mt: 2 }}>
                         {formData.fullName && (
@@ -304,7 +374,11 @@ export const UserInfoForm: React.FC = () => {
                             type="submit"
                             variant="contained"
                             size="large"
-                            disabled={!!globalUserInfo && Object.values(editingFields).some(Boolean)}
+                            disabled={
+                                (!!globalUserInfo && Object.values(editingFields).some(Boolean)) ||
+                                !isCookiePolicyAccepted ||
+                                !isKvkkAccepted
+                            }
                             sx={{ py: 1.5, borderRadius: 2, fontWeight: "bold", flex: 2 }}
                         >
                             {formData.fullName ? "Devam Et" : "Teklif Adımlarına Başla"}
@@ -312,6 +386,70 @@ export const UserInfoForm: React.FC = () => {
                     </Box>
                 </Box>
             </Paper>
+
+            <Modal
+                open={activeModal === 'cookiePolicy'}
+                onClose={() => {
+                    setActiveModal(null);
+                    setHasOpenedCookiePolicy(true);
+                }}
+            >
+                <Box sx={{
+                    position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+                    width: '90%', maxWidth: 600, bgcolor: 'background.paper', borderRadius: 2,
+                    boxShadow: 24, p: 4, maxHeight: '80vh', overflowY: 'auto'
+                }}>
+                    <Typography variant="h6" component="h2" gutterBottom fontWeight="bold" color="primary">
+                        Çerez Politikası
+                    </Typography>
+                    <Typography variant="body2" sx={{ mt: 2, whiteSpace: 'pre-wrap', color: "text.secondary" }}>
+                        {cookiePolicyText}
+                    </Typography>
+                    <Button 
+                        variant="contained" 
+                        fullWidth 
+                        sx={{ mt: 4, py: 1.5, borderRadius: 2, fontWeight: "bold" }}
+                        onClick={() => {
+                            setActiveModal(null);
+                            setHasOpenedCookiePolicy(true);
+                        }}
+                    >
+                        Okudum, Anladım
+                    </Button>
+                </Box>
+            </Modal>
+
+            <Modal
+                open={activeModal === 'kvkk'}
+                onClose={() => {
+                    setActiveModal(null);
+                    setHasOpenedKvkk(true);
+                }}
+            >
+                <Box sx={{
+                    position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+                    width: '90%', maxWidth: 600, bgcolor: 'background.paper', borderRadius: 2,
+                    boxShadow: 24, p: 4, maxHeight: '80vh', overflowY: 'auto'
+                }}>
+                    <Typography variant="h6" component="h2" gutterBottom fontWeight="bold" color="primary">
+                        Kişisel Verilerin Korunması (KVKK) Aydınlatma Metni
+                    </Typography>
+                    <Typography variant="body2" sx={{ mt: 2, whiteSpace: 'pre-wrap', color: "text.secondary" }}>
+                        {kvkkText}
+                    </Typography>
+                    <Button 
+                        variant="contained" 
+                        fullWidth 
+                        sx={{ mt: 4, py: 1.5, borderRadius: 2, fontWeight: "bold" }}
+                        onClick={() => {
+                            setActiveModal(null);
+                            setHasOpenedKvkk(true);
+                        }}
+                    >
+                        Okudum, Anladım
+                    </Button>
+                </Box>
+            </Modal>
         </Box>
     );
 };

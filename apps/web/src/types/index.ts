@@ -5,7 +5,7 @@ import { kidsActivitiesCategory } from "../data/kids-activities";
 import { decorconceptCategory } from "../data/decor-concept";
 import { piknikihtiyaclarCategory } from "../data/picnic-essentials";
 
-export type PersonCountTier = "0-15" | "15-30" | "30-50" | "50-75" | "75-100" | "100+";
+export type PersonCountTier = "0-14" | "15-29" | "30-49" | "50-74" | "75-99" | "100+";
 
 export interface ProductDetail {
   title: string;

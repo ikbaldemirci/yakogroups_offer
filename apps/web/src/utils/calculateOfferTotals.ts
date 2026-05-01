@@ -5,11 +5,11 @@ import type { OfferTotals } from "../types";
 export const validatePersonCount = (countStr: string, tier: string): boolean => {
     const num = parseInt(countStr, 10);
     if (isNaN(num)) return false;
-    if (tier === "0-15") return num > 0 && num <= 15;
-    if (tier === "15-30") return num >= 15 && num <= 30;
-    if (tier === "30-50") return num >= 30 && num <= 50;
-    if (tier === "50-75") return num >= 50 && num <= 75;
-    if (tier === "75-100") return num >= 75 && num <= 100;
+    if (tier === "0-14") return num > 0 && num <= 14;
+    if (tier === "15-29") return num >= 15 && num <= 29;
+    if (tier === "30-49") return num >= 30 && num <= 49;
+    if (tier === "50-74") return num >= 50 && num <= 74;
+    if (tier === "75-99") return num >= 75 && num <= 99;
     if (tier === "100+") return num >= 100;
     return true;
 };
@@ -53,11 +53,11 @@ export function calculateOfferTotals(
         if (exactPersonCount && exactPersonCount > 0) {
             count = exactPersonCount;
         } else if (personCountTier) {
-            if (personCountTier === "0-15") count = 15;
-            else if (personCountTier === "15-30") count = 30;
-            else if (personCountTier === "30-50") count = 50;
-            else if (personCountTier === "50-75") count = 75;
-            else if (personCountTier === "75-100") count = 100;
+            if (personCountTier === "0-14") count = 14;
+            else if (personCountTier === "15-29") count = 29;
+            else if (personCountTier === "30-49") count = 49;
+            else if (personCountTier === "50-74") count = 74;
+            else if (personCountTier === "75-99") count = 99;
             else if (personCountTier === "100+") count = 101;
         }
 
