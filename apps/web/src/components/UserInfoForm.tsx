@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import {
     Box,
     Button,
@@ -297,8 +297,8 @@ export const UserInfoForm: React.FC = () => {
                                 <MenuItem value="15-29">15 - 29 Kişi</MenuItem>
                                 <MenuItem value="30-49">30 - 49 Kişi</MenuItem>
                                 <MenuItem value="50-74">50 - 74 Kişi</MenuItem>
-                                <MenuItem value="75-99">75 - 99 Kişi</MenuItem>
-                                <MenuItem value="100+">100+ Kişi</MenuItem>
+                                <MenuItem value="75-150">75 - 150 Kişi</MenuItem>
+                                <MenuItem value="151+">151+ Kişi</MenuItem>
                             </Select>
                         </FormControl>
                     ))}

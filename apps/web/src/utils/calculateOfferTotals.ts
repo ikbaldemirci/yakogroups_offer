@@ -1,4 +1,4 @@
-import { categories } from "../types";
+﻿import { categories } from "../types";
 import type { SelectedItem } from "../types";
 import type { OfferTotals } from "../types";
 
@@ -9,8 +9,8 @@ export const validatePersonCount = (countStr: string, tier: string): boolean => 
     if (tier === "15-29") return num >= 15 && num <= 29;
     if (tier === "30-49") return num >= 30 && num <= 49;
     if (tier === "50-74") return num >= 50 && num <= 74;
-    if (tier === "75-99") return num >= 75 && num <= 99;
-    if (tier === "100+") return num >= 100;
+    if (tier === "75-150") return num >= 75 && num <= 150;
+    if (tier === "151+") return num >= 151;
     return true;
 };
 
@@ -57,8 +57,8 @@ export function calculateOfferTotals(
             else if (personCountTier === "15-29") count = 29;
             else if (personCountTier === "30-49") count = 49;
             else if (personCountTier === "50-74") count = 74;
-            else if (personCountTier === "75-99") count = 99;
-            else if (personCountTier === "100+") count = 101;
+            else if (personCountTier === "75-150") count = 150;
+            else if (personCountTier === "151+") count = 151;
         }
 
         if (count > 0 && count <= 50) crewCateringFee = 9000;

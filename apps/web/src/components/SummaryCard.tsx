@@ -59,7 +59,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
     const [ka10Selection, setKa10Selection] = useState<"Çadırsız" | "Çadırlı">("Çadırsız");
     const [itemQuantities, setItemQuantities] = useState<Record<string, number>>({});
 
-    const pieceBasedIds = ["pe6", "pe7", "pe8", "pe9", "pe12", "pe13", "pe16", "pe17", "pe18", "pe19", "pe20", "pe21", "pe22", "pe23", "pe24", "pe25", "pe26"];
+    const pieceBasedIds = ["pe6", "pe7", "pe8", "pe9", "pe11", "pe12", "pe13", "pe16", "pe17", "pe18", "pe19", "pe20", "pe21", "pe22", "pe23", "pe24", "pe25", "pe26"];
 
 
     const rawItems = Object.values(selectedItems);
@@ -387,18 +387,18 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                                             <Box sx={{ mt: 1 }}>
                                                                 <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
                                                                     <Typography variant="body2" color="text.secondary">
-                                                                        Adet (1-100):
+                                                                        Adet (1-150):
                                                                     </Typography>
                                                                     <TextField
                                                                         size="small"
                                                                         type="number"
-                                                                        inputProps={{ min: 1, max: 100 }}
+                                                                        inputProps={{ min: 1, max: 150 }}
                                                                         value={itemQuantities[item.product.id] === undefined ? 1 : itemQuantities[item.product.id]}
                                                                         onChange={(e) => {
                                                                             let val = parseInt(e.target.value, 10);
                                                                             if (isNaN(val)) val = 1;
                                                                             if (val < 1) val = 1;
-                                                                            if (val > 100) val = 100;
+                                                                            if (val > 150) val = 150;
                                                                             setItemQuantities(prev => ({ ...prev, [item.product.id]: val }));
                                                                         }}
                                                                         sx={{ width: 80, bgcolor: "white" }}

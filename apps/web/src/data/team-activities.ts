@@ -1,4 +1,4 @@
-import type { Category } from "../types";
+﻿import type { Category } from "../types";
 
 export const teamactivitiesCategory: Category = {
   "id": "team-activities",
@@ -20,8 +20,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 47500,
             "30-49": 50000,
             "50-74": 57500,
-            "75-99": 67500,
-            "100+": 0
+            "75-150": 67500,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -47,8 +47,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 45000,
             "30-49": 65000,
             "50-74": 75000,
-            "75-99": 75000,
-            "100+": 0
+            "75-150": 75000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -69,8 +69,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 35000,
             "30-49": 40000,
             "50-74": 45000,
-            "75-99": 50000,
-            "100+": 0
+            "75-150": 50000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -90,8 +90,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 75000,
             "30-49": 80000,
             "50-74": 85000,
-            "75-99": 90000,
-            "100+": 0
+            "75-150": 90000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -111,8 +111,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 45000,
             "30-49": 50000,
             "50-74": 75000,
-            "75-99": 100000,
-            "100+": 0
+            "75-150": 100000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -132,8 +132,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -155,8 +155,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 90000,
             "30-49": 90000,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -176,8 +176,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -197,8 +197,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 30000,
             "30-49": 50000,
             "50-74": 50000,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -218,8 +218,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -239,8 +239,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 45000,
             "30-49": 45000,
             "50-74": 45000,
-            "75-99": 45000,
-            "100+": 0
+            "75-150": 45000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -265,8 +265,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 45000,
             "30-49": 50000,
             "50-74": 60000,
-            "75-99": 80000,
-            "100+": 0
+            "75-150": 80000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -287,8 +287,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 75000,
             "30-49": 100000,
             "50-74": 100000,
-            "75-99": 150000,
-            "100+": 0
+            "75-150": 150000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -309,8 +309,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 30000,
             "30-49": 50000,
             "50-74": 50000,
-            "75-99": 75000,
-            "100+": 0
+            "75-150": 75000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -335,8 +335,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 50000,
             "30-49": 55000,
             "50-74": 57500,
-            "75-99": 75000,
-            "100+": 0
+            "75-150": 75000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -357,8 +357,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 35000,
             "30-49": 40000,
             "50-74": 45000,
-            "75-99": 50000,
-            "100+": 0
+            "75-150": 50000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -378,8 +378,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 75000,
             "30-49": 150000,
             "50-74": 175000,
-            "75-99": 250000,
-            "100+": 0
+            "75-150": 250000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -400,8 +400,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 35000,
             "30-49": 40000,
             "50-74": 45000,
-            "75-99": 50000,
-            "100+": 0
+            "75-150": 50000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -422,8 +422,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 35000,
             "30-49": 40000,
             "50-74": 45000,
-            "75-99": 50000,
-            "100+": 0
+            "75-150": 50000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -443,8 +443,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 35000,
             "30-49": 40000,
             "50-74": 45000,
-            "75-99": 50000,
-            "100+": 0
+            "75-150": 50000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -464,8 +464,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 90000,
             "30-49": 150000,
             "50-74": 200000,
-            "75-99": 250000,
-            "100+": 0
+            "75-150": 250000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -485,8 +485,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 30000,
             "30-49": 50000,
             "50-74": 70000,
-            "75-99": 80000,
-            "100+": 0
+            "75-150": 80000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -506,8 +506,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 30000,
             "30-49": 50000,
             "50-74": 50000,
-            "75-99": 75000,
-            "100+": 0
+            "75-150": 75000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -532,8 +532,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 45000,
             "30-49": 60000,
             "50-74": 60000,
-            "75-99": 100000,
-            "100+": 0
+            "75-150": 100000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -554,8 +554,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 60000,
             "30-49": 75000,
             "50-74": 100000,
-            "75-99": 150000,
-            "100+": 0
+            "75-150": 150000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -576,8 +576,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 75000,
             "30-49": 85000,
             "50-74": 95000,
-            "75-99": 120000,
-            "100+": 0
+            "75-150": 120000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -598,8 +598,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 55000,
             "30-49": 55000,
             "50-74": 55000,
-            "75-99": 55000,
-            "100+": 0
+            "75-150": 55000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -619,8 +619,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 150000,
             "30-49": 170000,
             "50-74": 180000,
-            "75-99": 200000,
-            "100+": 0
+            "75-150": 200000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -640,8 +640,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 30000,
             "30-49": 50000,
             "50-74": 50000,
-            "75-99": 75000,
-            "100+": 0
+            "75-150": 75000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -661,8 +661,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 30000,
             "30-49": 50000,
             "50-74": 50000,
-            "75-99": 75000,
-            "100+": 0
+            "75-150": 75000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -687,8 +687,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 40000,
             "30-49": 40000,
             "50-74": 40000,
-            "75-99": 40000,
-            "100+": 0
+            "75-150": 40000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -713,8 +713,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 75000,
             "30-49": 100000,
             "50-74": 100000,
-            "75-99": 150000,
-            "100+": 0
+            "75-150": 150000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -734,8 +734,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 50000,
             "30-49": 50000,
             "50-74": 50000,
-            "75-99": 50000,
-            "100+": 0
+            "75-150": 50000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -760,8 +760,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 45000,
             "30-49": 45000,
             "50-74": 45000,
-            "75-99": 45000,
-            "100+": 0
+            "75-150": 45000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -781,8 +781,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 90000,
             "30-49": 120000,
             "50-74": 150000,
-            "75-99": 200000,
-            "100+": 0
+            "75-150": 200000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -803,8 +803,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 75000,
             "30-49": 100000,
             "50-74": 120000,
-            "75-99": 175000,
-            "100+": 0
+            "75-150": 175000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -824,8 +824,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 60000,
             "30-49": 70000,
             "50-74": 90000,
-            "75-99": 120000,
-            "100+": 0
+            "75-150": 120000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -849,8 +849,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 25000,
             "30-49": 25000,
             "50-74": 25000,
-            "75-99": 25000,
-            "100+": 0
+            "75-150": 25000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -871,8 +871,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 35000,
             "30-49": 45000,
             "50-74": 45000,
-            "75-99": 45000,
-            "100+": 45000
+            "75-150": 45000,
+            "151+": 45000
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -893,8 +893,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 30000,
             "30-49": 30000,
             "50-74": 30000,
-            "75-99": 30000,
-            "100+": 0
+            "75-150": 30000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -914,8 +914,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 30000,
             "30-49": 37500,
             "50-74": 56250,
-            "75-99": 50000,
-            "100+": 0
+            "75-150": 50000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -935,8 +935,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 30000,
             "30-49": 30000,
             "50-74": 30000,
-            "75-99": 30000,
-            "100+": 0
+            "75-150": 30000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -956,8 +956,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 5000,
             "30-49": 5000,
             "50-74": 5000,
-            "75-99": 5000,
-            "100+": 0
+            "75-150": 5000,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1063,8 +1063,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1082,8 +1082,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1101,8 +1101,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1120,8 +1120,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1139,8 +1139,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1158,8 +1158,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1177,8 +1177,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1196,8 +1196,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1215,8 +1215,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1234,8 +1234,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1253,8 +1253,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1272,8 +1272,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1291,8 +1291,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1310,8 +1310,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1329,8 +1329,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1348,8 +1348,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1367,8 +1367,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1386,8 +1386,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1405,8 +1405,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1424,8 +1424,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1443,8 +1443,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1462,8 +1462,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1481,8 +1481,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1500,8 +1500,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1519,8 +1519,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 0,
             "30-49": 0,
             "50-74": 0,
-            "75-99": 0,
-            "100+": 0
+            "75-150": 0,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1543,8 +1543,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1550,
             "30-49": 1320,
             "50-74": 1220,
-            "75-99": 1110,
-            "100+": 0
+            "75-150": 1110,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1564,8 +1564,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1680,
             "30-49": 1290,
             "50-74": 1040,
-            "75-99": 890,
-            "100+": 0
+            "75-150": 890,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1585,8 +1585,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 3390,
             "30-49": 3090,
             "50-74": 2870,
-            "75-99": 2680,
-            "100+": 0
+            "75-150": 2680,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1606,8 +1606,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1930,
             "30-49": 1740,
             "50-74": 1620,
-            "75-99": 1490,
-            "100+": 0
+            "75-150": 1490,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1627,8 +1627,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 2500,
             "30-49": 2280,
             "50-74": 2120,
-            "75-99": 1960,
-            "100+": 0
+            "75-150": 1960,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1647,8 +1647,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1270,
             "30-49": 1110,
             "50-74": 1010,
-            "75-99": 910,
-            "100+": 0
+            "75-150": 910,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1667,8 +1667,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 3390,
             "30-49": 3090,
             "50-74": 2870,
-            "75-99": 2680,
-            "100+": 0
+            "75-150": 2680,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1687,8 +1687,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1460,
             "30-49": 1260,
             "50-74": 1160,
-            "75-99": 1050,
-            "100+": 0
+            "75-150": 1050,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1707,8 +1707,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 2120,
             "30-49": 1890,
             "50-74": 1770,
-            "75-99": 1630,
-            "100+": 0
+            "75-150": 1630,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1727,8 +1727,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1360,
             "30-49": 1050,
             "50-74": 870,
-            "75-99": 720,
-            "100+": 0
+            "75-150": 720,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1747,8 +1747,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1300,
             "30-49": 990,
             "50-74": 810,
-            "75-99": 660,
-            "100+": 0
+            "75-150": 660,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1767,8 +1767,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1550,
             "30-49": 1320,
             "50-74": 1220,
-            "75-99": 1110,
-            "100+": 0
+            "75-150": 1110,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1787,8 +1787,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1200,
             "30-49": 1020,
             "50-74": 960,
-            "75-99": 860,
-            "100+": 0
+            "75-150": 860,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1807,8 +1807,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1930,
             "30-49": 1740,
             "50-74": 1620,
-            "75-99": 1490,
-            "100+": 0
+            "75-150": 1490,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1827,8 +1827,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1710,
             "30-49": 1470,
             "50-74": 1360,
-            "75-99": 1220,
-            "100+": 0
+            "75-150": 1220,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1847,8 +1847,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1110,
             "30-49": 960,
             "50-74": 870,
-            "75-99": 800,
-            "100+": 0
+            "75-150": 800,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1867,8 +1867,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 2690,
             "30-49": 2430,
             "50-74": 2260,
-            "75-99": 2100,
-            "100+": 0
+            "75-150": 2100,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1887,8 +1887,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 950,
             "30-49": 810,
             "50-74": 750,
-            "75-99": 660,
-            "100+": 0
+            "75-150": 660,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1907,8 +1907,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1460,
             "30-49": 1260,
             "50-74": 1160,
-            "75-99": 1050,
-            "100+": 0
+            "75-150": 1050,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1927,8 +1927,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 980,
             "30-49": 750,
             "50-74": 610,
-            "75-99": 530,
-            "100+": 0
+            "75-150": 530,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1947,8 +1947,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1680,
             "30-49": 1500,
             "50-74": 1390,
-            "75-99": 1300,
-            "100+": 0
+            "75-150": 1300,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1967,8 +1967,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 2500,
             "30-49": 2280,
             "50-74": 2120,
-            "75-99":1960,
-            "100+": 0
+            "75-150":1960,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -1987,8 +1987,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1270,
             "30-49": 1110,
             "50-74": 1010,
-            "75-99": 910,
-            "100+": 0
+            "75-150": 910,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -2007,8 +2007,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1930,
             "30-49": 1740,
             "50-74": 1620,
-            "75-99": 1490,
-            "100+": 0
+            "75-150": 1490,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -2027,8 +2027,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1270,
             "30-49": 1110,
             "50-74": 1010,
-            "75-99": 910,
-            "100+": 0
+            "75-150": 910,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -2047,8 +2047,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1580,
             "30-49": 1440,
             "50-74": 1330,
-            "75-99": 1220,
-            "100+": 0
+            "75-150": 1220,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -2067,8 +2067,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1580,
             "30-49": 1440,
             "50-74": 1330,
-            "75-99": 1220,
-            "100+": 0
+            "75-150": 1220,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -2087,8 +2087,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1460,
             "30-49": 1260,
             "50-74": 1160,
-            "75-99": 1050,
-            "100+": 0
+            "75-150": 1050,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -2107,8 +2107,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1680,
             "30-49": 1500,
             "50-74": 1390,
-            "75-99": 1300,
-            "100+": 0
+            "75-150": 1300,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -2127,8 +2127,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1710,
             "30-49": 1530,
             "50-74": 1450,
-            "75-99": 1330,
-            "100+": 0
+            "75-150": 1330,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -2147,8 +2147,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 2120,
             "30-49": 1890,
             "50-74": 1770,
-            "75-99": 1630,
-            "100+": 0
+            "75-150": 1630,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -2167,8 +2167,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 2500,
             "30-49": 2280,
             "50-74": 2120,
-            "75-99": 1960,
-            "100+": 0
+            "75-150": 1960,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -2187,8 +2187,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1460,
             "30-49": 1110,
             "50-74": 900,
-            "75-99": 750,
-            "100+": 0
+            "75-150": 750,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -2207,8 +2207,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1770,
             "30-49": 1590,
             "50-74": 1480,
-            "75-99": 1360,
-            "100+": 0
+            "75-150": 1360,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -2227,8 +2227,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1580,
             "30-49": 1440,
             "50-74": 1330,
-            "75-99": 1220,
-            "100+": 0
+            "75-150": 1220,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -2247,8 +2247,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1610,
             "30-49": 1410,
             "50-74": 1280,
-            "75-99": 1160,
-            "100+": 0
+            "75-150": 1160,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -2267,8 +2267,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1930,
             "30-49": 1740,
             "50-74": 1620,
-            "75-99": 1490,
-            "100+": 0
+            "75-150": 1490,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -2287,8 +2287,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1610,
             "30-49": 1410,
             "50-74": 1280,
-            "75-99": 1160,
-            "100+": 0
+            "75-150": 1160,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -2307,8 +2307,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1550,
             "30-49": 1320,
             "50-74": 1220,
-            "75-99": 1110,
-            "100+": 0
+            "75-150": 1110,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -2327,8 +2327,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1680,
             "30-49": 1500,
             "50-74": 1390,
-            "75-99": 1300,
-            "100+": 0
+            "75-150": 1300,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
@@ -2347,8 +2347,8 @@ export const teamactivitiesCategory: Category = {
             "15-29": 1960,
             "30-49": 1770,
             "50-74": 1650,
-            "75-99": 1550,
-            "100+": 0
+            "75-150": 1550,
+            "151+": 0
           },
           "currency": "TRY",
           "vatIncluded": false,
