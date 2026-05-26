@@ -1,11 +1,11 @@
-import { menusCategory } from "../data/menus";
+﻿import { menusCategory } from "../data/menus";
 import { animationsinflatablesCategory } from "../data/animations-inflatables";
 import { teamactivitiesCategory } from "../data/team-activities";
 import { kidsActivitiesCategory } from "../data/kids-activities";
 import { decorconceptCategory } from "../data/decor-concept";
 import { piknikihtiyaclarCategory } from "../data/picnic-essentials";
 
-export type PersonCountTier = "0-14" | "15-29" | "30-49" | "50-74" | "75-99" | "100+";
+export type PersonCountTier = "0-14" | "15-29" | "30-49" | "50-74" | "75-150" | "151+";
 
 export interface ProductDetail {
   title: string;
