@@ -212,15 +212,15 @@ export const menusCategory: Category = {
           "details": [
             {
               "title": "Soğuk Büfesi",
-              "text": "Salata bar: havuç rendesi, göbek, roka, çoban salata, kırmızı lahana, turşu, kornişon, semizotu salata"
+              "text": "Salata bar: havuç rendesi, çoban salata, turşu kornişon"
             },
             {
               "title": "Sıcak Büfesi",
-              "text": "Izgara köfte çeşitleri: kasap köfte (3 adet), yarım ekmek"
+              "text": "Köfte ekmek, domates soslu spagetti"
             },
             {
               "title": "Tatlı Büfesi",
-              "text": "Taze meyve tabağı, kavun ve karpuz (mevsimine göre)"
+              "text": "Karpuz"
             },
             {
               "title": "Servis Bedeli",
@@ -241,15 +241,11 @@ export const menusCategory: Category = {
           "details": [
             {
               "title": "Soğuk Büfesi",
-              "text": "Salata bar: havuç rendesi, göbek, roka, çoban salata, kırmızı lahana, turşu, kornişon, semizotu salata"
+              "text": "Salata bar: havuç rendesi, göbek, roka, çoban salata, kırmızı lahana, turşu kornişon, semizotu salata"
             },
             {
               "title": "Sıcak Büfesi",
-              "text": "Barbekü antrikot (1 adet), tavuk pirzola (1 adet), tavuk şiş (1 adet), domates soslu spagetti makarna"
-            },
-            {
-              "title": "Tatlı Büfesi",
-              "text": "Taze meyve tabağı, kavun ve karpuz (mevsimine göre)"
+              "text": "Tavuk pirzola (1 adet), tavuk şiş (1 adet), kasap köfte (2 adet), ızgara sucuk (1 adet), domates soslu spagetti makarna , patates kızartması, közlenmiş biber"
             },
             {
               "title": "Servis Bedeli",
@@ -270,15 +266,15 @@ export const menusCategory: Category = {
           "details": [
             {
               "title": "Soğuk Büfesi",
-              "text": "Salata bar: havuç rendesi, göbek, roka, çoban salata, kırmızı lahana, turşu, kornişon, semizotu salata"
+              "text": "Salata bar: havuç rendesi, göbek, roka, çoban salata, kırmızı lahana, turşu kornişon, semizotu salata"
             },
             {
               "title": "Sıcak Büfesi",
-              "text": "Barbekü antrikot (1 adet), tavuk pirzola (1 adet), tavuk şiş (1 adet), kasap köfte (2 adet), ızgara sucuk (1 adet), domates soslu spagetti makarna"
+              "text": "Barbekü antrikot (1 adet), tavuk pirzola (1 adet), tavuk şiş (1 adet), kasap köfte (2 adet), ızgara sucuk (1 adet), pirinç pilav, patates kızartması, közlenmiş biber"
             },
             {
               "title": "Tatlı Büfesi",
-              "text": "Taze meyve tabağı, kavun ve karpuz (mevsimine göre)"
+              "text": "Taze meyve tabağı, kavun ve karpuz (mevsimine göre taze meyveler belirlenecektir)"
             },
             {
               "title": "Servis Bedeli",
