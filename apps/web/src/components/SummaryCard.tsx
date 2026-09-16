@@ -603,7 +603,7 @@ export const SummaryCard: React.FC<{ isCart?: boolean }> = ({ isCart = false }) 
                                     <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", py: 1 }}>
                                         <Typography variant="body1" color="text.secondary">Alınan Hizmetler Toplamı (KDV hariç)</Typography>
                                         <Typography variant="body1" fontWeight="medium" color="text.secondary">
-                                            {subtotal.toLocaleString("tr-TR", { minimumFractionDigits: 0, maximumFractionDigits: 2 })} ₺
+                                            {(subtotal + menuServiceFee).toLocaleString("tr-TR", { minimumFractionDigits: 0, maximumFractionDigits: 2 })} ₺
                                         </Typography>
                                     </Box>
                                     {crewCateringFee > 0 && (
